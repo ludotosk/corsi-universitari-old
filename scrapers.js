@@ -29,7 +29,7 @@ async function scrapeUnimi(url, browser) {
         [next] = await page.$x('//*[@id="parid-12472"]/div/div/div/div/div[2]/div[' + i + ']');
     } while (next != undefined);
 
-    return(listaCorsi);
+    return (listaCorsi);
 }
 
 async function scrapeUnimib(url, browser) {
@@ -41,24 +41,34 @@ async function scrapeUnimib(url, browser) {
 
     var next = [];
 
-    var i = 1;
+    var i = j = 1;
 
     do {
-        console.log(i);
-        const [el] = await page.$x('//*[@id="ui-accordion-3-header-0"]/a/div');
-        const titolo = await el.getProperty('textContent');
-        const titoloTxt = await titolo.jsonValue();
+        do {
+            console.log(j);
+            
+            const [el] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[' + i + ']/a/div');
+            const titolo = await el.getProperty('textContent');
+            const titoloTxt = await titolo.jsonValue();
+           
+            /* const [el1] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/div[' + i + ']/div');
+            const link = await el1.getElementsByTagName('a').getProperty('href');
+            const hrefTxt = await link.jsonValue(); */
+    
+            listaCorsi = listaCorsi + '\'' + titoloTxt.trim() + /*'\',\'' + hrefTxt +*/ '\'\n';
 
-        listaCorsi = listaCorsi + '\'' + titoloTxt + '\'\n';
+            i += 1;
+            [next] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[' + i + ']/a/div');
+        } while (next != undefined);
+        j += 1;
+        i = 1;
+        [next] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[1]/a/div');
+    } while(next != undefined)
 
-        i += 1;
-        [next] = await page.$x('//*[@id="ui-accordion-3-header-71"]/a/div');
-    } while (next != undefined);
+    return (listaCorsi);
+}
 
-    return(listaCorsi);
-} 
-
-async function launchScrape(){
+async function launchScrape() {
     const browser = await puppeteer.launch();
 
     const corsiUnimi = await scrapeUnimi('https://www.unimi.it/it/corsi/corsi-di-laurea-triennali-e-magistrali-ciclo-unico', browser);
@@ -71,7 +81,7 @@ async function launchScrape(){
         console.log('corsi > corsi.csv');
     });
 
-    browser.close();    
+    browser.close();
 }
 
 launchScrape();
