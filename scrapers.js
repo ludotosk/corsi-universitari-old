@@ -77,13 +77,44 @@ async function scrapeUnimib(url, browser) {
     return (listaCorsi);
 }
 
+async function scrapePolimi(url, browser, tipoLaurea) {
+    const page = await browser.newPage();
+
+    await page.goto(url);
+
+    var listaCorsi = '';
+
+    var next = [];
+
+    var i = 1;
+
+    do {
+        const [el] = await page.$x('/html/body/div/div/div/div[3]/div/div/ul[2]/li[' + i + ']/a');
+        const titolo = await el.getProperty('textContent');
+        const link = await el.getProperty('href');
+        const titoloTxt = await titolo.jsonValue();
+        const hrefTxt = await link.jsonValue();
+
+        listaCorsi = listaCorsi + '\'' + titoloTxt + '\',\'' + hrefTxt + '\',\'' + tipoLaurea + '\',\'polimi\'\n';
+
+        i += 1;
+        [next] = await page.$x('/html/body/div/div/div/div[3]/div/div/ul[2]/li[' + i + ']/a');
+    } while (next != undefined);
+
+    return (listaCorsi);
+}
+
+
+
 async function launchScrape() {
     const browser = await puppeteer.launch();
 
     const corsiUnimi = await scrapeUnimi('https://www.unimi.it/it/corsi/corsi-di-laurea-triennali-e-magistrali-ciclo-unico', browser);
     const corsiUnimib = await scrapeUnimib('https://www.unimib.it/didattica/corsi-studio-iscrizioni', browser);
+    const corsiPolimiTriennale = await scrapePolimi('https://www.polimi.it/corsi/corsi-di-laurea/', browser, 'Laurea triennale');
+    const corsiPolimiMagistrale = await scrapePolimi('https://www.polimi.it/corsi/corsi-di-laurea-magistrale/', browser, 'Laurea magistrale');
 
-    const corsi = corsiUnimi + corsiUnimib;
+    const corsi = corsiUnimi + corsiUnimib + corsiPolimiTriennale + corsiPolimiMagistrale;
 
     fs.writeFile('corsi.csv', corsi, function (err) {
         if (err) return console.log(err);
