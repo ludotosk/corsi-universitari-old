@@ -23,7 +23,7 @@ async function scrapeUnimi(url, browser) {
         const tipoCorso = await el1.getProperty('textContent');
         const corsoTxt = await tipoCorso.jsonValue();
 
-        listaCorsi = listaCorsi + '\'' + titoloTxt + '\',\'' + hrefTxt + '\',\'' + corsoTxt.trim() + '\',\' unimi' + '\'\n';
+        listaCorsi = listaCorsi + '\'' + titoloTxt + '\',\'' + hrefTxt + '\',\'' + corsoTxt.trim() + '\',\'unimi\'\n';
 
         i += 1;
         [next] = await page.$x('//*[@id="parid-12472"]/div/div/div/div/div[2]/div[' + i + ']');
@@ -45,17 +45,26 @@ async function scrapeUnimib(url, browser) {
 
     do {
         do {
-            console.log(j);
-            
             const [el] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[' + i + ']/a/div');
             const titolo = await el.getProperty('textContent');
             const titoloTxt = await titolo.jsonValue();
-           
-            /* const [el1] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/div[' + i + ']/div');
-            const link = await el1.getElementsByTagName('a').getProperty('href');
-            const hrefTxt = await link.jsonValue(); */
-    
-            listaCorsi = listaCorsi + '\'' + titoloTxt.trim() + /*'\',\'' + hrefTxt +*/ '\'\n';
+
+            const [el1] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/div[' + i + ']/div/div[4]/a');
+            var hrefTxt = '';
+            if (el1 != undefined) {
+                const link = await el1.getProperty('href');
+                hrefTxt = await link.jsonValue();
+            }else {
+                const [el2] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/div[' + i + ']/div/div[3]/a');
+                const link = await el2.getProperty('href');
+                hrefTxt = await link.jsonValue();
+            }
+
+            const [el3] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/div[' + i + ']/div/div[2]/span');
+            const tipoCorso = await el3.getProperty('textContent');
+            const corsoTxt = await tipoCorso.jsonValue();    
+
+            listaCorsi = listaCorsi + '\'' + titoloTxt.trim() + '\',\'' + hrefTxt + '\',\'' + corsoTxt + '\',\'unimib\'\n';
 
             i += 1;
             [next] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[' + i + ']/a/div');
@@ -63,7 +72,7 @@ async function scrapeUnimib(url, browser) {
         j += 1;
         i = 1;
         [next] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[1]/a/div');
-    } while(next != undefined)
+    } while (next != undefined)
 
     return (listaCorsi);
 }
