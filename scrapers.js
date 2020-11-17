@@ -143,5 +143,3 @@ async function launchScrape() {
 }
 
 launchScrape();
-
-//aggiungere magistrali unimi
