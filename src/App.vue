@@ -1,25 +1,23 @@
 <template>
   <v-container>
-    <v-simple-table fixed-header height="100%">
-      <template v-slot:default>
-        <thead>
-          <tr>
-            <th class="text-left">Nome corso</th>
-            <th class="text-left">Tipo corso</th>
-            <th class="text-letf">Università</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr v-for="item in corsi" :key="item.titoloTxt">
-            <td>
-              <a :href="item.hrefTxt">{{ item.titoloTxt }}</a>
-            </td>
-            <td>{{ item.tipoLaurea }}</td>
-            <td>{{ item.uni }}</td>
-          </tr>
-        </tbody>
-      </template>
-    </v-simple-table>
+    <v-card>
+      <v-card-title>
+        Corsi di Laurea
+        <v-spacer></v-spacer>
+        <v-text-field
+          v-model="search"
+          append-icon="mdi-magnify"
+          label="Search"
+          single-line
+          hide-details
+        ></v-text-field>
+      </v-card-title>
+      <v-data-table
+        :headers="headers"
+        :items="corsi"
+        :search="search"
+      ></v-data-table>
+    </v-card>
   </v-container>
 </template>
 
@@ -30,6 +28,33 @@ export default {
   name: "App",
   data() {
     return {
+      search: '',
+      headers: [
+        {
+          text: "Nome",
+          align: "start",
+          sortable: false,
+          value: "titoloTxt",
+        },
+        {
+          text: "Link",
+          align: "start",
+          sortable: false,
+          value: "hrefTxt",
+        },
+        {
+          text: "Tipo di Laurea",
+          align: "start",
+          sortable: false,
+          value: "tipoLaurea",
+        },
+        {
+          text: "Università",
+          align: "start",
+          sortable: false,
+          value: "uni",
+        },
+      ],
       corsi: corsiFile,
     };
   },
