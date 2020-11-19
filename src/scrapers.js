@@ -190,6 +190,14 @@ async function scrapeBocconi(url, browser) {
         [next] = await page.$x('/html/body/div[3]/div[2]/article/div[1]/div[2]/div/ul/li[' + i + ']/a');
     } while (next != undefined);
 
+    const [el1] = await page.$x('/html/body/div[3]/div[2]/article/div[1]/div[3]/div/p[1]/a');
+    const titolo = await el1.getProperty('textContent');
+    const link = await el1.getProperty('href');
+    const nomeCorso = await titolo.jsonValue();
+    const hrefTxt = await link.jsonValue();
+
+    arrayCorsi.push({nomeCorso,hrefTxt,tipoLaurea,uni});
+
     return (arrayCorsi);
 }
 
