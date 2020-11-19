@@ -1,61 +1,28 @@
 <template>
-  <v-container>
-    <v-card>
-      <v-card-title>
-        Corsi di Laurea
-        <v-spacer></v-spacer>
-        <v-text-field
-          v-model="search"
-          append-icon="mdi-magnify"
-          label="Search"
-          single-line
-          hide-details
-        ></v-text-field>
-      </v-card-title>
-      <v-data-table
-        :headers="headers"
-        :items="corsi"
-        :search="search"
-      ></v-data-table>
-    </v-card>
-  </v-container>
+  <v-table :data="corsi">
+    <thead slot="head">
+      <th>Nome corso</th>
+      <th>Tipo Laurea</th>
+      <th>Università</th>
+    </thead>
+      <tbody slot="body" slot-scope="{displayData}">
+        <tr v-for="row in displayData" :key="row.titoloTxt">
+          <td><a :href="row.hrefTxt">{{ row.titoloTxt }}</a></td>
+          <td>{{ row.tipoLaurea }}</td>
+          <td>{{ row.uni }}</td>
+        </tr>
+    </tbody>
+  </v-table>
 </template>
 
 <script>
-import corsiFile from "../public/corsi.json";
+import corsi from "../public/corsi.json";
 
 export default {
   name: "App",
   data() {
     return {
-      search: '',
-      headers: [
-        {
-          text: "Nome",
-          align: "start",
-          sortable: false,
-          value: "titoloTxt",
-        },
-        {
-          text: "Link",
-          align: "start",
-          sortable: false,
-          value: "hrefTxt",
-        },
-        {
-          text: "Tipo di Laurea",
-          align: "start",
-          sortable: false,
-          value: "tipoLaurea",
-        },
-        {
-          text: "Università",
-          align: "start",
-          sortable: false,
-          value: "uni",
-        },
-      ],
-      corsi: corsiFile,
+      corsi,
     };
   },
 };

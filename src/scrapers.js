@@ -6,9 +6,12 @@ async function scrapeUnimi(url, browser) {
 
     await page.goto(url);
 
-    var hrefTxt = titoloTxt = tipoLaurea = '';
+    var hrefTxt = '';
+    var titoloTxt = '';
+    var tipoLaurea = '';
 
-    var next = arrayCorsi = [];
+    var next = [];
+    var arrayCorsi = [];
 
     var i = 1;
 
@@ -57,9 +60,11 @@ async function scrapeUnimib(url, browser) {
 
     var uni = 'unimib';
 
-    var next = arrayCorsi = [];
+    var next = [];
+    var arrayCorsi = [];
 
-    var i = j = 1;
+    var i = 1;
+    var j = 1;
 
     do {
         do {
