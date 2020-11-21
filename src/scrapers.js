@@ -213,7 +213,11 @@ async function scrapeUnibgCorso(url, browser, arrayCorsi){
 
     const [el1] = await page.$x('/html/body/div[2]/div/div/section/div/div[1]/div/section/div/div[3]/div[2]/div[2]/div');
     const laurea = await el1.getProperty('textContent');
-    const tipoLaurea = await laurea.jsonValue();
+    var tipoLaurea = await laurea.jsonValue();
+
+    if (tipoLaurea == 'Laurea Magistrale Ciclo Unico 5 anni'){
+        tipoLaurea = 'Laurea magistrale a ciclo unico';
+    }
 
     const uni = 'unibg';
     const hrefTxt = uni;
