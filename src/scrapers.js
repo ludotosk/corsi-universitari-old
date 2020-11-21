@@ -209,7 +209,7 @@ async function scrapeUnibgCorso(url, browser, arrayCorsi){
     const [el] = await page.$x('/html/body/div[2]/div/div/section/h1');
     const titolo = await el.getProperty('textContent');
     const nomeCorso = await titolo.jsonValue();
-    console.log(nomeCorso);
+    //console.log(nomeCorso);
 
     const [el1] = await page.$x('/html/body/div[2]/div/div/section/div/div[1]/div/section/div/div[3]/div[2]/div[2]/div');
     const laurea = await el1.getProperty('textContent');
@@ -251,22 +251,30 @@ async function scrapeUnibg(url, browser) {
 async function launchScrape() {
     const browser = await puppeteer.launch();
 
-    //const corsiUnimiTriennale = await scrapeUnimi('https://www.unimi.it/it/corsi/corsi-di-laurea-triennali-e-magistrali-ciclo-unico', browser);
-    //const corsiUnimiMagistrale = await scrapeUnimi('https://www.unimi.it/it/corsi/corsi-di-laurea-magistrale', browser);
-    //const corsiUnimib = await scrapeUnimib('https://www.unimib.it/didattica/corsi-studio-iscrizioni', browser);
-    //const corsiPolimiTriennale = await scrapePolimi('https://www.polimi.it/corsi/corsi-di-laurea/', browser, 'Laurea triennale');
-    //const corsiPolimiMagistrale = await scrapePolimi('https://www.polimi.it/corsi/corsi-di-laurea-magistrale/', browser, 'Laurea magistrale');
-    //const corsiBocconi = await scrapeBocconi('https://www.unibocconi.it/wps/wcm/connect/bocconi/sitopubblico_it/albero+di+navigazione/home/corsi+di+studio/', browser);
+    const corsiUnimiTriennale = await scrapeUnimi('https://www.unimi.it/it/corsi/corsi-di-laurea-triennali-e-magistrali-ciclo-unico', browser);
+    console.log('unimi triennale ok');
+    const corsiUnimiMagistrale = await scrapeUnimi('https://www.unimi.it/it/corsi/corsi-di-laurea-magistrale', browser);
+    console.log('unimi magistrale ok');
+    const corsiUnimib = await scrapeUnimib('https://www.unimib.it/didattica/corsi-studio-iscrizioni', browser);
+    console.log('unimib ok');
+    const corsiPolimiTriennale = await scrapePolimi('https://www.polimi.it/corsi/corsi-di-laurea/', browser, 'Laurea triennale');
+    console.log('polimi triennale ok');
+    const corsiPolimiMagistrale = await scrapePolimi('https://www.polimi.it/corsi/corsi-di-laurea-magistrale/', browser, 'Laurea magistrale');
+    console.log('polimi magistrale ok');
+    const corsiBocconi = await scrapeBocconi('https://www.unibocconi.it/wps/wcm/connect/bocconi/sitopubblico_it/albero+di+navigazione/home/corsi+di+studio/', browser);
+    console.log('bocconi ok');
     const corsiUnibgTriennale = await scrapeUnibg('https://www.unibg.it/studia-noi/corsi/lauree-triennali-e-ciclo-unico', browser);
+    console.log('unibg triennale ok');
     const corsiUnibgMagistrale = await scrapeUnibg('https://www.unibg.it/studia-noi/corsi/lauree-magistrali', browser);
+    console.log('unibg magistrale ok');
 
     var corsi = [];
-    //Array.prototype.push.apply(corsi,corsiUnimiTriennale);
-    //Array.prototype.push.apply(corsi,corsiUnimiMagistrale);
-    //Array.prototype.push.apply(corsi,corsiUnimib);
-    //Array.prototype.push.apply(corsi,corsiPolimiTriennale);
-    //Array.prototype.push.apply(corsi,corsiPolimiMagistrale);
-    //Array.prototype.push.apply(corsi,corsiBocconi);
+    Array.prototype.push.apply(corsi,corsiUnimiTriennale);
+    Array.prototype.push.apply(corsi,corsiUnimiMagistrale);
+    Array.prototype.push.apply(corsi,corsiUnimib);
+    Array.prototype.push.apply(corsi,corsiPolimiTriennale);
+    Array.prototype.push.apply(corsi,corsiPolimiMagistrale);
+    Array.prototype.push.apply(corsi,corsiBocconi);
     Array.prototype.push.apply(corsi, corsiUnibgTriennale);
     Array.prototype.push.apply(corsi, corsiUnibgMagistrale);
 
