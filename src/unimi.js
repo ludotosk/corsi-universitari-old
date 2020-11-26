@@ -32,6 +32,7 @@ async function scrapeUnimi(url) {
 
     var uni = 'unimi';
 
+    //qui ho un ciclo per cerca i link negli elementi tramite xpath. Siccome ho due xpath diversi c'è un controllo.
     do {
         const [el] = await page.$x('/html/body/div/div/div/section/div/div[2]/div/div[2]/div/div/div/div/div[2]/div[' + i + ']/div/div/div/div/div/div[2]/div[3]/a');
         if (el != undefined) {
@@ -47,7 +48,7 @@ async function scrapeUnimi(url) {
             hrefTxt = await link.jsonValue();
         }
 
-
+        //qui nella stessa scheda del link mi cerca con un xpath diverso il tipo di laurea
         const [el1] = await page.$x('/html/body/div/div/div/section/div/div[2]/div/div[2]/div/div/div/div/div[2]/div[' + i + ']/div/div/div/div/div/div[2]/div[5]/div');
         if (el1 != undefined) {
             const tipoCorso = await el1.getProperty('textContent');

@@ -68,17 +68,17 @@ async function scrapeUnito(url) {
     }
 
     const unicoLink = await page.evaluateHandle(() => {
-        return Array.from(document.getElementById('quickset-elenco_corsi-1').getElementsByClassName('item-list')[1].getElementsByTagName('a')).map(a => a.href);
+        return Array.from(document.getElementById('quickset-elenco_corsi-1').getElementsByClassName('item-list')[2].getElementsByTagName('a')).map(a => a.href);
     });
     var unicoHref = await unicoLink.jsonValue();
 
     const unicoNome = await page.evaluateHandle(() => {
-        return Array.from(document.getElementById('quickset-elenco_corsi-1').getElementsByClassName('item-list')[1].getElementsByTagName('a')).map(a => a.textContent);
+        return Array.from(document.getElementById('quickset-elenco_corsi-1').getElementsByClassName('item-list')[2].getElementsByTagName('a')).map(a => a.textContent);
     });
     var unicoText = await unicoNome.jsonValue();
 
     //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
-    var tipoLaurea = 'Laurea magistrale';
+    var tipoLaurea = 'Laurea magistrale a ciclo unico';
     for (var i = 0, max = unicoHref.length; i < max; i++) {
         const hrefTxt = unicoHref[i];
         const nomeCorso = unicoText[i];

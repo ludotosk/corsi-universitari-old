@@ -1,6 +1,5 @@
 //qui integro le librerie che servono a node. 
-//Oltre a questo commento anche quello del polimi e quello di unibg. Il primo è per siti con strutture omogenee, il secondo più pesante per siti con strutture disomogenee
-//ho aggiunto il metodo del polito che è un mix tra unibg e gli altri.
+//Oltre a questo commento anche quello del polimi e quello di unibg e unimi. Il primo è il più veloce da copiare e a eseguire, cerca tutti i link in una classe o id. Il secondo cerca i link dei corsi nella pagina come il primo ma poi li va ad aprire per reperire dalle singole pagine le informazioni. L'ultimo cerca gli elementi tramite xpath da usare se il primo non va, cioè quando oltre ai link dei corsi ce ne sono altri e non si riesce a smistarli.
 //in unimi c'è un tipolaurea.trim() quella funzione serve per elimare gli spazi prima e dopo la stringa che in alcuni casi compaiono.
 const fs = require('fs');
 const { fork } = require('child_process');

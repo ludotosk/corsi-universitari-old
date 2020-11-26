@@ -30,31 +30,28 @@ async function scrapePolimi(url) {
     const uni = 'polimi';
 
     var arrayCorsi = [];
+    
+    //qui cerco un elemento o per nome classe o per nome id. Nome classe ritorna un array id solo un elemento.
+    const listHref = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByClassName('listaCorsi')[0].getElementsByTagName('a')).map(a => a.href);
+    });
+    var listaHref = await listHref.jsonValue();
 
-    var next = [];
+    const listText = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByClassName('listaCorsi')[0].getElementsByTagName('a')).map(a => a.textContent);
+    });
+    var listaText = await listText.jsonValue();
 
-    var i = 1;
+    //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
+    for (var i = 0, max = listaHref.length; i < max; i++) {
+        const hrefTxt = listaHref[i];
+        const nomeCorso = listaText[i];
 
-    //qui cerco gli elementi tramite fullxpath che alla fine è meglio che solo xpath che a volte da noie. In altri siti più complessi cambia la struttura dei cicli ma il funzionamento è lo stesso.
-    do {
-        //in questo caso in un solo elemento troviamo tutti i dati che ci servono. In altri casi ci serve cercare più elementi per estrapolare da ciascuno di essi i singoli dati.
-        const [el] = await page.$x('/html/body/div/div/div/div[3]/div/div/ul[2]/li[' + i + ']/a');
-        const titolo = await el.getProperty('textContent');
-        const link = await el.getProperty('href');
-        const nomeCorso = await titolo.jsonValue();
-        const hrefTxt = await link.jsonValue();
-
-        //in alcuni casi il tipo di laurea è estrapolato dal sito altre volte passato come parametro. Qui comunque metto nell'array i dati.
         arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
-
-        //prima incremento il contatore poi verifico che ci sia un elemento successivo altrimenti esco.
-        i += 1;
-        [next] = await page.$x('/html/body/div/div/div/div[3]/div/div/ul[2]/li[' + i + ']/a');
-    } while (next != undefined);
+    }
 
     //qui chiudo tutto e invio al padre i dati
     browser.close();
     process.send(arrayCorsi);
     process.exit();
-    //return (arrayCorsi);
 }
