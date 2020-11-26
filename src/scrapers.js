@@ -1,5 +1,6 @@
 //qui integro le librerie che servono a node. 
 //Oltre a questo commento anche quello del polimi e quello di unibg. Il primo è per siti con strutture omogenee, il secondo più pesante per siti con strutture disomogenee
+//ho aggiunto il metodo del polito che è un mix tra unibg e gli altri.
 //in unimi c'è un tipolaurea.trim() quella funzione serve per elimare gli spazi prima e dopo la stringa che in alcuni casi compaiono.
 const fs = require('fs');
 const { fork } = require('child_process');
@@ -27,7 +28,11 @@ async function launchScrape() {
     childUnibgTriennale.send('https://www.unibg.it/studia-noi/corsi/lauree-triennali-e-ciclo-unico');
     const childUnibgMagistrale = fork('./unibg.js');
     childUnibgMagistrale.send('https://www.unibg.it/studia-noi/corsi/lauree-magistrali');
-    
+    const childPolitoTriennale = fork('./polito.js', ['Laurea triennale']);
+    childPolitoTriennale.send('https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa.lauree?p_tipo_cds=1&p_elenco=T&p_lang=IT');
+    const childPolitoMagistrale = fork('./polito.js', ['Laurea magistrale']);
+    childPolitoMagistrale.send('https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa.lauree?p_tipo_cds=Z&p_elenco=T&p_lang=IT');
+
     var corsi = [];
     //creo l'array che conterrà tutti i risultati.
     //con la fuzione on cattura la risposta del figlio con i dati e poi eseguo l'aggiunta dei dati con la push all'array del padre. Dall'altra parte della on c'è una funzione send che dal figlio manda i dati.
@@ -88,10 +93,24 @@ async function launchScrape() {
         console.log('unibg magistrale ok');
         i++;
     });
+    childPolitoTriennale.on('message', (messaggio) => {
+        Array.prototype.push.apply(corsi, messaggio);
+    });
+    childPolitoTriennale.on('exit', (esco) => {
+        console.log('polito triennale ok');
+        i++;
+    });    
+    childPolitoMagistrale.on('message', (messaggio) => {
+        Array.prototype.push.apply(corsi, messaggio);
+    });
+    childPolitoMagistrale.on('exit', (esco) => {
+        console.log('polito magistrale ok');
+        i++;
+    });    
 
     //qui ogni secondo controllo se tutti hanno finito. È un po' rudimentale ma funziona. Non so se si possa fare meglio. Quando tutti hanno finito scrive su file l'array, scrive nel terminale che ha terminato e dice quanto ci ha messo.
     setInterval((scrivi) => {
-        if (i > 7) {
+        if (i > 9) {
             fs.writeFile('../public/corsi.json', JSON.stringify(corsi), function (err) {
                 if (err) return console.log(err);
                 console.log('corsi > corsi.json');
