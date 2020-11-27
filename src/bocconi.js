@@ -16,7 +16,7 @@ async function scrapeBocconi(url) {
 
     await page.setRequestInterception(true);
 
-    //if the page makes a  request to a resource type of image or stylesheet then abort that            request
+    //if the page makes a  request to a resource type of image or stylesheet then abort that request
     page.on('request', request => {
         if (request.resourceType() === 'image' || request.resourceType() === 'stylesheet' || request.resourceType() == 'script' || request.resourceType() == 'font' || request.resourceType() == 'media')
             request.abort();
@@ -30,51 +30,69 @@ async function scrapeBocconi(url) {
 
     var arrayCorsi = [];
 
-    var next = [];
+    // triennali italiano
+    var nomi = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByTagName('ul')[28].getElementsByTagName('li')).map(li => li.firstChild.textContent);
+    });
+    var listaNomi = await nomi.jsonValue();
 
-    var i = 1;
-    var j = 1;
+    var link = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByTagName('ul')[28].getElementsByTagName('li')).map(li => li.firstChild.href);
+    });
+    var listaLink = await link.jsonValue();
 
-    do {
-        do {
-            const [el] = await page.$x('/html/body/div[3]/div[2]/article/div[1]/div[1]/div/ul/li[' + j + ']/ul/li[' + i + ']/a');
-            const titolo = await el.getProperty('textContent');
-            const link = await el.getProperty('href');
-            const nomeCorso = await titolo.jsonValue();
-            const hrefTxt = await link.jsonValue();
+    for (var i = 0, max = listaNomi.length; i < max; i++) {
+        const hrefTxt = listaLink[i];
+        const nomeCorso = listaNomi[i];
+        const tipoLaurea = 'Laurea triennale';
 
-            tipoLaurea = 'Laurea triennale';
-            arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
-
-            i += 1;
-            [next] = await page.$x('/html/body/div[3]/div[2]/article/div[1]/div[1]/div/ul/li[' + j + ']/ul/li[' + i + ']/a');
-        } while (next != undefined);
-        j += 1;
-        i = 1;
-        [next] = await page.$x('/html/body/div[3]/div[2]/article/div[1]/div[1]/div/ul/li[' + j + ']/ul');
-    } while (next != undefined)
-
-    i = 1;
-
-    do {
-        const [el] = await page.$x('/html/body/div[3]/div[2]/article/div[1]/div[2]/div/ul/li[' + i + ']/a');
-        const titolo = await el.getProperty('textContent');
-        const link = await el.getProperty('href');
-        const nomeCorso = await titolo.jsonValue();
-        const hrefTxt = await link.jsonValue();
-
-        tipoLaurea = 'Laurea magistrale';
         arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+    }
 
-        i += 1;
-        [next] = await page.$x('/html/body/div[3]/div[2]/article/div[1]/div[2]/div/ul/li[' + i + ']/a');
-    } while (next != undefined);
+    // triennali inglese
+    var nomi = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByTagName('ul')[29].getElementsByTagName('li')).map(li => li.firstChild.textContent);
+    });
+    var listaNomi = await nomi.jsonValue();
 
+    var link = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByTagName('ul')[29].getElementsByTagName('li')).map(li => li.firstChild.href);
+    });
+    var listaLink = await link.jsonValue();
+
+    for (var i = 0, max = listaNomi.length; i < max; i++) {
+        const hrefTxt = listaLink[i];
+        const nomeCorso = listaNomi[i];
+        const tipoLaurea = 'Laurea triennale';
+
+        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+    }
+
+    // magistrali
+    var nomi = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByTagName('ul')[30].getElementsByTagName('li')).map(li => li.firstChild.textContent);
+    });
+    var listaNomi = await nomi.jsonValue();
+
+    var link = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByTagName('ul')[30].getElementsByTagName('li')).map(li => li.firstChild.href);
+    });
+    var listaLink = await link.jsonValue();
+
+    for (var i = 0, max = listaNomi.length; i < max; i++) {
+        const hrefTxt = listaLink[i];
+        const nomeCorso = listaNomi[i];
+        const tipoLaurea = 'Laurea magistrale';
+
+        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+    }
+
+    const tipoLaurea = 'Laurea magistrale'
     const [el1] = await page.$x('/html/body/div[3]/div[2]/article/div[1]/div[3]/div/p[1]/a');
     const titolo = await el1.getProperty('textContent');
-    const link = await el1.getProperty('href');
+    const link2 = await el1.getProperty('href');
     const nomeCorso = await titolo.jsonValue();
-    const hrefTxt = await link.jsonValue();
+    const hrefTxt = await link2.jsonValue();
 
     arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
 
@@ -82,5 +100,4 @@ async function scrapeBocconi(url) {
     browser.disconnect();
     process.send(arrayCorsi);
     process.exit();
-    //return (arrayCorsi);
 }

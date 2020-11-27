@@ -7,11 +7,12 @@ process.on('message', (messaggio) => {
     scrapeUnibg(messaggio);
 });
 
-//questa funzione fa lo scaping di ogni singola pagina di un corso. Stesso funzionamento delle altre università, cambia la seconda funzione.
+//questa funzione fa lo scaping di ogni singola pagina di un corso. Viene lancia da quella successiva.
 async function scrapeUnibgCorso(url, page, arrayCorsi) {
 
     await page.goto(url);
 
+    //qui e nel blocco successivo apro un elemento tramite xpath e ne prendo il valore.
     const [el] = await page.$x('/html/body/div[2]/div/div/section/h1');
     const titolo = await el.getProperty('textContent');
     const nomeCorso = await titolo.jsonValue();

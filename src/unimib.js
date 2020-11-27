@@ -1,3 +1,4 @@
+//prima guarda quello di polimi per le parti comuni
 const puppeteer = require('puppeteer');
 const axios = require('axios');
 
@@ -33,6 +34,9 @@ async function scrapeUnimib(url) {
     var i = 1;
     var j = 1;
 
+    //qui faccio le stesse cose della funzione scrapeunibgcorso ma al posto di prendere due elementi per pagina itero tutti gli elementi che trovo.
+    //siccome alcuni hanno un xpath diverso ho dovuto mettere dei controlli, inoltre siccome l'xpath è annidato ho dovuto annidare i cicli.
+    //è meglio quindi seguire l'esempio di unibg, questo serve solo per capire come fare il ciclo
     do {
         do {
             const [el] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[' + i + ']/a/div');
@@ -68,6 +72,7 @@ async function scrapeUnimib(url) {
             }
             arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
 
+            //qui faccio un controllo sull'elemento successivo se è undefined non c'è nulla e quindi esco dal ciclo
             i += 1;
             [next] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[' + i + ']/a/div');
         } while (next != undefined);

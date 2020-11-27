@@ -3,14 +3,14 @@ const puppeteer = require('puppeteer');
 const axios = require('axios');
 const tipoLaurea = process.argv[2];
 
-//qui ricevo la send del padre e chiamo la funzione di scrape. Nella send ricevo il link.
+//qui ricevo la send del padre e chiamo la funzione di scrape. Nella send ricevo il link e il numero della porta di debug di chrome.
 process.on('message', (messaggio) => {
     //console.log(messaggio);
     scrapePolimi(messaggio);
 });
 
 async function scrapePolimi(url) {
-    //apro browser e una pagina nel browser
+    //mi connetto al browser e apro una pagina nel browser
     const response = await axios.get(`http://localhost:${url.port}/json/version`);
     const { webSocketDebuggerUrl } = response.data;
     const browser = await puppeteer.connect({ browserWSEndpoint: webSocketDebuggerUrl });
@@ -35,7 +35,8 @@ async function scrapePolimi(url) {
 
     var arrayCorsi = [];
 
-    //qui cerco un elemento o per nome classe o per nome id. Nome classe ritorna un array id solo un elemento.
+    //qui cerco un elemento o per nome classe o per nome id o per tipo di tag. Nome classe ritorna un array id solo un elemento.
+    //in alcuni caso devo aprire il primo figlio dell'elemento come nello scraper di unimi.
     const listHref = await page.evaluateHandle(() => {
         return Array.from(document.getElementsByClassName('listaCorsi')[0].getElementsByTagName('a')).map(a => a.href);
     });
@@ -46,6 +47,7 @@ async function scrapePolimi(url) {
     });
     var listaText = await listText.jsonValue();
 
+    //chiudo la pagina e la connessione al browser
     page.close();
     browser.disconnect();
 

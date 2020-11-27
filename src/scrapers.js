@@ -1,6 +1,9 @@
-//qui integro le librerie che servono a node. 
-//Oltre a questo commento anche quello del polimi e quello di unibg e unimi. Il primo è il più veloce da copiare e a eseguire, cerca tutti i link in una classe o id. Il secondo cerca i link dei corsi nella pagina come il primo ma poi li va ad aprire per reperire dalle singole pagine le informazioni. L'ultimo cerca gli elementi tramite xpath da usare se il primo non va, cioè quando oltre ai link dei corsi ce ne sono altri e non si riesce a smistarli.
-//in unimi c'è un tipolaurea.trim() quella funzione serve per elimare gli spazi prima e dopo la stringa che in alcuni casi compaiono.
+/* 
+Ho fatto tre tipi di scraper.
+Quello di polimi il più veloce. Quello consigliato.
+Quello di unibg il più lento cerca tutti i link li filtra e si connette alle singole pagine. Da usare in casi estremi, ovvero se gli altri due non vanno.
+Quello di unimib più lento di quello di polimi da usare quando il primo non funziona. Cerca tutti gli elementi tramite xpath.
+*/
 const fs = require('fs');
 const { fork } = require('child_process');
 const chromeLauncher = require('chrome-launcher');
@@ -23,27 +26,27 @@ async function launchScrape() {
 
     //qui creo un figlio per ogni università con la fork in alcuni casi trami la fork mando anche dei dati. Mentre con la send chiamo la funzion che fa partire il figlio e gli mando il link.
     const childUnimiTriennale = fork('./unimi.js');
-    childUnimiTriennale.send({ url: 'https://www.unimi.it/it/corsi/corsi-di-laurea-triennali-e-magistrali-ciclo-unico', port: chrome.port});
+    childUnimiTriennale.send({ url: 'https://www.unimi.it/it/corsi/corsi-di-laurea-triennali-e-magistrali-ciclo-unico', port: chrome.port });
     const childUnimiMagistrale = fork('./unimi.js');
-    childUnimiMagistrale.send({ url: 'https://www.unimi.it/it/corsi/corsi-di-laurea-magistrale', port: chrome.port});
+    childUnimiMagistrale.send({ url: 'https://www.unimi.it/it/corsi/corsi-di-laurea-magistrale', port: chrome.port });
     const childUnimib = fork('./unimib.js');
-    childUnimib.send({ url: 'https://www.unimib.it/didattica/corsi-studio-iscrizioni', port: chrome.port});
+    childUnimib.send({ url: 'https://www.unimib.it/didattica/corsi-studio-iscrizioni', port: chrome.port });
     const childPolimiTriennale = fork('./polimi.js', ['Laurea triennale']);
-    childPolimiTriennale.send({ url: 'https://www.polimi.it/corsi/corsi-di-laurea/', port: chrome.port});
+    childPolimiTriennale.send({ url: 'https://www.polimi.it/corsi/corsi-di-laurea/', port: chrome.port });
     const childPolimiMagistrale = fork('./polimi.js', ['Laurea magistrale']);
-    childPolimiMagistrale.send({ url: 'https://www.polimi.it/corsi/corsi-di-laurea-magistrale/', port: chrome.port});
+    childPolimiMagistrale.send({ url: 'https://www.polimi.it/corsi/corsi-di-laurea-magistrale/', port: chrome.port });
     const childBocconi = fork('./bocconi.js');
-    childBocconi.send({ url: 'https://www.unibocconi.it/wps/wcm/connect/bocconi/sitopubblico_it/albero+di+navigazione/home/corsi+di+studio/', port: chrome.port});
+    childBocconi.send({ url: 'https://www.unibocconi.it/wps/wcm/connect/bocconi/sitopubblico_it/albero+di+navigazione/home/corsi+di+studio/', port: chrome.port });
     const childUnibgTriennale = fork('./unibg.js');
-    childUnibgTriennale.send({ url: 'https://www.unibg.it/studia-noi/corsi/lauree-triennali-e-ciclo-unico', port: chrome.port});
+    childUnibgTriennale.send({ url: 'https://www.unibg.it/studia-noi/corsi/lauree-triennali-e-ciclo-unico', port: chrome.port });
     const childUnibgMagistrale = fork('./unibg.js');
-    childUnibgMagistrale.send({ url: 'https://www.unibg.it/studia-noi/corsi/lauree-magistrali', port: chrome.port});
+    childUnibgMagistrale.send({ url: 'https://www.unibg.it/studia-noi/corsi/lauree-magistrali', port: chrome.port });
     const childPolitoTriennale = fork('./polito.js', ['Laurea triennale']);
-    childPolitoTriennale.send({ url: 'https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa.lauree?p_tipo_cds=1&p_elenco=T&p_lang=IT', port: chrome.port});
+    childPolitoTriennale.send({ url: 'https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa.lauree?p_tipo_cds=1&p_elenco=T&p_lang=IT', port: chrome.port });
     const childPolitoMagistrale = fork('./polito.js', ['Laurea magistrale']);
-    childPolitoMagistrale.send({ url: 'https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa.lauree?p_tipo_cds=Z&p_elenco=T&p_lang=IT', port: chrome.port});
+    childPolitoMagistrale.send({ url: 'https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa.lauree?p_tipo_cds=Z&p_elenco=T&p_lang=IT', port: chrome.port });
     const childUnito = fork('./unito.js');
-    childUnito.send({ url: 'https://www.unito.it/didattica/offerta-formativa/corsi-studio', port: chrome.port});
+    childUnito.send({ url: 'https://www.unito.it/didattica/offerta-formativa/corsi-studio', port: chrome.port });
 
     var corsi = [];
     //creo l'array che conterrà tutti i risultati.
