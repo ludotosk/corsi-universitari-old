@@ -2,7 +2,6 @@
 const puppeteer = require('puppeteer');
 const axios = require('axios');
 const tipoLaurea = process.argv[2];
-//const opts = process.argv[3];
 
 //qui ricevo la send del padre e chiamo la funzione di scrape. Nella send ricevo il link.
 process.on('message', (messaggio) => {
@@ -15,7 +14,7 @@ async function scrapePolimi(url) {
     const response = await axios.get(`http://localhost:${url.port}/json/version`);
     const { webSocketDebuggerUrl } = response.data;
     const browser = await puppeteer.connect({ browserWSEndpoint: webSocketDebuggerUrl });
-    
+
     const page = await browser.newPage();
 
     //questo serve per scaricare solo i file che servono. Uguale in tutti tranne che in unimib dove serve il js.

@@ -25,54 +25,38 @@ async function scrapeUnimi(url) {
 
     await page.goto(url.url);
 
-    var hrefTxt = '';
-    var nomeCorso = '';
-    var tipoLaurea = '';
-
-    var next = [];
     var arrayCorsi = [];
 
     var i = 1;
 
     var uni = 'unimi';
 
-    //qui ho un ciclo per cerca i link negli elementi tramite xpath. Siccome ho due xpath diversi c'è un controllo.
-    do {
-        const [el] = await page.$x('/html/body/div/div/div/section/div/div[2]/div/div[2]/div/div/div/div/div[2]/div[' + i + ']/div/div/div/div/div/div[2]/div[3]/a');
-        if (el != undefined) {
-            const titolo = await el.getProperty('textContent');
-            const link = await el.getProperty('href');
-            nomeCorso = await titolo.jsonValue();
-            hrefTxt = await link.jsonValue();
-        } else {
-            const [el2] = await page.$x('/html/body/div/div/div/section/div/div[2]/div/div[2]/div/div/div/div/div[2]/div[' + i + ']/div/div/div/div/div/div/div/div[2]/div[3]/a');
-            const titolo = await el2.getProperty('textContent');
-            const link = await el2.getProperty('href');
-            nomeCorso = await titolo.jsonValue();
-            hrefTxt = await link.jsonValue();
-        }
+    const nomi = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByClassName('view-content')[1].getElementsByClassName('bp-title')).map(div => div.textContent);
+    });
+    var listaNomi = await nomi.jsonValue();
 
-        //qui nella stessa scheda del link mi cerca con un xpath diverso il tipo di laurea
-        const [el1] = await page.$x('/html/body/div/div/div/section/div/div[2]/div/div[2]/div/div/div/div/div[2]/div[' + i + ']/div/div/div/div/div/div[2]/div[5]/div');
-        if (el1 != undefined) {
-            const tipoCorso = await el1.getProperty('textContent');
-            tipoLaurea = await tipoCorso.jsonValue();
-        } else {
-            const [el3] = await page.$x('/html/body/div/div/div/section/div/div[2]/div/div[2]/div/div/div/div/div[2]/div[' + i + ']/div/div/div/div/div/div/div/div[2]/div[5]/div');
-            const tipoCorso = await el3.getProperty('textContent');
-            tipoLaurea = await tipoCorso.jsonValue();
-        }
+    const laurea = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByClassName('view-content')[1].getElementsByClassName('card_left')).map(div => div.textContent);
+    });
+    var listaLauree = await laurea.jsonValue();
 
-        tipoLaurea = tipoLaurea.trim()
-        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
-
-        i += 1;
-        [next] = await page.$x('/html/body/div/div/div/section/div/div[2]/div/div[2]/div/div/div/div/div[2]/div[' + i + ']');
-    } while (next != undefined);
+    const link = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByClassName('view-content')[1].getElementsByClassName('bp-title')).map(div => div.firstChild.href);
+    });
+    var listaLink = await link.jsonValue();
 
     page.close();
     browser.disconnect();
+
+    for (var i = 0, max = listaNomi.length; i < max; i++) {
+        const hrefTxt = listaLink[i];
+        const nomeCorso = listaNomi[i];
+        const tipoLaurea = listaLauree[i];
+
+        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+    }
+   
     process.send(arrayCorsi);
     process.exit();
-    //return (arrayCorsi);
 }

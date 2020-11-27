@@ -15,7 +15,6 @@ async function scrapeUnibgCorso(url, page, arrayCorsi) {
     const [el] = await page.$x('/html/body/div[2]/div/div/section/h1');
     const titolo = await el.getProperty('textContent');
     const nomeCorso = await titolo.jsonValue();
-    //console.log(nomeCorso);
 
     const [el1] = await page.$x('/html/body/div[2]/div/div/section/div/div[1]/div/section/div/div[3]/div[2]/div[2]/div');
     const laurea = await el1.getProperty('textContent');
@@ -62,7 +61,6 @@ async function scrapeUnibg(url) {
     //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
     for (var i = 0, max = lista.length; i < max; i++) {
         if (lista[i].length == 37) {
-            //console.log(lista[i]);
             await scrapeUnibgCorso(lista[i], page, arrayCorsi);
         }
     }
@@ -71,5 +69,4 @@ async function scrapeUnibg(url) {
     browser.disconnect();
     process.send(arrayCorsi);
     process.exit();
-    //return (arrayCorsi);
 }
