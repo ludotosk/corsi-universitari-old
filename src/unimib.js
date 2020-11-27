@@ -1,4 +1,5 @@
 const puppeteer = require('puppeteer');
+const axios = require('axios');
 
 process.on('message', (messaggio) => {
     //console.log(messaggio);
@@ -6,7 +7,10 @@ process.on('message', (messaggio) => {
 });
 
 async function scrapeUnimib(url) {
-    const browser = await puppeteer.launch();
+    const response = await axios.get(`http://localhost:${url.port}/json/version`);
+    const { webSocketDebuggerUrl } = response.data;
+    const browser = await puppeteer.connect({ browserWSEndpoint: webSocketDebuggerUrl });
+
     const page = await browser.newPage();
 
     await page.setRequestInterception(true);
@@ -19,7 +23,7 @@ async function scrapeUnimib(url) {
             request.continue();
     });
 
-    await page.goto(url);
+    await page.goto(url.url);
 
     var uni = 'unimib';
 
@@ -73,7 +77,7 @@ async function scrapeUnimib(url) {
     } while (next != undefined)
 
     page.close();
-    browser.close();
+    browser.disconnect();
     process.send(arrayCorsi);
     process.exit();
     //return (arrayCorsi);

@@ -1,5 +1,6 @@
 //le parti uguali al polimi non le commento, sono già commentate lì
 const puppeteer = require('puppeteer');
+const axios = require('axios');
 
 process.on('message', (messaggio) => {
     //console.log(messaggio);
@@ -32,7 +33,10 @@ async function scrapeUnibgCorso(url, page, arrayCorsi) {
 }
 
 async function scrapeUnibg(url) {
-    const browser = await puppeteer.launch();
+    const response = await axios.get(`http://localhost:${url.port}/json/version`);
+    const { webSocketDebuggerUrl } = response.data;
+    const browser = await puppeteer.connect({ browserWSEndpoint: webSocketDebuggerUrl });
+
     const page = await browser.newPage();
 
     await page.setRequestInterception(true);
@@ -45,7 +49,7 @@ async function scrapeUnibg(url) {
             request.continue();
     });
 
-    await page.goto(url);
+    await page.goto(url.url);
 
     var arrayCorsi = [];
 
@@ -63,7 +67,8 @@ async function scrapeUnibg(url) {
         }
     }
 
-    browser.close();
+    page.close();
+    browser.disconnect();
     process.send(arrayCorsi);
     process.exit();
     //return (arrayCorsi);

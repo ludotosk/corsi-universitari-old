@@ -1,5 +1,6 @@
 //le parti uguali al polimi non le commento, sono già commentate lì
 const puppeteer = require('puppeteer');
+const axios = require('axios');
 const tipoLaurea = process.argv[2];
 
 process.on('message', (messaggio) => {
@@ -10,7 +11,10 @@ process.on('message', (messaggio) => {
 //questa funzione fa lo scaping di ogni singola pagina di un corso. Stesso funzionamento delle altre università, cambia la seconda funzione.
 
 async function scrapePolito(url) {
-    const browser = await puppeteer.launch();
+    const response = await axios.get(`http://localhost:${url.port}/json/version`);
+    const { webSocketDebuggerUrl } = response.data;
+    const browser = await puppeteer.connect({ browserWSEndpoint: webSocketDebuggerUrl });
+
     const page = await browser.newPage();
 
     const uni = 'polito'; 
@@ -25,7 +29,7 @@ async function scrapePolito(url) {
             request.continue();
     });
 
-    await page.goto(url);
+    await page.goto(url.url);
 
     var arrayCorsi = [];
 
@@ -47,7 +51,7 @@ async function scrapePolito(url) {
     var listaText = await listText.jsonValue();
 
     page.close();
-    browser.close();
+    browser.disconnect();
 
     //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
     for (var i = 0, max = listaHref.length; i < max; i++) {
