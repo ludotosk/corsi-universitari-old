@@ -11,7 +11,7 @@ async function scrapeUnimi(url) {
 
     await page.setRequestInterception(true);
 
-    //if the page makes a  request to a resource type of image or stylesheet then abort that            request
+    //if the page makes a  request to a resource type of image or stylesheet then abort that request
     page.on('request', request => {
         if (request.resourceType() === 'image' || request.resourceType() === 'stylesheet' || request.resourceType() == 'script' || request.resourceType() == 'font' || request.resourceType() == 'media')
             request.abort();
@@ -66,6 +66,7 @@ async function scrapeUnimi(url) {
         [next] = await page.$x('/html/body/div/div/div/section/div/div[2]/div/div[2]/div/div/div/div/div[2]/div[' + i + ']');
     } while (next != undefined);
 
+    page.close();
     browser.close();
     process.send(arrayCorsi);
     process.exit();

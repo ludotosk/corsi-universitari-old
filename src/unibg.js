@@ -7,18 +7,7 @@ process.on('message', (messaggio) => {
 });
 
 //questa funzione fa lo scaping di ogni singola pagina di un corso. Stesso funzionamento delle altre università, cambia la seconda funzione.
-async function scrapeUnibgCorso(url, browser, arrayCorsi) {
-    const page = await browser.newPage();
-
-    await page.setRequestInterception(true);
-
-    //if the page makes a  request to a resource type of image or stylesheet then abort that request
-    page.on('request', request => {
-        if (request.resourceType() === 'image' || request.resourceType() === 'stylesheet')
-            request.abort();
-        else
-            request.continue();
-    });
+async function scrapeUnibgCorso(url, page, arrayCorsi) {
 
     await page.goto(url);
 
@@ -36,7 +25,7 @@ async function scrapeUnibgCorso(url, browser, arrayCorsi) {
     }
 
     const uni = 'unibg';
-    const hrefTxt = uni;
+    const hrefTxt = url;
 
     arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
 
@@ -70,7 +59,7 @@ async function scrapeUnibg(url) {
     for (var i = 0, max = lista.length; i < max; i++) {
         if (lista[i].length == 37) {
             //console.log(lista[i]);
-            await scrapeUnibgCorso(lista[i], browser, arrayCorsi);
+            await scrapeUnibgCorso(lista[i], page, arrayCorsi);
         }
     }
 

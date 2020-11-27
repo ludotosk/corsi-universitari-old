@@ -39,15 +39,6 @@ async function scrapeUnito(url) {
     });
     var triennaliText = await triennaliNome.jsonValue();
 
-    //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
-    var tipoLaurea = 'Laurea triennale';
-    for (var i = 0, max = triennaliHref.length; i < max; i++) {
-        const hrefTxt = triennaliHref[i];
-        const nomeCorso = triennaliText[i];
-
-        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
-    }
-
     const magistraliLink = await page.evaluateHandle(() => {
         return Array.from(document.getElementById('quickset-elenco_corsi-1').getElementsByClassName('item-list')[1].getElementsByTagName('a')).map(a => a.href);
     });
@@ -57,15 +48,6 @@ async function scrapeUnito(url) {
         return Array.from(document.getElementById('quickset-elenco_corsi-1').getElementsByClassName('item-list')[1].getElementsByTagName('a')).map(a => a.textContent);
     });
     var magistraliText = await magistraliNome.jsonValue();
-
-    //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
-    var tipoLaurea = 'Laurea magistrale';
-    for (var i = 0, max = magistraliHref.length; i < max; i++) {
-        const hrefTxt = magistraliHref[i];
-        const nomeCorso = magistraliText[i];
-
-        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
-    }
 
     const unicoLink = await page.evaluateHandle(() => {
         return Array.from(document.getElementById('quickset-elenco_corsi-1').getElementsByClassName('item-list')[2].getElementsByTagName('a')).map(a => a.href);
@@ -77,6 +59,27 @@ async function scrapeUnito(url) {
     });
     var unicoText = await unicoNome.jsonValue();
 
+    page.close();
+    browser.close();
+
+    //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
+    var tipoLaurea = 'Laurea triennale';
+    for (var i = 0, max = triennaliHref.length; i < max; i++) {
+        const hrefTxt = triennaliHref[i];
+        const nomeCorso = triennaliText[i];
+
+        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+    }
+
+    //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
+    var tipoLaurea = 'Laurea magistrale';
+    for (var i = 0, max = magistraliHref.length; i < max; i++) {
+        const hrefTxt = magistraliHref[i];
+        const nomeCorso = magistraliText[i];
+
+        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+    }
+
     //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
     var tipoLaurea = 'Laurea magistrale a ciclo unico';
     for (var i = 0, max = unicoHref.length; i < max; i++) {
@@ -86,7 +89,6 @@ async function scrapeUnito(url) {
         arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
     }
 
-    browser.close();
     process.send(arrayCorsi);
     process.exit();
     //return (arrayCorsi);

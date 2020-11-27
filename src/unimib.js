@@ -72,6 +72,7 @@ async function scrapeUnimib(url) {
         [next] = await page.$x('/html/body/div[6]/div[3]/section/div/section/div/div/div[2]/div[4]/div/div/fieldset[1]/div/div/div/div/div/div/div[' + j + ']/div[2]/h3[1]/a/div');
     } while (next != undefined)
 
+    page.close();
     browser.close();
     process.send(arrayCorsi);
     process.exit();

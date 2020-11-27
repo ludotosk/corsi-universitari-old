@@ -42,6 +42,9 @@ async function scrapePolimi(url) {
     });
     var listaText = await listText.jsonValue();
 
+    page.close();
+    browser.close();
+
     //qui invece prendo tutti i link e li itero controllando la lunghezza per avere solo i link del corso. Così passo tutto all'altra funzione.
     for (var i = 0, max = listaHref.length; i < max; i++) {
         const hrefTxt = listaHref[i];
@@ -51,7 +54,6 @@ async function scrapePolimi(url) {
     }
 
     //qui chiudo tutto e invio al padre i dati
-    browser.close();
     process.send(arrayCorsi);
     process.exit();
 }

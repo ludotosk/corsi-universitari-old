@@ -74,6 +74,7 @@ async function scrapeBocconi(url) {
 
     arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
 
+    page.close();
     browser.close();
     process.send(arrayCorsi);
     process.exit();
