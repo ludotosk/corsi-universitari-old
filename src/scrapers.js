@@ -47,6 +47,8 @@ async function launchScrape() {
     childPolitoMagistrale.send({ url: 'https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa.lauree?p_tipo_cds=Z&p_elenco=T&p_lang=IT', port: chrome.port });
     const childUnito = fork('./unito.js');
     childUnito.send({ url: 'https://www.unito.it/didattica/offerta-formativa/corsi-studio', port: chrome.port });
+    //const childUnibo = fork('./unibo.js');
+    //childUnibo.send({ url: 'https://www.unibo.it/it/didattica/corsi-di-studio?orderby=area', port: chrome.port});
 
     var corsi = [];
     //creo l'array che conterrà tutti i risultati.
