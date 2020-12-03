@@ -33,6 +33,7 @@ async function scrapeUnibo(url) {
 
     var arrayCorsi = [];
 
+    // questi comandi attendono il caricamento del bottone per poi clickarlo così genera la pagina
     await page.waitForSelector('button.search-btn');
 
     await page.click('a.search-button.button-popup');
