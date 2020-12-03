@@ -47,8 +47,8 @@ async function launchScrape() {
     childPolitoMagistrale.send({ url: 'https://didattica.polito.it/pls/portal30/sviluppo.offerta_formativa.lauree?p_tipo_cds=Z&p_elenco=T&p_lang=IT', port: chrome.port });
     const childUnito = fork('./unito.js');
     childUnito.send({ url: 'https://www.unito.it/didattica/offerta-formativa/corsi-studio', port: chrome.port });
-    //const childUnibo = fork('./unibo.js');
-    //childUnibo.send({ url: 'https://www.unibo.it/it/didattica/corsi-di-studio?orderby=area', port: chrome.port});
+    const childUnibo = fork('./unibo.js');
+    childUnibo.send({ url: 'https://www.unibo.it/it/didattica/corsi-di-studio?orderby=area', port: chrome.port});
 
     var corsi = [];
     //creo l'array che conterrà tutti i risultati.
@@ -131,10 +131,17 @@ async function launchScrape() {
         console.log('unito ok');
         i++;
     });
+    childUnibo.on('message', (messaggio) => {
+        Array.prototype.push.apply(corsi, messaggio);
+    });
+    childUnibo.on('exit', (esco) => {
+        console.log('unibo ok');
+        i++;
+    });
 
     //qui ogni secondo controllo se tutti hanno finito. È un po' rudimentale ma funziona. Non so se si possa fare meglio. Quando tutti hanno finito scrive su file l'array, scrive nel terminale che ha terminato e dice quanto ci ha messo.
     setInterval((scrivi) => {
-        if (i > 10) {
+        if (i > 11) {
             fs.writeFile('../public/corsi.json', JSON.stringify(corsi), function (err) {
                 if (err) return console.log(err);
                 console.log('corsi > corsi.json');

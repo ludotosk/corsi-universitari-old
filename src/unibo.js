@@ -29,15 +29,57 @@ async function scrapeUnibo(url) {
     await page.goto(url.url);
 
     const uni = 'unibo';
+    var tipoLaurea;
 
     var arrayCorsi = [];
 
-    //clicco sul bottone per farmi realizzare la lista
-    for (var i = 1; i < 17; i++){
-        await page.click('button.area' + i);
+    await page.waitForSelector('button.search-btn');
+
+    await page.click('a.search-button.button-popup');
+    await page.click('button.search-btn');
+
+    await page.waitForXPath('//*[@id="panel16"]/div/div[28]/a/div[2]');
+
+    const listText = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByClassName('text-wrapper')).map(div => div.children[1].children[0].textContent);
+    });
+    var listaText = await listText.jsonValue();
+
+    const listHref = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByClassName('text-description')).map(div => div.lastElementChild.firstElementChild.href);
+    });
+    var listaHref = await listHref.jsonValue();
+
+    const tipo = await page.evaluateHandle(() => {
+        return Array.from(document.getElementsByClassName('type')).map(p => p.textContent);
+    });
+    var listaTipi = await tipo.jsonValue();
+
+    page.close();
+    browser.disconnect();
+
+    //console.log(listaHref.length);
+    //console.log(listaText.length);
+
+    for (var i = 0, max = listaHref.length; i < max; i++) {
+        const hrefTxt = listaHref[i];
+        const nomeCorso = listaText[i];
+        if(listaTipi[i] == 'Laurea'){
+            tipoLaurea = 'Laurea triennale';
+        } else {
+            if (listaTipi[i] == 'Laurea Magistrale'){
+                tipoLaurea = 'Laurea magistrale';
+            } else {
+                if (listaTipi[i] == 'Laurea Magistrale a Ciclo Unico'){
+                    tipoLaurea = 'Laurea magistrale a ciclo unico';
+                } else {
+                    tipoLaurea = listaTipi[i];
+                }
+            }
+        }
+
+        arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
     }
-    
-    
 
     //qui chiudo tutto e invio al padre i dati
     process.send(arrayCorsi);
