@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="container-md">
+    <br>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon3"
@@ -17,10 +18,11 @@
     <v-table
       :data="corsi"
       :filters="filters"
-      :pageSize="50"
+      :pageSize="15"
       @totalPagesChanged="totalPages = $event"
       :currentPage.sync="currentPage"
       class="table table-striped table-hover table-sm"
+      
     >
       <thead slot="head" class="thead-dark">
         <th>Nome corso</th>
@@ -40,6 +42,7 @@
     <smart-pagination
       :currentPage.sync="currentPage"
       :totalPages="totalPages"
+      :maxPageLinks="5"
     />
   </div>
 </template>
