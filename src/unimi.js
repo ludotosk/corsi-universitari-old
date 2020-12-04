@@ -52,7 +52,7 @@ async function scrapeUnimi(url) {
     for (var i = 0, max = listaNomi.length; i < max; i++) {
         const hrefTxt = listaLink[i];
         const nomeCorso = listaNomi[i];
-        const tipoLaurea = listaLauree[i];
+        const tipoLaurea = listaLauree[i].trim();
 
         arrayCorsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
     }

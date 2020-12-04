@@ -24,6 +24,9 @@ async function scrapeUnibgCorso(url, page, arrayCorsi) {
     if (tipoLaurea == 'Laurea Magistrale Ciclo Unico 5 anni') {
         tipoLaurea = 'Laurea magistrale a ciclo unico';
     }
+    if (tipoLaurea == 'Laurea Magistrale'){
+        tipoLaurea = 'Laurea magistrale';
+    }
 
     const uni = 'unibg';
     const hrefTxt = url;

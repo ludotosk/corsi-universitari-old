@@ -1,11 +1,30 @@
 <template>
   <div>
-    <label>Filtra in base al nome:</label>
-    <input class="form-control" v-model="filters.nomeCorso.value" />
-    <v-table :data="corsi" :filters="filters">
-      <thead slot="head">
+    <div class="input-group mb-3">
+      <div class="input-group-prepend">
+        <span class="input-group-text" id="basic-addon3"
+          >Filtra in base al nome:</span
+        >
+      </div>
+      <input
+        type="text"
+        class="form-control"
+        id="basic-url"
+        aria-describedby="basic-addon3"
+        v-model="filters.nomeCorso.value"
+      />
+    </div>
+    <v-table
+      :data="corsi"
+      :filters="filters"
+      :pageSize="50"
+      @totalPagesChanged="totalPages = $event"
+      :currentPage.sync="currentPage"
+      class="table table-striped table-hover table-sm"
+    >
+      <thead slot="head" class="thead-dark">
         <th>Nome corso</th>
-        <th>Tipo Laurea</th>
+        <v-th :sortKey="nameLength" defaultSort="desc">Tipo Laurea</v-th>
         <th>Università</th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }">
@@ -18,6 +37,10 @@
         </tr>
       </tbody>
     </v-table>
+    <smart-pagination
+      :currentPage.sync="currentPage"
+      :totalPages="totalPages"
+    />
   </div>
 </template>
 
@@ -32,7 +55,14 @@ export default {
       filters: {
         nomeCorso: { value: "", keys: ["nomeCorso"] },
       },
+      currentPage: 1,
+      totalPages: 0,
     };
+  },
+  methods: {
+    nameLength (row) {
+      return row.tipoLaurea.length
+    },
   },
 };
 </script>

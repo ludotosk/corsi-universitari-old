@@ -4,6 +4,7 @@ Quello di polimi il più veloce. Quello consigliato.
 Quello di unibg il più lento cerca tutti i link li filtra e si connette alle singole pagine. Da usare in casi estremi, ovvero se gli altri due non vanno.
 Quello di unimib più lento di quello di polimi da usare quando il primo non funziona. Cerca tutti gli elementi tramite xpath.
 In unibo clicco dei bottoni per generare pezzi di pagina e esploro i figli dei nodi.
+Controllare che i dati come tipo laurea non contengano spazi, nel caso eliminarli con la funzione trim
 */
 const fs = require('fs');
 const { fork } = require('child_process');
