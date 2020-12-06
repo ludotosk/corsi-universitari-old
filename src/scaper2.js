@@ -11,6 +11,7 @@ async function ScrapeArea(page) {
     const records = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr');
     var uni = '';
     var i;
+    var linkUniTxt = '';
     for (i = 1; i < records.length + 1; i++) {
         var [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/strong');
         if (el == undefined) {
@@ -18,15 +19,21 @@ async function ScrapeArea(page) {
             //console.log('uni');
             const universita = await el.getProperty('textContent');
             uni = await universita.jsonValue();
+            uni = uni.replace("     ( Pagina ateneo )", "");
+
+            [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/th/a[2]');
+            const linkUni = await el.getProperty('href');
+            linkUniTxt = await linkUni.jsonValue();
         } else {
             //console.log('corso');
             //console.log(i);
             const titolo = await el.getProperty('textContent');
             var nomeCorso = await titolo.jsonValue();
+            nomeCorso = nomeCorso.trim();
 
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/a[3]');
             if (el == undefined) {
-                var hrefTxt = 'fix';
+                var hrefTxt = linkUniTxt;
             } else {
                 const link = await el.getProperty('href');
                 var hrefTxt = await link.jsonValue();
@@ -42,7 +49,9 @@ async function ScrapeArea(page) {
                 var tipoLaurea = 'Laurea Magistrale';
             }
 
-            corsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+            if (nomeCorso != ''){
+                corsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+            }
         }
     }
     await page.evaluate(() => {
@@ -81,7 +90,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio prima lista')
     await ScrapeArea(page);
@@ -93,7 +102,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inzio seconda lista')
     await ScrapeArea(page);
@@ -105,7 +114,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio terza lista')
     await ScrapeArea(page);
@@ -117,7 +126,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inzio quarta lista')
     await ScrapeArea(page);
@@ -129,7 +138,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio quinta lista')
     await ScrapeArea(page);
@@ -141,7 +150,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inzio sesta lista')
     await ScrapeArea(page);
@@ -153,7 +162,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio settima lista')
     await ScrapeArea(page);
@@ -165,7 +174,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inzio ottava lista')
     await ScrapeArea(page);
@@ -177,7 +186,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio nona lista')
     await ScrapeArea(page);
@@ -189,7 +198,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inzio decima lista')
     await ScrapeArea(page);
@@ -201,7 +210,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio undicesima lista')
     await ScrapeArea(page);
@@ -213,7 +222,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio dodicesima lista')
     await ScrapeArea(page);
@@ -225,7 +234,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio tredicesima lista')
     await ScrapeArea(page);
@@ -237,7 +246,7 @@ async function laucnhScrape() {
     });
 
     await page.click('#avvia_ricerca');
-    await page.waitForSelector('#risultati > div.skin > div > table');
+    await page.waitForSelector('#risultati > div.skin > div > table > tbody > tr:nth-child(1)');
 
     console.log('inizio quattordicesima lista')
     await ScrapeArea(page);
@@ -245,6 +254,16 @@ async function laucnhScrape() {
 
     page.close();
     browser.close();
+
+    corsi.sort(function (a, b) {
+        if (a.nomeCorso.toLowerCase() < b.nomeCorso.toLowerCase()
+        ) return -1;
+        if (a.nomeCorso.toLowerCase() > b.nomeCorso.toLowerCase()
+        ) return 1;
+        return 0;
+    });
+
+    
 
     fs.writeFile('../public/corsi.json', JSON.stringify(corsi), function (err) {
         if (err) return console.log(err);
