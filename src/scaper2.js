@@ -49,7 +49,7 @@ async function ScrapeArea(page) {
                 var tipoLaurea = 'Laurea Magistrale';
             }
 
-            if (nomeCorso != ''){
+            if (nomeCorso != '') {
                 corsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
             }
         }
@@ -255,6 +255,9 @@ async function laucnhScrape() {
     page.close();
     browser.close();
 
+    console.log('numero corsi pre pulizia');
+    console.log(corsi.length);
+
     corsi.sort(function (a, b) {
         if (a.nomeCorso.toLowerCase() < b.nomeCorso.toLowerCase()
         ) return -1;
@@ -263,7 +266,19 @@ async function laucnhScrape() {
         return 0;
     });
 
-    
+    for (var x = 0; x < corsi.length; x++) {
+        for (var z = 0; z < corsi.length; z++) {
+            if (x != z) {
+                if (corsi[x].nomeCorso.toLowerCase() == corsi[z].nomeCorso.toLowerCase() && corsi[x].uni.toLowerCase() == corsi[z].uni.toLowerCase() && corsi[x].tipoLaurea.toLowerCase() == corsi[z].tipoLaurea.toLowerCase()) {
+                    corsi.splice(z, 1);
+                }
+            }
+        }
+    }
+
+    console.log('numero corsi post pulizia');
+    console.log(corsi.length);
+
 
     fs.writeFile('../public/corsi.json', JSON.stringify(corsi), function (err) {
         if (err) return console.log(err);
