@@ -7,10 +7,16 @@ import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import VueMeta from 'vue-meta'
 import VueRouter from 'vue-router'
+import VueGtag from "vue-gtag";
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
 Vue.use(VueRouter)
+
+Vue.use(VueGtag, {
+  config: { id: "G-WSK0D83FEJ" }
+});
+
 
 const routes = [
   { path: '/', name: 'Index', component: Home },
