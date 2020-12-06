@@ -33,10 +33,10 @@ async function ScrapeArea(page) {
 
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/a[3]');
             if (el == undefined) {
-                var hrefTxt = linkUniTxt;
+                let hrefTxt = linkUniTxt;
             } else {
                 const link = await el.getProperty('href');
-                var hrefTxt = await link.jsonValue();
+                let hrefTxt = await link.jsonValue();
 
             }
 
@@ -44,9 +44,9 @@ async function ScrapeArea(page) {
             const classe = await el.getProperty('textContent');
             const classeTxt = await classe.jsonValue();
             if (classeTxt.slice(0, 2) == 'L-') {
-                var tipoLaurea = 'Laurea Triennale';
+                let tipoLaurea = 'Laurea Triennale';
             } else {
-                var tipoLaurea = 'Laurea Magistrale';
+                let tipoLaurea = 'Laurea Magistrale';
             }
 
             if (nomeCorso != '') {
