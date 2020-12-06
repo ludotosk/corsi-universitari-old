@@ -1,6 +1,6 @@
 <template>
   <div class="container-md">
-    <br>
+    <br />
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <span class="input-group-text" id="basic-addon3"
@@ -22,7 +22,6 @@
       @totalPagesChanged="totalPages = $event"
       :currentPage.sync="currentPage"
       class="table table-striped table-hover table-sm"
-      
     >
       <thead slot="head" class="thead-dark">
         <th>Nome corso</th>
@@ -52,6 +51,15 @@ import corsi from "../public/corsi.json";
 
 export default {
   name: "App",
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: "corsiuniversitari.info",
+    // all titles will be injected into this template
+    titleTemplate: "%s | cerca il tuo corso",
+    meta: [
+      { name: "description", content: "corsiuniversitari.info ti permette di cercare fra tutti i corsi universitari italiani in base al nome del corso. Questo permette di poter fare un rapido confronto tra corsi, o di trovare quante università forniscono lo stesso corso." },
+    ],
+  },
   data() {
     return {
       corsi,
@@ -63,17 +71,9 @@ export default {
     };
   },
   methods: {
-    nameLength (row) {
-      return row.tipoLaurea.length
+    nameLength(row) {
+      return row.tipoLaurea.length;
     },
   },
 };
 </script>
-
-<style>
-table,
-th,
-td {
-  border: 1px solid black;
-}
-</style>
