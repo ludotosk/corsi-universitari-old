@@ -37,11 +37,9 @@
           </div>
           <div data-netlify-recaptcha="true"></div>
           <p>
-            <router-link to="/"
-              ><button type="submit" class="btn btn-info">
-                Invia
-              </button></router-link
-            >
+            <button type="submit" class="btn btn-info">
+              Invia
+            </button>
           </p>
         </form>
         <br />
