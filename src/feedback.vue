@@ -35,6 +35,7 @@
             <br />
             <textarea name="message" class="form-control"></textarea>
           </div>
+          <div data-netlify-recaptcha="true"></div>
           <p>
             <router-link to="/"
               ><button type="submit" class="btn btn-info">
@@ -45,7 +46,7 @@
         </form>
         <br />
         <p>
-          L'unica cosa necessaria per la compilazione del form è il contenuto.
+          L'unica cosa necessaria per la compilazione del form è il messaggio.
           Nome ed e-mail sono opzionali. Però se vuoi essere ricontattato
           l'e-mail è d'obbligo. Schiacciando invia mi arriverà una notifica via
           e-mail di un nuovo messaggio.
