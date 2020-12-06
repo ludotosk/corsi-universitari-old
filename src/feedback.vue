@@ -8,8 +8,9 @@
           name="feedback"
           method="POST"
           data-netlify="true"
-          data-netlify-recaptcha="true"
+          data-netlify-honeypot="bot-field"
         >
+        <input type="hidden" name="form-name" value="feedback">
           <div class="form-group form-row">
             <label>Nome:</label>
             <br />
@@ -33,7 +34,6 @@
             <br />
             <textarea name="message" class="form-control"></textarea>
           </div>
-          <div data-netlify-recaptcha="true"></div>
           <p>
             <button type="submit" class="btn btn-info">
               Invia
