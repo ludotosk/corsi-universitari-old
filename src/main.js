@@ -12,7 +12,6 @@ import VueGtag from "vue-gtag";
 Vue.use(SmartTable)
 Vue.use(VueMeta)
 Vue.use(VueRouter)
-
 Vue.use(VueGtag, {
   config: { id: "G-WSK0D83FEJ" }
 });
