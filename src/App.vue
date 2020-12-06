@@ -21,7 +21,7 @@
       :pageSize="15"
       @totalPagesChanged="totalPages = $event"
       :currentPage.sync="currentPage"
-      class="table table-striped table-hover table-sm"
+      class="table table-striped table-hover table-sm table-bordered"
     >
       <thead slot="head" class="thead-dark">
         <th>Nome corso</th>
@@ -57,7 +57,7 @@ export default {
     // all titles will be injected into this template
     titleTemplate: "%s | cerca il tuo corso",
     meta: [
-      { name: "description", content: "corsiuniversitari.info ti permette di cercare fra tutti i corsi universitari italiani in base al nome del corso. Questo permette di poter fare un rapido confronto tra corsi, o di trovare quante università forniscono lo stesso corso." },
+      { name: "description", content: "corsiuniversitari.info ti permette di cercare fra tutti i corsi universitari italiani in base al nome del corso e di trovare quello che fa per te. Puoi fare un rapido confronto tra corsi, o trovare quante università forniscono lo stesso corso." },
     ],
   },
   data() {
