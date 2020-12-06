@@ -8,10 +8,8 @@
           name="feedback"
           method="POST"
           data-netlify="true"
-          data-netlify-honeypot="bot-field"
           data-netlify-recaptcha="true"
         >
-          <input type="hidden" name="form-name" value="feedback" />
           <div class="form-group form-row">
             <label>Nome:</label>
             <br />
