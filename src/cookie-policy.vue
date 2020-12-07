@@ -44,20 +44,6 @@
       <strong>Descrizione:</strong>analisi anonima delle statistiche di
       navigazione
     </p>
-    <br />
-    <p><strong>Nome del cookie:</strong>_gat</p>
-    <p><strong>Durata:</strong>a fine sessione</p>
-    <p>
-      <strong>Descrizione:</strong>analisi anonima delle statistiche di
-      navigazione
-    </p>
-    <br />
-    <p><strong>Nome del cookie:</strong>_gaid</p>
-    <p><strong>Durata:</strong>24 ore</p>
-    <p>
-      <strong>Descrizione:</strong>analisi anonima delle statistiche di
-      navigazione
-    </p>
     <h5>
       Per maggiori dettagli, invitiamo a leggere le informative di riferimento:
     </h5>
