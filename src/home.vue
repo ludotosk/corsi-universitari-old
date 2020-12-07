@@ -57,17 +57,18 @@
       problema comune: dover cercare il
       <strong> migliore corso di laurea magistrale </strong> per me. Avendo un
       briciolo di ambizione sapevo che avrei dovuto cercare in tutti gli atenei
-      italiani. Volendo fare data science ho fatto qualche ricerca su
-      google, ma ho subito capito che non sarebbe stato facile. Infatti non solo
-      c'era un'infinità di università tra cui sceglie, ma il corso compariva anche
-      in varie aree accademiche, come scienze statistiche, scienze informatiche
-      ed economia. Perciò, dopo aver perso qualche giornata in ricerche, ho
-      creato questo strumento affinché possa facilitare la ricerca di altri
-      studenti come me.
+      italiani. Volendo fare data science ho fatto qualche ricerca su google, ma
+      ho subito capito che non sarebbe stato facile. Infatti non solo c'era
+      un'infinità di università tra cui sceglie, ma il corso compariva anche in
+      varie aree accademiche, come scienze statistiche, scienze informatiche ed
+      economia. Perciò, dopo aver perso qualche giornata in ricerche, ho creato
+      questo strumento affinché possa facilitare la ricerca di altri studenti
+      come me.
     </p>
     <p>
       Qui si possono trovare oltre <strong>4700 corsi di laurea</strong>
-      italiani che ho estrapolato da un sito istituzionale.
+      italiani che ho estrapolato da un sito istituzionale. I corsi in questione
+      sono relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
       <strong> Come funziona?</strong> È molto semplice, basta digitare nella
@@ -77,7 +78,7 @@
     </p>
     <p>
       <strong>Attenzione!</strong> le lauree magistali a ciclo unico compaiono
-      sotto laurea magistrale
+      sotto laurea magistrale.
     </p>
     <p>
       Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti
