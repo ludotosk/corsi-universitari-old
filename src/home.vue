@@ -86,6 +86,7 @@
       chi preferisse c'è
       <a href="https://www.instagram.com/ludotosk/">Instagram</a>.
     </p>
+    <p>Per l'informativa sulla privacy <router-link to="/cookie-policy">clicca qui</router-link>.</p>
   </div>
 </template>
 
