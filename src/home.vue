@@ -16,7 +16,7 @@
         class="form-control"
         id="basic-url"
         aria-describedby="basic-addon3"
-        v-model="filters.nomeCorso.value"
+        v-model="filters.n.value"
       />
     </div>
     <v-table
@@ -35,10 +35,10 @@
       <tbody slot="body" slot-scope="{ displayData }">
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-            <a :href="row.hrefTxt">{{ row.nomeCorso }}</a>
+            <a :href="row.h">{{ row.n }}</a>
           </td>
-          <td>{{ row.tipoLaurea }}</td>
-          <td>{{ row.uni }}</td>
+          <td>{{ row.t }}</td>
+          <td>{{ row.u }}</td>
         </tr>
       </tbody>
     </v-table>
@@ -112,7 +112,7 @@ export default {
     return {
       corsi,
       filters: {
-        nomeCorso: { value: "", keys: ["nomeCorso"] },
+        n: { value: "", keys: ["n"] },
       },
       currentPage: 1,
       totalPages: 0,
@@ -120,7 +120,7 @@ export default {
   },
   methods: {
     nameLength(row) {
-      return row.tipoLaurea.length;
+      return row.t.length;
     },
   },
 };
