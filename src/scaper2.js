@@ -9,8 +9,10 @@ var corsi = [];
 
 async function ScrapeArea(page) {
     const records = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr');
-    var uni = '';
+    var u = '';
     var i;
+    var h;
+    var t;
     var linkUniTxt = '';
     for (i = 1; i < records.length + 1; i++) {
         var [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/strong');
@@ -18,8 +20,8 @@ async function ScrapeArea(page) {
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/th/h3');
             //console.log('uni');
             const universita = await el.getProperty('textContent');
-            uni = await universita.jsonValue();
-            uni = uni.replace("     ( Pagina ateneo )", "");
+            u = await universita.jsonValue();
+            u = u.replace("     ( Pagina ateneo )", "");
 
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/th/a[2]');
             const linkUni = await el.getProperty('href');
@@ -28,15 +30,15 @@ async function ScrapeArea(page) {
             //console.log('corso');
             //console.log(i);
             const titolo = await el.getProperty('textContent');
-            var nomeCorso = await titolo.jsonValue();
-            nomeCorso = nomeCorso.trim();
+            var n = await titolo.jsonValue();
+            n = n.trim();
 
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/a[3]');
             if (el == undefined) {
-                let hrefTxt = linkUniTxt;
+                h = linkUniTxt;
             } else {
                 const link = await el.getProperty('href');
-                let hrefTxt = await link.jsonValue();
+                h = await link.jsonValue();
 
             }
 
@@ -44,13 +46,13 @@ async function ScrapeArea(page) {
             const classe = await el.getProperty('textContent');
             const classeTxt = await classe.jsonValue();
             if (classeTxt.slice(0, 2) == 'L-') {
-                let tipoLaurea = 'Laurea Triennale';
+                t = 'Laurea Triennale';
             } else {
-                let tipoLaurea = 'Laurea Magistrale';
+                t = 'Laurea Magistrale';
             }
 
-            if (nomeCorso != '') {
-                corsi.push({ nomeCorso, hrefTxt, tipoLaurea, uni });
+            if (n != '') {
+                corsi.push({ n, h, t, u });
             }
         }
     }
@@ -259,9 +261,9 @@ async function laucnhScrape() {
     console.log(corsi.length);
 
     corsi.sort(function (a, b) {
-        if (a.nomeCorso.toLowerCase() < b.nomeCorso.toLowerCase()
+        if (a.n.toLowerCase() < b.n.toLowerCase()
         ) return -1;
-        if (a.nomeCorso.toLowerCase() > b.nomeCorso.toLowerCase()
+        if (a.n.toLowerCase() > b.n.toLowerCase()
         ) return 1;
         return 0;
     });
@@ -269,7 +271,7 @@ async function laucnhScrape() {
     for (var x = 0; x < corsi.length; x++) {
         for (var z = 0; z < corsi.length; z++) {
             if (x != z) {
-                if (corsi[x].nomeCorso.toLowerCase() == corsi[z].nomeCorso.toLowerCase() && corsi[x].uni.toLowerCase() == corsi[z].uni.toLowerCase() && corsi[x].tipoLaurea.toLowerCase() == corsi[z].tipoLaurea.toLowerCase()) {
+                if (corsi[x].n.toLowerCase() == corsi[z].n.toLowerCase() && corsi[x].u.toLowerCase() == corsi[z].u.toLowerCase() && corsi[x].t.toLowerCase() == corsi[z].t.toLowerCase()) {
                     corsi.splice(z, 1);
                 }
             }
