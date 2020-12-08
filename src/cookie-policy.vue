@@ -37,7 +37,7 @@
     <h2>
       cookie tecnici che non richiedono consenso all'utente di terze parti
     </h2>
-    <h5>Servizio statistico di Google Analytics (IP anonimizzato)</h5>
+    <p>Servizio statistico di Google Analytics (IP anonimizzato)</p>
     <p><strong>Nome del cookie:</strong>_ga</p>
     <p><strong>Durata:</strong>2 anni</p>
     <p>

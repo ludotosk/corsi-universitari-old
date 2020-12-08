@@ -35,7 +35,7 @@
       <tbody slot="body" slot-scope="{ displayData }">
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-            <a :href="row.h" class="text-primary" target="_blank">{{ row.n }}</a>
+            <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
           </td>
           <td>{{ row.t }}</td>
           <td>{{ row.u }}</td>
