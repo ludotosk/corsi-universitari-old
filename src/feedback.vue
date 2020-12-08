@@ -10,34 +10,34 @@
           data-netlify="true"
           data-netlify-honeypot="bot-field"
         >
-        <input type="hidden" name="form-name" value="feedback">
+          <input type="hidden" name="form-name" value="feedback" />
           <div class="form-group form-row">
-            <label>Nome:</label>
+            <label for="nome">Nome:</label>
             <br />
             <input
+              id="nome"
               type="text"
               name="name"
               class="form-control form-control-lg"
             />
           </div>
           <div class="form-group">
-            <label>Email: </label>
+            <label for="email">Email: </label>
             <br />
             <input
+              id="email"
               type="email"
               name="email"
               class="form-control form-control-lg"
             />
           </div>
           <div class="form-group">
-            <label>Il tuo messaggio:</label>
+            <label for="message">Il tuo messaggio:</label>
             <br />
-            <textarea name="message" class="form-control"></textarea>
+            <textarea id="message" name="message" class="form-control"></textarea>
           </div>
           <p>
-            <button type="submit" class="btn btn-info">
-              Invia
-            </button>
+            <button type="submit" class="btn btn-primary">Invia</button>
           </p>
         </form>
         <br />

@@ -44,28 +44,28 @@
       <strong>Descrizione:</strong>analisi anonima delle statistiche di
       navigazione
     </p>
-    <h5>
-      Per maggiori dettagli, invitiamo a leggere le informative di riferimento:
-    </h5>
+    <p><strong>
+      Per maggiori dettagli, invitiamo a leggere le informative di riferimento:</strong>
+    </p>
     <p>Privacy e protezione dei dati</p>
     <a
-      href="https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008"
+      href="https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008" class="text-primary"
       >https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008</a
     >
     <p>Salvaguardia dei dati</p>
-    <a href="https://support.google.com/analytics/answer/6004245"
+    <a href="https://support.google.com/analytics/answer/6004245" class="text-primary"
       >https://support.google.com/analytics/answer/6004245</a
     >
     <p>Informativa Cookie di Google per Google Analytics</p>
     <a
-      href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
+      href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" class="text-primary"
       >https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a
     >
     <p>
       Componente aggiuntivo del browser per la disattivazione di Google
       Analytics
     </p>
-    <a href="https://tools.google.com/dlpage/gaoptout?hl=it"
+    <a href="https://tools.google.com/dlpage/gaoptout?hl=it" class="text-primary"
       >https://tools.google.com/dlpage/gaoptout?hl=it</a
     >
     <br />
@@ -82,39 +82,39 @@
     </p>
     <p>
       Mozilla Firefox
-      <a href="https://support.mozilla.org/it/kb/Bloccare%20i%20cookie"
+      <a href="https://support.mozilla.org/it/kb/Bloccare%20i%20cookie" class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Google Chrome
-      <a href="https://support.google.com/chrome/answer/95647?hl=it"
+      <a href="https://support.google.com/chrome/answer/95647?hl=it" class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Microsoft Internet Explorer
       <a
-        href="http://windows.microsoft.com/it-it/windows-vista/block-or-allow-cookies"
+        href="http://windows.microsoft.com/it-it/windows-vista/block-or-allow-cookies" class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Microsoft Edge
       <a
-        href="https://privacy.microsoft.com/it-it/windows-10-microsoft-edge-and-privacy"
+        href="https://privacy.microsoft.com/it-it/windows-10-microsoft-edge-and-privacy" class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Opera
-      <a href="http://help.opera.com/Windows/10.00/it/cookies.html"
+      <a href="http://help.opera.com/Windows/10.00/it/cookies.html" class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Safari
-      <a href="https://support.apple.com/kb/PH21411?locale=it_IT"
+      <a href="https://support.apple.com/kb/PH21411?locale=it_IT" class="text-primary"
         >link alle istruzioni</a
       >
     </p>
@@ -127,9 +127,27 @@
     <p><strong>Titolare del sito web</strong></p>
     <p>Ludovico Toscano</p>
     <p>
-      Email:<a href="mailto:toscanoludovico@gmail.com"
+      Email:<a href="mailto:toscanoludovico@gmail.com" class="text-primary"
         >toscanoludovico@gmail.com</a
       >
     </p>
   </div>
 </template>
+
+<script>
+export default {
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: "corsiuniversitari.info",
+    // all titles will be injected into this template
+    titleTemplate: "%s | cookie policy",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Questa è la pagina dedicata all'informativa sulle policy per i cookie.",
+      },
+    ],
+  },
+}
+</script>

@@ -7,8 +7,8 @@
     <br />
     <div class="input-group mb-3">
       <div class="input-group-prepend">
-        <span class="input-group-text" id="basic-addon3"
-          >Filtra in base al nome:</span
+        <label class="input-group-text" id="basic-addon3" for="basic-url"
+          >Filtra in base al nome:</label
         >
       </div>
       <input
@@ -35,7 +35,7 @@
       <tbody slot="body" slot-scope="{ displayData }">
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-            <a :href="row.h">{{ row.n }}</a>
+            <a :href="row.h" class="text-primary" target="_blank">{{ row.n }}</a>
           </td>
           <td>{{ row.t }}</td>
           <td>{{ row.u }}</td>
@@ -82,11 +82,11 @@
     </p>
     <p>
       Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti
-      qui c'è la sezione <router-link to="/feedback">feedback</router-link>. Per
+      qui c'è la sezione <router-link to="/feedback" class="text-primary">feedback</router-link>. Per
       chi preferisse c'è
-      <a href="https://www.instagram.com/ludotosk/">Instagram</a>.
+      <a href="https://www.instagram.com/ludotosk/" class="text-primary">Instagram</a>.
     </p>
-    <p>Per l'informativa sulla privacy <router-link to="/cookie-policy">clicca qui</router-link>.</p>
+    <p>Per l'informativa sulla privacy <router-link to="/cookie-policy" class="text-primary">clicca qui</router-link>.</p>
   </div>
 </template>
 
