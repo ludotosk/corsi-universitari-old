@@ -3,6 +3,8 @@
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
+        <br>
+        <h1 class="text-secondary">Inviaci qui il tuo feedback</h1>
         <br />
         <form
           name="feedback"

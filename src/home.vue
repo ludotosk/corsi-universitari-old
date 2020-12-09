@@ -104,7 +104,7 @@ export default {
       {
         name: "description",
         content:
-          "corsiuniversitari.info ti permette di cercare fra tutti i corsi universitari italiani in base al nome del corso e di trovare quello che fa per te. Puoi fare un rapido confronto tra corsi, o trovare quante università forniscono lo stesso corso. Così cercherò di aiutarti a trovare i migliori corsi universitarii.",
+          "corsiuniversitari.info ti permette di cercare fra tutti i corsi universitari italiani in base al nome del corso e di trovare quello che fa per te.",
       },
     ],
   },
