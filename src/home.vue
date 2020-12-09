@@ -19,7 +19,7 @@
         v-model="filters.n.value"
       />
     </div>
-    <p><strong>Attenzione!</strong> per eseguire la ricerca serve il nome del corso corretto. Es. <strong>biotecnologie</strong> si trova sotto "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il risultato corretto inserire <strong>"biotec"</strong>. Il resto della <strong>guida</strong> è sotto la tabella</p>
+    <p><strong>Attenzione!</strong> per eseguire la ricerca serve il nome del corso corretto. Es. <strong>biotecnologie</strong> si trova sotto "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la tabella</p>
     <v-table
       :data="corsi"
       :filters="filters"
