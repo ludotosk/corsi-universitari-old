@@ -19,7 +19,7 @@
         v-model="filters.n.value"
       />
     </div>
-    <p><strong>Attenzione!</strong> per eseguire la ricerca serve il nome del corso corretto. Es. <strong>biotecnologie</strong> si trova sotto "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il risultato corretto inserire <strong>"biotec"</strong>. </p>
+    <p><strong>Attenzione!</strong> per eseguire la ricerca serve il nome del corso corretto. Es. <strong>biotecnologie</strong> si trova sotto "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il risultato corretto inserire <strong>"biotec"</strong>. Il resto della <strong>guida</strong> è sotto la tabella</p>
     <v-table
       :data="corsi"
       :filters="filters"
@@ -30,7 +30,8 @@
     >
       <thead slot="head" class="thead-dark">
         <th>Nome corso</th>
-        <v-th :sortKey="nameLength" defaultSort="desc">Tipo Laurea</v-th>
+        <v-th sortKey="t" defaultSort="asc">Tipo Laurea</v-th>
+        <v-th sortKey="a" defaultSort="asc">Test</v-th>
         <th>Università</th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }">
@@ -39,6 +40,7 @@
             <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
           </td>
           <td>{{ row.t }}</td>
+          <td>{{ row.a }}</td>
           <td>{{ row.u }}</td>
         </tr>
       </tbody>
@@ -79,7 +81,7 @@
     </p>
     <p>
       <strong>Attenzione!</strong> le lauree magistali a ciclo unico compaiono
-      sotto laurea magistrale.
+      sotto laurea magistrale. La colonna test è per indicare quale corso ha test d'ingresso o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di ingresso libero come testo no.
     </p>
     <p>
       Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti

@@ -13,6 +13,7 @@ async function ScrapeArea(page) {
     var i;
     var h;
     var t;
+    var a;
     var linkUniTxt = '';
     for (i = 1; i < records.length + 1; i++) {
         var [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/strong');
@@ -51,8 +52,17 @@ async function ScrapeArea(page) {
                 t = 'Laurea Magistrale';
             }
 
+            [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[6]/img');
+            const accesso = await el.getProperty('title');
+            const accessoTxt = await accesso.jsonValue();
+            if (accessoTxt == 'Libero'){
+                a = 'No';
+            } else {
+                a = 'Sì';
+            }
+
             if (n != '') {
-                corsi.push({ n, h, t, u });
+                corsi.push({ n, h, t, u, a });
             }
         }
     }
