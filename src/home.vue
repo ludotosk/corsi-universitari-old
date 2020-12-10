@@ -29,7 +29,7 @@
       class="table table-striped table-hover table-sm table-bordered"
     >
       <thead slot="head" class="thead-dark">
-        <th>Nome corso</th>
+        <th>Corso di laurea</th>
         <v-th sortKey="t" defaultSort="asc">Tipo Laurea</v-th>
         <v-th sortKey="a" defaultSort="asc">Test</v-th>
         <th>Università</th>
@@ -51,23 +51,7 @@
       :maxPageLinks="5"
     />
     <br />
-    <p>
-      Per spiegare come funziona questo sito preferisco raccontarne la storia,
-      credo che ne illustri in maniera soddisfacente la sua utilità.
-    </p>
-    <p>
-      Arrivato all'ultimo anno di università mi sono trovato davanti a un
-      problema comune: dover cercare il
-      <strong> migliore corso di laurea magistrale </strong> per me. Avendo un
-      briciolo di ambizione sapevo che avrei dovuto cercare in tutti gli atenei
-      italiani. Volendo fare data science ho fatto qualche ricerca su google, ma
-      ho subito capito che non sarebbe stato facile. Infatti non solo c'era
-      un'infinità di università tra cui sceglie, ma il corso compariva anche in
-      varie aree accademiche, come scienze statistiche, scienze informatiche ed
-      economia. Perciò, dopo aver perso qualche giornata in ricerche, ho creato
-      questo strumento affinché possa facilitare la ricerca di altri studenti
-      come me.
-    </p>
+    <p>Questo sito è stato realizzato per aiutarti a trovare il tuo corso di laurea. In questo sito ci sono i corsi di tutte le facoltà universitari italiane.</p>
     <p>
       Qui si possono trovare oltre <strong>4700 corsi di laurea</strong>
       italiani che ho estrapolato da un sito istituzionale. I corsi in questione
@@ -80,14 +64,12 @@
       base al tipo di laurea.
     </p>
     <p>
-      <strong>Attenzione!</strong> le lauree magistali a ciclo unico compaiono
-      sotto laurea magistrale. La colonna test è per indicare quale corso ha test d'ingresso o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di ingresso libero come testo no.
+      <strong>Attenzione!</strong> le <strong>lauree magistrali a ciclo unico </strong>compaiono
+      sotto laurea magistrale. La colonna test è per indicare quale corso ha <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di accesso libero come test no.
     </p>
     <p>
       Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti
-      qui c'è la sezione <router-link to="/feedback" class="text-primary">feedback</router-link>. Per
-      chi preferisse c'è
-      <a href="https://www.instagram.com/ludotosk/" class="text-primary">Instagram</a>.
+      qui c'è la sezione <router-link to="/feedback" class="text-primary">feedback</router-link>.
     </p>
     <p>Per l'informativa sulla privacy <router-link to="/cookie-policy" class="text-primary">clicca qui</router-link>.</p>
   </div>
@@ -102,12 +84,12 @@ export default {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: "corsiuniversitari.info",
     // all titles will be injected into this template
-    titleTemplate: "%s | cerca il tuo corso",
+    titleTemplate: "%s | Il tuo corso di laurea",
     meta: [
       {
         name: "description",
         content:
-          "corsiuniversitari.info ti permette di cercare fra tutti i corsi universitari italiani in base al nome del corso e di trovare quello che fa per te.",
+          "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea italiani in base al nome del corso e di trovare quello che fa per te.",
       },
     ],
   },
