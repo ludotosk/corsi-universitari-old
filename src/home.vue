@@ -84,12 +84,12 @@ export default {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: "corsiuniversitari.info",
     // all titles will be injected into this template
-    titleTemplate: "%s | cerca il tuo corso",
+    titleTemplate: "%s | Il tuo corso di laurea",
     meta: [
       {
         name: "description",
         content:
-          "corsiuniversitari.info ti permette di cercare fra tutti i corsi universitari italiani in base al nome del corso e di trovare quello che fa per te.",
+          "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea italiani in base al nome del corso e di trovare quello che fa per te.",
       },
     ],
   },
