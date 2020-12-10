@@ -1,8 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-//import Home from './home.vue'
-//import Feedback from './feedback.vue'
-//import Cookiepolicy from './cookie-policy.vue'
 import SmartTable from 'vuejs-smart-table'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import VueMeta from 'vue-meta'
