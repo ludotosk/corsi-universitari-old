@@ -51,23 +51,7 @@
       :maxPageLinks="5"
     />
     <br />
-    <p>
-      Per spiegare come funziona questo sito preferisco raccontarne la storia,
-      credo che ne illustri in maniera soddisfacente la sua utilità.
-    </p>
-    <p>
-      Arrivato all'ultimo anno di università mi sono trovato davanti a un
-      problema comune: dover cercare il
-      <strong> migliore corso di laurea magistrale </strong> per me. Avendo un
-      briciolo di ambizione sapevo che avrei dovuto cercare in tutti gli atenei
-      italiani. Volendo fare data science ho fatto qualche ricerca su google, ma
-      ho subito capito che non sarebbe stato facile. Infatti non solo c'era
-      un'infinità di università tra cui sceglie, ma il corso compariva anche in
-      varie aree accademiche, come scienze statistiche, scienze informatiche ed
-      economia. Perciò, dopo aver perso qualche giornata in ricerche, ho creato
-      questo strumento affinché possa facilitare la ricerca di altri studenti
-      come me.
-    </p>
+    <p>Questo sito è stato realizzato per aiutarti a trovare il tuo corso di laurea. In questo sito ci sono i corsi di tutte le facoltà universitari italiane.</p>
     <p>
       Qui si possono trovare oltre <strong>4700 corsi di laurea</strong>
       italiani che ho estrapolato da un sito istituzionale. I corsi in questione
@@ -80,8 +64,8 @@
       base al tipo di laurea.
     </p>
     <p>
-      <strong>Attenzione!</strong> le lauree magistali a ciclo unico compaiono
-      sotto laurea magistrale. La colonna test è per indicare quale corso ha test d'ingresso o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di ingresso libero come testo no.
+      <strong>Attenzione!</strong> le <strong>lauree magistali a ciclo unico </strong>compaiono
+      sotto laurea magistrale. La colonna test è per indicare quale corso ha <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di ingresso libero come testo no.
     </p>
     <p>
       Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti
