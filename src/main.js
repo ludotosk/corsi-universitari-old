@@ -1,14 +1,18 @@
 import Vue from 'vue'
 import App from './App.vue'
-import Home from './home.vue'
-import Feedback from './feedback.vue'
-import Cookiepolicy from './cookie-policy.vue'
+//import Home from './home.vue'
+//import Feedback from './feedback.vue'
+//import Cookiepolicy from './cookie-policy.vue'
 import SmartTable from 'vuejs-smart-table'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import VueMeta from 'vue-meta'
 import VueRouter from 'vue-router'
 import VueGtag from "vue-gtag";
+
+const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
+const Feedback = () => import(/* webpackChunkName: "feedback" */ './feedback.vue')
+const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
