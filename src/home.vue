@@ -69,9 +69,7 @@
     </p>
     <p>
       Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti
-      qui c'è la sezione <router-link to="/feedback" class="text-primary">feedback</router-link>. Per
-      chi preferisse c'è
-      <a href="https://www.instagram.com/ludotosk/" class="text-primary">Instagram</a>.
+      qui c'è la sezione <router-link to="/feedback" class="text-primary">feedback</router-link>.
     </p>
     <p>Per l'informativa sulla privacy <router-link to="/cookie-policy" class="text-primary">clicca qui</router-link>.</p>
   </div>
