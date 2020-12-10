@@ -29,7 +29,7 @@
       class="table table-striped table-hover table-sm table-bordered"
     >
       <thead slot="head" class="thead-dark">
-        <th>Nome corso</th>
+        <th>Corso di laurea</th>
         <v-th sortKey="t" defaultSort="asc">Tipo Laurea</v-th>
         <v-th sortKey="a" defaultSort="asc">Test</v-th>
         <th>Università</th>
@@ -65,7 +65,7 @@
     </p>
     <p>
       <strong>Attenzione!</strong> le <strong>lauree magistrali a ciclo unico </strong>compaiono
-      sotto laurea magistrale. La colonna test è per indicare quale corso ha <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di ingresso libero come testo no.
+      sotto laurea magistrale. La colonna test è per indicare quale corso ha <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di accesso libero come test no.
     </p>
     <p>
       Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti
