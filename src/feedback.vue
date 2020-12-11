@@ -49,6 +49,7 @@
           l'e-mail è d'obbligo. Schiacciando invia mi arriverà una notifica via
           e-mail di un nuovo messaggio.
         </p>
+        <p>Per tornare alla home <router-link to="/">clicca qui</router-link>.</p>
       </div>
       <div class="col-md-3"></div>
     </div>
