@@ -1,12 +1,12 @@
 import Vue from 'vue'
 import App from './App.vue'
 import SmartTable from 'vuejs-smart-table'
-import 'bootstrap/dist/css/bootstrap.min.css'
+import '../scss/style.scss'
+//import 'bootstrap/dist/css/bootstrap.min.css'
 
 //import 'bootstrap/scss/_functions.scss'
 //import 'bootstrap/scss/_variables.scss'
 //import 'bootstrap/scss/_mixins.scss'
-//import 'bootstrap/scss/utilities/_spacing.scss'
 
 //import 'bootstrap/scss/_pagination.scss'
 //import 'bootstrap/scss/_tables.scss'
