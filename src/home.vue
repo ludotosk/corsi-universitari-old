@@ -90,6 +90,9 @@ export default {
           "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea italiani in base al nome del corso e di trovare quello che fa per te.",
       },
     ],
+    link: [
+      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/' },
+    ]
   },
   data() {
     return {

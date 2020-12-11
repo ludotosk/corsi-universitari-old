@@ -148,6 +148,9 @@ export default {
           "Questa è la pagina dedicata all'informativa sulle policy per i cookie.",
       },
     ],
+    link: [
+      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/cookie-policy' },
+    ]
   },
 }
 </script>

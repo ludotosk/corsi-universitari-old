@@ -70,6 +70,9 @@ export default {
           "Pagina dei feedback, se hai qualcosa da scrivermi puoi contattarmi qui. Mi verrà mandata automaticamente un'email col testo del messaggio.",
       },
     ],
+    link: [
+      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/feedback' },
+    ]
   },
 };
 </script>
