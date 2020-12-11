@@ -18,6 +18,7 @@ import VueGtag from "vue-gtag";
 const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
 const Feedback = () => import(/* webpackChunkName: "feedback" */ './feedback.vue')
 const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
+const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
@@ -29,7 +30,8 @@ Vue.use(VueGtag, {
 const routes = [
   { path: '/', name: 'Index', component: Home },
   { path: '/feedback', name: 'feedback', component: Feedback },
-  { path: '/cookie-policy', name: 'cookie-policy', component: Cookiepolicy}
+  { path: '/cookie-policy', name: 'cookie-policy', component: Cookiepolicy},
+  { path: '/tabella', name: 'tabella', component: Tabella}
 ]
 
 const router = new VueRouter({
