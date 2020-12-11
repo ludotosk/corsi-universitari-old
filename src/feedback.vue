@@ -56,8 +56,6 @@
 </template>
 
 <script>
-import corsi from "../public/corsi.json";
-
 export default {
   name: "feedback",
   metaInfo: {
@@ -72,21 +70,6 @@ export default {
           "Pagina dei feedback, se hai qualcosa da scrivermi puoi contattarmi qui. Mi verrà mandata automaticamente un'email col testo del messaggio.",
       },
     ],
-  },
-  data() {
-    return {
-      corsi,
-      filters: {
-        nomeCorso: { value: "", keys: ["nomeCorso"] },
-      },
-      currentPage: 1,
-      totalPages: 0,
-    };
-  },
-  methods: {
-    nameLength(row) {
-      return row.tipoLaurea.length;
-    },
   },
 };
 </script>

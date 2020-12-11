@@ -100,11 +100,6 @@ export default {
       currentPage: 1,
       totalPages: 0,
     };
-  },
-  methods: {
-    nameLength(row) {
-      return row.t.length;
-    },
-  },
+  }
 };
 </script>
