@@ -1,5 +1,5 @@
 <template>
-  <div class="container-md">
+  <div>
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <label class="input-group-text" id="basic-addon3" for="basic-url"
@@ -64,9 +64,7 @@ export default {
           "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea italiani in base al nome del corso e di trovare quello che fa per te.",
       },
     ],
-    link: [
-      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/' },
-    ]
+    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info/" }],
   },
   data() {
     return {
@@ -77,12 +75,18 @@ export default {
       currentPage: 1,
       totalPages: 0,
     };
-  }
+  },
 };
 </script>
 
 <style scoped>
-  a, tr{
-    font-size: 0.75rem;
-  }
+a,
+tr {
+  font-size: 0.75rem;
+}
+table,
+body {
+  margin: none;
+  padding: none;
+}
 </style>
