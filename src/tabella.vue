@@ -48,7 +48,7 @@
 </template>
 
 <script>
-import corsi from "../public/corsi.json";
+import corsi from "./corsi.json";
 
 export default {
   name: "home",
