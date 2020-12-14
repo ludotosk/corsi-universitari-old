@@ -23,6 +23,12 @@ async function ScrapeArea(page) {
             const universita = await el.getProperty('textContent');
             u = await universita.jsonValue();
             u = u.replace("     ( Pagina ateneo )", "");
+            if( u == 'LUM \"Jean Monnet\"'){
+                u = 'Libera università mediterranea Giuseppe Degennaro'
+            }
+            if( u == 'Università degli Studi di BOLOGNA' ){
+                u = 'Alma mater studiorum Università di Bologna'
+            }
 
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/th/a[2]');
             const linkUni = await el.getProperty('href');
