@@ -292,7 +292,7 @@ async function laucnhScrape() {
     console.log(corsi.length);
 
 
-    fs.writeFile('../public/corsi.json', JSON.stringify(corsi), function (err) {
+    fs.writeFile('./corsi.json', JSON.stringify(corsi), function (err) {
         if (err) return console.log(err);
         console.log('corsi > corsi.json');
         const fine = (Date.now() - inizio) / 1000;

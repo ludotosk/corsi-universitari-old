@@ -52,20 +52,6 @@ import corsi from "./corsi.json";
 
 export default {
   name: "home",
-  metaInfo: {
-    // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "corsiuniversitari.info",
-    // all titles will be injected into this template
-    titleTemplate: "%s | Il tuo corso di laurea",
-    meta: [
-      {
-        name: "description",
-        content:
-          "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea italiani in base al nome del corso e di trovare quello che fa per te.",
-      },
-    ],
-    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info/" }],
-  },
   data() {
     return {
       corsi,

@@ -139,9 +139,9 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "corsiuniversitari.info",
+    title: "cookie policy",
     // all titles will be injected into this template
-    titleTemplate: "%s | cookie policy",
+    titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
