@@ -30,7 +30,7 @@
         <th>Corso di laurea</th>
         <v-th sortKey="t" defaultSort="asc">Tipo Laurea</v-th>
         <v-th sortKey="a" defaultSort="asc">Test</v-th>
-        <th>Università</th>
+        <v-th sortKey="u" defaultSort="asc">Università</v-th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }">
         <tr v-for="row in displayData" :key="row.guid">
@@ -49,7 +49,7 @@
       :maxPageLinks="5"
     />
     <br />
-    <p><strong>Corsiuniversitari.info </strong>è stato realizzato per aiutarti a trovare il tuo corso di laurea. In questo sito ci sono i corsi di tutte le facoltà universitarie italiane.</p>
+    <p><strong>Corsiuniversitari.info </strong>è stato realizzato per aiutarti a trovare il tuo corso di laurea. In questo sito ci sono i corsi di tutte le università italiane.</p>
     <p>
       Qui si possono trovare oltre <strong>4700 corsi di laurea</strong>
       italiani che ho estrapolato da un sito istituzionale. I corsi in questione
