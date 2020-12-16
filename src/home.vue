@@ -62,8 +62,7 @@
       base al tipo di laurea.
     </p>
     <p>
-      <strong>Attenzione!</strong> le <strong>lauree magistrali a ciclo unico </strong>compaiono
-      sotto laurea magistrale. La colonna test è per indicare quale corso ha <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di accesso libero come test no.
+      <strong>Attenzione!</strong> La colonna test è per indicare quale corso ha <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di accesso libero come test no.
     </p>
     <p>
       Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti

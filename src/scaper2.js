@@ -55,7 +55,12 @@ async function ScrapeArea(page) {
             if (classeTxt.slice(0, 2) == 'L-') {
                 t = 'Laurea Triennale';
             } else {
-                t = 'Laurea Magistrale';
+                if (classeTxt == 'LM-4 C.U.' || classeTxt == 'LMR/02' || classeTxt == 'LM-13' || classeTxt == 'LMG/01' || classeTxt == 'LM-41' || classeTxt == 'LM-42' || classeTxt == 'LM-46' || classeTxt.slice(0, 2) == 'L/' || classeTxt == 'LM-85 bis'){
+                    t = 'Laurea Magistrale a Ciclo Unico';
+                } else {
+                    t = 'Laurea Magistrale';
+                }
+                
             }
 
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[6]/img');
