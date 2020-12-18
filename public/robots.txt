@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /app
+Disallow: /tabella
+
+Sitemap: http://www.corsiuniversitari.info/sitemap.xml
+
