@@ -65,8 +65,7 @@
       <strong>Attenzione!</strong> La colonna test è per indicare quale corso ha <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il corso sarà segnato come test sì, in caso di accesso libero come test no.
     </p>
     <p>
-      Per contattarmi in caso di problemi, dati mancanti o funzionalità mancanti
-      qui c'è la sezione <router-link to="/feedback" class="text-primary">feedback</router-link>.
+      <strong>Per contattarmi</strong> può scrivermi attraverso l'apposito <router-link to="/contattami" class="text-primary">form</router-link>.
     </p>
     <p>Per l'informativa sulla privacy <router-link to="/cookie-policy" class="text-primary">clicca qui</router-link>.</p>
   </div>

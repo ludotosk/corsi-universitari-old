@@ -2,21 +2,13 @@ import Vue from 'vue'
 import App from './App.vue'
 import SmartTable from 'vuejs-smart-table'
 import '../scss/style.scss'
-//import 'bootstrap/dist/css/bootstrap.min.css'
-
-//import 'bootstrap/scss/_functions.scss'
-//import 'bootstrap/scss/_variables.scss'
-//import 'bootstrap/scss/_mixins.scss'
-
-//import 'bootstrap/scss/_pagination.scss'
-//import 'bootstrap/scss/_tables.scss'
-
 import VueMeta from 'vue-meta'
 import VueRouter from 'vue-router'
 import VueGtag from "vue-gtag";
+//import Navbar from './Navbar.vue';
 
 const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
-const Feedback = () => import(/* webpackChunkName: "feedback" */ './feedback.vue')
+const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
 const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
 const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
 
@@ -28,10 +20,11 @@ Vue.use(VueGtag, {
 });
 
 const routes = [
-  { path: '/', name: 'Index', component: Home },
-  { path: '/feedback', name: 'feedback', component: Feedback },
-  { path: '/cookie-policy', name: 'cookie-policy', component: Cookiepolicy},
-  { path: '/tabella', name: 'tabella', component: Tabella}
+  {
+    path: '/', name: 'Index', component: Home },
+  { path: '/contattami', name: 'contattami', component: Contattami },
+  { path: '/cookie-policy', name: 'cookie-policy', component: Cookiepolicy },
+  { path: '/tabella', name: 'tabella', component: Tabella }
 ]
 
 const router = new VueRouter({
