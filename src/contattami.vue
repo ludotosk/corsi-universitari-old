@@ -71,7 +71,7 @@ export default {
       },
     ],
     link: [
-      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/feedback' },
+      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/contattami' },
     ]
   },
 };
