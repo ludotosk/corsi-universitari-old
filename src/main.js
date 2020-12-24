@@ -1,13 +1,16 @@
 import Vue from 'vue'
 import App from './App.vue'
 import SmartTable from 'vuejs-smart-table'
-import '../scss/style.scss'
 import VueMeta from 'vue-meta'
 import VueRouter from 'vue-router'
-import VueGtag from "vue-gtag";
-//import Navbar from './Navbar.vue';
+import VueGtag from "vue-gtag"
+import '../scss/style.scss'
+import Navbar from './Navbar.vue'
+import Footer from './Footer.vue'
+import 'bootstrap/js/dist/collapse'
 
 const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
+const Corsi = () => import(/* webpackChungName: "corsi" */ './corsi-di-laurea.vue')
 const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
 const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
 const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
@@ -21,10 +24,33 @@ Vue.use(VueGtag, {
 
 const routes = [
   {
-    path: '/', name: 'Index', component: Home },
-  { path: '/contattami', name: 'contattami', component: Contattami },
-  { path: '/cookie-policy', name: 'cookie-policy', component: Cookiepolicy },
-  { path: '/tabella', name: 'tabella', component: Tabella }
+    path: '/', name: 'Index', components: {
+      default: Home,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/contattami', name: 'contattami', components: {
+      default: Contattami,
+      header: Navbar
+    }
+  },
+  {
+    path: '/cookie-policy', name: 'cookie-policy', components: {
+      default: Cookiepolicy,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  { path: '/tabella', name: 'tabella', component: Tabella },
+  {
+    path: '/corsi-di-laurea', name: 'corsi', components: {
+      default: Corsi,
+      header: Navbar,
+      footer: Footer
+    }
+  }
 ]
 
 const router = new VueRouter({

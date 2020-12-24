@@ -1,7 +1,8 @@
 <template>
   <div id="app">
-   <!--  <router-view name="header" /> -->
+    <router-view name="header" />
     <router-view />
+    <router-view name="footer" />
   </div>
 </template>
 <script>
@@ -13,7 +14,11 @@ export default {
       content:
         "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea italiani in base al nome del corso e di trovare quello che fa per te.",
     },
-    { name: 'keywords', content: 'Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario' }
+    {
+      name: "keywords",
+      content:
+        "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
+    },
   ],
 };
 </script>

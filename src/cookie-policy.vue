@@ -131,7 +131,7 @@
         >toscanoludovico@gmail.com</a
       >
     </p>
-    <p>Per tornare alla home <router-link to="/">clicca qui</router-link>.</p>
+    <br>
   </div>
 </template>
 
