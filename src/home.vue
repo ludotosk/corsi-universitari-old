@@ -613,7 +613,7 @@ export default {
       {
         name: "description",
         content:
-          "In questo articolo vedremo assieme come cercare il corso di laurea che fa per se. Inoltre in questo sito abbiamo uno strumento esclusivo per cercare corsi di laurea.",
+          "In questo articolo vedremo assieme come cercare il corso di laurea che fa per se.",
       },
       {
         name: "keywords",
