@@ -598,3 +598,16 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "contattami",
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: "Come cercare un corso di laurea",
+    link: [
+      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/' },
+    ]
+  },
+};
+</script>
