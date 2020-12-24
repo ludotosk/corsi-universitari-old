@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-3"></div>
       <div class="col-md-6">
-        <br>
+        <br />
         <h1 class="text-secondary">Inviaci qui il tuo feedback</h1>
         <br />
         <form
@@ -36,7 +36,11 @@
           <div class="form-group">
             <label for="message">Il tuo messaggio:</label>
             <br />
-            <textarea id="message" name="message" class="form-control"></textarea>
+            <textarea
+              id="message"
+              name="message"
+              class="form-control"
+            ></textarea>
           </div>
           <p>
             <button type="submit" class="btn btn-primary">Invia</button>
@@ -48,7 +52,7 @@
           Nome ed e-mail sono opzionali. Però se vuoi essere ricontattato
           l'e-mail è d'obbligo. Schiacciando invia mi arriverà una notifica via
           e-mail di un nuovo messaggio.
-        </p>  
+        </p>
       </div>
       <div class="col-md-3"></div>
     </div>
@@ -69,10 +73,18 @@ export default {
         content:
           "Pagina dei feedback, se hai qualcosa da scrivermi puoi contattarmi qui. Mi verrà mandata automaticamente un'email col testo del messaggio.",
       },
+      {
+        name: "keywords",
+        content:
+          "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
+      },
     ],
     link: [
-      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/contattami' },
-    ]
+      {
+        rel: "canonical",
+        href: "https://www.corsiuniversitari.info/contattami",
+      },
+    ],
   },
 };
 </script>

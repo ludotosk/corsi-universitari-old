@@ -585,14 +585,17 @@
         problema sta nel fatto che comunque passa tutto attraverso la nostra
         soggettività e le persone sono per natura piene di bias. Inoltre
         <strong>la vita è piena di imprevisti</strong> che possono cambiare
-        tutto e spesso le persone stesse cambiano. <mark>Ciò non toglie che applicarsi
-        nella scelta sia meglio che fare le cose tanto per, quanto meno se
-        dovessimo sbagliare riusciremmo a capire perché, altrimenti non ce ne
-        sarà uno dal momento che la scelta è stata casuale.</mark>
+        tutto e spesso le persone stesse cambiano.
+        <mark
+          >Ciò non toglie che applicarsi nella scelta sia meglio che fare le
+          cose tanto per, quanto meno se dovessimo sbagliare riusciremmo a
+          capire perché, altrimenti non ce ne sarà uno dal momento che la scelta
+          è stata casuale.</mark
+        >
       </p>
       <p>
-        Quindi il punto è che <strong>questo è un processo iterativo</strong> e non c’è mai una
-        fine per un processo ciclico.
+        Quindi il punto è che <strong>questo è un processo iterativo</strong> e
+        non c’è mai una fine per un processo ciclico.
       </p>
       <br />
     </div>
@@ -605,9 +608,20 @@ export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: "Come cercare un corso di laurea",
-    link: [
-      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/' },
-    ]
+    titleTemplate: "%s | corsiuniversitari.info",
+    meta: [
+      {
+        name: "description",
+        content:
+          "In questo articolo vedremo assieme come cercare il corso di laurea che fa per se.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
+      },
+    ],
+    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info/" }],
   },
 };
 </script>

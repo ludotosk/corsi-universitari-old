@@ -78,7 +78,7 @@
       <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il
       corso sarà segnato come test sì, in caso di accesso libero come test no.
     </p>
-    <br>
+    <br />
   </div>
 </template>
 
@@ -98,8 +98,18 @@ export default {
         content:
           "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea italiani in base al nome del corso e di trovare quello che fa per te.",
       },
+      {
+        name: "keywords",
+        content:
+          "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
+      },
     ],
-    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info/corsi-di-laurea" }],
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea",
+      },
+    ],
   },
   data() {
     return {

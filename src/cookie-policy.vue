@@ -44,28 +44,37 @@
       <strong>Descrizione:</strong>analisi anonima delle statistiche di
       navigazione
     </p>
-    <p><strong>
-      Per maggiori dettagli, invitiamo a leggere le informative di riferimento:</strong>
+    <p>
+      <strong>
+        Per maggiori dettagli, invitiamo a leggere le informative di
+        riferimento:</strong
+      >
     </p>
     <p>Privacy e protezione dei dati</p>
     <a
-      href="https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008" class="text-primary"
+      href="https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008"
+      class="text-primary"
       >https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008</a
     >
     <p>Salvaguardia dei dati</p>
-    <a href="https://support.google.com/analytics/answer/6004245" class="text-primary"
+    <a
+      href="https://support.google.com/analytics/answer/6004245"
+      class="text-primary"
       >https://support.google.com/analytics/answer/6004245</a
     >
     <p>Informativa Cookie di Google per Google Analytics</p>
     <a
-      href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage" class="text-primary"
+      href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
+      class="text-primary"
       >https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a
     >
     <p>
       Componente aggiuntivo del browser per la disattivazione di Google
       Analytics
     </p>
-    <a href="https://tools.google.com/dlpage/gaoptout?hl=it" class="text-primary"
+    <a
+      href="https://tools.google.com/dlpage/gaoptout?hl=it"
+      class="text-primary"
       >https://tools.google.com/dlpage/gaoptout?hl=it</a
     >
     <br />
@@ -82,39 +91,49 @@
     </p>
     <p>
       Mozilla Firefox
-      <a href="https://support.mozilla.org/it/kb/Bloccare%20i%20cookie" class="text-primary"
+      <a
+        href="https://support.mozilla.org/it/kb/Bloccare%20i%20cookie"
+        class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Google Chrome
-      <a href="https://support.google.com/chrome/answer/95647?hl=it" class="text-primary"
+      <a
+        href="https://support.google.com/chrome/answer/95647?hl=it"
+        class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Microsoft Internet Explorer
       <a
-        href="http://windows.microsoft.com/it-it/windows-vista/block-or-allow-cookies" class="text-primary"
+        href="http://windows.microsoft.com/it-it/windows-vista/block-or-allow-cookies"
+        class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Microsoft Edge
       <a
-        href="https://privacy.microsoft.com/it-it/windows-10-microsoft-edge-and-privacy" class="text-primary"
+        href="https://privacy.microsoft.com/it-it/windows-10-microsoft-edge-and-privacy"
+        class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Opera
-      <a href="http://help.opera.com/Windows/10.00/it/cookies.html" class="text-primary"
+      <a
+        href="http://help.opera.com/Windows/10.00/it/cookies.html"
+        class="text-primary"
         >link alle istruzioni</a
       >
     </p>
     <p>
       Safari
-      <a href="https://support.apple.com/kb/PH21411?locale=it_IT" class="text-primary"
+      <a
+        href="https://support.apple.com/kb/PH21411?locale=it_IT"
+        class="text-primary"
         >link alle istruzioni</a
       >
     </p>
@@ -131,7 +150,7 @@
         >toscanoludovico@gmail.com</a
       >
     </p>
-    <br>
+    <br />
   </div>
 </template>
 
@@ -148,10 +167,18 @@ export default {
         content:
           "Questa è la pagina dedicata all'informativa sulle policy per i cookie.",
       },
+      {
+        name: "keywords",
+        content:
+          "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
+      },
     ],
     link: [
-      { rel: 'canonical', href: 'https://www.corsiuniversitari.info/cookie-policy' },
-    ]
+      {
+        rel: "canonical",
+        href: "https://www.corsiuniversitari.info/cookie-policy",
+      },
+    ],
   },
-}
+};
 </script>
