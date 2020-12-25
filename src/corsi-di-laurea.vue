@@ -2,7 +2,7 @@
   <div class="container-md">
     <br />
     <h1 class="text-secondary">Qui puoi cercare il tuo corso di laurea</h1>
-    <br />
+    <br >
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <label class="input-group-text" id="basic-addon3" for="basic-url"

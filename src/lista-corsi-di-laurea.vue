@@ -3,56 +3,10 @@
     <br />
     <h1 class="text-secondary">Lista corsi di laurea</h1>
     <br />
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <label class="input-group-text" id="basic-addon3" for="basic-url"
-          >Filtra in base al nome:</label
-        >
-      </div>
-      <input
-        type="text"
-        class="form-control"
-        id="basic-url"
-        aria-describedby="basic-addon3"
-        v-model="filters.n.value"
-      />
-    </div>
-    <p>
-      <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
-      corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
-      "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
-      risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
-      comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
-      tabella
-    </p>
-    <v-table
-      :data="corsi"
-      :filters="filters"
-      class="table table-striped table-hover table-sm table-bordered"
-    >
-      <thead slot="head" class="thead-dark">
-        <th>Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc">Tipo Laurea</v-th>
-        <v-th sortKey="a" defaultSort="asc">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc">Università</v-th>
-      </thead>
-      <tbody slot="body" slot-scope="{ displayData }">
-        <tr v-for="row in displayData" :key="row.guid">
-          <td>
-            <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
-          </td>
-          <td>Corso di {{ row.t }}</td>
-          <td>{{ row.a }}</td>
-          <td>{{ row.u }}</td>
-        </tr>
-      </tbody>
-    </v-table>
-    <br />
-    <p>
-      <strong>Corsiuniversitari.info </strong>è stato realizzato per aiutarti a
-      trovare il tuo corso di laurea. In questo sito ci sono i corsi di tutte le
-      università italiane.
-    </p>
+    <h2 class="text-secondary">
+      In questa pagina puoi trovare la lista di tutti i corsi di laurea Italiani
+    </h2>
+    <hr />
     <p>
       Qui si possono trovare oltre
       <strong>4700 corsi di laurea</strong> italiani che ho estrapolato da un
@@ -60,16 +14,20 @@
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
-      <strong> Come funziona?</strong> È molto semplice, basta digitare nella
-      barra di ricerca es. "data science" e comparirà la lista di tutti i corsi
-      con quel nome. Inoltre cliccando "tipo laurea" vengono ordinati i corsi in
-      base al tipo di laurea.
+      Se non sei interssato alla <strong>lista dei corsi di laurea</strong> ti
+      consiglio di visitare
+      <router-link to="/corsi-di-laurea"> questa pagina</router-link>. Dove puoi
+      trovare una tabella con una funzione di filtro per cerca il corso di
+      laurea che desideri.
     </p>
-    <p>
-      <strong>Attenzione!</strong> La colonna test è per indicare quale corso ha
-      <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il
-      corso sarà segnato come test sì, in caso di accesso libero come test no.
-    </p>
+    <br />
+    <ol>
+      <li v-for="corso in corsi" :key="corso.n">
+        Corso di {{ corso.t }} in <a :href="corso.h">{{ corso.n }}</a> presso
+        {{ corso.u }}
+      </li>
+    </ol>
+    <br />
     <br />
   </div>
 </template>
@@ -92,8 +50,7 @@ export default {
       },
       {
         name: "keywords",
-        content:
-          "Corsi di laurea, Corso di laurea, Lista corsi di laurea",
+        content: "Corsi di laurea, Corso di laurea, Lista corsi di laurea",
       },
     ],
     link: [
@@ -106,11 +63,6 @@ export default {
   data() {
     return {
       corsi,
-      filters: {
-        n: { value: "", keys: ["n"] },
-      },
-      currentPage: 1,
-      totalPages: 0,
     };
   },
 };
