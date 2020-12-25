@@ -607,13 +607,13 @@ export default {
   name: "contattami",
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Come cercare un corso di laurea",
+    title: "Come scegliere un corso di laurea",
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "In questo articolo vedremo assieme come cercare il corso di laurea che fa per se. Oltre a questo abbiamo anche uno strumento per te.",
+          "In questo articolo vedremo assieme come scegliere il corso di laurea che fa per se. Oltre a questo abbiamo anche uno strumento per te.",
       },
       {
         name: "keywords",
