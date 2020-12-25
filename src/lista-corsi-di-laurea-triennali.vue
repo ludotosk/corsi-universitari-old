@@ -4,7 +4,7 @@
     <h1 class="text-secondary">Lista corsi di laurea triennali</h1>
     <br />
     <h2 class="text-secondary">
-      In questa pagina puoi trovare la lista di tutti i corsi di laurea triennali Italiani
+      Qui puoi trovare la lista di tutti i corsi di laurea triennali Italiani
     </h2>
     <hr />
     <p>
@@ -22,7 +22,7 @@
     <br />
     <ol>
       <li v-for="corso in FiltraLista()" :key="corso.n">
-        Corso di {{ corso.t }} in <a :href="corso.h">{{ corso.n }}</a> presso
+        Corso di {{ corso.t }} | <a :href="corso.h">{{ corso.n }}</a> |
         {{ corso.u }}
       </li>
     </ol>

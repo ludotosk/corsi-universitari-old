@@ -22,7 +22,7 @@
     <br />
     <ol>
       <li v-for="corso in FiltraLista()" :key="corso.n">
-        Corso di {{ corso.t }} in <a :href="corso.h">{{ corso.n }}</a> presso
+        Corso di {{ corso.t }} | <a :href="corso.h">{{ corso.n }}</a> |
         {{ corso.u }}
       </li>
     </ol>
