@@ -17,12 +17,23 @@
           <li class="nav-item">
             <router-link class="nav-link active" to="/">Home</router-link>
           </li>
-           <li class="nav-item">
-            <router-link class="nav-link active" to="/corsi-di-laurea">Cerca corsi di laurea</router-link>
+          <li class="nav-item">
+            <router-link class="nav-link active" to="/corsi-di-laurea"
+              >Cerca corsi di laurea</router-link
+            >
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" to="/contattami"
-              >Contattami</router-link
+            <router-link
+              class="nav-link active"
+              to="/lista-corsi-di-laurea-triennali"
+              >Lista Triennali</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link
+              class="nav-link active"
+              to="/lista-corsi-di-laurea-magistrali"
+              >Lista Magistrali</router-link
             >
           </li>
         </ul>

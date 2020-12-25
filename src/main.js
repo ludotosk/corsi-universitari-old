@@ -14,7 +14,8 @@ const Corsi = () => import(/* webpackChungName: "corsi" */ './corsi-di-laurea.vu
 const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
 const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
 const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
-const Lista = () => import(/* webpackChunkName: "lista" */ './lista-corsi-di-laurea.vue')
+const ListaTriennali = () => import(/* webpackChunkName: "lista-triennali" */ './lista-corsi-di-laurea-triennali.vue')
+const ListaMagistrali = () => import(/* webpackChunkName: "lista-magistrali" */ './lista-corsi-di-laurea-magistrali.vue')
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
@@ -25,36 +26,43 @@ Vue.use(VueGtag, {
 
 const routes = [
   {
-    path: '/', name: 'Index', components: {
+    path: '/', components: {
       default: Home,
       header: Navbar,
       footer: Footer
     }
   },
   {
-    path: '/contattami', name: 'contattami', components: {
+    path: '/contattami', components: {
       default: Contattami,
       header: Navbar
     }
   },
   {
-    path: '/cookie-policy', name: 'cookie-policy', components: {
+    path: '/cookie-policy', components: {
       default: Cookiepolicy,
       header: Navbar,
       footer: Footer
     }
   },
-  { path: '/tabella', name: 'tabella', component: Tabella },
+  { path: '/tabella', component: Tabella },
   {
-    path: '/corsi-di-laurea', name: 'corsi', components: {
+    path: '/corsi-di-laurea', components: {
       default: Corsi,
       header: Navbar,
       footer: Footer
     }
   },
   {
-    path: '/lista-corsi-di-laurea', name: 'lista', components: {
-      default: Lista,
+    path: '/lista-corsi-di-laurea-triennali', components: {
+      default: ListaTriennali,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-magistrali', components: {
+      default: ListaMagistrali,
       header: Navbar,
       footer: Footer
     }

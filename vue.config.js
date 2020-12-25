@@ -3,7 +3,7 @@ module.exports = {
     prerenderSpa: {
       registry: undefined,
       renderRoutes: [
-        '/','/contattami','/cookie-policy', '/tabella', '/corsi-di-laurea', '/lista-corsi-di-laurea'
+        '/','/contattami','/cookie-policy', '/tabella', '/corsi-di-laurea', '/lista-corsi-di-laurea-triennali'
       ],
       useRenderEvent: true,
       headless: true,

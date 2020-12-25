@@ -86,7 +86,6 @@
 import corsi from "./corsi.json";
 
 export default {
-  name: "corsi di laurea",
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: "Cerca un corso di laurea",

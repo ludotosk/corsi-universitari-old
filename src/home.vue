@@ -604,7 +604,6 @@
 
 <script>
 export default {
-  name: "contattami",
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: "Come scegliere un corso di laurea",

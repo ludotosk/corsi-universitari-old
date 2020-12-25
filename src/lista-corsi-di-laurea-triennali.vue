@@ -1,15 +1,15 @@
 <template>
   <div class="container-md">
     <br />
-    <h1 class="text-secondary">Lista corsi di laurea</h1>
+    <h1 class="text-secondary">Lista corsi di laurea triennali</h1>
     <br />
     <h2 class="text-secondary">
-      In questa pagina puoi trovare la lista di tutti i corsi di laurea Italiani
+      In questa pagina puoi trovare la lista di tutti i corsi di laurea triennali Italiani
     </h2>
     <hr />
     <p>
       Qui si possono trovare oltre
-      <strong>4700 corsi di laurea</strong> italiani. I corsi in questione sono
+      <strong>1700 corsi di laurea triennali</strong>. I corsi in questione sono
       relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
@@ -21,7 +21,7 @@
     </p>
     <br />
     <ol>
-      <li v-for="corso in CreaTriennale()" :key="corso.n">
+      <li v-for="corso in FiltraLista()" :key="corso.n">
         Corso di {{ corso.t }} in <a :href="corso.h">{{ corso.n }}</a> presso
         {{ corso.u }}
       </li>
@@ -35,17 +35,16 @@
 import corsi from "./corsi.json";
 
 export default {
-  name: "lista corsi di laurea",
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Lista corsi di laurea",
+    title: "Lista corsi di laurea triennali",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "Qui puoi trovare la lista di tutti i corsi di laurea Italiani.",
+          "Qui puoi trovare la lista di tutti i corsi di laurea triennali Italiani.",
       },
       {
         name: "keywords",
@@ -55,12 +54,12 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea",
+        href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennali",
       },
     ],
   },
   methods: {
-    CreaTriennale: function() {
+    FiltraLista: function() {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
         if (corsi[x].t == "Laurea Triennale") {
