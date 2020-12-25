@@ -9,9 +9,8 @@
     <hr />
     <p>
       Qui si possono trovare oltre
-      <strong>4700 corsi di laurea</strong> italiani che ho estrapolato da un
-      sito istituzionale. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
+      <strong>4700 corsi di laurea</strong> italiani. I corsi in questione sono
+      relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
       Se non sei interssato alla <strong>lista dei corsi di laurea</strong> ti
@@ -22,7 +21,7 @@
     </p>
     <br />
     <ol>
-      <li v-for="corso in corsi" :key="corso.n">
+      <li v-for="corso in CreaTriennale()" :key="corso.n">
         Corso di {{ corso.t }} in <a :href="corso.h">{{ corso.n }}</a> presso
         {{ corso.u }}
       </li>
@@ -60,10 +59,16 @@ export default {
       },
     ],
   },
-  data() {
-    return {
-      corsi,
-    };
+  methods: {
+    CreaTriennale: function() {
+      var triennale = [];
+      for (var x = 0; x < corsi.length; x++) {
+        if (corsi[x].t == "Laurea Triennale") {
+          triennale.push(corsi[x]);
+        }
+      }
+      return triennale;
+    },
   },
 };
 </script>
