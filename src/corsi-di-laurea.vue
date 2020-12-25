@@ -44,7 +44,7 @@
           <td>
             <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
           </td>
-          <td>{{ row.t }}</td>
+          <td>Corso di {{ row.t }}</td>
           <td>{{ row.a }}</td>
           <td>{{ row.u }}</td>
         </tr>
