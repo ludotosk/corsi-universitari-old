@@ -57,6 +57,16 @@
               >
             </div>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link active" to="/corsi-di-laurea-unibo"
+              >Corsi di laurea Unibo</router-link
+            >
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link active" to="/corsi-di-laurea-unipi"
+              >Corsi di laurea Unipi</router-link
+            >
+          </li>
         </ul>
       </div>
     </div>

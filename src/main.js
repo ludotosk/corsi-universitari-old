@@ -20,6 +20,8 @@ const ListaTriennali = () => import(/* webpackChunkName: "lista-triennali" */ '.
 const ListaMagistrali = () => import(/* webpackChunkName: "lista-magistrali" */ './lista-corsi-di-laurea-magistrali.vue')
 const ListaCicloUnico = () => import(/* webpackChunkName: "lista-ciclo-unico" */ './lista-corsi-di-laurea-magistrali-ciclo-unico.vue')
 const ListaTriennaliLibere = () => import(/* webpackChunkName: "lista-triennali-libere" */ './lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
+const CorsiUnibo = () => import(/* webpackChungName: "corsiUnibo" */ './corsi-di-laurea-unibo.vue')
+const CorsiUnipi = () => import(/* webpackChungName: "corsiUnipi" */ './corsi-di-laurea-unipi.vue')
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
@@ -81,6 +83,20 @@ const routes = [
   {
     path: '/lista-corsi-di-laurea-triennali-ad-accesso-libero', components: {
       default: ListaTriennaliLibere,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unibo', components: {
+      default: CorsiUnibo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unipi', components: {
+      default: CorsiUnipi,
       header: Navbar,
       footer: Footer
     }
