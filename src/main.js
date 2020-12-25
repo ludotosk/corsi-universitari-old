@@ -14,6 +14,7 @@ const Corsi = () => import(/* webpackChungName: "corsi" */ './corsi-di-laurea.vu
 const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
 const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
 const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
+const Lista = () => import(/* webpackChunkName: "lista" */ './lista-corsi-di-laurea.vue')
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
@@ -50,8 +51,16 @@ const routes = [
       header: Navbar,
       footer: Footer
     }
-  }
+  },
+  {
+    path: '/lista-corsi-di-laurea', name: 'lista', components: {
+      default: Lista,
+      header: Navbar,
+      footer: Footer
+    }
+  },
 ]
+
 
 const router = new VueRouter({
   mode: 'history',
