@@ -12,8 +12,10 @@
     <hr />
     <p>
       <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
-      corsi di laurea magistrali, per avere il link alla pagina del corso
-      <router-link to="/corsi-di-laurea">visita questa pagina</router-link>.
+      corsi di laurea magistrali a ciclo unico, per avere il
+      <strong>link alla pagina del corso</strong> e la
+      <strong>funzione di filtro</strong>
+      <router-link to="/corsi-di-laurea"> visita questa pagina</router-link>.
     </p>
     <p>
       Qui si possono trovare oltre
@@ -25,7 +27,7 @@
       <thead class="thead-dark">
         <th>Corso di laurea</th>
         <th>Università</th>
-      </thead >
+      </thead>
       <tbody v-for="corso in FiltraLista()" :key="corso.n">
         <tr>
           <td>{{ corso.n }}</td>

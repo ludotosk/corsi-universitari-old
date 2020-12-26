@@ -7,17 +7,15 @@
       Qui puoi trovare la lista di tutti i corsi di laurea triennali Italiani
     </h2>
     <hr />
+      <p>
+      <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
+      corsi di laurea triennali, per avere il <strong>link alla pagina del corso</strong> e la <strong>funzione di filtro</strong> 
+      <router-link to="/corsi-di-laurea"> visita questa pagina</router-link>.
+    </p>
     <p>
       Qui si possono trovare oltre
       <strong>1700 corsi di laurea triennali</strong>. I corsi in questione sono
       relativi <strong>all'anno accademico 2020/2021</strong>.
-    </p>
-    <p>
-      Se non sei interssato alla <strong>lista dei corsi di laurea</strong> ti
-      consiglio di visitare
-      <router-link to="/corsi-di-laurea"> questa pagina</router-link>. Dove puoi
-      trovare una tabella con una funzione di filtro per cerca il corso di
-      laurea che desideri.
     </p>
     <br />
     <table class="table table-sm table-bordered">

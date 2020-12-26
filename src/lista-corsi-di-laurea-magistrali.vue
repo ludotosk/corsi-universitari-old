@@ -9,8 +9,8 @@
     <hr />
     <p>
       <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
-      corsi di laurea magistrali, per avere il link alla pagina del corso
-      <router-link to="/corsi-di-laurea">visita questa pagina</router-link>.
+      corsi di laurea magistrali, per avere il <strong>link alla pagina del corso</strong> e la <strong>funzione di filtro</strong> 
+      <router-link to="/corsi-di-laurea"> visita questa pagina</router-link>.
     </p>
     <p>
       Qui si possono trovare oltre
