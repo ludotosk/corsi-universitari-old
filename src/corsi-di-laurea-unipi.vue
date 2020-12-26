@@ -89,7 +89,7 @@ export default {
       {
         name: "description",
         content:
-          "In questo sito potrai trovare rapidamente qualsiasi corso di laurea di unipi, tutti raggruppati su una comoda tabella.",
+          "In questo sito potrai trovare rapidamente tutti i corsi di laurea di unipi, tutti raggruppati su una comoda tabella.",
       },
       {
         name: "keywords",
