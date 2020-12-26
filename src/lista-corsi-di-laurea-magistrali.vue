@@ -44,7 +44,7 @@ export default {
       {
         name: "description",
         content:
-          "Qui puoi trovare la lista di tutti i corsi di laurea magistrali Italiani.",
+          "Qui puoi trovare la lista di tutti i corsi di laurea magistrali Italiani. Visitaci per poter trovare altri strumenti.",
       },
       {
         name: "keywords",

@@ -44,7 +44,7 @@ export default {
       {
         name: "description",
         content:
-          "Qui puoi trovare la lista di tutti i corsi di laurea triennali Italiani.",
+          "Qui puoi trovare la lista di tutti i corsi di laurea triennali Italiani. Visitaci per trovare altri strumenti.",
       },
       {
         name: "keywords",

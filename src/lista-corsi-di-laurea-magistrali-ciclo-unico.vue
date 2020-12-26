@@ -44,7 +44,7 @@ export default {
       {
         name: "description",
         content:
-          "Qui puoi trovare la lista di tutti i corsi di laurea magistrali a ciclo unico Italiani.",
+          "In questa pagina puoi trovare la lista di tutti i corsi di laurea magistrali a ciclo unico Italiani.",
       },
       {
         name: "keywords",
