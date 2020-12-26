@@ -62,7 +62,7 @@ export default {
     FiltraLista: function() {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].t == "Laurea Triennale" && corsi[x].a == "No") {
+        if (corsi[x].t == "Triennale" && corsi[x].a == "No") {
           triennale.push(corsi[x]);
         }
       }

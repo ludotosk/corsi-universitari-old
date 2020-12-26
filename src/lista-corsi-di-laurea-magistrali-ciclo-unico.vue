@@ -62,7 +62,7 @@ export default {
     FiltraLista: function() {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].t == "Laurea Magistrale a Ciclo Unico") {
+        if (corsi[x].t == "Magistrale a Ciclo Unico") {
           triennale.push(corsi[x]);
         }
       }
