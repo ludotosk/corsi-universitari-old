@@ -8,7 +8,6 @@ import '../scss/style.scss'
 import Navbar from './Navbar.vue'
 import Footer from './Footer.vue'
 import 'bootstrap/js/dist/collapse'
-import 'bootstrap/js/dist/dropdown'
 
 
 const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
@@ -31,6 +30,7 @@ const CorsiUnisa = () => import(/* webpackChungName: "corsiUnisa" */ './uni/cors
 const CorsiUnito = () => import(/* webpackChungName: "corsiUnito" */ './uni/corsi-di-laurea-unito.vue')
 const CorsiUnipr = () => import(/* webpackChungName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
 const CorsiPolimi = () => import(/* webpackChungName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
+const Uni = () => import(/* webpackChungName: "Uni" */ './università.vue')
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
@@ -176,6 +176,13 @@ const routes = [
   {
     path: '/corsi-di-laurea-unito', components: {
       default: CorsiUnito,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/università', components: {
+      default: Uni,
       header: Navbar,
       footer: Footer
     }

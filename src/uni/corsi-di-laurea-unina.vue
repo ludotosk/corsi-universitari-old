@@ -118,7 +118,7 @@ export default {
     FiltraLista: function () {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].u == "Università degli Studi di NAPOLI") {
+        if (corsi[x].u == "Università degli Studi di NAPOLI \"Federico II\"") {
           triennale.push(corsi[x]);
         }
       }
