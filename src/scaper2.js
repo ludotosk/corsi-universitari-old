@@ -53,12 +53,12 @@ async function ScrapeArea(page) {
             const classe = await el.getProperty('textContent');
             const classeTxt = await classe.jsonValue();
             if (classeTxt.slice(0, 2) == 'L-') {
-                t = 'Laurea Triennale';
+                t = 'Triennale';
             } else {
                 if (classeTxt == 'LM-4 C.U.' || classeTxt == 'LMR/02' || classeTxt == 'LM-13' || classeTxt == 'LMG/01' || classeTxt == 'LM-41' || classeTxt == 'LM-42' || classeTxt == 'LM-46' || classeTxt.slice(0, 2) == 'L/' || classeTxt == 'LM-85 bis'){
-                    t = 'Laurea Magistrale a Ciclo Unico';
+                    t = 'Magistrale a Ciclo Unico';
                 } else {
-                    t = 'Laurea Magistrale';
+                    t = 'Magistrale';
                 }
                 
             }

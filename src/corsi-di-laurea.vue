@@ -2,7 +2,7 @@
   <div class="container-md">
     <br />
     <h1 class="text-secondary">Qui puoi cercare il tuo corso di laurea</h1>
-    <br >
+    <br />
     <div class="input-group mb-3">
       <div class="input-group-prepend">
         <label class="input-group-text" id="basic-addon3" for="basic-url"
@@ -44,7 +44,7 @@
           <td>
             <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
           </td>
-          <td>Corso di {{ row.t }}</td>
+          <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
           <td>{{ row.u }}</td>
         </tr>
