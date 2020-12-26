@@ -1,31 +1,38 @@
 <template>
   <div class="container-md">
     <br />
-    <h1 class="text-secondary">Lista corsi di laurea magistrali a ciclo unico</h1>
+    <h1 class="text-secondary">
+      Lista corsi di laurea magistrali a ciclo unico
+    </h1>
     <br />
     <h2 class="text-secondary">
-      Qui puoi trovare la lista di tutti i corsi di laurea magistrali a ciclo unico
+      Qui puoi trovare la lista di tutti i corsi di laurea magistrali a ciclo
+      unico
     </h2>
     <hr />
+    <p>
+      <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
+      corsi di laurea magistrali, per avere il link alla pagina del corso
+      <router-link to="/corsi-di-laurea">visita questa pagina</router-link>.
+    </p>
     <p>
       Qui si possono trovare oltre
       <strong>780 corsi di laurea magistrali</strong>. I corsi in questione sono
       relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
-    <p>
-      Se non sei interssato alla <strong>lista dei corsi di laurea</strong> ti
-      consiglio di visitare
-      <router-link to="/corsi-di-laurea"> questa pagina</router-link>. Dove puoi
-      trovare una tabella con una funzione di filtro per cerca il corso di
-      laurea che desideri.
-    </p>
     <br />
-    <ol>
-      <li v-for="corso in FiltraLista()" :key="corso.n">
-        <a :href="corso.h">{{ corso.n }}</a> |
-        {{ corso.u }}
-      </li>
-    </ol>
+    <table class="table table-sm table-bordered">
+      <thead class="thead-dark">
+        <th>Corso di laurea</th>
+        <th>Università</th>
+      </thead >
+      <tbody v-for="corso in FiltraLista()" :key="corso.n">
+        <tr>
+          <td>{{ corso.n }}</td>
+          <td>{{ corso.u }}</td>
+        </tr>
+      </tbody>
+    </table>
     <br />
     <br />
   </div>
@@ -54,12 +61,13 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea-magistrali-a-ciclo-unico",
+        href:
+          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-magistrali-a-ciclo-unico",
       },
     ],
   },
   methods: {
-    FiltraLista: function() {
+    FiltraLista: function () {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
         if (corsi[x].t == "Magistrale a Ciclo Unico") {

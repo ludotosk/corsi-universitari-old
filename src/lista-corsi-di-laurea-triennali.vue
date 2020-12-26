@@ -20,12 +20,18 @@
       laurea che desideri.
     </p>
     <br />
-    <ol>
-      <li v-for="corso in FiltraLista()" :key="corso.n">
-        Corso di Laurea {{ corso.t }} | <a :href="corso.h">{{ corso.n }}</a> |
-        {{ corso.u }}
-      </li>
-    </ol>
+    <table class="table table-sm table-bordered">
+      <thead class="thead-dark">
+        <th>Corso di laurea</th>
+        <th>Università</th>
+      </thead>
+      <tbody v-for="corso in FiltraLista()" :key="corso.n">
+        <tr>
+          <td>{{ corso.n }}</td>
+          <td>{{ corso.u }}</td>
+        </tr>
+      </tbody>
+    </table>
     <br />
     <br />
   </div>
@@ -54,12 +60,13 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennali",
+        href:
+          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennali",
       },
     ],
   },
   methods: {
-    FiltraLista: function() {
+    FiltraLista: function () {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
         if (corsi[x].t == "Triennale") {

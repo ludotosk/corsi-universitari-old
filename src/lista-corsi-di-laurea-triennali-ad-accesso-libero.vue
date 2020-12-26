@@ -1,7 +1,9 @@
 <template>
   <div class="container-md">
     <br />
-    <h1 class="text-secondary">Lista corsi di laurea triennali ad accesso libero</h1>
+    <h1 class="text-secondary">
+      Lista corsi di laurea triennali ad accesso libero
+    </h1>
     <br />
     <h2 class="text-secondary">
       Qui puoi trovare la lista dei corsi di laurea triennali ad accesso libero
@@ -9,8 +11,8 @@
     <hr />
     <p>
       Qui si possono trovare oltre
-      <strong>1000 corsi di laurea triennali ad accesso libero</strong>. I corsi in questione sono
-      relativi <strong>all'anno accademico 2020/2021</strong>.
+      <strong>1000 corsi di laurea triennali ad accesso libero</strong>. I corsi
+      in questione sono relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
       Se non sei interssato alla <strong>lista dei corsi di laurea</strong> ti
@@ -20,12 +22,18 @@
       laurea che desideri.
     </p>
     <br />
-    <ol>
-      <li v-for="corso in FiltraLista()" :key="corso.n">
-        <a :href="corso.h">{{ corso.n }}</a> |
-        {{ corso.u }}
-      </li>
-    </ol>
+    <table class="table table-sm table-bordered">
+      <thead class="thead-dark">
+        <th>Corso di laurea</th>
+        <th>Università</th>
+      </thead>
+      <tbody v-for="corso in FiltraLista()" :key="corso.n">
+        <tr>
+          <td>{{ corso.n }}</td>
+          <td>{{ corso.u }}</td>
+        </tr>
+      </tbody>
+    </table>
     <br />
     <br />
   </div>
@@ -54,12 +62,13 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennali-ad-accesso-libero",
+        href:
+          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennali-ad-accesso-libero",
       },
     ],
   },
   methods: {
-    FiltraLista: function() {
+    FiltraLista: function () {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
         if (corsi[x].t == "Triennale" && corsi[x].a == "No") {
