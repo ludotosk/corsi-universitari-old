@@ -16,12 +16,21 @@ const Corsi = () => import(/* webpackChungName: "corsi" */ './corsi-di-laurea.vu
 const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
 const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
 const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
-const ListaTriennali = () => import(/* webpackChunkName: "lista-triennali" */ './lista-corsi-di-laurea-triennali.vue')
-const ListaMagistrali = () => import(/* webpackChunkName: "lista-magistrali" */ './lista-corsi-di-laurea-magistrali.vue')
-const ListaCicloUnico = () => import(/* webpackChunkName: "lista-ciclo-unico" */ './lista-corsi-di-laurea-magistrali-ciclo-unico.vue')
-const ListaTriennaliLibere = () => import(/* webpackChunkName: "lista-triennali-libere" */ './lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
-const CorsiUnibo = () => import(/* webpackChungName: "corsiUnibo" */ './corsi-di-laurea-unibo.vue')
-const CorsiUnipi = () => import(/* webpackChungName: "corsiUnipi" */ './corsi-di-laurea-unipi.vue')
+const CorsiUnibo = () => import(/* webpackChungName: "corsiUnibo" */ './uni/corsi-di-laurea-unibo.vue')
+const CorsiUnipi = () => import(/* webpackChungName: "corsiUnipi" */ './uni/corsi-di-laurea-unipi.vue')
+const CorsiSapienza = () => import(/* webpackChungName: "corsiSapienza" */ './uni/corsi-di-laurea-sapienza.vue')
+const CorsiUnipd = () => import(/* webpackChungName: "corsiUnipd" */ './uni/corsi-di-laurea-unipd.vue')
+const CorsiBicocca = () => import(/* webpackChungName: "corsiBicocca" */ './uni/corsi-di-laurea-bicocca.vue')
+const CorsiUniba = () => import(/* webpackChungName: "corsiUniba" */ './uni/corsi-di-laurea-uniba.vue')
+const CorsiUnifi = () => import(/* webpackChungName: "corsiUnifi" */ './uni/corsi-di-laurea-unifi.vue')
+const CorsiUnimi = () => import(/* webpackChungName: "corsiUnimi" */ './uni/corsi-di-laurea-unimi.vue')
+const CorsiUnina = () => import(/* webpackChungName: "corsiUnina" */ './uni/corsi-di-laurea-unina.vue')
+const CorsiUnipa = () => import(/* webpackChungName: "corsiUnipa" */ './uni/corsi-di-laurea-unipa.vue')
+const CorsiUniroma1 = () => import(/* webpackChungName: "corsiUniroma1" */ './uni/corsi-di-laurea-uniroma1.vue')
+const CorsiUnisa = () => import(/* webpackChungName: "corsiUnisa" */ './uni/corsi-di-laurea-unisa.vue')
+const CorsiUnito = () => import(/* webpackChungName: "corsiUnito" */ './uni/corsi-di-laurea-unito.vue')
+const CorsiUnipr = () => import(/* webpackChungName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
+const CorsiPolimi = () => import(/* webpackChungName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
@@ -60,29 +69,50 @@ const routes = [
     }
   },
   {
-    path: '/lista-corsi-di-laurea-triennali', components: {
-      default: ListaTriennali,
+    path: '/corsi-di-laurea-unibo', components: {
+      default: CorsiUnibo,
       header: Navbar,
       footer: Footer
     }
   },
   {
-    path: '/lista-corsi-di-laurea-magistrali', components: {
-      default: ListaMagistrali,
+    path: '/corsi-di-laurea-unipi', components: {
+      default: CorsiUnipi,
       header: Navbar,
       footer: Footer
     }
   },
   {
-    path: '/lista-corsi-di-laurea-magistrali-a-ciclo-unico', components: {
-      default: ListaCicloUnico,
+    path: '/corsi-di-laurea-sapienza', components: {
+      default: CorsiSapienza,
       header: Navbar,
       footer: Footer
     }
   },
   {
-    path: '/lista-corsi-di-laurea-triennali-ad-accesso-libero', components: {
-      default: ListaTriennaliLibere,
+    path: '/corsi-di-laurea-unipd', components: {
+      default: CorsiUnipd,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-bicocca', components: {
+      default: CorsiBicocca,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-polimi', components: {
+      default: CorsiPolimi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-uniba', components: {
+      default: CorsiUniba,
       header: Navbar,
       footer: Footer
     }
@@ -95,8 +125,57 @@ const routes = [
     }
   },
   {
-    path: '/corsi-di-laurea-unipi', components: {
-      default: CorsiUnipi,
+    path: '/corsi-di-laurea-unifi', components: {
+      default: CorsiUnifi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unimi', components: {
+      default: CorsiUnimi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unina', components: {
+      default: CorsiUnina,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unipa', components: {
+      default: CorsiUnipa,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unipr', components: {
+      default: CorsiUnipr,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-uniroma1', components: {
+      default: CorsiUniroma1,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unisa', components: {
+      default: CorsiUnisa,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unito', components: {
+      default: CorsiUnito,
       header: Navbar,
       footer: Footer
     }

@@ -1,7 +1,7 @@
 <template>
   <div class="container-md">
     <br />
-    <h1 class="text-secondary">Corsi di laurea Unibo</h1>
+    <h1 class="text-secondary">Corsi di laurea {{uni}}</h1>
     <br />
     <div class="input-group mb-3">
       <div class="input-group-prepend">
@@ -46,7 +46,7 @@
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
-          <td>Unibo</td>
+          <td>{{uni}} </td>
         </tr>
       </tbody>
     </v-table>
@@ -57,8 +57,8 @@
     />
     <br />
     <p>
-      Qui si possono trovare oltre
-      <strong>220 corsi di laurea di Unibo</strong>. I corsi in questione sono relativi
+      Qui si possono trovare
+      <strong>tutti i corsi di laurea {{uni}}</strong>. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
@@ -77,30 +77,30 @@
 </template>
 
 <script>
-import corsi from "./corsi.json";
+import corsi from "../corsi.json";
 
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea Unibo",
+    title: "Corsi di laurea UniRoma1",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "In questo sito potrai trovare rapidamente tutti i corsi di laurea di unibo, tutti raggruppati su una comoda tabella.",
+          "In questo sito potrai trovare rapidamente tutti i corsi di laurea UniRoma1, tutti raggruppati su una comoda tabella.",
       },
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea Unibo",
+          "Corsi di laurea, Corso di laurea, Corsi di laurea unip",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-unibo",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-UniRoma1",
       },
     ],
   },
@@ -111,13 +111,14 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
+      uni: "UniRoma1"
     };
   },
   methods: {
     FiltraLista: function () {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].u == "Alma mater studiorum Università di Bologna") {
+        if (corsi[x].u == "Università degli Studi di ROMA \"La Sapienza\"") {
           triennale.push(corsi[x]);
         }
       }
