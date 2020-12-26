@@ -22,7 +22,7 @@
     <br />
     <ol>
       <li v-for="corso in FiltraLista()" :key="corso.n">
-        Corso di Laurea {{ corso.t }} | <a :href="corso.h">{{ corso.n }}</a> |
+        <a :href="corso.h">{{ corso.n }}</a> |
         {{ corso.u }}
       </li>
     </ol>
