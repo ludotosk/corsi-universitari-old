@@ -69,7 +69,11 @@ const routes = [
       footer: Footer
     }
   },
-  { path: '/tabella', component: Tabella },
+  {
+    path: '/tabella', components: {
+      default: Tabella
+    }
+  },
   {
     path: '/tutti-i-corsi-di-laurea', components: {
       default: Corsi,
@@ -223,7 +227,7 @@ const routes = [
       header: Navbar,
       footer: Footer
     }
-  }, 
+  },
   {
     path: '/corsi-di-laurea-triennale', components: {
       default: CorsiTriennale,

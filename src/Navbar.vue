@@ -22,6 +22,12 @@
               >Tutti i corsi di laurea</router-link
             >
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link active" to="/universita"
+              >Università</router-link
+            >
+          </li>
+          <!--
           <li class="nav-item dropdown active">
             <a
               class="nav-link dropdown-toggle"
@@ -67,16 +73,12 @@
               </li>
             </div>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link active" to="/universita"
-              >Università</router-link
-            >
-          </li>
+          
           <li class="nav-item dropdown active">
             <a
               class="nav-link dropdown-toggle"
               href="#"
-              id="navbarDropdown"
+              id="navbarDropdown1"
               role="button"
               data-toggle="dropdown"
               aria-haspopup="true"
@@ -84,7 +86,10 @@
             >
               Corsi di laurea per livello
             </a>
-            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+            <div
+              class="dropdown-menu bg-dark"
+              aria-labelledby="navbarDropdown1"
+            >
               <li class="dropdown-item bg-dark">
                 <router-link
                   class="nav-link active"
@@ -114,7 +119,7 @@
               to="/corsi-di-laurea-triennali-ad-accesso-libero"
               >Triennali ad accesso libero</router-link
             >
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
