@@ -88,7 +88,7 @@ import corsi from "./corsi.json";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Cerca un corso di laurea",
+    title: "Tutti i corsi di laurea",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
