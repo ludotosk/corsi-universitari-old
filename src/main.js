@@ -71,7 +71,7 @@ const routes = [
   },
   { path: '/tabella', component: Tabella },
   {
-    path: '/corsi-di-laurea', components: {
+    path: '/tutti-i-corsi-di-laurea', components: {
       default: Corsi,
       header: Navbar,
       footer: Footer

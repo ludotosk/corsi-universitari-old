@@ -1,7 +1,7 @@
 <template>
   <div class="container-md">
     <br />
-    <h1 class="text-secondary">Qui puoi cercare il tuo corso di laurea</h1>
+    <h1 class="text-secondary">Tutti i Corsi di Laurea</h1>
     <br />
     <div class="input-group mb-3">
       <div class="input-group-prepend">
@@ -62,8 +62,8 @@
       università italiane.
     </p>
     <p>
-      Qui si possono trovare oltre
-      <strong>4700 corsi di laurea</strong> italiani che ho estrapolato da un
+      Qui si possono trovare
+      <strong>tutti i corsi di laurea</strong> italiani che ho estrapolato da un
       sito istituzionale. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
@@ -100,13 +100,13 @@ export default {
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
+          "Corsi di laurea, Corso di laurea, Corsi universitari, tutti i corsi di laurea",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea",
+        href: "https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea",
       },
     ],
   },
