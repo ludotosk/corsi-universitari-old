@@ -22,6 +22,51 @@
               >Cerca corsi di laurea</router-link
             >
           </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Liste corsi di laurea
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <li class="dropdown-item bg-dark">
+                <router-link
+                  class="nav-link active"
+                  to="/lista-corsi-di-laurea-triennale"
+                  >Lista corsi di laurea triennali</router-link
+                >
+              </li>
+              <li class="dropdown-item bg-dark">
+                <router-link
+                  class="nav-link active"
+                  to="/lista-corsi-di-laurea-magistrale"
+                  >Lista corsi di laurea magistrali</router-link
+                >
+              </li>
+              <li class="dropdown-item bg-dark">
+                <router-link
+                  class="nav-link active"
+                  to="/lista-corsi-di-laurea-magistrale-a-ciclo-unico"
+                  >Lista corsi di laurea magistrali a ciclo unico</router-link
+                >
+              </li>
+              <div class="dropdown-divider"></div>
+              <li class="dropdown-item bg-dark">
+                <router-link
+                  class="nav-link active"
+                  to="/lista-corsi-di-laurea-triennale-ad-accesso-libero"
+                  >Lista corsi di laurea triennali ad accesso
+                  libero</router-link
+                >
+              </li>
+            </div>
+          </li>
           <li class="nav-item">
             <router-link class="nav-link active" to="/università"
               >Università</router-link

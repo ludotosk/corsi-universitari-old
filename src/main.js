@@ -8,6 +8,7 @@ import '../scss/style.scss'
 import Navbar from './Navbar.vue'
 import Footer from './Footer.vue'
 import 'bootstrap/js/dist/collapse'
+import 'bootstrap/js/dist/dropdown'
 
 
 const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
@@ -31,6 +32,11 @@ const CorsiUnito = () => import(/* webpackChungName: "corsiUnito" */ './uni/cors
 const CorsiUnipr = () => import(/* webpackChungName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
 const CorsiPolimi = () => import(/* webpackChungName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
 const Uni = () => import(/* webpackChungName: "Uni" */ './università.vue')
+const ListaTriennale = () => import(/* webpackChungName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue')
+const ListaMagistrale = () => import(/* webpackChungName: "ListaMagistrale" */ './liste/lista-corsi-di-laurea-magistrali.vue')
+const ListaCiclo = () => import(/* webpackChungName: "ListaCiclo" */ './liste/lista-corsi-di-laurea-magistrali-ciclo-unico.vue')
+const ListaAccesso = () => import(/* webpackChungName: "ListaAccesso" */ './liste/lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
+
 
 Vue.use(SmartTable)
 Vue.use(VueMeta)
@@ -183,6 +189,34 @@ const routes = [
   {
     path: '/università', components: {
       default: Uni,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-triennale', components: {
+      default: ListaTriennale,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-triennale-ad-accesso-libero', components: {
+      default: ListaAccesso,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-magistrale', components: {
+      default: ListaMagistrale,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-magistrale-a-ciclo-unico', components: {
+      default: ListaCiclo,
       header: Navbar,
       footer: Footer
     }
