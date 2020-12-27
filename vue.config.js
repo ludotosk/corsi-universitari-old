@@ -1,4 +1,4 @@
-module.exports = {
+/* module.exports = {
   pluginOptions: {
     prerenderSpa: {
       registry: undefined,
@@ -13,3 +13,4 @@ module.exports = {
 }
 
 
+ */
