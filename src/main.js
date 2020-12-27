@@ -50,7 +50,7 @@ Vue.use(VueGtag, {
 
 const routes = [
   {
-    path: '/', components: {
+    path: '/', name: 'index', components: {
       default: Home,
       header: Navbar,
       footer: Footer
