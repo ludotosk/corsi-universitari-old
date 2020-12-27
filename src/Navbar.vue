@@ -18,7 +18,7 @@
             <router-link class="nav-link active" to="/">Home</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" to="/corsi-di-laurea"
+            <router-link class="nav-link active" to="/tutti-i-corsi-di-laurea"
               >Tutti i corsi di laurea</router-link
             >
           </li>
