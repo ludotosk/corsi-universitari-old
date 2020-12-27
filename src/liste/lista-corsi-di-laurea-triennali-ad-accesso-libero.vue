@@ -14,11 +14,11 @@
       corsi di laurea triennali ad accesso libero, per avere il
       <strong>link alla pagina del corso</strong> e la
       <strong>funzione di filtro</strong>
-      <router-link to="/corsi-di-laurea"> visita questa pagina</router-link>.
+      <router-link to="/corsi-di-laurea-triennali-ad-accesso-libero"> visita questa pagina</router-link>.
     </p>
     <p>
-      Qui si possono trovare oltre
-      <strong>1000 corsi di laurea triennali ad accesso libero</strong>. I corsi
+      Qui si possono trovare
+      <strong>tutti i corsi di laurea triennali ad accesso libero</strong>. I corsi
       in questione sono relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <br />

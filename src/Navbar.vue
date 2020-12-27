@@ -19,7 +19,7 @@
           </li>
           <li class="nav-item">
             <router-link class="nav-link active" to="/corsi-di-laurea"
-              >Cerca corsi di laurea</router-link
+              >Tutti i corsi di laurea</router-link
             >
           </li>
           <li class="nav-item dropdown active">
@@ -70,6 +70,47 @@
           <li class="nav-item">
             <router-link class="nav-link active" to="/università"
               >Università</router-link
+            >
+          </li>
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Corsi di laurea per livello
+            </a>
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <li class="dropdown-item bg-dark">
+                <router-link
+                  class="nav-link active"
+                  to="/corsi-di-laurea-triennale"
+                  >Corsi di laurea triennali</router-link
+                >
+              </li>
+              <li class="dropdown-item bg-dark">
+                <router-link
+                  class="nav-link active"
+                  to="/corsi-di-laurea-magistrale"
+                  >Corsi di laurea magistrali</router-link
+                >
+              </li>
+              <li class="dropdown-item bg-dark">
+                <router-link
+                  class="nav-link active"
+                  to="/corsi-di-laurea-magistrale-a-ciclo-unico"
+                  >Corsi di laurea magistrali a ciclo unico</router-link
+                >
+              </li>
+            </div>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link active" to="/corsi-di-laurea-triennali-ad-accesso-libero"
+              >Triennali ad accesso libero</router-link
             >
           </li>
         </ul>
