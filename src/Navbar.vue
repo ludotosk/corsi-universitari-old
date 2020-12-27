@@ -68,7 +68,7 @@
             </div>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" to="/università"
+            <router-link class="nav-link active" to="/universita"
               >Università</router-link
             >
           </li>

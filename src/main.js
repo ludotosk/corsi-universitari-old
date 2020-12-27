@@ -190,7 +190,7 @@ const routes = [
     }
   },
   {
-    path: '/università', components: {
+    path: '/universita', components: {
       default: Uni,
       header: Navbar,
       footer: Footer
