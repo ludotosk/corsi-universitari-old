@@ -32,10 +32,10 @@ const CorsiUnito = () => import(/* webpackChungName: "corsiUnito" */ './uni/cors
 const CorsiUnipr = () => import(/* webpackChungName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
 const CorsiPolimi = () => import(/* webpackChungName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
 const Uni = () => import(/* webpackChungName: "Uni" */ './università.vue')
-//const ListaTriennale = () => import(/* webpackChungName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue')
-//const ListaMagistrale = () => import(/* webpackChungName: "ListaMagistrale" */ './liste/lista-corsi-di-laurea-magistrali.vue')
-//const ListaCiclo = () => import(/* webpackChungName: "ListaCiclo" */ './liste/lista-corsi-di-laurea-magistrali-ciclo-unico.vue')
-//const ListaAccesso = () => import(/* webpackChungName: "ListaAccesso" */ './liste/lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
+const ListaTriennale = () => import(/* webpackChungName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue')
+const ListaMagistrale = () => import(/* webpackChungName: "ListaMagistrale" */ './liste/lista-corsi-di-laurea-magistrali.vue')
+const ListaCiclo = () => import(/* webpackChungName: "ListaCiclo" */ './liste/lista-corsi-di-laurea-magistrali-ciclo-unico.vue')
+const ListaAccesso = () => import(/* webpackChungName: "ListaAccesso" */ './liste/lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
 const CorsiTriennale = () => import(/* webpackChungName: "CorsiTriennale" */ './livello/corsi-di-laurea-triennali.vue')
 const CorsiMagistrale = () => import(/* webpackChungName: "CorsiMagistrale" */ './livello/corsi-di-laurea-magistrali.vue')
 const CorsiCiclo = () => import(/* webpackChungName: "CorsiCiclo" */ './livello/corsi-di-laurea-magistrali-a-ciclo-unico.vue')
@@ -196,7 +196,7 @@ const routes = [
       footer: Footer
     }
   },
-/*   {
+  {
     path: '/lista-corsi-di-laurea-triennale', components: {
       default: ListaTriennale,
       header: Navbar,
@@ -223,7 +223,7 @@ const routes = [
       header: Navbar,
       footer: Footer
     }
-  }, */
+  }, 
   {
     path: '/corsi-di-laurea-triennale', components: {
       default: CorsiTriennale,

@@ -22,7 +22,7 @@
               >Tutti i corsi di laurea</router-link
             >
           </li>
-  <!--         <li class="nav-item dropdown active">
+          <li class="nav-item dropdown active">
             <a
               class="nav-link dropdown-toggle"
               href="#"
@@ -66,7 +66,7 @@
                 >
               </li>
             </div>
-          </li> -->
+          </li>
           <li class="nav-item">
             <router-link class="nav-link active" to="/universita"
               >Università</router-link
@@ -109,7 +109,9 @@
             </div>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link active" to="/corsi-di-laurea-triennali-ad-accesso-libero"
+            <router-link
+              class="nav-link active"
+              to="/corsi-di-laurea-triennali-ad-accesso-libero"
               >Triennali ad accesso libero</router-link
             >
           </li>
