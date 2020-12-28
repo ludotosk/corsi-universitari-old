@@ -8,7 +8,7 @@ import '../scss/style.scss'
 import Navbar from './Navbar.vue'
 import Footer from './Footer.vue'
 import 'bootstrap/js/dist/collapse'
-import 'bootstrap/js/dist/dropdown'
+//import 'bootstrap/js/dist/dropdown'
 
 
 const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
