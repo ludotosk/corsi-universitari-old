@@ -5,13 +5,7 @@ import VueMeta from 'vue-meta'
 import VueRouter from 'vue-router'
 import VueGtag from "vue-gtag"
 import '../scss/style.scss'
-import Navbar from './Navbar.vue'
-import Footer from './Footer.vue'
-//import BootstrapVue from 'bootstrap-vue'
-//import 'bootstrap/js/dist/collapse'
-//import 'bootstrap/js/dist/dropdown'
 import { NavbarPlugin } from 'bootstrap-vue'
-
 
 const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
 const Corsi = () => import(/* webpackChungName: "corsi" */ './corsi-di-laurea.vue')
@@ -42,6 +36,8 @@ const CorsiTriennale = () => import(/* webpackChungName: "CorsiTriennale" */ './
 const CorsiMagistrale = () => import(/* webpackChungName: "CorsiMagistrale" */ './livello/corsi-di-laurea-magistrali.vue')
 const CorsiCiclo = () => import(/* webpackChungName: "CorsiCiclo" */ './livello/corsi-di-laurea-magistrali-a-ciclo-unico.vue')
 const CorsiLiberi = () => import(/* webpackChungName: "CorsiLiberi" */ './livello/corsi-di-laurea-triennali-accesso-libero.vue')
+const Navbar = () => import(/* webpackChungName: "Navbar" */ './Navbar.vue')
+const Footer = () => import(/* webpackChungName: "Footer" */ './Footer.vue')
 
 Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
