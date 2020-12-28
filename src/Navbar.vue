@@ -1,5 +1,52 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <b-navbar variant="dark" type="dark">
+    <b-navbar-nav>
+      <b-nav-item><router-link to="/" class="nav-link active">Home</router-link></b-nav-item>
+      <b-nav-item href="/tutti-i-corsi-di-laurea">
+        <router-link to="/tutti-i-corsi-di-laurea" class="nav-link active"
+          >Tutti i corsi di laurea</router-link
+        ></b-nav-item
+      >
+      <b-nav-item
+        ><router-link to="/universita" class="nav-link active">Università</router-link></b-nav-item
+      >
+
+      <!-- Navbar dropdowns -->
+      <b-nav-item-dropdown text="Liste Corsi di laurea" right class="nav-link active">
+        <b-dropdown-item
+          ><router-link to="/lista-corsi-di-laurea-triennale"
+            >Corsi di laurea triennali</router-link
+          ></b-dropdown-item
+        >
+        <b-dropdown-item
+          ><router-link to="/lista-corsi-di-laurea-magistrale"
+            >Corsi di laurea magistrali</router-link
+          ></b-dropdown-item
+        >
+        <b-dropdown-item
+          ><router-link to="/lista-corsi-di-laurea-magistrale-a-ciclo-unico"
+            >Corsi di laurea magistrali a ciclo unico</router-link
+          ></b-dropdown-item
+        >
+        <b-dropdown-divider></b-dropdown-divider>
+        <b-dropdown-item
+          ><router-link to="/lista-corsi-di-laurea-triennale-ad-accesso-libero"
+            >Corsi di laurea triennali ad accesso libero</router-link
+          ></b-dropdown-item
+        >
+      </b-nav-item-dropdown>
+
+      <b-nav-item-dropdown text="Corsi di laurea per livello" right class="nav-link active">
+        <b-dropdown-item><router-link to="/corsi-di-laurea-triennale">Corsi di laurea triennali</router-link></b-dropdown-item>
+        <b-dropdown-item><router-link to="/corsi-di-laurea-magistrale">Corsi di laurea magistrali</router-link></b-dropdown-item>
+        <b-dropdown-item><router-link to="/corsi-di-laurea-magistrale-a-ciclo-unico">Corsi di laurea magistrali a ciclo unico</router-link></b-dropdown-item>
+        <b-dropdown-divider></b-dropdown-divider>
+        <b-dropdown-item><router-link to="/corsi-di-laurea-triennali-ad-accesso-libero">Corsi di laurea triennali ad accesso libero</router-link></b-dropdown-item>
+      </b-nav-item-dropdown>
+    </b-navbar-nav>
+  </b-navbar>
+
+  <!--   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-md">
       <button
         class="navbar-toggler"
@@ -27,7 +74,6 @@
               >Università</router-link
             >
           </li>
-          <!--
           <li class="nav-item dropdown active">
             <a
               class="nav-link dropdown-toggle"
@@ -119,10 +165,10 @@
               to="/corsi-di-laurea-triennali-ad-accesso-libero"
               >Triennali ad accesso libero</router-link
             >
-          </li> -->
+          </li> 
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> -->
 </template>
 
