@@ -19,7 +19,7 @@
       <p>
         Prima di partire però ti avviso che su questo sito è presente uno
         <strong>
-          <router-link to="/corsi-di-laurea">strumento</router-link> per cercare
+          <router-link to="/tutti-i-corsi-di-laurea">strumento</router-link> per cercare
           corsi di laurea</strong
         >.
         <mark
