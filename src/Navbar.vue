@@ -1,9 +1,9 @@
 <template>
-  <b-navbar toggleable variant="dark" type="dark">
+  <b-navbar toggleable="lg" variant="dark" type="dark">
     <b-navbar-toggle target="navbar-toggle-collapse"></b-navbar-toggle>
 
     <b-collapse id="navbar-toggle-collapse" is-nav>
-      <b-navbar-nav>
+      <b-navbar-nav class="mx-auto"> 
         <b-nav-item
           ><router-link to="/" class="nav-link active"
             >Home</router-link
