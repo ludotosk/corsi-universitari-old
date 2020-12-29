@@ -64,7 +64,7 @@ export default {
       {
         rel: "canonical",
         href:
-          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-magistrali-a-ciclo-unico",
+          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-magistrale-a-ciclo-unico",
       },
     ],
   },

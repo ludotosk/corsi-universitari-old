@@ -63,7 +63,7 @@ export default {
       {
         rel: "canonical",
         href:
-          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennali-ad-accesso-libero",
+          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennale-ad-accesso-libero",
       },
     ],
   },

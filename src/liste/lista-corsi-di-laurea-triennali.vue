@@ -59,7 +59,7 @@ export default {
       {
         rel: "canonical",
         href:
-          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennali",
+          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennale",
       },
     ],
   },
