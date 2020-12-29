@@ -88,3 +88,26 @@
     <br />
   </div>
 </template>
+
+<script>
+export default {
+  metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: "Univerisità",
+    titleTemplate: "%s | corsiuniversitari.info",
+    meta: [
+      {
+        name: "description",
+        content:
+          "Questa è la lista delle università per la quale abbiamo la tabella di tutti i corsi di laurea filtrati per ateneo.",
+      },
+      {
+        name: "keywords",
+        content:
+          "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
+      },
+    ],
+    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info/universita" }],
+  },
+};
+</script>

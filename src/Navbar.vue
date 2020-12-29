@@ -19,7 +19,11 @@
             >Università</router-link
           ></b-nav-item
         >
-
+        <b-nav-item
+          ><router-link to="/area-accademica" class="nav-link active"
+            >Aree accademiche</router-link
+          ></b-nav-item
+        >
         <!-- Navbar dropdowns -->
         <b-nav-item-dropdown
           text="Liste Corsi di laurea"

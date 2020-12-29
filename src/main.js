@@ -38,6 +38,25 @@ const CorsiCiclo = () => import(/* webpackChungName: "CorsiCiclo" */ './livello/
 const CorsiLiberi = () => import(/* webpackChungName: "CorsiLiberi" */ './livello/corsi-di-laurea-triennali-accesso-libero.vue')
 const Navbar = () => import(/* webpackChungName: "Navbar" */ './Navbar.vue')
 const Footer = () => import(/* webpackChungName: "Footer" */ './Footer.vue')
+const CorsiMedicina = () => import(/* webpackChungName: "corsimedicina" */ './area/corsi-di-laurea-medicina.vue')
+const CorsiPsicologia = () => import(/* webpackChungName: "corsipsicologia" */ './area/corsi-di-laurea-psicologia.vue')
+const CorsiFisioterapia = () => import(/* webpackChungName: "corsifisioterapia" */ './area/corsi-di-laurea-fisioterapia.vue')
+const CorsiStoria = () => import(/* webpackChungName: "corsistoria" */ './area/corsi-di-laurea-storia.vue')
+const CorsiInfermieristica = () => import(/* webpackChungName: "corsiinfermieristica" */ './area/corsi-di-laurea-infermieristica.vue')
+const CorsiMatematica = () => import(/* webpackChungName: "corsimatematica" */ './area/corsi-di-laurea-matematica.vue')
+const CorsiFormazionePrimaria = () => import(/* webpackChungName: "corsiformazioneprimaria" */ './area/corsi-di-laurea-scienze-della-formazione-primaria.vue')
+const CorsiBiologia = () => import(/* webpackChungName: "corsibiologia" */ './area/corsi-di-laurea-biologia.vue')
+const CorsiFilosofia = () => import(/* webpackChungName: "corsifilosofia" */ './area/corsi-di-laurea-filosofia.vue')
+const CorsiBiotecnologia = () => import(/* webpackChungName: "corsibiotecnologie" */ './area/corsi-di-laurea-biotecnologia.vue')
+const CorsiDietistica = () => import(/* webpackChungName: "corsidietistica" */ './area/corsi-di-laurea-dietistica.vue')
+const CorsiFarmacia = () => import(/* webpackChungName: "corsifarmacia" */ './area/corsi-di-laurea-farmacia.vue')
+const CorsiGiurisprudenza = () => import(/* webpackChungName: "corsigiurisprudenza" */ './area/corsi-di-laurea-giurisprudenza.vue')
+const CorsiInformatica = () => import(/* webpackChungName: "corsiinformatica" */ './area/corsi-di-laurea-informatica.vue')
+const CorsiLettere = () => import(/* webpackChungName: "corsilettere" */ './area/corsi-di-laurea-lettere.vue')
+const CorsiLogopedia = () => import(/* webpackChungName: "corsilogopedia" */ './area/corsi-di-laurea-logopedia.vue')
+const CorsiMotorie = () => import(/* webpackChungName: "corsimotorie" */ './area/corsi-di-laurea-scienze-motorie.vue')
+const CorsiFisica = () => import(/* webpackChungName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
+const AreaAccademica = () => import(/* webpackChungName: "areaaccademica" */ './area-accademica.vue')
 
 Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
@@ -139,8 +158,7 @@ const routes = [
   {
     path: '/corsi-di-laurea-unifi', components: {
       default: CorsiUnifi,
-      header: Navbar,
-      footer: Footer
+      header: Navbar,CorsiMatematica
     }
   },
   {
@@ -251,6 +269,139 @@ const routes = [
   {
     path: '/corsi-di-laurea-triennali-ad-accesso-libero', components: {
       default: CorsiLiberi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-medicina', components: {
+      default: CorsiMedicina,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-psicologia', components: {
+      default: CorsiPsicologia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-fisioterapia', components: {
+      default: CorsiFisioterapia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-storia', components: {
+      default: CorsiStoria,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-infermieristica', components: {
+      default: CorsiInfermieristica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-matematica', components: {
+      default: CorsiMatematica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-scienze-della-formazione-primaria', components: {
+      default: CorsiFormazionePrimaria,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-biologia', components: {
+      default: CorsiBiologia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-filosofia', components: {
+      default: CorsiFilosofia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-fisica', components: {
+      default: CorsiFisica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-biotecnologia', components: {
+      default: CorsiBiotecnologia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+    {
+    path: '/corsi-di-laurea-dietistica', components: {
+      default: CorsiDietistica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-farmacia', components: {
+      default: CorsiFarmacia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-giurisprudenza', components: {
+      default: CorsiGiurisprudenza,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-informatica', components: {
+      default: CorsiInformatica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-lettere', components: {
+      default: CorsiLettere,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-logopedia', components: {
+      default: CorsiLogopedia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-scienze-motorie', components: {
+      default: CorsiMotorie,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/area-accademica', components: {
+      default: AreaAccademica,
       header: Navbar,
       footer: Footer
     }
