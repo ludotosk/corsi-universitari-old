@@ -14,6 +14,7 @@ async function ScrapeArea(page) {
     var h;
     var t;
     var a;
+    var c;
     var linkUniTxt = '';
     for (i = 1; i < records.length + 1; i++) {
         var [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/strong');
@@ -23,10 +24,10 @@ async function ScrapeArea(page) {
             const universita = await el.getProperty('textContent');
             u = await universita.jsonValue();
             u = u.replace("     ( Pagina ateneo )", "");
-            if( u == 'LUM \"Jean Monnet\"'){
+            if (u == 'LUM \"Jean Monnet\"') {
                 u = 'Libera università mediterranea Giuseppe Degennaro'
             }
-            if( u == 'Università degli Studi di BOLOGNA' ){
+            if (u == 'Università degli Studi di BOLOGNA') {
                 u = 'Alma mater studiorum Università di Bologna'
             }
 
@@ -55,25 +56,26 @@ async function ScrapeArea(page) {
             if (classeTxt.slice(0, 2) == 'L-') {
                 t = 'Triennale';
             } else {
-                if (classeTxt == 'LM-4 C.U.' || classeTxt == 'LMR/02' || classeTxt == 'LM-13' || classeTxt == 'LMG/01' || classeTxt == 'LM-41' || classeTxt == 'LM-42' || classeTxt == 'LM-46' || classeTxt.slice(0, 2) == 'L/' || classeTxt == 'LM-85 bis'){
+                if (classeTxt == 'LM-4 C.U.' || classeTxt == 'LMR/02' || classeTxt == 'LM-13' || classeTxt == 'LMG/01' || classeTxt == 'LM-41' || classeTxt == 'LM-42' || classeTxt == 'LM-46' || classeTxt.slice(0, 2) == 'L/' || classeTxt == 'LM-85 bis') {
                     t = 'Magistrale a Ciclo Unico';
                 } else {
                     t = 'Magistrale';
                 }
-                
+
             }
+            c = classeTxt;
 
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[6]/img');
             const accesso = await el.getProperty('title');
             const accessoTxt = await accesso.jsonValue();
-            if (accessoTxt == 'Libero'){
+            if (accessoTxt == 'Libero') {
                 a = 'No';
             } else {
                 a = 'Sì';
             }
 
             if (n != '') {
-                corsi.push({ n, h, t, u, a });
+                corsi.push({ n, h, t, u, a, c });
             }
         }
     }
@@ -289,7 +291,7 @@ async function laucnhScrape() {
         return 0;
     });
 
-    for (var x = 0; x < corsi.length; x++) {
+    for (let x = 0; x < corsi.length; x++) {
         for (var z = 0; z < corsi.length; z++) {
             if (x != z) {
                 if (corsi[x].n.toLowerCase() == corsi[z].n.toLowerCase() && corsi[x].u.toLowerCase() == corsi[z].u.toLowerCase() && corsi[x].t.toLowerCase() == corsi[z].t.toLowerCase()) {
@@ -299,11 +301,22 @@ async function laucnhScrape() {
         }
     }
 
+    var lista = JSON.parse(JSON.stringify(corsi));
+
+    for (let x = 0; x < lista.length; x++) {
+        delete lista[x].h;
+        delete lista[x].c;
+    }
+
+    fs.writeFile('./src/lista.json', JSON.stringify(lista), function (err) {
+        if (err) return console.log(err);
+        console.log('lista > lista.json');
+    });
+
     console.log('numero corsi post pulizia');
     console.log(corsi.length);
 
-
-    fs.writeFile('./corsi.json', JSON.stringify(corsi), function (err) {
+    fs.writeFile('./src/corsi.json', JSON.stringify(corsi), function (err) {
         if (err) return console.log(err);
         console.log('corsi > corsi.json');
         const fine = (Date.now() - inizio) / 1000;
