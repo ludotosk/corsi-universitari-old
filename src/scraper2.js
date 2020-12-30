@@ -13,8 +13,9 @@ async function ScrapeArea(page) {
     var i;
     var h;
     var t;
-    var a;
+    var a = 'Sì';
     var c;
+    var e = 0;
     var linkUniTxt = '';
     for (i = 1; i < records.length + 1; i++) {
         var [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/strong');
@@ -65,17 +66,25 @@ async function ScrapeArea(page) {
             }
             c = classeTxt;
 
+            [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[10]/img');
+            if (el != undefined) {
+                const inglese = await el.getProperty('alt');
+                const ingTxt = await inglese.jsonValue();
+                if (ingTxt == "Corso in lingua inglese") {
+                    e = 1;
+                }
+            }
+
+
             [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[6]/img');
             const accesso = await el.getProperty('title');
             const accessoTxt = await accesso.jsonValue();
             if (accessoTxt == 'Libero') {
                 a = 'No';
-            } else {
-                a = 'Sì';
             }
 
             if (n != '') {
-                corsi.push({ n, h, t, u, a, c });
+                corsi.push({ n, h, t, u, a, c, e });
             }
         }
     }
@@ -306,6 +315,7 @@ async function laucnhScrape() {
     for (let x = 0; x < lista.length; x++) {
         delete lista[x].h;
         delete lista[x].c;
+        delete lista[x].e;
     }
 
     fs.writeFile('./src/lista.json', JSON.stringify(lista), function (err) {

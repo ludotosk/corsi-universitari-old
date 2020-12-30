@@ -57,6 +57,7 @@ const CorsiLogopedia = () => import(/* webpackChungName: "corsilogopedia" */ './
 const CorsiMotorie = () => import(/* webpackChungName: "corsimotorie" */ './area/corsi-di-laurea-scienze-motorie.vue')
 const CorsiFisica = () => import(/* webpackChungName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
 const AreaAccademica = () => import(/* webpackChungName: "areaaccademica" */ './area-accademica.vue')
+const Inglese = () => import(/* webpackChungName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
 
 Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
@@ -402,6 +403,13 @@ const routes = [
   {
     path: '/area-accademica', components: {
       default: AreaAccademica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-in-inglese', components: {
+      default: Inglese,
       header: Navbar,
       footer: Footer
     }

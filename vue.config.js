@@ -51,8 +51,7 @@ module.exports = {
         '/corsi-di-laurea-fisioterapia',
         '/corsi-di-laurea-psicologia',
         '/corsi-di-laurea-medicina',
-        
-
+        '/corsi-di-laurea-in-inglese'
       ],
       useRenderEvent: true,
       headless: true,
