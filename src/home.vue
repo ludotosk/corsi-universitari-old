@@ -19,8 +19,8 @@
       <p>
         Prima di partire però ti avviso che su questo sito è presente uno
         <strong>
-          <router-link to="/tutti-i-corsi-di-laurea">strumento</router-link> per cercare
-          corsi di laurea</strong
+          <router-link to="/tutti-i-corsi-di-laurea">strumento</router-link> per
+          cercare corsi di laurea</strong
         >.
         <mark
           >Strumento che contiene tutti i corsi di laurea italiani e permette di
@@ -44,7 +44,7 @@
           <mark
             >ma un’area accademica è un’idea troppo vaga soprattutto se si parla
             dell’ambito dell’informatica. E questo vale non solo per
-            l'informatica.</mark
+            quest'ultima.</mark
           >
         </p>
         <p>
@@ -88,15 +88,15 @@
       <hr />
       <p>
         Prima di procedere ci tengo a fare una precisazione: io non sono uno
-        psicologo, un formatore o una persona che ricopre una qualsiasi ruolo
-        del genere. Sono semplicemente una persona che si informa e cerca di
-        fare un discorso di senso compiuto.
+        psicologo, un formatore o una persona che ricopre un qualsiasi ruolo del
+        genere. Sono semplicemente una persona che si informa e cerca di fare un
+        discorso di senso compiuto.
       </p>
       <p>
         Quindi cercate di fare attenzione, quello che dico potrebbe essere
         giusto come no. Confido quindi nel senso critico e nell’intelligenza del
-        lettore perché ciò che scrivo potrebbe adattarsi meglio a qualcuno e ad
-        altri no.
+        lettore perché ciò che scrivo potrebbe adattarsi meglio a qualcuno
+        rispetto ad altri.
       </p>
       <p>
         Dovete prendere questo testo come uno dei tanti specchi sul mondo reale,
@@ -229,7 +229,7 @@
           quanto riguarda il lavoro altrui.
         </p>
         <p>
-          Questo cosa significa? Che per fare questo lavoro bisogna essere in
+          Questo cosa comporta? Che per fare questo lavoro bisogna essere in
           grado di sopportare lo stress e avere sangue freddo.
           <strong>Lo stress è un fattore quotidiano in questo caso</strong>,
           bisogna prendere decisioni, talvolta ci si sente soli e si hanno
@@ -275,7 +275,7 @@
       <p>
         Cosa intendo dire? Semplicemente due cose. La prima - e qui riprendo il
         capitolo precedente - è che non si dovrebbe
-        <strong>pensare solo alle materie che ci appassionano</strong> ma anche
+        <strong>pensare solo alle materie che ci appassionano</strong>, ma anche
         agli <strong>sbocchi lavorativi</strong> che un certo corso di laurea
         può offrirti.
       </p>
@@ -324,8 +324,8 @@
         <p>
           Vorrei fare il data scientist ma questo non è un lavoro specifico, è
           un microuniverso e ci sono davvero tante opportunità dentro questo
-          settore. Infatti esistono corsi di laurea di questa materia con solo
-          il primo anno in comune.
+          settore. Infatti esistono tanti corsi di laurea di questa materia con
+          solo il primo anno in comune.
           <mark
             >Oppure corsi di laurea che prevedono specializzazioni molto
             diverse.</mark
@@ -379,7 +379,7 @@
         >
         Vi posso assicurare che le sensazioni che si provano in quel caso sono
         paragonabili a quelle che si provano lavorando e lo dice una persona che
-        ha fatto - e rimediato - un danno da più di 3000€ a un cliente.
+        ha fatto e ha rimediato a un danno da più di 3000€ a un cliente.
       </p>
       <p>
         Organizzando una festa si va in contro a molti imprevisti: gente che non
@@ -387,26 +387,27 @@
         <strong>non penso sia una cosa per tutti</strong>, c’è chi vive questa
         situazione con serenità e chi impazzisce.
         <mark
-          >Inoltre si possono assaporare i sentimenti di chi fallisce o di chi
-          vince, pressione sociale compresa.</mark
+          >Inoltre si possono facilmente distinguere i sentimenti di chi
+          fallisce o di chi vince, derivati soprattutto dalla pressione
+          sociale.</mark
         >
         Una festa come un prodotto o un servizio può essere un fiasco come una
         rivelazione.
         <mark
-          >Questi sentimenti fanno parte di uno stress emotivo non per tutti e
-          che riguarda solo alcune posizioni.</mark
+          >Questi sentimenti sono conseguenti a uno stress emotivo non adatto a
+          tutti e che riguarda solo alcune posizioni lavorative.</mark
         >
       </p>
       <p>
-        Oltre all’importanza del provare la responsabilità si possono provare
-        diverse tipologie di lavori. Io per esempio nello stesso posto di lavoro
-        ho provato a volgere prima delle mansioni manuali e in seguito
-        d’ufficio. Così facendo ho capito che l’ufficio fa più per me, ma anche
-        qui si entra nel soggettivo. Fate voi le vostre considerazioni a
-        riguardo.
+        Oltre all’importanza del provare ad assumersi delle responsabilità sulle
+        proprie spalle si possono provare diverse tipologie di incarichi. Io per
+        esempio nello stesso posto di lavoro ho provato a svolgere prima delle
+        mansioni manuali e in seguito d’ufficio. Così facendo ho capito che
+        l’ufficio fa più per me, ma anche qui si entra nel soggettivo. Traete
+        voi le vostre conclusioni.
       </p>
       <p>
-        Quindi in questo modo <strong>potete conoscere voi stessi</strong>,
+        Quindi in questo modo <strong>potete conoscere voi stessi</strong>;
         volendo esistono anche vari test della personalità più o meno validi, ma
         onestamente ritengo sia meglio fare esperienza.
       </p>
@@ -447,25 +448,26 @@
         <hr />
         <p>
           Un consiglio che io credo possa essere vitale è quello di
-          <strong>giocare di anticipo</strong>. Per mostravi quando sia
-          importante prendersi per tempo vi porto due esempi personali.
+          <strong>giocare d'anticipo</strong>. Per mostravi quanto sia
+          importante prendersi per tempo vi riporto due esempi personali.
         </p>
         <p>
-          Il primo è un errore che ho fatto, studiare troppo poco la matematica.
-          Pensavo non fosse così utile ai fini del mio futuro lavoro ed è stato
-          un errore. Ne ho pagato le conseguenze perdendo un anno alla
-          triennale.
+          Nel primo caso ti parlo di un errore che ho fatto: studiare troppo
+          poco la matematica. Pensavo non fosse così utile ai fini del mio
+          futuro lavoro ed è stato un errore. Ne ho pagato le conseguenze
+          perdendo un anno alla triennale.
         </p>
         <p>
-          Sono stato portato a pensare che non fosse utile a causa della
+          Sono stato portato a pensare che non fosse utile a causa dell'
           esperienza prematura con la programmazione. Infatti programmando mi
           accorsi che in fondo il lavoro del programmatore lo si può fare pure
-          non conoscendo la matematica che è vero ma diventa un handicap nello
-          studio. In parte perché è previsto uno o più esami di matematica nel
-          mio percorso formativo, in parte perché nella teoria dei riferimenti
-          alla matematica ci sono. Quindi per quanto poco utile nella pratica
-          per fare il salto di livello affiancandoci un po’ di studio teorico è
-          vitale.
+          non conoscendo la matematica (cosa che reputo tuttora giusta) ma in
+          realtà questa mancanza diventa un handicap, in parte perché sono
+          previsti uno o più esami di matematica nel mio percorso formativo, in
+          parte perché nella teoria dei riferimenti alla matematica ci sono.
+          Quindi per quanto poco utile nella pratica per fare il salto di
+          livello affiancare a quest'ultima un po’ di studio teorico è
+          importante.
         </p>
         <p>
           Inoltre <strong>esistono gli imprevisti</strong> e bisogna tenere a
@@ -476,42 +478,37 @@
         <p>
           <mark>
             Aggiungo quindi che nella programmazione del proprio percorso futuro
-            bisogna tenere a mente degli imprevisti.</mark
+            bisogna tenere conto di possibili imprevisti.</mark
           >
         </p>
         <p>
-          L’altro esempio invece è un esempio di come abbia
-          <strong>fatto bene ad anticipare una scelta</strong>. In sostanza nel
-          corso del secondo anno della triennale pensai bene di guardarmi
-          attorno per quanto riguarda i corsi di laurea magistrali.
+          L’altro esempio invece riporta i vantaggi che ho avuto
+          <strong>anticipando una scelta</strong>. In sostanza, nel corso del
+          secondo anno della triennale, pensai bene di guardarmi attorno per
+          quanto riguarda i corsi di laurea magistrali.
           <mark
             >Sebbene avessi già in testa di proseguire su sicurezza informatica
-            ho continuato a iterare il processo.</mark
+            non ho mai smesso di informarmi.</mark
           >
-          Scoprendo quindi il corso di data science sembra più azzeccato per me
-          rispetto a sicurezza.
+          Scoprendo quindi il corso di data science capii che facesse più al
+          caso mio che sicurezza informa.
         </p>
         <p>
-          Benissimo perché è stato
+          Perché è stato
           <strong>così importante fare quella scelta in anticipo</strong> di due
           anni rispetto alla laurea? Beh per iniziare la maggior parte dei corsi
           di laurea di data science richiedono anche dei cfu (crediti formativi
-          universitari) di economia per chi ha frequentato informatica. Secondo
-          è richiesto il B2 per poter accedere al corso di laurea. Quando per
-          poter perseguire la laurea alla mia triennale basta un B1.
+          universitari) di economia per chi ha frequentato informatica. In
+          secondo luogo è richiesto il B2 per poter accedere al corso di laurea,
+          quando per poter conseguire la laurea alla mia triennale basta il B1.
           <mark
             >Quindi l’aver anticipato la scelta mi ha permesso di non
-            precludermi questo percorso ma non solo.</mark
+            precludermi questo percorso, ma non solo :</mark
           >
-          Infatti durante il corso dell’anno successivo ho potuto parlarne in
+          infatti durante il corso dell’anno successivo ho potuto parlarne in
           giro
           <strong>sfruttando tutte le occasioni di confronto</strong> possibile
-          e ho anche potuto informarmi. Guardando ore di video in merito a
-          queste materie assicurandomi quindi di poter fare
-          <strong>la scelta giusta al momento giusto</strong>. Inoltre non è da
-          sottovalutare l'arco di tempo impiegato per trovare fonti di
-          informazione. Spesso si parla di settimane o mesi, un
-          <strong>po' troppo per chi si svegli all'ultimo</strong>.
+          e ho approfondito di più cosa significasse fare il data scientist.
         </p>
         <p>
           In tutto questo periodo sono anche riuscito a
@@ -526,14 +523,13 @@
         </p>
         <p>
           <mark>
-            Notate che se per caso doveste aver a che fare che lavora nel posto
-            che vorreste essere informati è importante.</mark
+            Se per caso venissi a contatto con qualcuno che lavora nel settore
+            che ti interessa non esitare a chiedergli qualche dettaglio in più,
+            tenersi sempre aggiornati è importantissimo Ma se non ti fossi
+            documentato suffficientemente prima su quella cosa che ti interessa
+            potresti aver sprecato un'occasione perché non avresti le giuste
+            domande da porre.</mark
           >
-          Primo perché
-          <strong>non sprechereste l’occasione e saprete cose chiedergli</strong
-          >. Secondo perché potreste
-          <strong>fare colpo su questa persona</strong>, ottenendo quindi un
-          <strong>vantaggio competitivo</strong>.
         </p>
         <p>
           Questa precisazione l’ho fatta perché fa parte della mia esperienza.
@@ -545,15 +541,18 @@
           servono quei 12 cfu di economia.
         </p>
         <p>
-          Non solo mi sono anche accorto di come i colleghi attorno a me dopo la
-          laurea si trovino <strong>alle strette con la scelta</strong>.<mark>
-            Con la conseguenza di aver fatto scelte di pancia senza approfondire
-            cosa si va a scegliere.</mark
-          >
-          Ma non solo, precludendosi anche la possibilità di poter cambiare
-          università nei casi peggiori. Questo perché ogni università ha
-          tempistiche diverse per l’accesso i corsi di laurea magistrali, quindi
-          bisogna fare attenzione e giocare d’anticipo.
+          inoltre, mi sono anche accorto di come i colleghi attorno a me dopo la
+          laurea si trovino
+          <strong>
+            disorientati perché si sono rifiutati di pensare troppo in là nel
+            fututo, di pensare già ad una possibile scelta papabile, </strong
+          >.<mark>
+            con la conseguenza di aver fatto scelte di pancia senza aver troppo
+            approfondito a cosa andassero contro.
+          </mark>
+          E, inoltre, è meglio rimandare simili decisioni anche perchè ogni
+          università ha tempistiche diverse per l’accesso ai corsi di laurea
+          magistrali, quindi bisogna fare attenzione e giocare d’anticipo.
         </p>
         <br />
       </div>
@@ -568,7 +567,7 @@
         sottolineato come io non sia nessuno. Però qualcuno si sarà accorto che
         il mio metodo è molto simile se non uguale a quello di Ray Dalio. Dalio
         nel suo libro <i>I principi del successo</i> spiega molto meglio di
-        quanto possa aver fatto io il suo metodo vincente, inoltre ci terrei ad
+        quanto possa aver fatto io il suo metodo vincente. Inoltre ci terrei ad
         aggiungere che lui è un pensionato di successo mentre io sono in quella
         che lui definisce "<i>la prima fase della mia vita</i>". Dalio, oltre ad
         essere il migliore nel suo settore, è anche una persona che si informa
@@ -583,7 +582,8 @@
         Credo sia evidente che tra lo scegliere un corso di laurea senza un
         criterio e l’essere informati, il secondo metodo funzioni meglio. Il
         problema sta nel fatto che comunque passa tutto attraverso la nostra
-        soggettività e le persone sono per natura piene di bias. Inoltre
+        soggettività e le persone sono per natura piene di bias cognitivi.
+        Inoltre
         <strong>la vita è piena di imprevisti</strong> che possono cambiare
         tutto e spesso le persone stesse cambiano.
         <mark
@@ -595,7 +595,7 @@
       </p>
       <p>
         Quindi il punto è che <strong>questo è un processo iterativo</strong> e
-        non c’è mai una fine per un processo ciclico.
+        non c’è mai una fine in un processo ciclico.
       </p>
       <br />
     </div>
