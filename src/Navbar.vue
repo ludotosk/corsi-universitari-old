@@ -79,6 +79,11 @@
             >Corsi di laurea in inglese</router-link
           ></b-nav-item
         >
+            <b-nav-item
+          ><router-link to="/guida" class="nav-link active"
+            >Guida</router-link
+          ></b-nav-item
+        >
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

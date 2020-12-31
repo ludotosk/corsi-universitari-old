@@ -58,6 +58,7 @@ const CorsiMotorie = () => import(/* webpackChungName: "corsimotorie" */ './area
 const CorsiFisica = () => import(/* webpackChungName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
 const AreaAccademica = () => import(/* webpackChungName: "areaaccademica" */ './area-accademica.vue')
 const Inglese = () => import(/* webpackChungName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
+const Guida = () => import(/* webpackChungName: "guida" */ './guida.vue')
 
 Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
@@ -414,6 +415,12 @@ const routes = [
       footer: Footer
     }
   },
+  {
+    path: '/guida', components: {
+      default: Guida,
+      header: Navbar
+    }
+  }
 ]
 
 
