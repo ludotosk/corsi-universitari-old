@@ -16,6 +16,7 @@ async function ScrapeArea(page) {
     var a = 'Sì';
     var c;
     var e = 0;
+    var s;
     var linkUniTxt = '';
     for (i = 1; i < records.length + 1; i++) {
         var [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]/strong');
@@ -83,8 +84,16 @@ async function ScrapeArea(page) {
                 a = 'No';
             }
 
+            [el] = await page.$x('/html/body/div[3]/div/div[2]/div[2]/div[2]/div/table/tbody/tr[' + i + ']/td[2]');
+            const citta = await el.getProperty('innerText');
+            s = await citta.jsonValue();
+            var indexInzio = s.lastIndexOf(' , ');   
+            var indexFine = s.indexOf('\n');
+            s = s.substring(indexInzio,indexFine);
+            s = s.slice(3,s.length);
+
             if (n != '') {
-                corsi.push({ n, h, t, u, a, c, e });
+                corsi.push({ n, h, t, u, a, c, e, s });
             }
         }
     }
@@ -310,7 +319,7 @@ async function laucnhScrape() {
         }
     }
 
-    var lista = JSON.parse(JSON.stringify(corsi));
+ /*    var lista = JSON.parse(JSON.stringify(corsi));
 
     for (let x = 0; x < lista.length; x++) {
         delete lista[x].h;
@@ -318,10 +327,21 @@ async function laucnhScrape() {
         delete lista[x].e;
     }
 
-    fs.writeFile('./src/lista.json', JSON.stringify(lista), function (err) {
+    fs.writeFile('./src/corsi.json', JSON.stringify(lista), function (err) {
         if (err) return console.log(err);
-        console.log('lista > lista.json');
+        console.log('lista > corsi.json');
     });
+
+    var nocitta = JSON.parse(JSON.stringify(corsi));
+
+    for (let x = 0; x < nocitta.length; x++) {
+        delete nocitta[x].s;
+    }
+
+    fs.writeFile('./src/corsi.json', JSON.stringify(nocitta), function (err) {
+        if (err) return console.log(err);
+        console.log('corsi > corsi.json');
+    }); */
 
     console.log('numero corsi post pulizia');
     console.log(corsi.length);

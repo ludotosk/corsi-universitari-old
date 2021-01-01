@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import corsi from "../lista.json";
+import corsi from "../corsi.json";
 
 export default {
   metaInfo: {
