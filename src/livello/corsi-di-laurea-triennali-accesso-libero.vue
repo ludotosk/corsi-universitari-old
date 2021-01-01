@@ -35,7 +35,7 @@
     >
       <thead slot="head" class="thead-dark">
         <th>Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc">Tipo Laurea</v-th>
+        <v-th sortKey="t" defaultSort="asc">Livello</v-th>
         <th>Università</th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }">
@@ -62,7 +62,7 @@
     <p>
       <strong> Come funziona?</strong> È molto semplice, basta digitare nella
       barra di ricerca es. "data science" e comparirà la lista di tutti i corsi
-      con quel nome. Inoltre cliccando "tipo laurea" vengono ordinati i corsi in
+      con quel nome. Inoltre cliccando "Livello" vengono ordinati i corsi in
       base al tipo di laurea.
     </p>
     <p>

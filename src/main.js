@@ -79,7 +79,8 @@ const routes = [
   {
     path: '/contattami', components: {
       default: Contattami,
-      header: Navbar
+      header: Navbar,
+      footer: Footer
     }
   },
   {
@@ -418,7 +419,8 @@ const routes = [
   {
     path: '/guida', components: {
       default: Guida,
-      header: Navbar
+      header: Navbar,
+      footer: Footer
     }
   }
 ]
