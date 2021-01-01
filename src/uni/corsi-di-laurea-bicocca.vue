@@ -116,13 +116,13 @@ export default {
   },
   methods: {
     FiltraLista: function () {
-      var triennale = [];
+      var array = [];
       for (var x = 0; x < corsi.length; x++) {
         if (corsi[x].u == "Università degli Studi di MILANO-BICOCCA") {
-          triennale.push(corsi[x]);
+          array.push(corsi[x]);
         }
       }
-      return triennale;
+      return array;
     },
   },
 };

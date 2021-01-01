@@ -36,7 +36,7 @@
       <thead slot="head" class="thead-dark">
         <th>Corso di laurea</th>
         <v-th sortKey="t" defaultSort="asc">Livello</v-th>
-        <th>Università</th>
+        <v-th sortKey="u" defaultSort="asc">Università</v-th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }">
         <tr v-for="row in displayData" :key="row.guid">

@@ -59,6 +59,21 @@ const CorsiFisica = () => import(/* webpackChungName: "corsifisica" */ './area/c
 const AreaAccademica = () => import(/* webpackChungName: "areaaccademica" */ './area-accademica.vue')
 const Inglese = () => import(/* webpackChungName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
 const Guida = () => import(/* webpackChungName: "guida" */ './guida.vue')
+const Padova = () => import(/* webpackChungName: "padova" */ './citta/corsi-di-laurea-padova.vue')
+const Bari = () => import(/* webpackChungName: "bari" */ './citta/corsi-di-laurea-bari.vue')
+const Bologna = () => import(/* webpackChungName: "bologna" */ './citta/corsi-di-laurea-bologna.vue')
+const Firenze = () => import(/* webpackChungName: "firenze" */ './citta/corsi-di-laurea-firenze.vue')
+const Genova = () => import(/* webpackChungName: "genova" */ './citta/corsi-di-laurea-genova.vue')
+const Milano = () => import(/* webpackChungName: "Milano" */ './citta/corsi-di-laurea-milano.vue')
+const Napoli = () => import(/* webpackChungName: "napoli" */ './citta/corsi-di-laurea-napoli.vue')
+const Pavia = () => import(/* webpackChungName: "pavia" */ './citta/corsi-di-laurea-pavia.vue')
+const Pisa = () => import(/* webpackChungName: "pisa" */ './citta/corsi-di-laurea-pisa.vue')
+const Roma = () => import(/* webpackChungName: "roma" */ './citta/corsi-di-laurea-roma.vue')
+const Torino = () => import(/* webpackChungName: "torino" */ './citta/corsi-di-laurea-torino.vue')
+const Venezia = () => import(/* webpackChungName: "venezia" */ './citta/corsi-di-laurea-venezia.vue')
+const Verona = () => import(/* webpackChungName: "verona" */ './citta/corsi-di-laurea-verona.vue')
+const Citta = () => import(/* webpackChungName: "citta" */ './citta.vue')
+
 
 Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
@@ -419,6 +434,104 @@ const routes = [
   {
     path: '/guida', components: {
       default: Guida,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-padova', components: {
+      default: Padova,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-bari', components: {
+      default: Bari,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-bologna', components: {
+      default: Bologna,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-firenze', components: {
+      default: Firenze,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-genova', components: {
+      default: Genova,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-milano', components: {
+      default: Milano,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-napoli', components: {
+      default: Napoli,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-pavia', components: {
+      default: Pavia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-pisa', components: {
+      default: Pisa,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-roma', components: {
+      default: Roma,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-torino', components: {
+      default: Torino,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-venezia', components: {
+      default: Venezia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-verona', components: {
+      default: Verona,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/citta', components: {
+      default: Citta,
       header: Navbar,
       footer: Footer
     }

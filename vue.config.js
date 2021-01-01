@@ -52,20 +52,26 @@ module.exports = {
         '/corsi-di-laurea-psicologia',
         '/corsi-di-laurea-medicina',
         '/corsi-di-laurea-in-inglese',
-        '/guida'
+        '/guida',
+        '/citta',
+        '/corsi-di-laurea-bari',
+        '/corsi-di-laurea-bologna',
+        '/corsi-di-laurea-firenze',
+        '/corsi-di-laurea-genova',
+        '/corsi-di-laurea-milano',
+        '/corsi-di-laurea-napoli',
+        '/corsi-di-laurea-padova',
+        '/corsi-di-laurea-pavia',
+        '/corsi-di-laurea-pisa',
+        '/corsi-di-laurea-roma',
+        '/corsi-di-laurea-torino',
+        '/corsi-di-laurea-venezia',
+        '/corsi-di-laurea-verona'
       ],
       useRenderEvent: true,
       headless: true,
       onlyProduction: true,
-
-      postProcess: route => {
-        // Defer scripts and tell Vue it's been server rendered to trigger hydration
-        route.html = route.html
-          .replace(/<script (.*?)>/g, '<script $1 defer>')
-          .replace('id="app"', 'id="app" data-server-rendered="true"');
-        return route;
-      }
-
     }
   }
 }
+

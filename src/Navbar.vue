@@ -20,6 +20,11 @@
           ></b-nav-item
         >
         <b-nav-item
+          ><router-link to="/citta" class="nav-link active"
+            >Città</router-link
+          ></b-nav-item
+        >
+        <b-nav-item
           ><router-link to="/area-accademica" class="nav-link active"
             >Aree accademiche</router-link
           ></b-nav-item
@@ -79,7 +84,7 @@
             >Corsi in inglese</router-link
           ></b-nav-item
         >
-            <b-nav-item
+        <b-nav-item
           ><router-link to="/guida" class="nav-link active"
             >Guida</router-link
           ></b-nav-item

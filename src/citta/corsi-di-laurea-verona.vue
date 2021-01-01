@@ -1,7 +1,7 @@
 <template>
   <div class="container-md">
     <br />
-    <h1 class="text-secondary">Corsi di laurea {{uni}}</h1>
+    <h1 class="text-secondary">Corsi di laurea a {{uni}}</h1>
     <br />
     <div class="input-group mb-3">
       <div class="input-group-prepend">
@@ -44,7 +44,7 @@
           <td>
             <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
           </td>
-          <td>Corso di Laurea {{ row.t }} in Inglese</td>
+          <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
           <td>{{ row.u }} </td>
         </tr>
@@ -58,7 +58,7 @@
     <br />
     <p>
       Qui si possono trovare
-      <strong>tutti i corsi di laurea {{uni}}</strong>. I corsi in questione sono relativi
+      <strong>tutti i corsi di laurea a {{uni}}</strong>. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
@@ -77,30 +77,30 @@
 </template>
 
 <script>
-import corsi from "./corsi.json";
+import corsi from "../corsi.json";
 
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea in inglese",
+    title: "Corsi di laurea a Verona",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "In questo sito potrai trovare rapidamente tutti i corsi di laurea in inglese, tutti raggruppati su una comoda tabella.",
+          "In questo sito potrai trovare rapidamente tutti i corsi di laurea Verona, tutti raggruppati su una comoda tabella.",
       },
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea unip",
+          "Corsi di laurea, Corso di laurea, Corsi di laurea verona",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-in-inglese",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-verona",
       },
     ],
   },
@@ -111,14 +111,14 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
-      uni: "in inglese"
+      uni: "Verona"
     };
   },
   methods: {
     FiltraLista: function () {
       var array = [];
       for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].e == 1) {
+        if (corsi[x].s == "VERONA") {
           array.push(corsi[x]);
         }
       }
