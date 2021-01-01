@@ -26,7 +26,7 @@
         >
 
         <b-nav-item-dropdown
-          text="Corsi di laurea per livello"
+          text="Corsi per livello"
           right
           class="nav-link active"
         >
@@ -76,7 +76,7 @@
         </b-nav-item-dropdown>
         <b-nav-item
           ><router-link to="/corsi-di-laurea-in-inglese" class="nav-link active"
-            >Corsi di laurea in inglese</router-link
+            >Corsi in inglese</router-link
           ></b-nav-item
         >
             <b-nav-item
