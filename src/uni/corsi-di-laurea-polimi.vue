@@ -94,13 +94,13 @@ export default {
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea unip",
+          "Corsi di laurea, Corso di laurea, Corsi di laurea polimi",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-Polimi",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-polimi",
       },
     ],
   },

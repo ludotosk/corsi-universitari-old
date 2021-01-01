@@ -94,13 +94,13 @@ export default {
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea unip",
+          "Corsi di laurea, Corso di laurea, Corsi di laurea bicocca",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-Bicocca",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-bicocca",
       },
     ],
   },

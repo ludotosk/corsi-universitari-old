@@ -100,7 +100,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-UniRoma1",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-uniroma1",
       },
     ],
   },

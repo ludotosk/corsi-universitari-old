@@ -8,7 +8,7 @@
     "lint": "vue-cli-service lint",
     "build-report": "vue-cli-service build --report",
     "http-server": "http-server dist",
-    "launch-scraper": "node src/scraper2.js"
+    "launch-scraper": "node src/scraper-cdl.js"
   },
   "dependencies": {
     "axios": "^0.21.0",

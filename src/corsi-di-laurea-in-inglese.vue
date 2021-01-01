@@ -94,7 +94,7 @@ export default {
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea unip",
+          "Corsi di laurea, Corso di laurea, Corsi di laurea inglese",
       },
     ],
     link: [

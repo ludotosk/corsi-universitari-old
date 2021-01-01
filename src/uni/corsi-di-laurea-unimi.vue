@@ -100,7 +100,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-Unimi",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-unimi",
       },
     ],
   },
