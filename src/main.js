@@ -73,7 +73,7 @@ const Torino = () => import(/* webpackChungName: "torino" */ './citta/corsi-di-l
 const Venezia = () => import(/* webpackChungName: "venezia" */ './citta/corsi-di-laurea-venezia.vue')
 const Verona = () => import(/* webpackChungName: "verona" */ './citta/corsi-di-laurea-verona.vue')
 const Citta = () => import(/* webpackChungName: "citta" */ './citta.vue')
-
+const CorsiKore = () => import(/* webpackChungName: "kore" */ './uni/corsi-di-laurea-unikore.vue')
 
 Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
@@ -532,6 +532,13 @@ const routes = [
   {
     path: '/citta', components: {
       default: Citta,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unikore', components: {
+      default: CorsiKore,
       header: Navbar,
       footer: Footer
     }

@@ -66,7 +66,8 @@ module.exports = {
         '/corsi-di-laurea-roma',
         '/corsi-di-laurea-torino',
         '/corsi-di-laurea-venezia',
-        '/corsi-di-laurea-verona'
+        '/corsi-di-laurea-verona',
+        '/corsi-di-laurea-unikore'
       ],
       useRenderEvent: true,
       headless: true,

@@ -82,25 +82,25 @@ import corsi from "../corsi.json";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea Unipr",
+    title: "Corsi di laurea Unikore",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "In questo sito potrai trovare rapidamente tutti i corsi di laurea Unipr, tutti raggruppati su una comoda tabella.",
+          "In questo sito potrai trovare rapidamente tutti i corsi di laurea unikore, tutti raggruppati su una comoda tabella.",
       },
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea unipr",
+          "Corsi di laurea, Corso di laurea, Corsi di laurea unikore",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-Unipr",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-unikore",
       },
     ],
   },
@@ -111,18 +111,18 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
-      uni: "Unipr"
+      uni: "Unikore"
     };
   },
   methods: {
     FiltraLista: function () {
-      var triennale = [];
+      var array = [];
       for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].u == "Università degli Studi di PARMA") {
-          triennale.push(corsi[x]);
+        if (corsi[x].u == "UKE - Università Kore di ENNA") {
+          array.push(corsi[x]);
         }
       }
-      return triennale;
+      return array;
     },
   },
 };

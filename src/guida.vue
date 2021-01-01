@@ -27,7 +27,7 @@ export default {
       {
         name: "description",
         content:
-          "In questa pagina c'è il nostro video guida all'utilizzo del sito. Speriamo possa esserti d'aiuto nella ricerda del tuo corso di laurea.",
+          "In questa pagina c'è il nostro video guida all'utilizzo del sito. Speriamo possa esserti d'aiuto nella ricerca del tuo corso di laurea.",
       },
       {
         name: "keywords",

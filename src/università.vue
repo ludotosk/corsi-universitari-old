@@ -84,6 +84,11 @@
           >Corsi di laurea Unito</router-link
         >
       </li>
+       <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-unikore"
+          >Corsi di laurea Unikore</router-link
+        >
+      </li>
     </ul>
     <br />
   </div>
