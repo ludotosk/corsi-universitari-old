@@ -84,9 +84,59 @@
           >Corsi di laurea Unito</router-link
         >
       </li>
-       <li class="list-group-item">
+      <li class="list-group-item">
         <router-link class="nav-link active" to="/corsi-di-laurea-unikore"
           >Corsi di laurea Unikore</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-univda"
+          >Corsi di laurea Univda</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-bocconi"
+          >Corsi di laurea Bocconi</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-ecampus"
+          >Corsi di laurea Ecampus</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-federico-ii"
+          >Corsi di laurea Federico II</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-mercatorum"
+          >Corsi di laurea Mercatorum</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-roma-tre"
+          >Corsi di laurea Roma Tre</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-tor-vergata"
+          >Corsi di laurea Tor Vergata</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-unicusano"
+          >Corsi di laurea Unicusano</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-uninettuno"
+          >Corsi di laurea Uninettuno</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-unipegaso"
+          >Corsi di laurea Unipegaso</router-link
         >
       </li>
     </ul>
@@ -112,7 +162,12 @@ export default {
           "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
       },
     ],
-    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info/universita" }],
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.corsiuniversitari.info/universita",
+      },
+    ],
   },
 };
 </script>

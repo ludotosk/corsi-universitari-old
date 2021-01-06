@@ -343,11 +343,6 @@ async function laucnhScrape() {
         console.log('corsi > corsi.json');
     }); */
 
-    fs.writeFile('./src/universita.json', JSON.stringify(listaUni), function (err) {
-        if (err) return console.log(err);
-        console.log('università > universita.json');
-    });     
-
     console.log('numero corsi post pulizia');
     console.log(corsi.length);
 

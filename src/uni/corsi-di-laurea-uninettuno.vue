@@ -37,7 +37,7 @@
         <th>Corso di laurea</th>
         <v-th sortKey="t" defaultSort="asc">Livello</v-th>
         <v-th sortKey="a" defaultSort="asc">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc">Università</v-th>
+        <th>Università</th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }">
         <tr v-for="row in displayData" :key="row.guid">
@@ -46,7 +46,7 @@
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
-          <td>{{ row.u }}</td>
+          <td>{{uni}} </td>
         </tr>
       </tbody>
     </v-table>
@@ -82,25 +82,25 @@ import corsi from "../corsi.json";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Cdl scienze della formazione primaria",
+    title: "Corsi di laurea Uninettuno",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "In questo sito potrai trovare rapidamente tutti i corsi di laurea di scienze della formazione primaria, tutti raggruppati su una comoda tabella.",
+          "In questo sito potrai trovare rapidamente tutti i corsi di laurea uninettuno, tutti raggruppati su una comoda tabella.",
       },
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea scienze della formazione primaria",
+          "Corsi di laurea, Corso di laurea, Corsi di laurea uninettuno",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-scienze-della-formazione-primaria",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-uninettuno",
       },
     ],
   },
@@ -111,14 +111,14 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
-      uni: "scienze della formazione primaria"
+      uni: "Uninettuno"
     };
   },
   methods: {
     FiltraLista: function () {
       var array = [];
       for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].c == "LM-85 bis") {
+        if (corsi[x].u == "Università Telematica Internazionale UNINETTUNO") {
           array.push(corsi[x]);
         }
       }

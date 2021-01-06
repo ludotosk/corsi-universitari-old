@@ -21,7 +21,7 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Come scegliere un corso di laurea? Ecco il nostro sito!",
+    title: "Guida al sito",
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {

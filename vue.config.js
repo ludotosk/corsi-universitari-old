@@ -67,7 +67,17 @@ module.exports = {
         '/corsi-di-laurea-torino',
         '/corsi-di-laurea-venezia',
         '/corsi-di-laurea-verona',
-        '/corsi-di-laurea-unikore'
+        '/corsi-di-laurea-unikore',
+        '/corsi-di-laurea-univda',
+        '/corsi-di-laurea-unipegaso',
+        '/corsi-di-laurea-unicusano',
+        '/corsi-di-laurea-ecampus',
+        '/corsi-di-laurea-mercatorum',
+        '/corsi-di-laurea-bocconi',
+        '/corsi-di-laurea-roma-tre',
+        '/corsi-di-laurea-tor-vergata',
+        '/corsi-di-laurea-uninettuno',
+        '/corsi-di-laurea-federico-ii'
       ],
       useRenderEvent: true,
       headless: true,
