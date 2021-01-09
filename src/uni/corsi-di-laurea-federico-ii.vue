@@ -120,7 +120,7 @@ export default {
   async created() {
     try {
       const res = await axios.get(
-        'https://json-server-corsi.herokuapp.com/corsi?u=Università degli Studi di NAPOLI \"Federico II\"'
+        'https://json-server-corsi.herokuapp.com/corsi?u=Università degli Studi di NAPOLI "Federico II"'
       );
 
       this.corsi = res.data;

@@ -102,9 +102,9 @@ module.exports = {
       config.plugins.push(...productionPlugins);
     }
   },
-};
-
-/* module.exports = {
+}; 
+/* 
+module.exports = {
   pluginOptions: {
     prerenderSpa: {
       registry: undefined,
@@ -185,11 +185,15 @@ module.exports = {
         '/corsi-di-laurea-uninettuno',
         '/corsi-di-laurea-federico-ii'
       ],
+      //headless: true,
+      //onlyProduction: true,
       //useRenderEvent: true,
-      headless: true,
-      onlyProduction: true,
-      //renderAfterTime: 5000
+      customRenderConfig: {
+        inject: {},
+        renderAfterElementExists: '[data-view]',
+      }
     }
   }
 }
+
  */
