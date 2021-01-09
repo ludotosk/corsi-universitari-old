@@ -28,7 +28,7 @@
         <v-th sortKey="a" defaultSort="asc">Test</v-th>
         <v-th sortKey="u" defaultSort="asc">Università</v-th>
       </thead>
-      <tbody slot="body" slot-scope="{ displayData }">
+      <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
             <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
@@ -48,13 +48,14 @@
 </template>
 
 <script>
-import corsi from "./corsi.json";
+//import corsi from "./corsi.json";
+import axios from "axios";
 
 export default {
   name: "home",
   data() {
     return {
-      corsi,
+      corsi: [],
       filters: {
         n: { value: "", keys: ["n"] },
       },
@@ -62,6 +63,15 @@ export default {
       totalPages: 0,
     };
   },
+  async created(){
+    try {
+      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi');
+
+      this.corsi = res.data;
+    } catch (e) {
+      console.log(e);
+    }
+  } 
 };
 </script>
 

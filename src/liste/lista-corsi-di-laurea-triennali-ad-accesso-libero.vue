@@ -27,8 +27,8 @@
         <th>Corso di laurea</th>
         <th>Università</th>
       </thead>
-      <tbody v-for="corso in FiltraLista()" :key="corso.n">
-        <tr>
+      <tbody v-for="corso in corsi" :key="corso.n">
+        <tr data-view>
           <td>{{ corso.n }}</td>
           <td>{{ corso.u }}</td>
         </tr>
@@ -40,7 +40,8 @@
 </template>
 
 <script>
-import corsi from "../corsi.json";
+//import corsi from "../corsi.json";
+import axios from "axios";
 
 export default {
   metaInfo: {
@@ -67,7 +68,23 @@ export default {
       },
     ],
   },
-  methods: {
+   data() {
+    return{
+      corsi: []
+    }
+  },
+  async created() {
+    try {
+      const res = await axios.get(
+        "https://json-server-corsi.herokuapp.com/corsi?t=Triennale&a=No"
+      );
+
+      this.corsi = res.data;
+    } catch (e) {
+      console.log(e);
+    }
+  },
+/*   methods: {
     FiltraLista: function () {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
@@ -77,6 +94,6 @@ export default {
       }
       return triennale;
     },
-  },
+  }, */
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="container-md">
+  <div class="container-md" data-view>
     <br />
     <h1 class="text-secondary">Corsi di laurea divisi per area accademica</h1>
     <hr />
@@ -40,7 +40,9 @@
         >
       </li>
       <li class="list-group-item">
-        <router-link class="nav-link active" to="/corsi-di-laurea-infermieristica"
+        <router-link
+          class="nav-link active"
+          to="/corsi-di-laurea-infermieristica"
           >Corsi di laurea infermieristica</router-link
         >
       </li>
@@ -70,18 +72,34 @@
         >
       </li>
       <li class="list-group-item">
-        <router-link class="nav-link active" to="/corsi-di-laurea-scienze-della-formazione-primaria"
+        <router-link
+          class="nav-link active"
+          to="/corsi-di-laurea-scienze-della-formazione-primaria"
           >Corsi di laurea scienze della formazione primaria</router-link
         >
       </li>
       <li class="list-group-item">
-        <router-link class="nav-link active" to="/corsi-di-laurea-scienze-motorie"
+        <router-link
+          class="nav-link active"
+          to="/corsi-di-laurea-scienze-motorie"
           >Corsi di laurea scienze motorie</router-link
         >
       </li>
       <li class="list-group-item">
         <router-link class="nav-link active" to="/corsi-di-laurea-storia"
           >Corsi di laurea storia</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link
+          class="nav-link active"
+          to="/corsi-di-laurea-giurisprudenza"
+          >Corsi di laurea giurisprudenza</router-link
+        >
+      </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-lettere"
+          >Corsi di laurea lettere</router-link
         >
       </li>
     </ul>
@@ -107,7 +125,12 @@ export default {
           "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
       },
     ],
-    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info/area-accademica" }],
+    link: [
+      {
+        rel: "canonical",
+        href: "https://www.corsiuniversitari.info/area-accademica",
+      },
+    ],
   },
 };
 </script>

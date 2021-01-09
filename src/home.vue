@@ -1,5 +1,5 @@
 <template>
-  <div class="text-justify">
+  <div class="text-justify" data-view>
     <br />
     <div class="container-md">
       <h1 class="text-center">Come scegliere un corso di laurea?</h1>

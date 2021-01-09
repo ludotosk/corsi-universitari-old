@@ -9,8 +9,12 @@
     <hr />
     <p>
       <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
-      corsi di laurea magistrali, per avere il <strong>link alla pagina del corso</strong> e la <strong>funzione di filtro</strong> 
-      <router-link to="/corsi-di-laurea-magistrale"> visita questa pagina</router-link>.
+      corsi di laurea magistrali, per avere il
+      <strong>link alla pagina del corso</strong> e la
+      <strong>funzione di filtro</strong>
+      <router-link to="/corsi-di-laurea-magistrale">
+        visita questa pagina</router-link
+      >.
     </p>
     <p>
       Qui si possono trovare oltre
@@ -23,8 +27,8 @@
         <th>Corso di laurea</th>
         <th>Università</th>
       </thead>
-      <tbody v-for="corso in FiltraLista()" :key="corso.n">
-        <tr>
+      <tbody v-for="corso in corsi" :key="corso.n">
+        <tr data-view>
           <td>{{ corso.n }}</td>
           <td>{{ corso.u }}</td>
         </tr>
@@ -36,7 +40,8 @@
 </template>
 
 <script>
-import corsi from "../corsi.json";
+//import corsi from "../corsi.json";
+import axios from "axios";
 
 export default {
   metaInfo: {
@@ -63,7 +68,23 @@ export default {
       },
     ],
   },
-  methods: {
+  data() {
+    return{
+      corsi: []
+    }
+  },
+  async created() {
+    try {
+      const res = await axios.get(
+        "https://json-server-corsi.herokuapp.com/corsi?t=Magistrale"
+      );
+
+      this.corsi = res.data;
+    } catch (e) {
+      console.log(e);
+    }
+  },
+  /*  methods: {
     FiltraLista: function () {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {
@@ -73,6 +94,6 @@ export default {
       }
       return triennale;
     },
-  },
+  }, */
 };
 </script>

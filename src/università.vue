@@ -1,5 +1,5 @@
 <template>
-  <div class="container-md">
+  <div class="container-md" data-view>
     <br />
     <h1 class="text-secondary">Corsi di laurea divisi per ateneo</h1>
     <hr />

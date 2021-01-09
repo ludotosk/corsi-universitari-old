@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container" data-view>
     <br />
     <h1>Informativa sui cookie</h1>
     <h2>Cosa sono i cookie?</h2>

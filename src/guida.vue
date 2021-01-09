@@ -1,5 +1,5 @@
 <template>
-  <div class="container-md">
+  <div class="container-md" data-view>
     <br />
     <h1 class="text-secondary">Guida all'utilizzo del sito</h1>
     <h2 class="text-secondary">

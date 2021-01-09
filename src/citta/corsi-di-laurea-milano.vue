@@ -26,7 +26,7 @@
       tabella
     </p>
     <v-table
-      :data="FiltraLista()"
+      :data="corsi"
       :filters="filters"
       :pageSize="15"
       @totalPagesChanged="totalPages = $event"
@@ -39,7 +39,7 @@
         <v-th sortKey="a" defaultSort="asc">Test</v-th>
         <v-th sortKey="u" defaultSort="asc">Università</v-th>
       </thead>
-      <tbody slot="body" slot-scope="{ displayData }">
+      <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
             <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
@@ -77,7 +77,8 @@
 </template>
 
 <script>
-import corsi from "../corsi.json";
+//import corsi from "../corsi.json";
+import axios from "axios";
 
 export default {
   metaInfo: {
@@ -111,10 +112,20 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
-      uni: "Milano"
+      uni: "Milano",
+      corsi: []
     };
   },
-  methods: {
+   async created(){
+    try {
+      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi?s=MILANO');
+
+      this.corsi = res.data;
+    } catch (e) {
+      console.log(e);
+    }
+  } 
+ /*  methods: {
     FiltraLista: function () {
       var array = [];
       for (var x = 0; x < corsi.length; x++) {
@@ -124,6 +135,6 @@ export default {
       }
       return array;
     },
-  },
+  }, */
 };
 </script>
