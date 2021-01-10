@@ -35,9 +35,9 @@
     >
       <thead slot="head" class="thead-dark">
         <th>Corso di laurea</th>
-        <th>Livello</th>
-        <th>Test</th>
-        <th>Università</th>
+        <v-th sortKey="t" defaultSort="asc">Livello</v-th>
+        <v-th sortKey="a" defaultSort="asc">Test</v-th>
+        <v-th sortKey="u" defaultSort="asc">Università</v-th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
@@ -120,14 +120,16 @@ export default {
       totalPages: 0,
     };
   },
-  async created(){
+  async created() {
     try {
-      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi');
+      const res = await axios.get(
+        "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
+      );
 
       this.corsi = res.data;
     } catch (e) {
       console.log(e);
     }
-  } 
+  },
 };
 </script>

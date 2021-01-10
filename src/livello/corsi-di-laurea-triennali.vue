@@ -35,7 +35,7 @@
     >
       <thead slot="head" class="thead-dark">
         <th>Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc">Livello</v-th>
+        <th>Livello</th>
         <v-th sortKey="a" defaultSort="asc">Test</v-th>
         <v-th sortKey="u" defaultSort="asc">Università</v-th>
       </thead>

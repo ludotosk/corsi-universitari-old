@@ -118,7 +118,7 @@ export default {
   },
   async created(){
     try {
-      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi?e=1');
+      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc');
 
       this.corsi = res.data;
     } catch (e) {
