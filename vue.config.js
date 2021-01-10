@@ -91,6 +91,8 @@ const productionPlugins = [
       // so we create a snapshot of the page after the
       // `data-view` attribute exists in the DOM.
       renderAfterElementExists: '[data-view]',
+      headless: false,
+      maxConcurrentRoutes: 4
     }),
   }),
 ];
@@ -188,10 +190,6 @@ module.exports = {
       //headless: true,
       //onlyProduction: true,
       //useRenderEvent: true,
-      customRenderConfig: {
-        inject: {},
-        renderAfterElementExists: '[data-view]',
-      }
     }
   }
 }
