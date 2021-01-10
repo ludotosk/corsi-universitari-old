@@ -90,9 +90,10 @@ const productionPlugins = [
       // request has fetched all the necessary data,
       // so we create a snapshot of the page after the
       // `data-view` attribute exists in the DOM.
-      renderAfterElementExists: '[data-view]',
+      //renderAfterElementExists: '[data-view]',
+      renderAfterTime: 2000, 
       headless: true,
-      maxConcurrentRoutes: 4
+      maxConcurrentRoutes: 32
     }),
   }),
 ];
