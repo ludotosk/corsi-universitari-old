@@ -35,9 +35,9 @@
     >
       <thead slot="head" class="thead-dark">
         <th>Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc">Livello</v-th>
-        <v-th sortKey="a" defaultSort="asc">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc">Università</v-th>
+        <th>Livello</th>
+        <th>Test</th>
+        <th>Università</th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">

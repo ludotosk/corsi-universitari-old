@@ -2,7 +2,6 @@ User-agent: *
 Allow: /
 Disallow: /App
 Disallow: /tabella
-Disallow: /cookie-policy
 
 Sitemap: http://www.corsiuniversitari.info/sitemap.xml
 
