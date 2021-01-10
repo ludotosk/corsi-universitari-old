@@ -91,7 +91,7 @@ const productionPlugins = [
       // so we create a snapshot of the page after the
       // `data-view` attribute exists in the DOM.
       renderAfterElementExists: '[data-view]',
-      headless: false,
+      headless: true,
       maxConcurrentRoutes: 4
     }),
   }),
