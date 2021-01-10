@@ -92,7 +92,7 @@ const productionPlugins = [
       // `data-view` attribute exists in the DOM.
       renderAfterElementExists: '[data-view]',
       headless: true,
-      maxConcurrentRoutes: 8
+      maxConcurrentRoutes: 32
     }),
   }),
 ];

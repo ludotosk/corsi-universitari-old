@@ -117,7 +117,7 @@ export default {
    async created() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/corsi?t=Triennale&a=No",
+        "https://json-server-corsi.herokuapp.com/corsi?t=Triennale&a=No&_sort=u&_order=asc",
       );
 
       this.corsi = res.data;
