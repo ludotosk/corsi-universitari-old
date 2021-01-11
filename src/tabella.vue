@@ -48,14 +48,14 @@
 </template>
 
 <script>
-import corsi from "./corsi.json";
-//import axios from "axios";
+//import corsi from "./corsi.json";
+import axios from "axios";
 
 export default {
   name: "home",
   data() {
     return {
-      corsi,
+      corsi: [],
       filters: {
         n: { value: "", keys: ["n"] },
       },
@@ -63,16 +63,18 @@ export default {
       totalPages: 0,
     };
   },
-/*   async created(){
+  async created() {
     try {
-      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi');
+      const res = await axios.get(
+        "https://json-server-corsi.herokuapp.com/corsi"
+      );
 
       this.corsi = res.data;
     } catch (e) {
       console.log(e);
     }
-  }*/ 
-}; 
+  },
+};
 </script>
 
 <style scoped>
