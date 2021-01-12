@@ -1,7 +1,7 @@
 <template>
   <div class="container-md">
     <br />
-    <h1 class="text-secondary">Corsi di laurea {{uni}}</h1>
+    <h1 class="text-secondary">Corsi di laurea {{ uni }}</h1>
     <br />
     <div class="input-group mb-3">
       <div class="input-group-prepend">
@@ -58,7 +58,8 @@
     <br />
     <p>
       Qui si possono trovare
-      <strong>tutti i corsi di laurea {{uni}}</strong>. I corsi in questione sono relativi
+      <strong>tutti i corsi di laurea {{ uni }}</strong
+      >. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
@@ -101,7 +102,13 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-scienze-motorie",
+        href:
+          "https://www.corsiuniversitari.info/corsi-di-laurea-scienze-motorie",
+      },
+      {
+        rel: "preload",
+        href: "https://json-server-corsi.herokuapp.com/corsi?c=L-22&c=LM-67",
+        as: "fetch",
       },
     ],
   },
@@ -113,19 +120,21 @@ export default {
       currentPage: 1,
       totalPages: 0,
       uni: "scienze motorie",
-      corsi: []
+      corsi: [],
     };
   },
-    async created(){
+  async created() {
     try {
-      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi?c=L-22&c=LM-67');
+      const res = await axios.get(
+        "https://json-server-corsi.herokuapp.com/corsi?c=L-22&c=LM-67"
+      );
 
       this.corsi = res.data;
     } catch (e) {
       console.log(e);
     }
-  } 
-/*   methods: {
+  },
+  /*   methods: {
     FiltraLista: function () {
       var array = [];
       for (var x = 0; x < corsi.length; x++) {

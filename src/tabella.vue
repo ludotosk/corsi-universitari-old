@@ -63,6 +63,16 @@ export default {
       totalPages: 0,
     };
   },
+  metaInfo: {
+    link: [
+      {
+        rel: "preload",
+        href:
+          "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc",
+        as: "fetch",
+      },
+    ],
+  },
   async created() {
     try {
       const res = await axios.get(

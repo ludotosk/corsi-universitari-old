@@ -104,6 +104,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-informatica",
       },
+      {
+        rel: "preload",
+        href:
+          "https://json-server-corsi.herokuapp.com/corsi?c=L-31&c=LM-18&c=LM-32&c=LM-43&c=LM-66",
+        as: "fetch",
+      },
     ],
   },
   data() {
