@@ -109,9 +109,8 @@ export default {
         href: "https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea",
       },
       {
-        rel: "preload",
+        rel: "prefetch",
         href: "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc",
-        as: "fetch"
       }
     ],
   },

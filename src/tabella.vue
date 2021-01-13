@@ -48,14 +48,14 @@
 </template>
 
 <script>
-//import corsi from "./corsi.json";
-import axios from "axios";
+import corsi from "./corsi.json";
+//import axios from "axios";
 
 export default {
   name: "home",
   data() {
     return {
-      corsi: [],
+      corsi,
       filters: {
         n: { value: "", keys: ["n"] },
       },
@@ -63,7 +63,7 @@ export default {
       totalPages: 0,
     };
   },
-  metaInfo: {
+ /*  metaInfo: {
     link: [
       {
         rel: "preload",
@@ -83,7 +83,7 @@ export default {
     } catch (e) {
       console.log(e);
     }
-  },
+  }, */
 };
 </script>
 
