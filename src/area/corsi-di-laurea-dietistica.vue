@@ -122,7 +122,7 @@ export default {
       corsi: [],
     };
   },
-  async created() {
+  async beforeCreate() {
     try {
       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT3&n=Dietistica (abilitante alla professione sanitaria di Dietista)"

@@ -124,7 +124,7 @@ export default {
       corsi: [],
     };
   },
-  async created() {
+  async beforeCreate() {
     try {
       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT1&n=Infermieristica (abilitante alla professione sanitaria di Infermiere)"

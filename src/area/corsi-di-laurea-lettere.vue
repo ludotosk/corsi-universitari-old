@@ -122,7 +122,7 @@ export default {
       corsi: [],
     };
   },
-  async created() {
+  async beforeCreate() {
     try {
       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?L-10&c=LM-15&LM-36&LM-37"

@@ -73,7 +73,7 @@ export default {
       corsi: []
     }
   },
-  async created() {
+  async beforeCreate() {
     try {
       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?t=Magistrale"
