@@ -108,10 +108,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea",
       },
- /*      {
-        rel: "prefetch",
-        href: "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc",
-      } */
+      {
+        rel: "preload",
+        href:
+          "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc",
+        as: "fetch",
+      },
     ],
   },
   data() {
@@ -124,8 +126,13 @@ export default {
       totalPages: 0,
     };
   },
-  async beforeCreate() {
-    try {
+  async created() {
+    const response = await fetch(
+      "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
+    );
+    const data = await response.json()
+    this.corsi = data
+    /*   try {
       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
       );
@@ -133,7 +140,7 @@ export default {
       this.corsi = res.data;
     } catch (e) {
       console.log(e);
-    }
+    } */
   },
 };
 </script>
