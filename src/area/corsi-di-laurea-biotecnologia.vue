@@ -105,11 +105,11 @@ export default {
         href:
           "https://www.corsiuniversitari.info/corsi-di-laurea-biotecnologia",
       },
-      {
+    /*   {
         rel: "preload",
         href: "https://json-server-corsi.herokuapp.com/corsi?c=L-02&c=LM-7&c=LM-8&c=LM-9",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

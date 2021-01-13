@@ -104,12 +104,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-fisioterapia",
       },
-      {
+ /*      {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT2&n=Fisioterapia (abilitante alla professione sanitaria di Fisioterapista)",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

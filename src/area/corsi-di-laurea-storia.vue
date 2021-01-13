@@ -103,12 +103,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-storia",
       },
-      {
+  /*     {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?c=L-42&c=LM-89&c=LM-15",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

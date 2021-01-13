@@ -105,12 +105,12 @@ export default {
         href:
           "https://www.corsiuniversitari.info/corsi-di-laurea-infermieristica",
       },
-      {
+     /*  {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT1&n=Infermieristica (abilitante alla professione sanitaria di Infermiere)",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

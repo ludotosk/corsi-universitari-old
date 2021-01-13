@@ -103,12 +103,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-dietistica",
       },
-      {
+   /*    {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT3&n=Dietistica (abilitante alla professione sanitaria di Dietista)",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

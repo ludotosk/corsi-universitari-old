@@ -103,11 +103,11 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-psicologia",
       },
-      {
+     /*  {
         rel: "preload",
         href: "https://json-server-corsi.herokuapp.com/corsi?c=L-24&LM-51",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

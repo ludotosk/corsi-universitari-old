@@ -103,12 +103,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-matematica",
       },
-      {
+     /*  {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?c=L-31&LM-40&c=LM-44",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

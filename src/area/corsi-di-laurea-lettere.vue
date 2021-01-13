@@ -103,12 +103,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-lettere",
       },
-      {
+   /*    {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?L-10&c=LM-15&LM-36&LM-37",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

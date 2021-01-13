@@ -103,11 +103,11 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-farmacia",
       },
-      {
+  /*     {
         rel: "preload",
         href: "https://json-server-corsi.herokuapp.com/corsi?c=LM-13",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

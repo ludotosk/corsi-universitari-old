@@ -103,12 +103,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-in-inglese",
       },
-      {
+/*       {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

@@ -103,11 +103,11 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-biologia",
       },
-      {
+   /*    {
         rel: "preload",
         href: "https://json-server-corsi.herokuapp.com/corsi?c=L-13&c=LM-6",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

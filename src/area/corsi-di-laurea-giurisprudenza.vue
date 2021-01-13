@@ -105,12 +105,12 @@ export default {
         href:
           "https://www.corsiuniversitari.info/corsi-di-laurea-giurisprudenza",
       },
-      {
+    /*   {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?c=L-14&c=LMG-01&c=LM/SC-GIUR",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

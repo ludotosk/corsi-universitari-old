@@ -103,12 +103,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-fisica",
       },
-      {
+   /*    {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?c=L-30&c=LM-17&c=LM-44&c=LM-79",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

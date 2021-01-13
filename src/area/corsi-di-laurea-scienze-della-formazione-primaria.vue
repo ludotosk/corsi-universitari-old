@@ -105,11 +105,11 @@ export default {
         href:
           "https://www.corsiuniversitari.info/corsi-di-laurea-scienze-della-formazione-primaria",
       },
-      {
+    /*   {
         rel: "preload",
         href: "https://json-server-corsi.herokuapp.com/corsi?c=LM-85 bis",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

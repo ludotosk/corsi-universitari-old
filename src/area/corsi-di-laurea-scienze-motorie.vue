@@ -105,11 +105,11 @@ export default {
         href:
           "https://www.corsiuniversitari.info/corsi-di-laurea-scienze-motorie",
       },
-      {
+   /*    {
         rel: "preload",
         href: "https://json-server-corsi.herokuapp.com/corsi?c=L-22&c=LM-67",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {

@@ -103,12 +103,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-logopedia",
       },
-      {
+    /*   {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT2&n=Logopedia (abilitante alla professione sanitaria di Logopedista)",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {
