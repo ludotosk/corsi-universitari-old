@@ -12,7 +12,7 @@ Vue.use(SmartTable)
 Vue.use(VueMeta)
 Vue.use(VueGtag, {
   config: { id: "G-WSK0D83FEJ" },
-});
+}, router);
 
 new Vue({
   el: '#app',

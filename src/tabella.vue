@@ -48,14 +48,14 @@
 </template>
 
 <script>
-import corsi from "./corsi.json";
-//import axios from "axios";
+//import corsi from "./corsi.json";
+import axios from "axios";
 
 export default {
   name: "home",
   data() {
     return {
-      corsi,
+      corsi: [],
       filters: {
         n: { value: "", keys: ["n"] },
       },
@@ -72,7 +72,7 @@ export default {
         as: "fetch",
       },
     ],
-  },
+  }, */
   async beforeCreate() {
     try {
       const res = await axios.get(
@@ -83,7 +83,7 @@ export default {
     } catch (e) {
       console.log(e);
     }
-  }, */
+  }, 
 };
 </script>
 
