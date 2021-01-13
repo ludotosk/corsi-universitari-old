@@ -83,7 +83,7 @@
 </template>
 
 <script>
-import axios from "axios";
+//import axios from "axios";
 
 export default {
   metaInfo: {
@@ -108,12 +108,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea",
       },
-      {
+  /*     {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc",
         as: "fetch",
-      },
+      }, */
     ],
   },
   data() {
