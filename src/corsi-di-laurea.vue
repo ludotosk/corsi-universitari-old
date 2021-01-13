@@ -126,7 +126,7 @@ export default {
       totalPages: 0,
     };
   },
-  async created() {
+  async beforeCreate() {
     const response = await fetch(
       "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
     );
