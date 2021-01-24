@@ -106,7 +106,7 @@ module.exports = {
     }
   },
   pwa: {
-    themeColors: '#343a40',
+    themeColor: '#343a40',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
     workboxOptions: {
