@@ -106,6 +106,9 @@ module.exports = {
     }
   },
   pwa: {
+    themeColors: '#343a40',
+    appleMobileWebAppCapable: 'yes',
+    appleMobileWebAppStatusBarStyle: 'black',
     workboxOptions: {
       cacheId: 'https://json-server-corsi.herokuapp.com/'
     }
