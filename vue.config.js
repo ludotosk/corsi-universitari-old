@@ -105,6 +105,11 @@ module.exports = {
       config.plugins.push(...productionPlugins);
     }
   },
+  pwa: {
+    workboxOptions: {
+      cacheId: 'https://json-server-corsi.herokuapp.com/'
+    }
+  }
 }; 
 
 
