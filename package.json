@@ -1,5 +1,5 @@
 {
-  "name": "uniscraper",
+  "name": "corsiuniversitari.info",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -16,6 +16,7 @@
     "bootstrap-vue": "^2.21.1",
     "popper.js": "^1.16.1",
     "readline": "^1.3.0",
+    "register-service-worker": "^1.7.1",
     "underscore": "^1.12.0",
     "vue": "^2.6.11",
     "vue-gtag": "^1.10.0",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-pwa": "^4.5.11",
     "@vue/cli-service": "~4.5.0",
     "babel-eslint": "^10.1.0",
     "core-js": "^3.8.2",
