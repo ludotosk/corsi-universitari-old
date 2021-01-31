@@ -31,7 +31,7 @@
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-            <a :href="row.h" target="_blank" rel="noopener">{{ row.n }}</a>
+           <a :href="row.h" target="_blank" rel="noopener" class="text-danger">{{ row.n }}</a>
           </td>
           <td>{{ row.t }}</td>
           <td>{{ row.a }}</td>
