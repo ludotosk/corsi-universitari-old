@@ -14,7 +14,7 @@
       corsi di laurea triennali ad accesso libero, per avere il
       <strong>link alla pagina del corso</strong> e la
       <strong>funzione di filtro</strong>
-      <router-link to="/corsi-di-laurea-triennali-ad-accesso-libero"> visita questa pagina</router-link>.
+      <router-link to="/corsi-di-laurea-triennali-ad-accesso-libero" class="text-danger"> visita questa pagina</router-link>.
     </p>
     <p>
       Qui si possono trovare

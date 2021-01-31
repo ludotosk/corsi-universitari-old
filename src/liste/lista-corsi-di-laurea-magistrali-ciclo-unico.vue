@@ -15,7 +15,7 @@
       corsi di laurea magistrali a ciclo unico, per avere il
       <strong>link alla pagina del corso</strong> e la
       <strong>funzione di filtro</strong>
-      <router-link to="/corsi-di-laurea-magistrale-a-ciclo-unico">
+      <router-link to="/corsi-di-laurea-magistrale-a-ciclo-unico" class="text-danger">
         visita questa pagina</router-link
       >.
     </p>

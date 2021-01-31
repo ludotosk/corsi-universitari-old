@@ -12,7 +12,7 @@
       corsi di laurea magistrali, per avere il
       <strong>link alla pagina del corso</strong> e la
       <strong>funzione di filtro</strong>
-      <router-link to="/corsi-di-laurea-magistrale">
+      <router-link to="/corsi-di-laurea-magistrale" class="text-danger">
         visita questa pagina</router-link
       >.
     </p>

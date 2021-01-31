@@ -19,14 +19,14 @@
       <p>
         Prima di partire però ti avviso che su questo sito è presente uno
         <strong>
-          <router-link to="/tutti-i-corsi-di-laurea">strumento</router-link> per
+          <router-link to="/tutti-i-corsi-di-laurea" class="text-danger">strumento</router-link> per
           cercare corsi di laurea</strong
         >.
         <mark
           >Strumento che contiene tutti i corsi di laurea italiani e permette di
           effettuare una rapida ricerca tramite i nomi dei corsi.</mark
         >
-        Per capire come funziona <router-link to="/guida">qui c'è la mia guida</router-link>.
+        Per capire come funziona <router-link to="/guida" class="text-danger">qui c'è la mia guida</router-link>.
       </p>
       <br />
     </div>
