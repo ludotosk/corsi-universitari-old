@@ -3,11 +3,12 @@ import App from './App.vue'
 import SmartTable from 'vuejs-smart-table'
 import VueMeta from 'vue-meta'
 import VueGtag from "vue-gtag"
-import '../scss/style.scss'
+import './scss/style.scss'
 import router from './router'
 import { NavbarPlugin } from 'bootstrap-vue'
 import './registerServiceWorker'
 
+Vue.config.performance = true
 Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
 Vue.use(VueMeta)

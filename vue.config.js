@@ -91,7 +91,7 @@ const productionPlugins = [
       // so we create a snapshot of the page after the
       // `data-view` attribute exists in the DOM.
       //renderAfterElementExists: '[data-view]',
-      renderAfterTime: 2000, 
+      renderAfterTime: 2000,
       headless: true,
       maxConcurrentRoutes: 32
     }),
@@ -112,12 +112,12 @@ module.exports = {
     workboxOptions: {
       cacheId: 'https://json-server-corsi.herokuapp.com/'
     }
-  }
-}; 
+  },
+};
 
 
 
-/* 
+/*
 module.exports = {
   pluginOptions: {
     prerenderSpa: {
