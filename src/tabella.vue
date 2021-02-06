@@ -31,7 +31,13 @@
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-           <a :href="row.h" target="_blank" rel="noopener" class="text-danger">{{ row.n }}</a>
+            <a
+              :href="row.h"
+              target="_blank"
+              rel="noopener"
+              class="text-danger"
+              >{{ row.n }}</a
+            >
           </td>
           <td>{{ row.t }}</td>
           <td>{{ row.a }}</td>
@@ -44,7 +50,13 @@
       :totalPages="totalPages"
       :maxPageLinks="4"
     />
-    <a href="https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea" class="text-danger" target="_blank" id="linkalsito">corsiuniversitari.info</a>
+    <a
+      href="https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea"
+      class="text-danger"
+      target="_blank"
+      id="linkalsito"
+      >corsiuniversitari.info</a
+    >
   </div>
 </template>
 
@@ -64,7 +76,7 @@ export default {
       totalPages: 0,
     };
   },
- /*  metaInfo: {
+  /*  metaInfo: {
     link: [
       {
         rel: "preload",
@@ -84,22 +96,26 @@ export default {
     } catch (e) {
       console.log(e);
     }
-  }, 
+  },
 };
 </script>
 
 <style scoped>
-a,
-tr {
-  font-size: 0.75rem;
+#linkalsito {
+  display: block;
 }
-table,
-body {
-  margin: none;
-  padding: none;
-}
-#linkalsito {display: block;}
 @media screen and (max-width: 768px) {
-  #linkalsito {display:none;}
+  #linkalsito {
+    display: none;
+  }
+  a,
+  tr {
+    font-size: 0.75rem;
+  }
+  table,
+  body {
+    margin: none;
+    padding: none;
+  }
 }
 </style>
