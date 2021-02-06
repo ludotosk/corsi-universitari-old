@@ -13,7 +13,7 @@ Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
 Vue.use(VueMeta)
 Vue.use(VueGtag, {
-  config: { id: "G-WSK0D83FEJ" },
+  config: { id: process.env.ID },
 }, router);
 
 new Vue({
