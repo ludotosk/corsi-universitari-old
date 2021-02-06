@@ -44,7 +44,7 @@
       :totalPages="totalPages"
       :maxPageLinks="4"
     />
-    <a href="https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea" class="text-danger" target="_blank">corsiuniversitari.info</a>
+    <a href="https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea" class="text-danger" target="_blank" id="linkalsito">corsiuniversitari.info</a>
   </div>
 </template>
 
@@ -97,5 +97,9 @@ table,
 body {
   margin: none;
   padding: none;
+}
+#linkalsito {display: block;}
+@media screen and (max-width: 768px) {
+  #linkalsito {display:none;}
 }
 </style>
