@@ -44,7 +44,7 @@
       :totalPages="totalPages"
       :maxPageLinks="4"
     />
-    <a href="https://www.corsiuniversitari.info/" class="text-danger">corsiuniversitari.info</a>
+    <a href="https://www.corsiuniversitari.info/" class="text-danger" target="_blank">corsiuniversitari.info</a>
   </div>
 </template>
 
