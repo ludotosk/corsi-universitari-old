@@ -42,7 +42,13 @@
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-            <a :href="row.h" target="_blank" rel="noopener" class="text-danger">{{ row.n }}</a>
+            <a
+              :href="row.h"
+              target="_blank"
+              rel="noopener"
+              class="text-danger"
+              >{{ row.n }}</a
+            >
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
@@ -128,20 +134,26 @@ export default {
     };
   },
   async beforeCreate() {
-    /*    const response = await fetch(
+/*     const response = await fetch(
       "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
     );
     const data = await response.json();
-    this.corsi = data; */
-    try {
+    this.corsi = data;
+    const cache = await caches.open("cache-corsi-universitari");
+    cache.add(data);
+ */
+      try {
       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
       );
 
       this.corsi = res.data;
+      const cache = await caches.open("cache-corsi-universitari");
+      cache.add(res);
+      //console.log(res.data, cache)
     } catch (e) {
       console.log(e);
-    }
+    } 
   },
 };
 </script>

@@ -42,7 +42,13 @@
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-           <a :href="row.h" target="_blank" rel="noopener" class="text-danger">{{ row.n }}</a>
+            <a
+              :href="row.h"
+              target="_blank"
+              rel="noopener"
+              class="text-danger"
+              >{{ row.n }}</a
+            >
           </td>
           <td>Corso di Laurea {{ row.t }} in Inglese</td>
           <td>{{ row.a }}</td>
@@ -103,7 +109,7 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-in-inglese",
       },
-/*       {
+      /*       {
         rel: "preload",
         href:
           "https://json-server-corsi.herokuapp.com/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc",
@@ -129,6 +135,9 @@ export default {
       );
 
       this.corsi = res.data;
+      const cache = await caches.open('cache-corsi-universitari');
+      cache.add(res)
+      //console.log(res.data, cache)
     } catch (e) {
       console.log(e);
     }
