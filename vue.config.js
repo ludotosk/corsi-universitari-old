@@ -109,8 +109,9 @@ module.exports = {
     themeColor: '#343a40',
     appleMobileWebAppCapable: 'yes',
     appleMobileWebAppStatusBarStyle: 'black',
+    //workboxPluginMode: 'InjectManifest',
     workboxOptions: {
-      cacheId: 'https://json-server-corsi.herokuapp.com/'
+      cacheId: 'https://json-server-corsi.herokuapp.com/',  
     }
   },
 };
