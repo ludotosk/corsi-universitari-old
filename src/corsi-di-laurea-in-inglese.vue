@@ -135,8 +135,8 @@ export default {
       );
 
       this.corsi = res.data;
-      const cache = await caches.open('cache-corsi-universitari');
-      cache.add(res)
+    /*   const cache = await caches.open('cache-corsi-universitari');
+      cache.add(res) */
       //console.log(res.data, cache)
     } catch (e) {
       console.log(e);

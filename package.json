@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build && workbox generateSW workbox-config.js",
     "lint": "vue-cli-service lint",
-    "build-report": "vue-cli-service build --report",
+    "build-report": "vue-cli-service build --report  && workbox generateSW workbox-config.js",
     "http-server": "http-server dist",
     "launch-scraper": "node src/scraper-cdl.js"
   },
@@ -22,7 +22,8 @@
     "vue-gtag": "^1.10.0",
     "vue-meta": "^2.4.0",
     "vue-router": "^3.4.9",
-    "vuejs-smart-table": "0.0.5"
+    "vuejs-smart-table": "0.0.5",
+    "workbox-cli": "^6.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
