@@ -111,7 +111,15 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: 'black',
     //workboxPluginMode: 'InjectManifest',
     workboxOptions: {
-      cacheId: 'https://json-server-corsi.herokuapp.com/',  
+      cacheId: 'https://json-server-corsi.herokuapp.com/',
+      globDirectory: "dist/",
+      globPatterns: [
+        "**/*.{css,ico,html,js}"
+      ],
+      runtimeCaching: [{
+        urlPattern: /\.(?:png|jpg|jpeg|svg|json)$/,
+        handler: 'StaleWhileRevalidate'
+      }]
     }
   },
 };
