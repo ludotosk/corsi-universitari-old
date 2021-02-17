@@ -1,4 +1,4 @@
-const path = require('path');
+/* const path = require('path');
 const PrerenderSpaPlugin = require('prerender-spa-plugin');
 
 const productionPlugins = [
@@ -93,11 +93,11 @@ const productionPlugins = [
       //renderAfterElementExists: '[data-view]',
       renderAfterTime: 2000,
       headless: true,
-      maxConcurrentRoutes: 32
+      maxConcurrentRoutes: 32,
     }),
   }),
 ];
-
+ */
 module.exports = {
   lintOnSave: false,
   configureWebpack: (config) => {
@@ -118,7 +118,7 @@ module.exports = {
       runtimeCaching: [{
         urlPattern: /https:\/\/json-server-corsi.herokuapp.com\/.(.*)/,
         handler: 'StaleWhileRevalidate',
-      }] 
+      }]
     }
   }
 }
@@ -126,7 +126,7 @@ module.exports = {
 
 
 
-/*
+
 module.exports = {
   pluginOptions: {
     prerenderSpa: {
@@ -206,13 +206,16 @@ module.exports = {
         '/corsi-di-laurea-roma-tre',
         '/corsi-di-laurea-tor-vergata',
         '/corsi-di-laurea-uninettuno',
-        '/corsi-di-laurea-federico-ii'
+        '/corsi-di-laurea-federico-ii',
+        '/corsi-di-laurea-in-inglese'
       ],
       //headless: true,
       //onlyProduction: true,
       //useRenderEvent: true,
+      renderAfterTime: 2000,
+      headless: true,
+      maxConcurrentRoutes: 32,
     }
   }
 }
 
- */
