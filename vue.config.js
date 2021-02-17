@@ -98,6 +98,8 @@ const productionPlugins = [
   }),
 ];
  */
+
+ 
 module.exports = {
   lintOnSave: false,
   configureWebpack: (config) => {
