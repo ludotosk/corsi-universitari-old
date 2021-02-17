@@ -111,7 +111,7 @@ module.exports = {
     appleMobileWebAppStatusBarStyle: 'black',
     //workboxPluginMode: 'InjectManifest',
     workboxOptions: {
-      cacheId: 'https://json-server-corsi.herokuapp.com/',
+      cacheId: 'corsi-universitari',
       globDirectory: "dist/",
       globPatterns: [
         "**/*.{css,ico,html,js}"
@@ -121,8 +121,9 @@ module.exports = {
         handler: 'StaleWhileRevalidate'
       }]
     }
-  },
-};
+  }
+}
+
 
 
 

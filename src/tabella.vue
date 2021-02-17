@@ -54,7 +54,6 @@
       href="https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea"
       class="text-danger"
       target="_blank"
-      id="linkalsito"
       >corsiuniversitari.info</a
     >
   </div>
@@ -101,13 +100,7 @@ export default {
 </script>
 
 <style scoped>
-#linkalsito {
-  display: block;
-}
 @media screen and (max-width: 768px) {
-  #linkalsito {
-    display: none;
-  }
   a,
   tr {
     font-size: 0.75rem;

@@ -134,27 +134,22 @@ export default {
     };
   },
   async beforeCreate() {
-  /*   const response = await fetch(
+    /*     const response = await fetch(
       "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
     );
-    
+
     const data = await response.json();
     this.corsi = data;
-    const cache = await caches.open("cache-corsi-universitari");
-    cache.add(response); */
-   
-      try {
+ */
+    try {
       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
       );
 
       this.corsi = res.data;
-  /*     const cache = await caches.open("cache-corsi-universitari");
-      cache.add(res);
-      console.log(cache.length) */
     } catch (e) {
       console.log(e);
-    }  
+    }
   },
 };
 </script>
