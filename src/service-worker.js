@@ -19,7 +19,7 @@ workbox.setConfig({
   
   workbox.routing.registerRoute(
     /https:\/\/json-server-corsi.herokuapp.com\/.(.*)/,
-    workbox.strategies.networkFirst({
+    workbox.strategies.staleWhileRevalidate({
       cacheName: 'api',
     }),
   );
