@@ -16,19 +16,10 @@ Vue.use(VueGtag, {
   config: { id: process.env.ID },
 }, router);
 
-// Check that service workers are supported
-if ('serviceWorker' in navigator) {
-  // Use the window load event to keep the page load performant
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/service-worker.js');
-  });
-} 
-
 new Vue({
   el: '#app',
   router,
   render: h => h(App),
   mounted: () => document.dispatchEvent(new Event("x-app-rendered")),
-  //mounted: () => document.dispatchEvent(new Event("x-app-rendered")),
 }).$mount('#app')
 
