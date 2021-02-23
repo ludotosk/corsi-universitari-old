@@ -7,7 +7,6 @@
     <br />
     <h2 class="text-secondary">
       Qui puoi trovare la lista di tutti i master di secondo livello
-      unico
     </h2>
     <hr />
     <p>
