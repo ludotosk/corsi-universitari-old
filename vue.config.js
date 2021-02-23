@@ -98,7 +98,9 @@ module.exports = {
         '/corsi-di-laurea-federico-ii',
         '/corsi-di-laurea-in-inglese', 
         '/master-primo-livello',
-        '/master-secondo-livello'
+        '/master-secondo-livello',
+        '/lista-master-secondo-livello',
+        '/lista-master-primo-livello'
       ],
       //headless: true,
       //onlyProduction: true,
