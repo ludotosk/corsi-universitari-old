@@ -24,7 +24,7 @@
     <br />
     <table class="table table-sm table-bordered">
       <thead class="thead-dark">
-        <th>Corso di laurea</th>
+        <th>Nome master</th>
         <th>Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.corso">
