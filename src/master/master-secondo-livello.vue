@@ -1,7 +1,7 @@
 <template>
   <div class="container-md">
     <br />
-    <h1 class="text-secondary">Master di {{livello}}</h1>
+    <h1 class="text-secondary">Master di {{ livello }}</h1>
     <br />
     <div class="input-group mb-3">
       <div class="input-group-prepend">
@@ -35,15 +35,23 @@
       <thead slot="head" class="thead-dark">
         <th>Nome del master</th>
         <th>Livello</th>
+        <th>Arco</th>
         <v-th sortKey="uni" defaultSort="asc">Università</v-th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-           <a :href="row.link" target="_blank" rel="noopener" class="text-danger">{{ row.corso }}</a>
+            <a
+              :href="row.link"
+              target="_blank"
+              rel="noopener"
+              class="text-danger"
+              >{{ row.corso }}</a
+            >
           </td>
           <td>{{ row.tipo }}</td>
-          <td>{{ row.uni }} </td>
+          <td>{{ row.durata }}</td>
+          <td>{{ row.uni }}</td>
         </tr>
       </tbody>
     </v-table>
@@ -55,7 +63,8 @@
     <br />
     <p>
       Qui si possono trovare
-      <strong>tutti i master di {{livello}}</strong>.
+      <strong>tutti i master di {{ livello }}</strong
+      >.
     </p>
     <p>
       <strong> Come funziona?</strong> È molto semplice, basta digitare nella
@@ -84,8 +93,7 @@ export default {
       },
       {
         name: "keywords",
-        content:
-          "Master di Secondo livello",
+        content: "Master di Secondo livello",
       },
     ],
     link: [
@@ -103,13 +111,13 @@ export default {
       currentPage: 1,
       totalPages: 0,
       livello: "Secondo Livello",
-      corsi: []
+      corsi: [],
     };
   },
-    async beforeCreate() {
+  async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/master?tipo=Master di Secondo Livello&_sort=corso,uni&_order=asc,asc",
+        "https://json-server-corsi.herokuapp.com/master?tipo=Master di Secondo Livello&_sort=corso,uni&_order=asc,asc"
       );
 
       this.corsi = res.data;

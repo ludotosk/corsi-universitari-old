@@ -25,11 +25,13 @@
     <table class="table table-sm table-bordered">
       <thead class="thead-dark">
         <th>Nome master</th>
+        <th>Arco</th>
         <th>Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.corso">
         <tr data-view>
-          <td>{{ corso.corso }}</td>
+          <td class="text-break">{{ corso.corso }}</td>
+          <td>{{ corso.durata }}</td>
           <td>{{ corso.uni }}</td>
         </tr>
       </tbody>
