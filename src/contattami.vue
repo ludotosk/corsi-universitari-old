@@ -5,7 +5,7 @@
       <div class="col-md-6">
         <br />
         <h1 class="text-secondary">Inviaci qui il tuo feedback</h1>
-        <br />
+        <hr />
         <form
           name="feedback"
           method="POST"

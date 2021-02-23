@@ -80,7 +80,10 @@ const CorsiFederico = () => import(/* webpackChunkName: "federico" */ './uni/cor
 const CorsiRomaTre = () => import(/* webpachChunkName: "romatre" */ './uni/corsi-di-laurea-roma-tre.vue')
 const CorsiTor = () => import(/* webpackChunkName: "tor" */ './uni/corsi-di-laurea-tor-vergata.vue')
 const CorsiUninettuno = () => import(/* webpackChunkName: "uninettuno" */ './uni/corsi-di-laurea-uninettuno.vue')
-
+const MasterPrimo = () => import(/* webpackChunkName: "master primo" */ './master/master-primo-livello.vue')
+const MasterSecondo = () => import(/* webpackChunkName: "master secondo" */ './master/master-secondo-livello.vue')
+const ListaMasterPrimo = () => import(/* webpackChunkName: "lista master primo" */ './liste/lista-master-di-primo-livello.vue')
+const ListaMasterSecondo = () => import(/* webpackChunkName: "lista master secondo" */ './liste/lista-master-di-secondo-livello.vue')
 
 const routes = [
     {
@@ -608,6 +611,34 @@ const routes = [
     {
       path: '/corsi-di-laurea-uninettuno', components: {
         default: CorsiUninettuno,
+        header: Navbar,
+        footer: Footer
+      }
+    },
+    {
+      path: '/master-primo-livello', components: {
+        default: MasterPrimo,
+        header: Navbar,
+        footer: Footer
+      }
+    },
+    {
+      path: '/master-secondo-livello', components: {
+        default: MasterSecondo,
+        header: Navbar,
+        footer: Footer
+      }
+    },
+    {
+      path: '/lista-master-primo-livello', components: {
+        default: ListaMasterPrimo,
+        header: Navbar,
+        footer: Footer
+      }
+    },
+    {
+      path: '/lista-master-secondo-livello', components: {
+        default: ListaMasterSecondo,
         header: Navbar,
         footer: Footer
       }

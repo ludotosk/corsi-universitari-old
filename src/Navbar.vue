@@ -1,14 +1,13 @@
 <template>
   <b-navbar toggleable="lg" variant="dark" type="dark">
+    <b-navbar-brand><router-link to="/" class="nav-link active"
+            ><img src="/img/icons/android-chrome-192x192.png" height="30" width="30"></router-link
+          ></b-navbar-brand>
+    
     <b-navbar-toggle target="navbar-toggle-collapse"></b-navbar-toggle>
 
     <b-collapse id="navbar-toggle-collapse" is-nav>
       <b-navbar-nav class="mx-auto">
-        <b-nav-item
-          ><router-link to="/" class="nav-link active"
-            >Home</router-link
-          ></b-nav-item
-        >
         <b-nav-item href="/tutti-i-corsi-di-laurea">
           <router-link to="/tutti-i-corsi-di-laurea" class="nav-link active"
             >Tutti i corsi di laurea</router-link
@@ -84,11 +83,34 @@
             >Corsi in inglese</router-link
           ></b-nav-item
         >
-        <b-nav-item
-          ><router-link to="/guida" class="nav-link active"
-            >Guida</router-link
-          ></b-nav-item
+         <b-nav-item-dropdown
+          text="Master"
+          right
+          class="nav-link active"
         >
+          <b-dropdown-item
+            ><router-link to="/master-primo-livello"
+              >Master di primo livello</router-link
+            ></b-dropdown-item
+          >
+          <b-dropdown-item
+            ><router-link to="/master-secondo-livello"
+              >Master di secondo livello</router-link
+            ></b-dropdown-item
+          >
+       
+          <b-dropdown-divider></b-dropdown-divider>
+          <b-dropdown-item
+            ><router-link to="/lista-master-primo-livello"
+              >Lista primo livello</router-link
+            ></b-dropdown-item
+          >
+          <b-dropdown-item
+            ><router-link to="/lista-master-secondo-livello"
+              >Lista secondo livello</router-link
+            ></b-dropdown-item
+          >
+        </b-nav-item-dropdown>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>

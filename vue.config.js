@@ -96,7 +96,9 @@ module.exports = {
         '/corsi-di-laurea-tor-vergata',
         '/corsi-di-laurea-uninettuno',
         '/corsi-di-laurea-federico-ii',
-        '/corsi-di-laurea-in-inglese'
+        '/corsi-di-laurea-in-inglese', 
+        '/master-primo-livello',
+        '/master-secondo-livello'
       ],
       //headless: true,
       //onlyProduction: true,
