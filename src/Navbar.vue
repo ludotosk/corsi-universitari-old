@@ -1,7 +1,7 @@
 <template>
   <b-navbar toggleable="lg" variant="dark" type="dark">
     <b-navbar-brand><router-link to="/" class="nav-link active"
-            ><img src="/img/icons/android-chrome-192x192.png" height="30" width="30"></router-link
+            ><img src="/img/icons/android-chrome-192x192.png" height="30" width="30" alt="logo corsiuniversitati.info"></router-link
           ></b-navbar-brand>
     
     <b-navbar-toggle target="navbar-toggle-collapse"></b-navbar-toggle>
