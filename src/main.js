@@ -8,13 +8,13 @@ import router from './router'
 import { NavbarPlugin } from 'bootstrap-vue'
 import './registerServiceWorker'
 
-Vue.config.performance = true
 Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
 Vue.use(VueMeta)
+
 Vue.use(VueGtag, {
-  config: { id: process.env.ID },
-}, router);
+  config: { id: 'G-WSK0D83FEJ' },
+}, router); 
 
 new Vue({
   el: '#app',
