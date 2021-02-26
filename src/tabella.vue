@@ -54,6 +54,7 @@
       href="https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea"
       class="text-danger"
       target="_blank"
+      id="link-sito"
       >corsiuniversitari.info</a
     >
   </div>
@@ -109,6 +110,9 @@ export default {
   body {
     margin: none;
     padding: none;
+  }
+  #link-sito {
+    font-size: 1rem;
   }
 }
 </style>
