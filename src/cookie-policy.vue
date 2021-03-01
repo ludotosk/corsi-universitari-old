@@ -65,7 +65,7 @@
     <p>Informativa Cookie di Google per Google Analytics</p>
     <a
       href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
-      class="text-primary"
+      class="text-primary text-break"
       >https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a
     >
     <p>
