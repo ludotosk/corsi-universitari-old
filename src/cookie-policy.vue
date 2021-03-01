@@ -53,13 +53,13 @@
     <p>Privacy e protezione dei dati</p>
     <a
       href="https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008"
-      class="text-primary"
+      class="text-primary text-break"
       >https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008</a
     >
     <p>Salvaguardia dei dati</p>
     <a
       href="https://support.google.com/analytics/answer/6004245"
-      class="text-primary"
+      class="text-primary text-break"
       >https://support.google.com/analytics/answer/6004245</a
     >
     <p>Informativa Cookie di Google per Google Analytics</p>
