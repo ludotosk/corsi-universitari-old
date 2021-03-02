@@ -1,7 +1,7 @@
 <template>
   <div class="container-md" data-view>
     <br />
-    <h1 class="text-secondary">Corsi di laurea divisi per citta</h1>
+    <h1 class="text-secondary">Corsi di laurea per città</h1>
     <hr />
     <ul class="list-group">
       <li class="list-group-item">

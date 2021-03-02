@@ -23,7 +23,6 @@ const CorsiUnisa = () => import(/* webpackChunkName: "corsiUnisa" */ './uni/cors
 const CorsiUnito = () => import(/* webpackChunkName: "corsiUnito" */ './uni/corsi-di-laurea-unito.vue')
 const CorsiUnipr = () => import(/* webpackChunkName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
 const CorsiPolimi = () => import(/* webpackChunkName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
-const Uni = () => import(/* webpackChunkName: "Uni" */ './università.vue')
 const ListaTriennale = () => import(/* webpackChunkName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue')
 const ListaMagistrale = () => import(/* webpackChunkName: "ListaMagistrale" */ './liste/lista-corsi-di-laurea-magistrali.vue')
 const ListaCiclo = () => import(/* webpackChunkName: "ListaCiclo" */ './liste/lista-corsi-di-laurea-magistrali-ciclo-unico.vue')
@@ -52,7 +51,7 @@ const CorsiLettere = () => import(/* webpackChunkName: "corsilettere" */ './area
 const CorsiLogopedia = () => import(/* webpackChunkName: "corsilogopedia" */ './area/corsi-di-laurea-logopedia.vue')
 const CorsiMotorie = () => import(/* webpackChunkName: "corsimotorie" */ './area/corsi-di-laurea-scienze-motorie.vue')
 const CorsiFisica = () => import(/* webpackChunkName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
-const AreaAccademica = () => import(/* webpackChunkName: "areaaccademica" */ './area-accademica.vue')
+const AreaAccademicaUni = () => import(/* webpackChunkName: "areaaccademica" */ './area-accademica-uni.vue')
 const Inglese = () => import(/* webpackChunkName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
 const Guida = () => import(/* webpackChunkName: "guida" */ './guida.vue')
 const Padova = () => import(/* webpackChunkName: "padova" */ './citta/corsi-di-laurea-padova.vue')
@@ -227,13 +226,6 @@ const routes = [
     {
       path: '/corsi-di-laurea-unito', components: {
         default: CorsiUnito,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/universita', components: {
-        default: Uni,
         header: Navbar,
         footer: Footer
       }
@@ -421,8 +413,8 @@ const routes = [
       }
     },
     {
-      path: '/area-accademica', components: {
-        default: AreaAccademica,
+      path: '/area-accademica-uni', components: {
+        default: AreaAccademicaUni,
         header: Navbar,
         footer: Footer
       }
