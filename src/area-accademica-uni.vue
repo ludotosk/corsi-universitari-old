@@ -1,7 +1,7 @@
 <template>
   <div class="container-md" data-view>
     <br />
-    <h1 class="text-secondary">Corsi di laurea divisi per area accademica e università</h1>
+    <h1 class="text-secondary">Corsi di laurea per area accademica e università</h1>
     <div class="row">
       <div class="col-md">
         <br>
@@ -127,7 +127,7 @@
       </div>
       <div class="col-md">
         <br>
-        <h2 class="text-secondary">Ateneo</h2>
+        <h2 class="text-secondary">Università</h2>
         <hr />
         <ul class="list-group">
           <li class="list-group-item">

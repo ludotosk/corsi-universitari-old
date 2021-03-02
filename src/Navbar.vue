@@ -112,7 +112,7 @@
       <b-navbar-nav class="ml-auto">
         <b-nav-item
           href="https://t.me/corsiuniversitari_bot"
-          class="d-flex flex-column"
+          class="nav-link d-flex flex-column"
         >
           <img
             height="30px"
