@@ -102,6 +102,11 @@
           >Corsi di laurea lettere</router-link
         >
       </li>
+      <li class="list-group-item">
+        <router-link class="nav-link active" to="/corsi-di-laurea-economia"
+          >Corsi di laurea economia</router-link
+        >
+      </li>
     </ul>
     <br />
   </div>

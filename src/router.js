@@ -84,6 +84,7 @@ const MasterPrimo = () => import(/* webpackChunkName: "master primo" */ './maste
 const MasterSecondo = () => import(/* webpackChunkName: "master secondo" */ './master/master-secondo-livello.vue')
 const ListaMasterPrimo = () => import(/* webpackChunkName: "lista master primo" */ './liste/lista-master-di-primo-livello.vue')
 const ListaMasterSecondo = () => import(/* webpackChunkName: "lista master secondo" */ './liste/lista-master-di-secondo-livello.vue')
+const CorsiEconomia = () => import(/* webpackChunkName: "corsi economia" */ './area/corsi-di-laurea-economia.vue')
 
 const routes = [
     {
@@ -639,6 +640,13 @@ const routes = [
     {
       path: '/lista-master-secondo-livello', components: {
         default: ListaMasterSecondo,
+        header: Navbar,
+        footer: Footer
+      }
+    },
+    {
+      path: '/corsi-di-laurea-economia', components: {
+        default: CorsiEconomia,
         header: Navbar,
         footer: Footer
       }

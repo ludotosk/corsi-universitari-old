@@ -100,7 +100,8 @@ module.exports = {
         '/master-primo-livello',
         '/master-secondo-livello',
         '/lista-master-secondo-livello',
-        '/lista-master-primo-livello'
+        '/lista-master-primo-livello',
+        '/corsi-di-laurea-economia'
       ],
       //headless: true,
       //onlyProduction: true,

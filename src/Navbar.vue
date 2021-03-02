@@ -15,7 +15,7 @@
         >
         <b-nav-item
           ><router-link to="/universita" class="nav-link active"
-            >Università</router-link
+            >Ateneo</router-link
           ></b-nav-item
         >
         <b-nav-item

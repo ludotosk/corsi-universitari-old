@@ -23,7 +23,7 @@
       "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
       risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
-      tabella
+      tabella.
     </p>
     <v-table
       :data="corsi"
