@@ -284,13 +284,13 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Area accademica",
+    title: "Area accademica e Uni",
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "Questa è la lista delle aree accademiche per le quali abbiamo filtrato tutti i corsi di laurea di tutte le università.",
+          "Questa è la lista delle aree accademiche e delle universita per le quali abbiamo filtrato tutti i corsi di laurea.",
       },
       {
         name: "keywords",
