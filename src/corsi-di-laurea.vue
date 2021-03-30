@@ -127,7 +127,7 @@ export default {
     };
   },
   async beforeCreate() {
-/*     try {
+  try {
       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
       );
@@ -135,16 +135,7 @@ export default {
       this.corsi = res.data;
     } catch (e) {
       console.log(e);
-    } */
-    try {
-      const res = await axios.get(
-        "/.netlify/functions/api"
-      );
-      
-      this.corsi = res.data;
-    } catch (e) {
-      console.log(e);
-    }
+    } 
   },
 };
 </script>

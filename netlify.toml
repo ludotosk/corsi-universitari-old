@@ -1,4 +1,0 @@
-[build]
-command = 'vue-cli-service build'
-functions = 'functions'
-'publish' = '/dist'
