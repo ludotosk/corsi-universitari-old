@@ -301,7 +301,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/area-accademica",
+        href: "https://www.corsiuniversitari.info/area-accademica-uni",
       },
     ],
   },
