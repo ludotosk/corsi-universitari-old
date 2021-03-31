@@ -84,571 +84,587 @@ const MasterSecondo = () => import(/* webpackChunkName: "master secondo" */ './m
 const ListaMasterPrimo = () => import(/* webpackChunkName: "lista master primo" */ './liste/lista-master-di-primo-livello.vue')
 const ListaMasterSecondo = () => import(/* webpackChunkName: "lista master secondo" */ './liste/lista-master-di-secondo-livello.vue')
 const CorsiEconomia = () => import(/* webpackChunkName: "corsi economia" */ './area/corsi-di-laurea-economia.vue')
+const ListaPerfezionamentoAltaFormazione = () => import(/* webpackChunkName: "lista perfezionamento alta formazione" */ './liste/lista-perfezionamento-alta-formazione.vue')
+const PerfezionamentoAltaFormazione = () => import(/* webpackChunkName: "perfezionamento alta formazione" */ './master/perfezionamento-alta-formazione.vue')
 
 const routes = [
-    {
-      path: '/', components: {
-        default: Home,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/contattami', components: {
-        default: Contattami,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/cookie-policy', components: {
-        default: Cookiepolicy,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/tabella', components: {
-        default: Tabella
-      }
-    },
-    {
-      path: '/tutti-i-corsi-di-laurea', components: {
-        default: Corsi,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unibo', components: {
-        default: CorsiUnibo,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unipi', components: {
-        default: CorsiUnipi,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-sapienza', components: {
-        default: CorsiSapienza,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unipd', components: {
-        default: CorsiUnipd,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-bicocca', components: {
-        default: CorsiBicocca,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-polimi', components: {
-        default: CorsiPolimi,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-uniba', components: {
-        default: CorsiUniba,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unibo', components: {
-        default: CorsiUnibo,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unifi', components: {
-        default: CorsiUnifi,
-        header: Navbar,CorsiMatematica
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unimi', components: {
-        default: CorsiUnimi,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unina', components: {
-        default: CorsiUnina,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unipa', components: {
-        default: CorsiUnipa,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unipr', components: {
-        default: CorsiUnipr,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-uniroma1', components: {
-        default: CorsiUniroma1,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unisa', components: {
-        default: CorsiUnisa,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unito', components: {
-        default: CorsiUnito,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/lista-corsi-di-laurea-triennale', components: {
-        default: ListaTriennale,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/lista-corsi-di-laurea-triennale-ad-accesso-libero', components: {
-        default: ListaAccesso,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/lista-corsi-di-laurea-magistrale', components: {
-        default: ListaMagistrale,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/lista-corsi-di-laurea-magistrale-a-ciclo-unico', components: {
-        default: ListaCiclo,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-triennale', components: {
-        default: CorsiTriennale,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-magistrale', components: {
-        default: CorsiMagistrale,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-magistrale-a-ciclo-unico', components: {
-        default: CorsiCiclo,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-triennali-ad-accesso-libero', components: {
-        default: CorsiLiberi,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-medicina', components: {
-        default: CorsiMedicina,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-psicologia', components: {
-        default: CorsiPsicologia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-fisioterapia', components: {
-        default: CorsiFisioterapia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-storia', components: {
-        default: CorsiStoria,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-infermieristica', components: {
-        default: CorsiInfermieristica,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-matematica', components: {
-        default: CorsiMatematica,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-scienze-della-formazione-primaria', components: {
-        default: CorsiFormazionePrimaria,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-biologia', components: {
-        default: CorsiBiologia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-filosofia', components: {
-        default: CorsiFilosofia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-fisica', components: {
-        default: CorsiFisica,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-biotecnologia', components: {
-        default: CorsiBiotecnologia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-      {
-      path: '/corsi-di-laurea-dietistica', components: {
-        default: CorsiDietistica,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-farmacia', components: {
-        default: CorsiFarmacia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-giurisprudenza', components: {
-        default: CorsiGiurisprudenza,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-informatica', components: {
-        default: CorsiInformatica,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-lettere', components: {
-        default: CorsiLettere,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-logopedia', components: {
-        default: CorsiLogopedia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-scienze-motorie', components: {
-        default: CorsiMotorie,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/area-accademica-uni', components: {
-        default: AreaAccademicaUni,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-in-inglese', components: {
-        default: Inglese,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/guida', components: {
-        default: Guida,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-padova', components: {
-        default: Padova,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-bari', components: {
-        default: Bari,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-bologna', components: {
-        default: Bologna,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-firenze', components: {
-        default: Firenze,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-genova', components: {
-        default: Genova,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-milano', components: {
-        default: Milano,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-napoli', components: {
-        default: Napoli,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-pavia', components: {
-        default: Pavia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-pisa', components: {
-        default: Pisa,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-roma', components: {
-        default: Roma,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-torino', components: {
-        default: Torino,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-venezia', components: {
-        default: Venezia,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-verona', components: {
-        default: Verona,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/citta', components: {
-        default: Citta,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unikore', components: {
-        default: CorsiKore,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-univda', components: {
-        default: CorsiUnivda,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unipegaso', components: {
-        default: CorsiUnipegaso,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-unicusano', components: {
-        default: CorsiUnicusano,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-ecampus', components: {
-        default: CorsiEcampus,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-mercatorum', components: {
-        default: CorsiMercatorum,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-bocconi', components: {
-        default: CorsiBocconi,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-federico-ii', components: {
-        default: CorsiFederico,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-roma-tre', components: {
-        default: CorsiRomaTre,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-tor-vergata', components: {
-        default: CorsiTor,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-uninettuno', components: {
-        default: CorsiUninettuno,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/master-primo-livello', components: {
-        default: MasterPrimo,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/master-secondo-livello', components: {
-        default: MasterSecondo,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/lista-master-primo-livello', components: {
-        default: ListaMasterPrimo,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/lista-master-secondo-livello', components: {
-        default: ListaMasterSecondo,
-        header: Navbar,
-        footer: Footer
-      }
-    },
-    {
-      path: '/corsi-di-laurea-economia', components: {
-        default: CorsiEconomia,
-        header: Navbar,
-        footer: Footer
-      }
+  {
+    path: '/', components: {
+      default: Home,
+      header: Navbar,
+      footer: Footer
     }
-  ]
-  
-  
-  const router = new VueRouter({
-    mode: 'history',
-    routes: routes
-  })
-  
-  export default router;
+  },
+  {
+    path: '/contattami', components: {
+      default: Contattami,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/cookie-policy', components: {
+      default: Cookiepolicy,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/tabella', components: {
+      default: Tabella
+    }
+  },
+  {
+    path: '/tutti-i-corsi-di-laurea', components: {
+      default: Corsi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unibo', components: {
+      default: CorsiUnibo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unipi', components: {
+      default: CorsiUnipi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-sapienza', components: {
+      default: CorsiSapienza,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unipd', components: {
+      default: CorsiUnipd,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-bicocca', components: {
+      default: CorsiBicocca,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-polimi', components: {
+      default: CorsiPolimi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-uniba', components: {
+      default: CorsiUniba,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unibo', components: {
+      default: CorsiUnibo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unifi', components: {
+      default: CorsiUnifi,
+      header: Navbar, CorsiMatematica
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unimi', components: {
+      default: CorsiUnimi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unina', components: {
+      default: CorsiUnina,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unipa', components: {
+      default: CorsiUnipa,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unipr', components: {
+      default: CorsiUnipr,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-uniroma1', components: {
+      default: CorsiUniroma1,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unisa', components: {
+      default: CorsiUnisa,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unito', components: {
+      default: CorsiUnito,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-triennale', components: {
+      default: ListaTriennale,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-triennale-ad-accesso-libero', components: {
+      default: ListaAccesso,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-magistrale', components: {
+      default: ListaMagistrale,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-magistrale-a-ciclo-unico', components: {
+      default: ListaCiclo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-triennale', components: {
+      default: CorsiTriennale,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-magistrale', components: {
+      default: CorsiMagistrale,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-magistrale-a-ciclo-unico', components: {
+      default: CorsiCiclo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-triennali-ad-accesso-libero', components: {
+      default: CorsiLiberi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-medicina', components: {
+      default: CorsiMedicina,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-psicologia', components: {
+      default: CorsiPsicologia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-fisioterapia', components: {
+      default: CorsiFisioterapia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-storia', components: {
+      default: CorsiStoria,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-infermieristica', components: {
+      default: CorsiInfermieristica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-matematica', components: {
+      default: CorsiMatematica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-scienze-della-formazione-primaria', components: {
+      default: CorsiFormazionePrimaria,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-biologia', components: {
+      default: CorsiBiologia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-filosofia', components: {
+      default: CorsiFilosofia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-fisica', components: {
+      default: CorsiFisica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-biotecnologia', components: {
+      default: CorsiBiotecnologia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-dietistica', components: {
+      default: CorsiDietistica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-farmacia', components: {
+      default: CorsiFarmacia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-giurisprudenza', components: {
+      default: CorsiGiurisprudenza,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-informatica', components: {
+      default: CorsiInformatica,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-lettere', components: {
+      default: CorsiLettere,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-logopedia', components: {
+      default: CorsiLogopedia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-scienze-motorie', components: {
+      default: CorsiMotorie,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/area-accademica-uni', components: {
+      default: AreaAccademicaUni,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-in-inglese', components: {
+      default: Inglese,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/guida', components: {
+      default: Guida,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-padova', components: {
+      default: Padova,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-bari', components: {
+      default: Bari,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-bologna', components: {
+      default: Bologna,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-firenze', components: {
+      default: Firenze,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-genova', components: {
+      default: Genova,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-milano', components: {
+      default: Milano,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-napoli', components: {
+      default: Napoli,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-pavia', components: {
+      default: Pavia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-pisa', components: {
+      default: Pisa,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-roma', components: {
+      default: Roma,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-torino', components: {
+      default: Torino,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-venezia', components: {
+      default: Venezia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-verona', components: {
+      default: Verona,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/citta', components: {
+      default: Citta,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unikore', components: {
+      default: CorsiKore,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-univda', components: {
+      default: CorsiUnivda,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unipegaso', components: {
+      default: CorsiUnipegaso,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-unicusano', components: {
+      default: CorsiUnicusano,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-ecampus', components: {
+      default: CorsiEcampus,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-mercatorum', components: {
+      default: CorsiMercatorum,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-bocconi', components: {
+      default: CorsiBocconi,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-federico-ii', components: {
+      default: CorsiFederico,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-roma-tre', components: {
+      default: CorsiRomaTre,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-tor-vergata', components: {
+      default: CorsiTor,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-uninettuno', components: {
+      default: CorsiUninettuno,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/master-primo-livello', components: {
+      default: MasterPrimo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/master-secondo-livello', components: {
+      default: MasterSecondo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-master-primo-livello', components: {
+      default: ListaMasterPrimo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-master-secondo-livello', components: {
+      default: ListaMasterSecondo,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-economia', components: {
+      default: CorsiEconomia,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-perfezionamento-alta-formazione', components: {
+      default: ListaPerfezionamentoAltaFormazione,
+      header: Navbar,
+      footer: Footer
+    }
+  },
+  {
+    path: '/perfezionamento-alta-formazione', components: {
+      default: PerfezionamentoAltaFormazione,
+      header: Navbar,
+      footer: Footer
+    }
+  }
+]
+
+
+const router = new VueRouter({
+  mode: 'history',
+  routes: routes
+})
+
+export default router;

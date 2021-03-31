@@ -83,7 +83,7 @@
             >Corsi in inglese</router-link
           ></b-nav-item
         >
-        <b-nav-item-dropdown text="Master" right class="nav-link active">
+        <b-nav-item-dropdown text="Post Laurea" right class="nav-link active">
           <b-dropdown-item
             ><router-link to="/master-primo-livello"
               >Master di primo livello</router-link
@@ -94,16 +94,25 @@
               >Master di secondo livello</router-link
             ></b-dropdown-item
           >
-
+          <b-dropdown-item
+            ><router-link to="/perfezionamento-alta-formazione"
+              >Corsi Perfezionamento - Alta Formazione</router-link
+            ></b-dropdown-item
+          >
           <b-dropdown-divider></b-dropdown-divider>
           <b-dropdown-item
             ><router-link to="/lista-master-primo-livello"
-              >Lista primo livello</router-link
+              >Lista master primo livello</router-link
             ></b-dropdown-item
           >
           <b-dropdown-item
             ><router-link to="/lista-master-secondo-livello"
-              >Lista secondo livello</router-link
+              >Lista master secondo livello</router-link
+            ></b-dropdown-item
+          >
+                    <b-dropdown-item
+            ><router-link to="/lista-perfezionamento-alta-formazione"
+              >Lista Corsi Perfezionamento - Alta Formazione</router-link
             ></b-dropdown-item
           >
         </b-nav-item-dropdown>
