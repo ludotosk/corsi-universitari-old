@@ -118,7 +118,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-server-corsi.herokuapp.com/corsi?u=Università degli Studi di BARI ALDO MORO'
+        'https://json-server-corsi.herokuapp.com/api/corsi?u=Università degli Studi di BARI ALDO MORO'
       );
 
       this.corsi = res.data;

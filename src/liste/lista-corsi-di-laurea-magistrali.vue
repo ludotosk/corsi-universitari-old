@@ -76,7 +76,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/corsi?t=Magistrale"
+        "https://json-server-corsi.herokuapp.com/api/corsi?t=Magistrale"
       );
 
       this.corsi = res.data;

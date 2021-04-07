@@ -118,7 +118,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/corsi?u=Università della VALLE D'AOSTA"
+        "https://json-server-corsi.herokuapp.com/api/corsi?u=Università della VALLE D'AOSTA"
       );
 
       this.corsi = res.data;

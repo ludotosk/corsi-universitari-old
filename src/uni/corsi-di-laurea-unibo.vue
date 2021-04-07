@@ -118,7 +118,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-server-corsi.herokuapp.com/corsi?u=Alma mater studiorum Università di Bologna'
+        'https://json-server-corsi.herokuapp.com/api/corsi?u=Alma mater studiorum Università di Bologna'
       );
 
       this.corsi = res.data;

@@ -118,7 +118,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-server-corsi.herokuapp.com/corsi?u=Università degli Studi di PADOVA'
+        'https://json-server-corsi.herokuapp.com/api/corsi?u=Università degli Studi di PADOVA'
       );
 
       this.corsi = res.data;
