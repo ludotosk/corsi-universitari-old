@@ -119,7 +119,7 @@ export default {
    async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/api/corsi?u=Università Telematica \"E-CAMPUS\"",
+        "https://json-server-corsi.herokuapp.com/corsi?u=Università Telematica \"E-CAMPUS\"",
       );
 
       this.corsi = res.data;

@@ -106,7 +106,7 @@ export default {
   /*     {
         rel: "preload",
         href:
-          "https://json-server-corsi.herokuapp.com/api/corsi?c=L-42&c=LM-89&c=LM-15",
+          "https://json-server-corsi.herokuapp.com/corsi?c=L-42&c=LM-89&c=LM-15",
         as: "fetch",
       }, */
     ],
@@ -125,7 +125,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/api/corsi?c=L-42&c=LM-89&c=LM-15"
+        "https://json-server-corsi.herokuapp.com/corsi?c=L-42&c=LM-89&c=LM-15"
       );
 
       this.corsi = res.data;

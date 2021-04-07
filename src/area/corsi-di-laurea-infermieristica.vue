@@ -108,7 +108,7 @@ export default {
      /*  {
         rel: "preload",
         href:
-          "https://json-server-corsi.herokuapp.com/api/corsi?c=L/SNT1&n=Infermieristica (abilitante alla professione sanitaria di Infermiere)",
+          "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT1&n=Infermieristica (abilitante alla professione sanitaria di Infermiere)",
         as: "fetch",
       }, */
     ],
@@ -127,7 +127,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/api/corsi?c=L/SNT1&n=Infermieristica (abilitante alla professione sanitaria di Infermiere)"
+        "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT1&n=Infermieristica (abilitante alla professione sanitaria di Infermiere)"
       );
 
       this.corsi = res.data;

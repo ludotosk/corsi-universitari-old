@@ -118,7 +118,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-server-corsi.herokuapp.com/api/corsi?u=Università Telematica Internazionale UNINETTUNO'
+        'https://json-server-corsi.herokuapp.com/corsi?u=Università Telematica Internazionale UNINETTUNO'
       );
 
       this.corsi = res.data;

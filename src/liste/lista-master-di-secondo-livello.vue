@@ -78,7 +78,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/api/master?tipo=Master di Secondo Livello&_sort=corso,uni&_order=asc,asc",
+        "https://json-server-corsi.herokuapp.com/master?tipo=Master di Secondo Livello&_sort=corso,uni&_order=asc,asc",
       );
 
       this.corsi = res.data;

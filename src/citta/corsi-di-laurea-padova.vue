@@ -118,7 +118,7 @@ export default {
   },
     async beforeCreate(){
     try {
-      const res = await axios.get('https://json-server-corsi.herokuapp.com/api/corsi?s=PADOVA');
+      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi?s=PADOVA');
 
       this.corsi = res.data;
     } catch (e) {
