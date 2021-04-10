@@ -66,6 +66,12 @@ import axios from "axios";
 
 export default {
   name: "home",
+    metaInfo: {
+    // if no subcomponents specify a metaInfo.title, this title will be used
+    title: "Tutti i corsi di laurea",
+    // all titles will be injected into this template
+    titleTemplate: "%s | corsiuniversitari.info",
+  },
   data() {
     return {
       corsi: [],
