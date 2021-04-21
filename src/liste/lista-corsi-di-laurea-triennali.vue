@@ -18,7 +18,7 @@
       relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <br />
-    <table class="table table-sm table-bordered">
+    <table class="table">
       <thead class="thead-dark">
         <th>Corso di laurea</th>
         <th>Università</th>
