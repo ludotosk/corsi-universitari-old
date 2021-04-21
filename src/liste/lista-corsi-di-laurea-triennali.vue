@@ -18,8 +18,8 @@
       relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <br />
-    <table class="table">
-      <thead class="thead-dark">
+    <table>
+      <thead class="bg-dark text-white">
         <th>Corso di laurea</th>
         <th>Università</th>
       </thead>
@@ -28,6 +28,7 @@
           <td>{{ corso.n }}</td>
           <td>{{ corso.u }}</td>
         </tr>
+        <hr>
       </tbody>
     </table>
     <br />
