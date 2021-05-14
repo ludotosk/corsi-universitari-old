@@ -12,8 +12,8 @@ module.exports = {
       ],
       swSrc: "./src/service-worker.js",
       //runtimeCaching: [{
-        //urlPattern: /https:\/\/json-server-corsi.herokuapp.com\/.(.*)/,
-        //handler: 'StaleWhileRevalidate',
+      //urlPattern: /https:\/\/json-server-corsi.herokuapp.com\/.(.*)/,
+      //handler: 'StaleWhileRevalidate',
       //}]
     }
   },
@@ -95,7 +95,7 @@ module.exports = {
         '/corsi-di-laurea-tor-vergata',
         '/corsi-di-laurea-uninettuno',
         '/corsi-di-laurea-federico-ii',
-        '/corsi-di-laurea-in-inglese', 
+        '/corsi-di-laurea-in-inglese',
         '/master-primo-livello',
         '/master-secondo-livello',
         '/lista-master-secondo-livello',
