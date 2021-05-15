@@ -7,7 +7,7 @@
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <a class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</a>
+            <button class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</button>
           </p>
           <input
             type="text"
