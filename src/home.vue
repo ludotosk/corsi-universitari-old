@@ -1,9 +1,9 @@
 <template>
-  <div class="text-justify" data-view>
+  <div class="has-text-justified is-size-6 has-text-weight-medium has-text-black" data-view>
     <br />
-    <div class="container-md">
-      <h1 class="text-center">Come scegliere un corso di laurea?</h1>
-      <hr />
+    <div class="container is-fullhd">
+      <h1 class="has-text-centered is-size-2 has-text-dark">Come scegliere un corso di laurea?</h1>
+      <hr class="has-background-grey-light" style="height:1px;"/>
       <p>
         Se ti trovi su questo sito probabilmente non è casuale e scommetto che
         ti sarà d’aiuto nel <strong>cercare un corso di laurea</strong>.
@@ -19,22 +19,22 @@
       <p>
         Prima di partire però ti avviso che su questo sito è presente uno
         <strong>
-          <router-link to="/tutti-i-corsi-di-laurea" class="text-danger">strumento</router-link> per
+          <router-link to="/tutti-i-corsi-di-laurea" class="has-text-danger-dark">strumento</router-link> per
           cercare corsi di laurea</strong
         >.
-        <mark
+        <mark class="has-background-success"
           >Strumento che contiene tutti i corsi di laurea italiani e permette di
           effettuare una rapida ricerca tramite i nomi dei corsi.</mark
         >
-        Per capire come funziona <router-link to="/guida" class="text-danger">qui c'è la mia guida</router-link>.
+        Per capire come funziona <router-link to="/guida" class="has-text-danger-dark">qui c'è la mia guida</router-link>.
       </p>
       <br />
     </div>
-    <div class="bg-light">
-      <div class="container-md">
+    <div class="has-background-light">
+      <div class="container is-fullhd">
         <br />
-        <h2 class="text-center">Il metodo</h2>
-        <hr />
+        <h2 class="has-text-centered is-size-3">Il metodo</h2>
+        <hr class="has-background-grey-light" style="height:1px;"/>
         <p>
           Prima di spiegare la mia personale visione del mondo però è giusto
           spiegare il percorso che mi ha portato alle conclusioni che ho tratto.
@@ -42,7 +42,7 @@
         <p>
           Come persona (e come universitario) non sono mai stato indeciso su
           quale potesse essere la mia area accademica,
-          <mark
+          <mark class="has-background-success"
             >ma un’area accademica è un’idea troppo vaga soprattutto se si parla
             dell’ambito dell’informatica. E questo vale non solo per
             quest'ultima.</mark
@@ -69,7 +69,7 @@
           lavoro.
         </p>
         <p>
-          <mark
+          <mark class="has-background-success"
             >A essere onesto ho sentito la mancanza di un
             <strong>orientamento universitario</strong> adeguato che il mondo
             scolastico avrebbe dovuto darmi, orientamento che si è rivelato
@@ -83,10 +83,10 @@
         <br />
       </div>
     </div>
-    <div class="container-md">
+    <div class="container is-fullhd">
       <br />
-      <h2 class="text-center">Piccola premessa</h2>
-      <hr />
+      <h2 class="has-text-centered is-size-3">Piccola premessa</h2>
+      <hr class="has-background-grey-light" style="height:1px;"/>
       <p>
         Prima di procedere ci tengo a fare una precisazione: io non sono uno
         psicologo, un formatore o una persona che ricopre un qualsiasi ruolo del
@@ -107,11 +107,11 @@
       </p>
       <br />
     </div>
-    <div class="bg-light">
-      <div class="container-md">
+    <div class="has-background-light">
+      <div class="container is-fullhd">
         <br />
-        <h2 class="text-center">Il percorso che intendo proporre</h2>
-        <hr />
+        <h2 class="has-text-centered is-size-3">Il percorso che intendo proporre</h2>
+        <hr class="has-background-grey-light" style="height:1px;"/>
         <p>
           Solitamente viene detto di pensare alle proprie passioni come prima
           regola per cercare l’università più adatta a te,<strong>
@@ -119,14 +119,14 @@
           >
         </p>
         <p>
-          <mark
+          <mark class="has-background-success"
             >Prima di tutto bisogna differenziare ciò che potrebbe essere
             appassionante da studiare rispetto a ciò che potrebbe essere
             appassionante da fare</mark
           >.
         </p>
         <p>
-          <mark
+          <mark class="has-background-success"
             >Seconda cosa, è molto più importante capire il come rispetto al
             cosa…</mark
           >
@@ -139,12 +139,12 @@
         <br />
       </div>
     </div>
-    <div class="container-md">
+    <div class="container is-fullhd">
       <br />
-      <h2 class="text-center">Conoscere se stessi</h2>
-      <hr />
+      <h2 class="has-text-centered is-size-3">Conoscere se stessi</h2>
+      <hr class="has-background-grey-light" style="height:1px;"/>
       <p>
-        <mark
+        <mark class="has-background-success"
           >Credo che questa sia la parte più snobbata di tutti quando invece le
           andrebbe di diritto il primo posto sul podio in quanto a
           importanza.</mark
@@ -168,14 +168,14 @@
         un ragazzo e che per merito del suo intervento attivo (magari anche solo
         parlandone coi genitori o essendo di conforto per il ragazzo o la
         ragazza in questione) salvasse la vita di quella persona. In questo caso
-        <mark>l’empatia gioca un ruolo fondamentale</mark> e siccome non si
+        <mark class="has-background-success">l’empatia gioca un ruolo fondamentale</mark> e siccome non si
         apprende a scuola è giusto interrogarsi se si ha questa caratteristica
         prima di decidere di intraprendere la strada dell’insegnamento.
       </p>
       <p>
         Al contrario un microeconomista deve prendere delle decisioni basate sui
         numeri dove l’empatia serve a ben poco.
-        <mark>In questo caso serve molto senso critico</mark>: decidere di
+        <mark class="has-background-success">In questo caso serve molto senso critico</mark>: decidere di
         aumentare il prezzo di un bene non è una decisione da prendere di
         pancia, ma va ponderata bene interrogandosi assiduamente su cosa
         succederebbe se si aumentasse il prezzo del bene x, ad esempio, e
@@ -183,7 +183,7 @@
       </p>
       <p>
         Con questi due esempi ciò che voglio fare è
-        <mark
+        <mark class="has-background-success"
           >mettere in luce come alcune persone siano più o meno predisposte a
           percorre una strada piuttosto che un’altra</mark
         >
@@ -191,18 +191,18 @@
         ma <strong>in base al loro carattere</strong>.
       </p>
       <p>
-        <mark>
+        <mark class="has-background-success">
           Quando ci troviamo a dover decidere che corso di laurea scegliere se
           ci conosciamo sappiamo già cosa escludere e cosa no.</mark
         >
       </p>
       <br />
     </div>
-    <div class="bg-light">
-      <div class="container-md">
+    <div class="has-background-light">
+      <div class="container is-fullhd">
         <br />
-        <h2 class="text-center">Conoscere il lavoro a cui si va in contro</h2>
-        <hr />
+        <h2 class="has-text-centered is-size-3">Conoscere il lavoro a cui si va in contro</h2>
+        <hr class="has-background-grey-light" style="height:1px;"/>
         <p>
           Con questo capitolo voglio introdurre un altro
           <strong>aspetto che non ho mai visto considerare</strong> né alle
@@ -213,12 +213,12 @@
           Per sapere quali sono le posizioni che si possono ottenere in seguito
           alla laurea basta
           <strong>visitare il sito del corso di laurea</strong>.
-          <mark>Li solitamente si parla di sbocchi lavorativi.</mark>
+          <mark class="has-background-success">Li solitamente si parla di sbocchi lavorativi.</mark>
         </p>
         <p>
           Partiamo con altri due esempi diametralmente opposti, giusto per farmi
           capire.
-          <mark
+          <mark class="has-background-success"
             >Fare l’imprenditore e fare il dipendente pubblico sono due cose ben
             distinte.</mark
           >
@@ -235,7 +235,7 @@
           <strong>Lo stress è un fattore quotidiano in questo caso</strong>,
           bisogna prendere decisioni, talvolta ci si sente soli e si hanno
           addosso molte responsabilità.
-          <mark
+          <mark class="has-background-success"
             >Il sangue freddo serve in caso di emergenza e un’emergenza prima o
             poi capita è solo questione di tempo.</mark
           >
@@ -264,10 +264,10 @@
         <br />
       </div>
     </div>
-    <div class="container-md">
+    <div class="container is-fullhd">
       <br />
-      <h2 class="text-center">Capire quali sono le proprie passioni</h2>
-      <hr />
+      <h2 class="has-text-centered is-size-3">Capire quali sono le proprie passioni</h2>
+      <hr class="has-background-grey-light" style="height:1px;"/>
       <p>
         Va prestata <strong>molta attenzione</strong> su questo punto. Bisogna
         saper distinguere tra cosa è <strong>appassionante studiare</strong> e
@@ -288,7 +288,7 @@
         Nel primo caso molti finiscono per <strong>lavorare in proprio</strong>,
         mentre nel secondo si finisce spesso
         <strong>sotto delle multinazionali</strong>.
-        <mark
+        <mark class="has-background-success"
           >Eppure per un appassionato di informatica studiare le due materie
           sarebbe ugualmente interessante.</mark
         >
@@ -308,15 +308,15 @@
       </p>
       <br />
     </div>
-    <div class="bg-light">
-      <div class="container-md">
+    <div class="has-background-light">
+      <div class="container is-fullhd">
         <br />
-        <h2 class="text-center">
+        <h2 class="has-text-centered is-size-3">
           Resta ancora un ventaglio di corsi di laurea tra cui scegliere
         </h2>
-        <hr />
+        <hr class="has-background-grey-light" style="height:1px;"/>
         <p>
-          <mark>
+          <mark class="has-background-success">
             Prendiamo per esempio la mia situazione personale: dopo tutti questi
             passaggi sono giunto a una conclusione, ma è comunque troppo
             generica</mark
@@ -327,7 +327,7 @@
           un microuniverso e ci sono davvero tante opportunità dentro questo
           settore. Infatti esistono tanti corsi di laurea di questa materia con
           solo il primo anno in comune.
-          <mark
+          <mark class="has-background-success"
             >Oppure corsi di laurea che prevedono specializzazioni molto
             diverse.</mark
           >
@@ -353,28 +353,28 @@
         <br />
       </div>
     </div>
-    <div class="container-md">
+    <div class="container is-fullhd">
       <br />
-      <h2 class="text-center">
+      <h2 class="has-text-centered is-size-3 has-text-dark">
         "Eh ma non conosco me stesso né il mondo del lavoro"
       </h2>
-      <hr />
+      <hr class="has-background-grey-light" style="height:1px;"/>
       <p>
         Se una persona non conosce se stessa l’unica cosa che può fare è<strong>
           provare a fare</strong
-        >.<mark>
+        >.<mark class="has-background-success">
           Infatti provare ad avere una posizione di responsabilità permette di
           capire molte cose</mark
         >.
       </p>
       <p>
-        <mark>
+        <mark class="has-background-success">
           Qualcuno potrebbe sentirsi a proprio agio qualcun altro potrebbe
           impazzire.</mark
         >
       </p>
       <p>
-        <mark>
+        <mark class="has-background-success">
           Per provare non serve per forza fare chissà cosa, basta organizzare
           anche solo una festa.</mark
         >
@@ -387,14 +387,14 @@
         paga, gente che da buca e qualsiasi altra sorta di problemi. Onestamente
         <strong>non penso sia una cosa per tutti</strong>, c’è chi vive questa
         situazione con serenità e chi impazzisce.
-        <mark
+        <mark class="has-background-success"
           >Inoltre si possono facilmente distinguere i sentimenti di chi
           fallisce o di chi vince, derivati soprattutto dalla pressione
           sociale.</mark
         >
         Una festa come un prodotto o un servizio può essere un fiasco come una
         rivelazione.
-        <mark
+        <mark class="has-background-success"
           >Questi sentimenti sono conseguenti a uno stress emotivo non adatto a
           tutti e che riguarda solo alcune posizioni lavorative.</mark
         >
@@ -414,7 +414,7 @@
       </p>
       <p>
         Passo ora a parlare di lavoro.
-        <mark>Confrontiamo un aspirante medico con un aspirante trader.</mark>
+        <mark class="has-background-success">Confrontiamo un aspirante medico con un aspirante trader.</mark>
         Come fare a
         <strong>capire in questo caso qual è il loro posto</strong> e come
         funziona il lavoro? Semplice: guardando video, leggendo libri e anche
@@ -430,7 +430,7 @@
       </p>
       <p>Lo so che tra voi c’è chi pensa a Michael Burry, ma andiamo avanti.</p>
       <p>
-        <mark>
+        <mark class="has-background-success">
           Approfondendo gli argomenti che vi ispirano noterete come qualche
           argomento diventerà man mano più interessante e altri man mano più
           noiosi.</mark
@@ -442,11 +442,11 @@
       </p>
       <br />
     </div>
-    <div class="bg-light">
-      <div class="container-md">
+    <div class="has-background-light">
+      <div class="container is-fullhd">
         <br />
-        <h2 class="text-center">Ultimo appunto prima di concludere</h2>
-        <hr />
+        <h2 class="has-text-centered is-size-3">Ultimo appunto prima di concludere</h2>
+        <hr class="has-background-grey-light" style="height:1px;"/>
         <p>
           Un consiglio che io credo possa essere vitale è quello di
           <strong>giocare d'anticipo</strong>. Per mostravi quanto sia
@@ -477,7 +477,7 @@
           diventa necessaria anche nella pratica.
         </p>
         <p>
-          <mark>
+          <mark class="has-background-success">
             Aggiungo quindi che nella programmazione del proprio percorso futuro
             bisogna tenere conto di possibili imprevisti.</mark
           >
@@ -487,7 +487,7 @@
           <strong>anticipando una scelta</strong>. In sostanza, nel corso del
           secondo anno della triennale, pensai bene di guardarmi attorno per
           quanto riguarda i corsi di laurea magistrali.
-          <mark
+          <mark class="has-background-success"
             >Sebbene avessi già in testa di proseguire su sicurezza informatica
             non ho mai smesso di informarmi.</mark
           >
@@ -502,7 +502,7 @@
           universitari) di economia per chi ha frequentato informatica. In
           secondo luogo è richiesto il B2 per poter accedere al corso di laurea,
           quando per poter conseguire la laurea alla mia triennale basta il B1.
-          <mark
+          <mark class="has-background-success"
             >Quindi l’aver anticipato la scelta mi ha permesso di non
             precludermi questo percorso, ma non solo :</mark
           >
@@ -517,13 +517,13 @@
             >entrare in contatto con una persona appena uscita da quel corso di
             laurea</strong
           >.
-          <mark
+          <mark class="has-background-success"
             >Capite bene che i vantaggi che ho ottenuto da un po’ di
             pianificazione sono stati enormi.</mark
           >
         </p>
         <p>
-          <mark>
+          <mark class="has-background-success">
             Se per caso venissi a contatto con qualcuno che lavora nel settore
             che ti interessa non esitare a chiedergli qualche dettaglio in più,
             tenersi sempre aggiornati è importantissimo Ma se non ti fossi
@@ -547,7 +547,7 @@
           <strong>
             disorientati perché si sono rifiutati di pensare troppo in là nel
             fututo, di pensare già ad una possibile scelta papabile, </strong
-          >.<mark>
+          >.<mark class="has-background-success">
             con la conseguenza di aver fatto scelte di pancia senza aver troppo
             approfondito a cosa andassero contro.
           </mark>
@@ -558,10 +558,10 @@
         <br />
       </div>
     </div>
-    <div class="container-md">
+    <div class="container is-fullhd">
       <br />
-      <h2 class="text-center">Per concludere</h2>
-      <hr />
+      <h2 class="has-text-centered is-size-3">Per concludere</h2>
+      <hr class="has-background-grey-light" style="height:1px;"/>
       <p>
         Siamo giunti alle conclusioni finali di questo breve saggio. Giustamente
         potreste dubitare di tutto ciò che vi ho detto, in fondo all’inizio ho
@@ -576,7 +576,7 @@
         vi fidate di me fidatevi di lui e leggete il suo libro.
       </p>
       <p>
-        <mark
+        <mark class="has-background-success"
           >Attenzione, così facendo non si trova per forza il corso di laurea
           giusto, ma si riducono di molto le possibilità di sbagliare.</mark
         >
@@ -587,7 +587,7 @@
         Inoltre
         <strong>la vita è piena di imprevisti</strong> che possono cambiare
         tutto e spesso le persone stesse cambiano.
-        <mark
+        <mark class="has-background-success"
           >Ciò non toglie che applicarsi nella scelta sia meglio che fare le
           cose tanto per, quanto meno se dovessimo sbagliare riusciremmo a
           capire perché, altrimenti non ce ne sarà uno dal momento che la scelta

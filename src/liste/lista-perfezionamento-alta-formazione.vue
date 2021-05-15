@@ -1,11 +1,11 @@
 <template>
-  <div class="container-md">
+  <div class="container is-fullhd">
     <br />
-    <h1 class="text-secondary">
+   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Lista corsi di perfezionamento - alta formazione
     </h1>
     <br />
-    <h2 class="text-secondary">
+    <h2 class="has-text-grey is-size-2">
       Qui puoi trovare la lista di tutti i corsi di perfezionamento - alta formazione
     </h2>
     <hr />
@@ -13,7 +13,7 @@
       <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei corsi di perfezionamento - alta formazione, per avere il
       <strong>link alla pagina del corso</strong> e la
       <strong>funzione di filtro</strong>
-      <router-link to="/perfezionamento-alta-formazione" class="text-danger">
+      <router-link to="/perfezionamento-alta-formazione" class="has-text-danger">
         visita questa pagina</router-link
       >.
     </p>
@@ -22,8 +22,8 @@
       <strong>800 corsi di perfezionamento - alta formazione</strong>.
     </p>
     <br />
-    <table class="table table-sm table-bordered">
-      <thead class="thead-dark">
+     <table  class="table is-bordered">
+     <thead class="has-background-dark">
         <th>Nome corso</th>
         <th>Arco</th>
         <th>Università</th>

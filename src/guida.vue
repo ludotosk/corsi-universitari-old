@@ -1,8 +1,8 @@
 <template>
-  <div class="container-md" data-view>
+  <div class="container is-fullhd" data-view>
     <br />
-    <h1 class="text-secondary">Guida all'utilizzo del sito</h1>
-    <h2 class="text-secondary">
+   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Guida all'utilizzo del sito</h1>
+    <h2 class="has-text-grey is-size-2">
       Come scegliere corso di laurea? Ecco il nostro sito!
     </h2>
     <hr />

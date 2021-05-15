@@ -25,12 +25,6 @@ module.exports = {
         /^navbar(|-exact)-.*/,
         /^b-nav(|-exact)-.*$/,
         /^dropdown(|-exact)-.*$/,
-        'collapse',
-        'navbar',
-        'bg-dark',
-        'dropdown',
-        'active',
-        'show',
         'smart-pagination',
         /^page(|-exact)-.*$/,
         'pagination'

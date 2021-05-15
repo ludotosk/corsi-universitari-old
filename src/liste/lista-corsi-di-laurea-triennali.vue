@@ -1,16 +1,16 @@
 <template>
-  <div class="container-md">
+  <div class="container is-fullhd">
     <br />
-    <h1 class="text-secondary">Lista corsi di laurea triennali</h1>
+   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Lista corsi di laurea triennali</h1>
     <br />
-    <h2 class="text-secondary">
+    <h2 class="has-text-grey is-size-2">
       Qui puoi trovare la lista di tutti i corsi di laurea triennali Italiani
     </h2>
     <hr />
       <p>
       <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
       corsi di laurea triennali, per avere il <strong>link alla pagina del corso</strong> e la <strong>funzione di filtro</strong> 
-      <router-link to="/corsi-di-laurea-triennale" class="text-danger"> visita questa pagina</router-link>. 
+      <router-link to="/corsi-di-laurea-triennale" class="has-text-danger"> visita questa pagina</router-link>. 
     </p>
     <p>
       Qui si possono trovare oltre
@@ -18,10 +18,10 @@
       relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <br />
-    <table class="table table-sm table-bordered">
-      <thead class="thead-dark">
-        <th>Corso di laurea</th>
-        <th>Università</th>
+     <table  class="table is-bordered">
+     <thead class="has-background-dark">
+        <th class="has-text-white">Corso di laurea</th>
+        <th class="has-text-white">Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.n">
         <tr data-view>

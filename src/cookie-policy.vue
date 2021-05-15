@@ -1,8 +1,8 @@
 <template>
-  <div class="container" data-view>
+  <div class="container is-fullhd" data-view>
     <br />
-    <h1>Informativa sui cookie</h1>
-    <h2>Cosa sono i cookie?</h2>
+    <h1 class="is-size-1">Informativa sui cookie</h1>
+    <h2 class="is-size-3">Cosa sono i cookie?</h2>
     <p>
       I cookie sono piccoli file di testo che i siti visitati dagli utenti
       inviano ai loro terminali, ove vengono memorizzati per essere poi
@@ -13,14 +13,14 @@
       altri domini, ecc.) che risiedono su server diversi da quello del sito
       visitato.
     </p>
-    <h2>A cosa servono i cookie?</h2>
+    <h2 class="is-size-3">A cosa servono i cookie?</h2>
     <p>
       I cookie sono usati per differenti finalità: esecuzione di autenticazioni
       informatiche, monitoraggio di sessioni, memorizzazione di informazioni su
       specifiche configurazioni riguardanti gli utenti che accedono al server,
       memorizzazione delle preferenze, ecc.
     </p>
-    <h2>Cosa sono i cookie "tecnici"?</h2>
+    <h2 class="is-size-3">Cosa sono i cookie "tecnici"?</h2>
     <p>
       Sono i cookie che servono a effettuare la navigazione o a fornire un
       servizio richiesto dall´utente. Non vengono utilizzati per scopi ulteriori
@@ -34,7 +34,7 @@
       effettuare e mantenere l´identificazione dell´utente nell´ambito della
       sessione, risultano indispensabili.
     </p>
-    <h2>
+    <h2 class="is-size-3">
       cookie tecnici che non richiedono consenso all'utente di terze parti
     </h2>
     <p>Servizio statistico di Google Analytics (IP anonimizzato)</p>
@@ -53,19 +53,19 @@
     <p>Privacy e protezione dei dati</p>
     <a
       href="https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008"
-      class="text-primary text-break"
+      class="has-text-danger"
       >https://support.google.com/analytics/topic/2919631?hl=it&ref_topic=1008008</a
     >
     <p>Salvaguardia dei dati</p>
     <a
       href="https://support.google.com/analytics/answer/6004245"
-      class="text-primary text-break"
+      class="has-text-danger"
       >https://support.google.com/analytics/answer/6004245</a
     >
     <p>Informativa Cookie di Google per Google Analytics</p>
     <a
       href="https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage"
-      class="text-primary text-break"
+      class="has-text-danger"
       >https://developers.google.com/analytics/devguides/collection/analyticsjs/cookie-usage</a
     >
     <p>
@@ -74,7 +74,7 @@
     </p>
     <a
       href="https://tools.google.com/dlpage/gaoptout?hl=it"
-      class="text-primary"
+      class="has-text-danger"
       >https://tools.google.com/dlpage/gaoptout?hl=it</a
     >
     <br />
@@ -93,7 +93,7 @@
       Mozilla Firefox
       <a
         href="https://support.mozilla.org/it/kb/Bloccare%20i%20cookie"
-        class="text-primary"
+        class="has-text-danger"
         >link alle istruzioni</a
       >
     </p>
@@ -101,7 +101,7 @@
       Google Chrome
       <a
         href="https://support.google.com/chrome/answer/95647?hl=it"
-        class="text-primary"
+        class="has-text-danger"
         >link alle istruzioni</a
       >
     </p>
@@ -109,7 +109,7 @@
       Microsoft Internet Explorer
       <a
         href="http://windows.microsoft.com/it-it/windows-vista/block-or-allow-cookies"
-        class="text-primary"
+        class="has-text-danger"
         >link alle istruzioni</a
       >
     </p>
@@ -117,7 +117,7 @@
       Microsoft Edge
       <a
         href="https://privacy.microsoft.com/it-it/windows-10-microsoft-edge-and-privacy"
-        class="text-primary"
+        class="has-text-danger"
         >link alle istruzioni</a
       >
     </p>
@@ -125,7 +125,7 @@
       Opera
       <a
         href="http://help.opera.com/Windows/10.00/it/cookies.html"
-        class="text-primary"
+        class="has-text-danger"
         >link alle istruzioni</a
       >
     </p>
@@ -133,7 +133,7 @@
       Safari
       <a
         href="https://support.apple.com/kb/PH21411?locale=it_IT"
-        class="text-primary"
+        class="has-text-danger"
         >link alle istruzioni</a
       >
     </p>
@@ -146,7 +146,7 @@
     <p><strong>Titolare del sito web</strong></p>
     <p>Ludovico Toscano</p>
     <p>
-      Email:<a href="mailto:toscanoludovico@gmail.com" class="text-primary"
+      Email:<a href="mailto:toscanoludovico@gmail.com" class="has-text-danger"
         >toscanoludovico@gmail.com</a
       >
     </p>

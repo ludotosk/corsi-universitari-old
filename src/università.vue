@@ -1,7 +1,7 @@
 <template>
-  <div class="container-md" data-view>
+  <div class="container is-fullhd" data-view>
     <br />
-    <h1 class="text-secondary">Corsi di laurea divisi per ateneo</h1>
+   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea divisi per ateneo</h1>
     <hr />
     <ul class="list-group">
       <li class="list-group-item">

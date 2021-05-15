@@ -1,21 +1,23 @@
 <template>
-  <div class="container-md">
+  <div class="container is-fullhd">
     <br />
-    <h1 class="text-secondary">Corsi di laurea a {{uni}}</h1>
+   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea a {{uni}}</h1>
     <br />
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <label class="input-group-text" id="basic-addon3" for="basic-url"
-          >Filtra in base al nome:</label
-        >
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field has-addons">
+          <p class="control">
+            <a class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</a>
+          </p>
+          <input
+            type="text"
+            class="input"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+            v-model="filters.n.value"
+          />
+        </div>
       </div>
-      <input
-        type="text"
-        class="form-control"
-        id="basic-url"
-        aria-describedby="basic-addon3"
-        v-model="filters.n.value"
-      />
     </div>
     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
@@ -25,24 +27,25 @@
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
     </p>
+    <br>
     <v-table
       :data="corsi"
       :filters="filters"
       :pageSize="15"
       @totalPagesChanged="totalPages = $event"
       :currentPage.sync="currentPage"
-      class="table table-striped table-hover table-sm table-bordered"
+      class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
     >
-      <thead slot="head" class="thead-dark">
-        <th>Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc">Livello</v-th>
-        <v-th sortKey="a" defaultSort="asc">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc">Università</v-th>
+      <thead slot="head" class="has-background-dark">
+        <th class="has-text-white">Corso di laurea</th>
+        <v-th sortKey="t" defaultSort="asc" class="has-text-white">Livello</v-th>
+        <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
+        <v-th sortKey="u" defaultSort="asc" class="has-text-white">Università</v-th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-           <a :href="row.h" target="_blank" rel="noopener" class="text-danger">{{ row.n }}</a>
+           <a :href="row.h" target="_blank" rel="noopener" class="has-text-danger">{{ row.n }}</a>
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
@@ -53,7 +56,7 @@
     <smart-pagination
       :currentPage.sync="currentPage"
       :totalPages="totalPages"
-      :maxPageLinks="5"
+      :maxPageLinks="4"
     />
     <br />
     <p>

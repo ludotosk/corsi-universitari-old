@@ -5,10 +5,8 @@ import VueMeta from 'vue-meta'
 import VueGtag from "vue-gtag"
 import './scss/style.scss'
 import router from './router'
-import { NavbarPlugin } from 'bootstrap-vue'
 import './registerServiceWorker'
 
-Vue.use(NavbarPlugin)
 Vue.use(SmartTable)
 Vue.use(VueMeta)
 

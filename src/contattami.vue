@@ -1,61 +1,52 @@
 <template>
-  <div class="container-fluid" data-view>
-    <div class="row">
-      <div class="col-md-3"></div>
-      <div class="col-md-6">
+  <div class="container is-fullhd" data-view>
+    <br />
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+      Inviaci qui il tuo feedback
+    </h1>
+    <hr />
+    <form
+      name="feedback"
+      method="POST"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
+      <input type="hidden" name="form-name" value="feedback" />
+      <div class="form-group form-row">
+        <label for="nome">Nome:</label>
         <br />
-        <h1 class="text-secondary">Inviaci qui il tuo feedback</h1>
-        <hr />
-        <form
-          name="feedback"
-          method="POST"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-        >
-          <input type="hidden" name="form-name" value="feedback" />
-          <div class="form-group form-row">
-            <label for="nome">Nome:</label>
-            <br />
-            <input
-              id="nome"
-              type="text"
-              name="name"
-              class="form-control form-control-lg"
-            />
-          </div>
-          <div class="form-group">
-            <label for="email">Email: </label>
-            <br />
-            <input
-              id="email"
-              type="email"
-              name="email"
-              class="form-control form-control-lg"
-            />
-          </div>
-          <div class="form-group">
-            <label for="message">Il tuo messaggio:</label>
-            <br />
-            <textarea
-              id="message"
-              name="message"
-              class="form-control"
-            ></textarea>
-          </div>
-          <p>
-            <button type="submit" class="btn btn-primary">Invia</button>
-          </p>
-        </form>
-        <br />
-        <p>
-          L'unica cosa necessaria per la compilazione del form è il messaggio.
-          Nome ed e-mail sono opzionali. Però se vuoi essere ricontattato
-          l'e-mail è d'obbligo. Schiacciando invia mi arriverà una notifica via
-          e-mail di un nuovo messaggio.
-        </p>
+        <div class="control">
+          <input id="nome" type="text" name="name" class="input" />
+        </div>
       </div>
-      <div class="col-md-3"></div>
-    </div>
+      <div class="form-group">
+        <label for="email">Email: </label>
+        <br />
+        <div class="control">
+          <input id="email" type="email" name="email" class="input" />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="message">Il tuo messaggio:</label>
+        <br />
+        <div class="control">
+          <textarea id="message" name="message" class="textarea"></textarea>
+        </div>
+      </div>
+      <br />
+      <div class="control">
+        <button type="submit" class="button is-link has-background-dark">
+          Invia
+        </button>
+      </div>
+    </form>
+    <br />
+    <p>
+      L'unica cosa necessaria per la compilazione del form è il messaggio. Nome
+      ed e-mail sono opzionali. Però se vuoi essere ricontattato l'e-mail è
+      d'obbligo. Schiacciando invia mi arriverà una notifica via e-mail di un
+      nuovo messaggio.
+    </p>
   </div>
 </template>
 

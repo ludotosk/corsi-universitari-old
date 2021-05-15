@@ -1,21 +1,23 @@
 <template>
-  <div class="container-md">
+  <div class="container is-fullhd">
     <br />
-    <h1 class="text-secondary">Master di {{ livello }}</h1>
+   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Master di {{ livello }}</h1>
     <br />
-    <div class="input-group mb-3">
-      <div class="input-group-prepend">
-        <label class="input-group-text" id="basic-addon3" for="basic-url"
-          >Filtra in base al nome:</label
-        >
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field has-addons">
+          <p class="control">
+            <a class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</a>
+          </p>
+          <input
+            type="text"
+            class="input"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+            v-model="filters.corso.value"
+          />
+        </div>
       </div>
-      <input
-        type="text"
-        class="form-control"
-        id="basic-url"
-        aria-describedby="basic-addon3"
-        v-model="filters.corso.value"
-      />
     </div>
     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
@@ -23,20 +25,20 @@
       "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
       risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
       comune a tutti i nomi.
-    </p>
+    </p><br>
     <v-table
       :data="corsi"
       :filters="filters"
       :pageSize="15"
       @totalPagesChanged="totalPages = $event"
       :currentPage.sync="currentPage"
-      class="table table-striped table-hover table-sm table-bordered"
+      class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
     >
-      <thead slot="head" class="thead-dark">
-        <th>Nome del master</th>
-        <th>Livello</th>
-        <th>Arco</th>
-        <v-th sortKey="uni" defaultSort="asc">Università</v-th>
+      <thead slot="head" class="has-background-dark">
+          <th class="has-text-white">Nome del master</th>
+        <th class="has-text-white">Livello</th>
+        <th class="has-text-white">Arco</th>
+        <v-th class="has-text-white" sortKey="uni" defaultSort="asc">Università</v-th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
@@ -45,7 +47,7 @@
               :href="row.link"
               target="_blank"
               rel="noopener"
-              class="text-danger"
+              class="has-text-danger"
               >{{ row.corso }}</a
             >
           </td>
@@ -58,7 +60,7 @@
     <smart-pagination
       :currentPage.sync="currentPage"
       :totalPages="totalPages"
-      :maxPageLinks="5"
+      :maxPageLinks="4"
     />
     <br />
     <p>
