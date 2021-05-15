@@ -9,7 +9,11 @@
 <script>
 export default {
   async beforeUpdate() {
-    document.getElementById("navbar").setAttribute("class", `navbar-menu`);
+    try {
+      document.getElementById("navbar").setAttribute("class", `navbar-menu`);
+    } catch (e) {
+        //nulla
+    }
   },
 };
 </script>
