@@ -37,9 +37,9 @@
       class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
     >
       <thead slot="head" class="has-background-dark">
-        <th>Corso di laurea</th>
-        <th>Livello</th>
-        <v-th sortKey="u" defaultSort="asc">Università</v-th>
+        <th class="has-text-white">Corso di laurea</th>
+        <th class="has-text-white">Livello</th>
+        <v-th sortKey="u" defaultSort="asc" class="has-text-white">Università</v-th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">

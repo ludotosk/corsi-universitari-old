@@ -24,9 +24,9 @@
     <br />
      <table  class="table is-bordered">
      <thead class="has-background-dark">
-        <th>Nome corso</th>
-        <th>Arco</th>
-        <th>Università</th>
+        <th class="has-text-white">Nome corso</th>
+        <th class="has-text-white">Arco</th>
+        <th class="has-text-white">Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.corso">
         <tr data-view>
