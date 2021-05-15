@@ -1,5 +1,5 @@
 <template>
-  <footer class="has-background-primary has-text-light footer">
+  <footer class="has-background-dark has-text-light footer">
     <div class="content has-text-weight-medium has-text-centered">
       <p>
         Sito a cura di Ludovico Toscano. Contatti email:

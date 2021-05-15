@@ -1,13 +1,19 @@
 <template>
   <div class="container is-fullhd">
     <br />
-    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Tutti i Corsi di Laurea</h1>
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+      Tutti i Corsi di Laurea
+    </h1>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <button class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</button>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -27,8 +33,8 @@
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
     </p>
-    <br>
-    <br>
+    <br />
+    <br />
     <v-table
       :data="corsi"
       :filters="filters"
@@ -39,9 +45,13 @@
     >
       <thead slot="head" class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc" class="has-text-white">Livello</v-th>
+        <v-th sortKey="t" defaultSort="asc" class="has-text-white"
+          >Livello</v-th
+        >
         <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc" class="has-text-white">Università</v-th>
+        <v-th sortKey="u" defaultSort="asc" class="has-text-white"
+          >Università</v-th
+        >
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
@@ -122,7 +132,174 @@ export default {
   },
   data() {
     return {
-      corsi: [],
+      corsi: [
+        {
+          n: "Accounting e Finanza",
+          h:
+            "https://www.unibz.it/en/faculties/economics-management/master-accounting-finance/",
+          t: "Magistrale",
+          u: "Libera Università di BOLZANO",
+          a: "Sì",
+          c: "LM-77",
+          e: 1,
+          s: "BOLZANO - BOZEN",
+        },
+        {
+          n: "Accounting e Libera Professione",
+          h: "http://www.accounting-professione.unifi.it/",
+          t: "Magistrale",
+          u: "Università degli Studi di FIRENZE",
+          a: "No",
+          c: "LM-77",
+          e: 1,
+          s: "FIRENZE",
+        },
+        {
+          n: "Acquacoltura e igiene delle produzioni ittiche",
+          h: "http://corsi.unibo.it/Laurea/acquacoltura",
+          t: "Triennale",
+          u: "Alma mater studiorum Università di Bologna",
+          a: "No",
+          c: "L-38",
+          e: 1,
+          s: "CESENATICO",
+        },
+        {
+          n: "Advanced Automotive Electronic Engineering",
+          h: "http://corsi.unibo.it/2cycle/AutomotiveElectronicEngineering",
+          t: "Magistrale",
+          u: "Alma mater studiorum Università di Bologna",
+          a: "Sì",
+          c: "LM-29",
+          e: 1,
+          s: "BOLOGNA",
+        },
+        {
+          n: "Advanced Automotive Engineering",
+          h:
+            "http://www.ingmo.unimore.it/site/home/didattica/lauree-magistrali.html",
+          t: "Magistrale",
+          u: "Università degli Studi di MODENA e REGGIO EMILIA",
+          a: "Sì",
+          c: "LM-33",
+          e: 1,
+          s: "MODENA",
+        },
+        {
+          n: "Advanced Cosmetic Sciences",
+          h: "http://corsi.unibo.it/2Cycle/AdvancedCosmeticSciences",
+          t: "Magistrale",
+          u: "Alma mater studiorum Università di Bologna",
+          a: "No",
+          c: "LM-54",
+          e: 1,
+          s: "RIMINI",
+        },
+        {
+          n: "Advanced design",
+          h:
+            "http://corsi.unibo.it/Magistrale/AdvancedDesign/Pagine/default.aspx",
+          t: "Magistrale",
+          u: "Alma mater studiorum Università di Bologna",
+          a: "No",
+          c: "LM-12",
+          e: 1,
+          s: "BOLOGNA",
+        },
+        {
+          n: "ADVANCED MOLECULAR SCIENCES",
+          h: "http://www.master-ams.unifi.it/",
+          t: "Magistrale",
+          u: "Università degli Studi di FIRENZE",
+          a: "No",
+          c: "LM-54",
+          e: 1,
+          s: "FIRENZE",
+        },
+        {
+          n: "Aeronautical Engineering - Ingegneria Aeronautica",
+          h: "http://www.ingindinf.polimi.it/",
+          t: "Magistrale",
+          u: "Politecnico di MILANO",
+          a: "Sì",
+          c: "LM-20",
+          e: 1,
+          s: "MILANO",
+        },
+        {
+          n: "Aerospace Engineering",
+          h: "http://corsi.unibo.it/2cycle/AerospaceEngineering",
+          t: "Magistrale",
+          u: "Alma mater studiorum Università di Bologna",
+          a: "Sì",
+          c: "LM-20",
+          e: 1,
+          s: "FORLI'",
+        },
+        {
+          n: "AEROSPACE ENGINEERING - INGEGNERIA AEROSPAZIALE",
+          h: "https://www.ingegneria.unisalento.it/web/942656/home_page",
+          t: "Magistrale",
+          u: "Università del SALENTO",
+          a: "No",
+          c: "LM-20",
+          e: 1,
+          s: "BRINDISI",
+        },
+        {
+          n: "Agribusiness",
+          h:
+            "https://www.unisi.it/scegli-il-tuo-percorso/ambiente-biologia-chimica-farmacia-geologia/agribusiness",
+          t: "Triennale",
+          u: "Università degli Studi di SIENA",
+          a: "Sì",
+          c: "L-25",
+          e: 1,
+          s: "SIENA",
+        },
+        {
+          n: "AGRICOLTURA SOSTENIBILE",
+          h: "http://www.unipg.it/perm/offerta-formativa/2020/corso/276",
+          t: "Magistrale",
+          u: "Università degli Studi di PERUGIA",
+          a: "No",
+          c: "LM-69",
+          e: 1,
+          s: "PERUGIA",
+        },
+        {
+          n: "Agricoltura sostenibile e di precisione",
+          h:
+            "https://offertaformativa.unicatt.it/cdl-agricoltura-sostenibile-e-di-precisione-2020",
+          t: "Magistrale",
+          u: "Università Cattolica del Sacro Cuore",
+          a: "No",
+          c: "LM-69",
+          e: 1,
+          s: "PIACENZA",
+        },
+        {
+          n: "Agricultural and food economics",
+          h:
+            "https://offertaformativa.unicatt.it/cdl-agricultural-and-food-economics-2020",
+          t: "Magistrale",
+          u: "Università Cattolica del Sacro Cuore",
+          a: "No",
+          c: "LM-69",
+          e: 1,
+          s: "CREMONA",
+        },
+        {
+          n: "Agroingegneria",
+          h: "https://www.unipa.it/dipartimenti/saaf/cds/agroingegneria2073",
+          t: "Triennale",
+          u: "Università degli Studi di PALERMO",
+          a: "No",
+          c: "L-25",
+          e: 1,
+          s: "PALERMO",
+        }
+      ],
       filters: {
         n: { value: "", keys: ["n"] },
       },
