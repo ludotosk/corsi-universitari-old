@@ -17,7 +17,7 @@ module.exports = {
       //}]
     }
   },
-/*   pluginOptions: {
+  pluginOptions: {
     prerenderSpa: {
       registry: undefined,
       renderRoutes: [
@@ -111,7 +111,7 @@ module.exports = {
       headless: true,
       maxConcurrentRoutes: 32,
     }
-  } */
+  }
 }
 
 
