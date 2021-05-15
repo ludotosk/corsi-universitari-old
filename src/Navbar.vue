@@ -28,7 +28,10 @@
     </div>
 
     <div id="navbar" class="navbar-menu">
-      <div class="navbar-start has-text-weight-medium"  style="flex-grow: 1; justify-content: center;">
+      <div
+        class="navbar-start has-text-weight-medium"
+        style="flex-grow: 1; justify-content: center"
+      >
         <router-link to="/tutti-i-corsi-di-laurea" class="navbar-item"
           >Tutti i corsi di laurea</router-link
         >
