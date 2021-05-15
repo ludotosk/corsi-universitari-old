@@ -44,7 +44,7 @@
           >Corsi in inglese</router-link
         >
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Corsi per livello</a>
+          <p class="navbar-link">Corsi per livello</p>
 
           <div class="navbar-dropdown">
             <router-link to="/corsi-di-laurea-triennale" class="navbar-item"
@@ -87,7 +87,7 @@
           </div>
         </div>
         <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">Post laurea</a>
+          <p class="navbar-link">Post laurea</p>
           <div class="navbar-dropdown">
             <router-link to="/master-primo-livello" class="navbar-item"
               >Master di primo livello</router-link
