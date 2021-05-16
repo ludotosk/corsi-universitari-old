@@ -6,7 +6,7 @@ exports.handler = async function (event, context) {
     var query = event.queryStringParameters
     var tipo = event.path
 
-    let rawdata = fs.readFileSync(require.resolve(`./db.json`));
+    let rawdata = fs.readFileSync(require.resolve(`./assets/db.json`));
     let corsi = JSON.parse(rawdata);
 
     var res = [];
