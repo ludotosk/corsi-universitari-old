@@ -142,13 +142,11 @@ export default {
   },
   async beforeCreate() {
     try {
-      const res = await axios.get(
+      /*       const res = await axios.get(
         "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
-      ); 
-      /*
-      const res = await axios.get(
-        "api/corsi?_sort=u,a,t&_order=asc,desc,desc"
-      ); */
+      );  */
+
+      const res = await axios.get("api/corsi?_sort=u,a,t&_order=asc,desc,desc");
 
       this.corsi = res.data;
     } catch (e) {
