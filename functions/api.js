@@ -1,19 +1,18 @@
 exports.handler = async function (event, context) {
     const fs = require('fs');
-    const path = require('path')
-    const jsonPath = path.join(__dirname, 'db.json');
 
     console.log(event.path)
     console.log(event.queryStringParameters)
     var query = event.queryStringParameters
     var tipo = event.path
 
-    let rawdata = fs.readFileSync(jsonPath, 'utf-8');
+    let rawdata = fs.readFileSync(require.resolve(`./db.json`));
     let corsi = JSON.parse(rawdata);
 
     var res = [];
 
-    if (tipo == `/.netlify/functions/api/corsi`) {
+    //bisogna impostare la redirects per questo
+    if (tipo == `/api/corsi`) {
         res = corsi.corsi;
 
         if (query.t != undefined) {
@@ -60,7 +59,7 @@ exports.handler = async function (event, context) {
 
     }
 
-    if (tipo == `/.netlify/functions/api/master`) {
+    if (tipo == `/api/master`) {
         res = corsi.master;
 
         if (query.uni != undefined) {

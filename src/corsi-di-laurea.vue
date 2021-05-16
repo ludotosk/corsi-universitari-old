@@ -146,7 +146,7 @@ export default {
         "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc"
       ); */
       const res = await axios.get(
-        "/.netlify/functions/api/corsi"
+        "api/corsi?_sort=u,a,t&_order=asc,desc,desc"
       );
 
       this.corsi = res.data;
