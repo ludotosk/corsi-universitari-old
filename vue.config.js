@@ -111,6 +111,13 @@ module.exports = {
       headless: true,
       maxConcurrentRoutes: 32,
     }
+  },
+  devServer: {
+    proxy: {
+      '/api': {
+        target: 'localhost:8888/.netlify/functions/api'
+      }
+    }
   }
 }
 

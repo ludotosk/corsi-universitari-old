@@ -3,7 +3,7 @@
     <div class="navbar-brand">
       <router-link to="/" class="navbar-item">
         <img
-          src="/img/icons/favicon-32x32.png"
+          src="/img/icons/android-chrome-192x192.png"
           height="32"
           width="32"
           alt="logo corsiuniversitati.info"
