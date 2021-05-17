@@ -18,7 +18,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  /https:\/\/json-server-corsi.herokuapp.com\/.(.*)/,
+  /https:\/\/json-corsi-fastify.herokuapp.com\/.(.*)/,
   workbox.strategies.networkFirst({
     cacheName: 'api',
   }),

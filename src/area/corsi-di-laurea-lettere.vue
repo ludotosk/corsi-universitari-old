@@ -109,7 +109,7 @@ export default {
    /*    {
         rel: "preload",
         href:
-          "https://json-server-corsi.herokuapp.com/corsi?L-10&c=LM-15&LM-36&LM-37",
+          "https://json-corsi-fastify.herokuapp.com/corsi?L-10&c=LM-15&LM-36&LM-37",
         as: "fetch",
       }, */
     ],
@@ -128,7 +128,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/corsi?L-10&c=LM-15&LM-36&LM-37"
+        "https://json-corsi-fastify.herokuapp.com/corsi?L-10&c=LM-15&LM-36&LM-37"
       );
 
       this.corsi = res.data;

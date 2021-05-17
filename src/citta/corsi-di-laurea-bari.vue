@@ -121,7 +121,7 @@ export default {
   },
    async beforeCreate(){
     try {
-      const res = await axios.get('https://json-server-corsi.herokuapp.com/corsi?s=BARI');
+      const res = await axios.get('https://json-corsi-fastify.herokuapp.com/corsi?s=BARI');
 
       this.corsi = res.data;
     } catch (e) {

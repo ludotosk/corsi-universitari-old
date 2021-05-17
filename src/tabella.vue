@@ -89,7 +89,7 @@ export default {
       {
         rel: "preload",
         href:
-          "https://json-server-corsi.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc",
+          "https://json-corsi-fastify.herokuapp.com/corsi?_sort=u,a,t&_order=asc,desc,desc",
         as: "fetch",
       },
     ],
@@ -97,7 +97,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/corsi"
+        "https://json-corsi-fastify.herokuapp.com/corsi"
       );
 
       this.corsi = res.data;

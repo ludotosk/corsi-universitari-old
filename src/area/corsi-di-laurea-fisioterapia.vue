@@ -110,7 +110,7 @@ export default {
  /*      {
         rel: "preload",
         href:
-          "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT2&n=Fisioterapia (abilitante alla professione sanitaria di Fisioterapista)",
+          "https://json-corsi-fastify.herokuapp.com/corsi?c=L/SNT2&n=Fisioterapia (abilitante alla professione sanitaria di Fisioterapista)",
         as: "fetch",
       }, */
     ],
@@ -129,7 +129,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/corsi?c=L/SNT2&n=Fisioterapia (abilitante alla professione sanitaria di Fisioterapista)"
+        "https://json-corsi-fastify.herokuapp.com/corsi?c=L/SNT2&n=Fisioterapia (abilitante alla professione sanitaria di Fisioterapista)"
       );
 
       this.corsi = res.data;

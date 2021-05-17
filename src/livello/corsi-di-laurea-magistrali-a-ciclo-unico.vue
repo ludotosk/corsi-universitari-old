@@ -122,7 +122,7 @@ export default {
     async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-server-corsi.herokuapp.com/corsi?t=Magistrale a Ciclo Unico&_sort=a,u&_order=desc,asc",
+        "https://json-corsi-fastify.herokuapp.com/corsi?t=Magistrale a Ciclo Unico&_sort=a,u&_order=desc,asc",
       );
 
       this.corsi = res.data;
