@@ -118,7 +118,7 @@ module.exports = {
         target: 'localhost:8888/.netlify/functions/api'
       }
     }
-  }
+  },
 }
 
 

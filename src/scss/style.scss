@@ -34,3 +34,7 @@ $family-sans-serif: "Quicksand", sans-serif;
     background-color: #2f3c48;
     border-color: #2f3c48;
 }
+
+.active {
+    @extend .is-active;
+}

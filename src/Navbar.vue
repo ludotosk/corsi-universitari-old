@@ -16,18 +16,19 @@
         aria-label="menu"
         aria-expanded="false"
         data-target="navbar"
-        v-on:click="navbarTrigger"
+        v-on:click="isActive = !isActive"
+        v-bind:class="{ active: isActive }"
       >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
+        <span aria-hidden="true" ></span>
+        <span aria-hidden="true" ></span>
+        <span aria-hidden="true" ></span>
+        <span aria-hidden="true" ></span>
+        <span aria-hidden="true" ></span>
+        <span aria-hidden="true" ></span>
       </a>
     </div>
 
-    <div id="navbar" class="navbar-menu">
+    <div id="navbar" class="navbar-menu" v-bind:class="{ active: isActive }">
       <div
         class="navbar-start has-text-weight-medium"
         style="flex-grow: 1; justify-content: center"
@@ -124,33 +125,8 @@
 export default {
   data() {
     return {
-      navbarBurgers: null,
+      isActive: false,
     };
-  },
-  async mounted() {
-    this.navbarBurgers = Array.prototype.slice.call(
-      document.querySelectorAll(".navbar-burger"),
-      0
-    );
-  },
-  methods: {
-    navbarTrigger: function () {
-      // Check if there are any navbar burgers
-      if (this.navbarBurgers.length > 0) {
-        // Add a click event on each of them
-        this.navbarBurgers.forEach((el) => {
-          el.addEventListener("click", () => {
-            // Get the target from the "data-target" attribute
-            const target = el.dataset.target;
-            const $target = document.getElementById(target);
-
-            // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-            el.classList.toggle("is-active");
-            $target.classList.toggle("is-active");
-          });
-        });
-      }
-    },
   },
 };
 </script>
