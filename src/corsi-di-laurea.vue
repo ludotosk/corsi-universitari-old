@@ -37,7 +37,6 @@
       tabella.
     </p>
     <br />
-    <br />
     <v-table
       :data="corsi"
       :filters="filters"
