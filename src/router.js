@@ -54,7 +54,7 @@ const CorsiMotorie = () => import(/* webpackChunkName: "corsimotorie" */ './area
 const CorsiFisica = () => import(/* webpackChunkName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
 const AreaAccademicaUni = () => import(/* webpackChunkName: "areaaccademica" */ './area-accademica-uni.vue')
 const Inglese = () => import(/* webpackChunkName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
-const Guida = () => import(/* webpackChunkName: "guida" */ './guida.vue')
+//const Guida = () => import(/* webpackChunkName: "guida" */ './guida.vue')
 const Padova = () => import(/* webpackChunkName: "padova" */ './citta/corsi-di-laurea-padova.vue')
 const Bari = () => import(/* webpackChunkName: "bari" */ './citta/corsi-di-laurea-bari.vue')
 const Bologna = () => import(/* webpackChunkName: "bologna" */ './citta/corsi-di-laurea-bologna.vue')
@@ -472,14 +472,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/guida', components: {
       default: Guida,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/corsi-di-laurea-padova', components: {
       default: Padova,
