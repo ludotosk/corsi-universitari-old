@@ -4,6 +4,10 @@
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Corsi di laurea per città
     </h1>
+    <br>
+    <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
+      Ecco la lista delle nostre città
+    </h2>
     <hr />
     <ul class="list-group">
       <div class="box">

@@ -4,6 +4,9 @@
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Tutti i Corsi di Laurea
     </h1>
+    <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
+      Qui puoi trovare tutti i Corsi di Laurea italiani
+    </h2>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">

@@ -2,6 +2,7 @@
   <div class="container is-fullhd">
     <br />
    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Master di {{ livello }}</h1>
+   <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">Qui puoi trovare i master di {{ livello }}</h2>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">

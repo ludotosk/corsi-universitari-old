@@ -38,3 +38,11 @@ $family-sans-serif: "Quicksand", sans-serif;
 .active {
     @extend .is-active;
 }
+
+.hidden {
+    @extend .is-hidden;
+}
+
+.danger {
+    @extend .has-text-danger;
+}

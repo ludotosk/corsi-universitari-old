@@ -102,7 +102,9 @@ module.exports = {
         '/lista-master-primo-livello',
         '/corsi-di-laurea-economia',
         '/lista-perfezionamento-alta-formazione',
-        '/perfezionamento-alta-formazione'
+        '/perfezionamento-alta-formazione',
+        '/lista-corsi-di-laurea-senza-test',
+        '/corsi-di-laurea-senza-test',
       ],
       //headless: true,
       //onlyProduction: true,

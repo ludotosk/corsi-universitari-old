@@ -46,7 +46,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Lista corsi di laurea triennali",
+    title: "Lista corsi di laurea triennali ad accesso libero",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
@@ -57,7 +57,7 @@ export default {
       },
       {
         name: "keywords",
-        content: "Corsi di laurea, Corso di laurea, Lista corsi di laurea",
+        content: "Corsi di laurea, Corso di laurea, Lista corsi di laurea ad accesso libero",
       },
     ],
     link: [

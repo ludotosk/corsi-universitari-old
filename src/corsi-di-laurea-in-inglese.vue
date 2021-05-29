@@ -1,13 +1,22 @@
 <template>
   <div class="container is-fullhd">
     <br />
-   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea {{ uni }}</h1>
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+      Corsi di laurea {{ uni }}
+    </h1>
+    <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
+      Qui puoi trovare tutti i Corsi di Laurea {{ uni }}
+    </h2>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <label for="basic-url" class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</label>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -27,7 +36,7 @@
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
     </p>
-    <br>
+    <br />
     <v-table
       :data="corsi"
       :filters="filters"
@@ -38,9 +47,13 @@
     >
       <thead slot="head" class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc" class="has-text-white">Livello</v-th>
+        <v-th sortKey="t" defaultSort="asc" class="has-text-white"
+          >Livello</v-th
+        >
         <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc" class="has-text-white">Università</v-th>
+        <v-th sortKey="u" defaultSort="asc" class="has-text-white"
+          >Università</v-th
+        >
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">

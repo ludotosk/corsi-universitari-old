@@ -4,6 +4,7 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
+const Panel = () => import(/* webpackChunkName: "panel" */'./panellink.vue')
 const Corsi = () => import(/* webpackChunkName: "corsi" */ './corsi-di-laurea.vue')
 const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
 const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
@@ -118,6 +119,7 @@ const routes = [
     path: '/tutti-i-corsi-di-laurea', components: {
       default: Corsi,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -125,6 +127,7 @@ const routes = [
     path: '/corsi-di-laurea-unibo', components: {
       default: CorsiUnibo,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -132,6 +135,7 @@ const routes = [
     path: '/corsi-di-laurea-unipi', components: {
       default: CorsiUnipi,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -139,6 +143,7 @@ const routes = [
     path: '/corsi-di-laurea-sapienza', components: {
       default: CorsiSapienza,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -146,6 +151,7 @@ const routes = [
     path: '/corsi-di-laurea-unipd', components: {
       default: CorsiUnipd,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -153,6 +159,7 @@ const routes = [
     path: '/corsi-di-laurea-bicocca', components: {
       default: CorsiBicocca,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -160,6 +167,7 @@ const routes = [
     path: '/corsi-di-laurea-polimi', components: {
       default: CorsiPolimi,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -167,6 +175,7 @@ const routes = [
     path: '/corsi-di-laurea-uniba', components: {
       default: CorsiUniba,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -174,6 +183,7 @@ const routes = [
     path: '/corsi-di-laurea-unibo', components: {
       default: CorsiUnibo,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -187,6 +197,7 @@ const routes = [
     path: '/corsi-di-laurea-unimi', components: {
       default: CorsiUnimi,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -194,6 +205,7 @@ const routes = [
     path: '/corsi-di-laurea-unina', components: {
       default: CorsiUnina,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -201,6 +213,7 @@ const routes = [
     path: '/corsi-di-laurea-unipa', components: {
       default: CorsiUnipa,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -208,6 +221,7 @@ const routes = [
     path: '/corsi-di-laurea-unipr', components: {
       default: CorsiUnipr,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -215,6 +229,7 @@ const routes = [
     path: '/corsi-di-laurea-uniroma1', components: {
       default: CorsiUniroma1,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -222,6 +237,7 @@ const routes = [
     path: '/corsi-di-laurea-unisa', components: {
       default: CorsiUnisa,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -229,6 +245,7 @@ const routes = [
     path: '/corsi-di-laurea-unito', components: {
       default: CorsiUnito,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -236,6 +253,7 @@ const routes = [
     path: '/lista-corsi-di-laurea-triennale', components: {
       default: ListaTriennale,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -243,6 +261,7 @@ const routes = [
     path: '/lista-corsi-di-laurea-triennale-ad-accesso-libero', components: {
       default: ListaAccesso,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -250,6 +269,7 @@ const routes = [
     path: '/lista-corsi-di-laurea-magistrale', components: {
       default: ListaMagistrale,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -257,6 +277,7 @@ const routes = [
     path: '/lista-corsi-di-laurea-magistrale-a-ciclo-unico', components: {
       default: ListaCiclo,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -264,6 +285,7 @@ const routes = [
     path: '/corsi-di-laurea-triennale', components: {
       default: CorsiTriennale,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -271,6 +293,7 @@ const routes = [
     path: '/corsi-di-laurea-magistrale', components: {
       default: CorsiMagistrale,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -278,6 +301,7 @@ const routes = [
     path: '/corsi-di-laurea-magistrale-a-ciclo-unico', components: {
       default: CorsiCiclo,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -285,6 +309,7 @@ const routes = [
     path: '/corsi-di-laurea-triennali-ad-accesso-libero', components: {
       default: CorsiLiberi,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -292,6 +317,7 @@ const routes = [
     path: '/corsi-di-laurea-medicina', components: {
       default: CorsiMedicina,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -299,6 +325,7 @@ const routes = [
     path: '/corsi-di-laurea-psicologia', components: {
       default: CorsiPsicologia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -306,6 +333,7 @@ const routes = [
     path: '/corsi-di-laurea-fisioterapia', components: {
       default: CorsiFisioterapia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -313,6 +341,7 @@ const routes = [
     path: '/corsi-di-laurea-storia', components: {
       default: CorsiStoria,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -320,6 +349,7 @@ const routes = [
     path: '/corsi-di-laurea-infermieristica', components: {
       default: CorsiInfermieristica,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -327,6 +357,7 @@ const routes = [
     path: '/corsi-di-laurea-matematica', components: {
       default: CorsiMatematica,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -334,6 +365,7 @@ const routes = [
     path: '/corsi-di-laurea-scienze-della-formazione-primaria', components: {
       default: CorsiFormazionePrimaria,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -341,6 +373,7 @@ const routes = [
     path: '/corsi-di-laurea-biologia', components: {
       default: CorsiBiologia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -348,6 +381,7 @@ const routes = [
     path: '/corsi-di-laurea-filosofia', components: {
       default: CorsiFilosofia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -355,6 +389,7 @@ const routes = [
     path: '/corsi-di-laurea-fisica', components: {
       default: CorsiFisica,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -362,6 +397,7 @@ const routes = [
     path: '/corsi-di-laurea-biotecnologia', components: {
       default: CorsiBiotecnologia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -369,6 +405,7 @@ const routes = [
     path: '/corsi-di-laurea-dietistica', components: {
       default: CorsiDietistica,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -376,6 +413,7 @@ const routes = [
     path: '/corsi-di-laurea-farmacia', components: {
       default: CorsiFarmacia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -383,6 +421,7 @@ const routes = [
     path: '/corsi-di-laurea-giurisprudenza', components: {
       default: CorsiGiurisprudenza,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -390,6 +429,7 @@ const routes = [
     path: '/corsi-di-laurea-informatica', components: {
       default: CorsiInformatica,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -397,6 +437,7 @@ const routes = [
     path: '/corsi-di-laurea-lettere', components: {
       default: CorsiLettere,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -404,6 +445,7 @@ const routes = [
     path: '/corsi-di-laurea-logopedia', components: {
       default: CorsiLogopedia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -411,6 +453,7 @@ const routes = [
     path: '/corsi-di-laurea-scienze-motorie', components: {
       default: CorsiMotorie,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -425,6 +468,7 @@ const routes = [
     path: '/corsi-di-laurea-in-inglese', components: {
       default: Inglese,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -432,6 +476,7 @@ const routes = [
     path: '/guida', components: {
       default: Guida,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -439,6 +484,7 @@ const routes = [
     path: '/corsi-di-laurea-padova', components: {
       default: Padova,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -446,6 +492,7 @@ const routes = [
     path: '/corsi-di-laurea-bari', components: {
       default: Bari,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -453,6 +500,7 @@ const routes = [
     path: '/corsi-di-laurea-bologna', components: {
       default: Bologna,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -460,6 +508,7 @@ const routes = [
     path: '/corsi-di-laurea-firenze', components: {
       default: Firenze,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -467,6 +516,7 @@ const routes = [
     path: '/corsi-di-laurea-genova', components: {
       default: Genova,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -474,6 +524,7 @@ const routes = [
     path: '/corsi-di-laurea-milano', components: {
       default: Milano,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -481,6 +532,7 @@ const routes = [
     path: '/corsi-di-laurea-napoli', components: {
       default: Napoli,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -488,6 +540,7 @@ const routes = [
     path: '/corsi-di-laurea-pavia', components: {
       default: Pavia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -495,6 +548,7 @@ const routes = [
     path: '/corsi-di-laurea-pisa', components: {
       default: Pisa,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -502,6 +556,7 @@ const routes = [
     path: '/corsi-di-laurea-roma', components: {
       default: Roma,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -509,6 +564,7 @@ const routes = [
     path: '/corsi-di-laurea-torino', components: {
       default: Torino,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -516,6 +572,7 @@ const routes = [
     path: '/corsi-di-laurea-venezia', components: {
       default: Venezia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -523,6 +580,7 @@ const routes = [
     path: '/corsi-di-laurea-verona', components: {
       default: Verona,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -537,6 +595,7 @@ const routes = [
     path: '/corsi-di-laurea-unikore', components: {
       default: CorsiKore,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -544,6 +603,7 @@ const routes = [
     path: '/corsi-di-laurea-univda', components: {
       default: CorsiUnivda,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -551,6 +611,7 @@ const routes = [
     path: '/corsi-di-laurea-unipegaso', components: {
       default: CorsiUnipegaso,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -558,6 +619,7 @@ const routes = [
     path: '/corsi-di-laurea-unicusano', components: {
       default: CorsiUnicusano,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -565,6 +627,7 @@ const routes = [
     path: '/corsi-di-laurea-ecampus', components: {
       default: CorsiEcampus,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -572,6 +635,7 @@ const routes = [
     path: '/corsi-di-laurea-mercatorum', components: {
       default: CorsiMercatorum,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -579,6 +643,7 @@ const routes = [
     path: '/corsi-di-laurea-bocconi', components: {
       default: CorsiBocconi,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -586,6 +651,7 @@ const routes = [
     path: '/corsi-di-laurea-federico-ii', components: {
       default: CorsiFederico,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -593,6 +659,7 @@ const routes = [
     path: '/corsi-di-laurea-roma-tre', components: {
       default: CorsiRomaTre,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -600,6 +667,7 @@ const routes = [
     path: '/corsi-di-laurea-tor-vergata', components: {
       default: CorsiTor,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -607,6 +675,7 @@ const routes = [
     path: '/corsi-di-laurea-uninettuno', components: {
       default: CorsiUninettuno,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -614,6 +683,7 @@ const routes = [
     path: '/master-primo-livello', components: {
       default: MasterPrimo,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -621,6 +691,7 @@ const routes = [
     path: '/master-secondo-livello', components: {
       default: MasterSecondo,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -628,6 +699,7 @@ const routes = [
     path: '/lista-master-primo-livello', components: {
       default: ListaMasterPrimo,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -635,6 +707,7 @@ const routes = [
     path: '/lista-master-secondo-livello', components: {
       default: ListaMasterSecondo,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -642,6 +715,7 @@ const routes = [
     path: '/corsi-di-laurea-economia', components: {
       default: CorsiEconomia,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -649,6 +723,7 @@ const routes = [
     path: '/lista-perfezionamento-alta-formazione', components: {
       default: ListaPerfezionamentoAltaFormazione,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
@@ -656,6 +731,23 @@ const routes = [
     path: '/perfezionamento-alta-formazione', components: {
       default: PerfezionamentoAltaFormazione,
       header: Navbar,
+      panel: Panel,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-senza-test', components: {
+      default: () => import(/* webpackChunkName: "corsi senza test" */ './no-test/corsi-di-laurea-senza-test.vue'),
+      header: Navbar,
+      panel: Panel,
+      footer: Footer
+    }
+  },
+  {
+    path: '/lista-corsi-di-laurea-senza-test', components: {
+      default: () => import(/* webpackChunkName: "lista corsi senza test" */ './no-test/lista-corsi-di-laurea-senza-test.vue'),
+      header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   }
