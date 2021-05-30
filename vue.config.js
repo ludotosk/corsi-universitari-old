@@ -69,7 +69,6 @@ module.exports = {
         '/corsi-di-laurea-psicologia',
         '/corsi-di-laurea-medicina',
         '/corsi-di-laurea-in-inglese',
-        '/guida',
         '/citta',
         '/corsi-di-laurea-bari',
         '/corsi-di-laurea-bologna',
@@ -122,5 +121,3 @@ module.exports = {
     }
   },
 }
-
-

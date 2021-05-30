@@ -105,7 +105,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-Milano",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-milano",
       },
     ],
   },

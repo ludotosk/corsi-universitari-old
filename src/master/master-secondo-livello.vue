@@ -102,7 +102,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/master-Secondo-livello",
+        href: "https://www.corsiuniversitari.info/master-secondo-livello",
       },
     ],
   },
