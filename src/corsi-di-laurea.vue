@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
-      Tutti i Corsi di Laurea
+      Tutti i Corsi di Laurea 2021
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
       Tutti i corsi di laurea italiani del 2021
