@@ -5,7 +5,7 @@
       Tutti i Corsi di Laurea
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Qui puoi trovare tutti i Corsi di Laurea italiani
+      Tutti i corsi di laurea italiani del 2021
     </h2>
     <br />
     <div class="field is-horizontal">
@@ -110,19 +110,19 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Tutti i corsi di laurea",
+    title: "Tutti i corsi di laurea 2021",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea italiani in base al nome del corso e di trovare quello che fa per te.",
+          "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea del 2021 in base al nome del corso e di trovare quello che fa per te.",
       },
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi universitari, tutti i corsi di laurea",
+          "Corsi di laurea, Corso di laurea, Corsi universitari, tutti i corsi di laurea, 2021",
       },
     ],
     link: [
