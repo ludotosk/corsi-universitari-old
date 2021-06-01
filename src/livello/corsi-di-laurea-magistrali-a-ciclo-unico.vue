@@ -1,9 +1,9 @@
 <template>
   <div class="container is-fullhd">
     <br />
-      <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea {{uni}} [lista 2021]</h1>
+      <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Lauree {{uni}} [lista]</h1>
      <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Quali sono i corsi di laurea {{ uni }}? Ecco la lista!
+      Quali sono le lauree {{ uni }}? Ecco la lista!
     </h2>
     <br />
     <div class="field is-horizontal">
@@ -89,7 +89,7 @@ import axios from "axios"
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea magistrale a ciclo unico [lista 2021]",
+    title: "Lauree magistrali a ciclo unico [lista]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
@@ -118,7 +118,7 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
-      uni: "magistrale a ciclo unico",
+      uni: "magistrali a ciclo unico",
       corsi: [],
     };
   },
