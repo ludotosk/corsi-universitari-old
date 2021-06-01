@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
      <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea a {{uni}}</h1>
-   <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">Qui puoi trovare corsi di laurea a {{uni}}</h2>
+   <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">Quali sono i corsi di laurea a {{uni}}? Ecco la lista!</h2>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
@@ -61,8 +61,7 @@
     />
     <br />
     <p>
-      Qui si possono trovare
-      <strong>tutti i corsi di laurea a {{uni}}</strong>. I corsi in questione sono relativi
+      Qui si può trovare <strong>la lista dei corsi di laurea a {{uni}}</strong>. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>

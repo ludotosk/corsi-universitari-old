@@ -1,29 +1,75 @@
 <template>
   <div class="container is-fullhd">
     <br />
-   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Lista corsi di perfezionamento - alta formazione
     </h1>
     <br />
     <h2 class="has-text-grey is-size-2">
-      Qui puoi trovare la lista di tutti i corsi di perfezionamento - alta formazione
+      Qui puoi trovare la lista di tutti i corsi di perfezionamento - alta
+      formazione
     </h2>
     <hr />
     <p>
-      <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei corsi di perfezionamento - alta formazione, per avere il
+      <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
+      corsi di perfezionamento - alta formazione, per avere il
       <strong>link alla pagina del corso</strong> e la
       <strong>funzione di filtro</strong>
-      <router-link to="/perfezionamento-alta-formazione" class="has-text-danger">
+      <b class="has-text-danger" @click="cerca = true"> clicca qui!</b>
+      <!--      <router-link
+        to="/perfezionamento-alta-formazione"
+        class="has-text-danger"
+      >
         visita questa pagina</router-link
-      >.
+      >. -->
     </p>
     <p>
       Qui si possono trovare oltre
       <strong>800 corsi di perfezionamento - alta formazione</strong>.
     </p>
     <br />
-     <table  class="table is-bordered">
-     <thead class="has-background-dark">
+    <div v-if="cerca == true">
+      <v-table
+        :data="corsi"
+        :filters="filters"
+        :pageSize="15"
+        @totalPagesChanged="totalPages = $event"
+        :currentPage.sync="currentPage"
+        class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+      >
+        <thead slot="head" class="has-background-dark">
+          <th class="has-text-white">Nome del master</th>
+          <th class="has-text-white">Livello</th>
+          <th class="has-text-white">Arco</th>
+          <v-th class="has-text-white" sortKey="uni" defaultSort="asc"
+            >Università</v-th
+          >
+        </thead>
+        <tbody slot="body" slot-scope="{ displayData }" data-view>
+          <tr v-for="row in displayData" :key="row.guid">
+            <td>
+              <a
+                :href="row.link"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ row.corso }}</a
+              >
+            </td>
+            <td class="text-break">{{ livello }}</td>
+            <td>{{ row.durata }}</td>
+            <td>{{ row.uni }}</td>
+          </tr>
+        </tbody>
+      </v-table>
+      <smart-pagination
+        :currentPage.sync="currentPage"
+        :totalPages="totalPages"
+        :maxPageLinks="4"
+      />
+    </div>
+    <table class="table is-bordered" v-if="cerca == false">
+      <thead class="has-background-dark">
         <th class="has-text-white">Nome corso</th>
         <th class="has-text-white">Arco</th>
         <th class="has-text-white">Università</th>
@@ -73,12 +119,19 @@ export default {
   data() {
     return {
       corsi: [],
-    }
+      filters: {
+        corso: { value: "", keys: ["corso"] },
+      },
+      currentPage: 1,
+      totalPages: 0,
+      livello: "Corso Perfezionamento - Alta Formazione",
+      cerca: false
+    };
   },
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/master?tipo=Corso%20di%20Perfezionamento/Alta%20Formazione&_sort=corso,uni&_order=asc,asc",
+        "https://json-corsi-fastify.herokuapp.com/master?tipo=Corso%20di%20Perfezionamento/Alta%20Formazione&_sort=corso,uni&_order=asc,asc"
       );
 
       this.corsi = res.data;

@@ -60,11 +60,11 @@
                 class="navbar-item"
                 >Corsi di laurea magistrali a ciclo unico</router-link
               >
-              <router-link
+              <!--         <router-link
                 to="/corsi-di-laurea-triennali-ad-accesso-libero"
                 class="navbar-item"
                 >Corsi di laurea triennali ad accesso libero</router-link
-              >
+              > -->
               <hr class="navbar-divider" />
               <router-link
                 to="/lista-corsi-di-laurea-triennale"
@@ -97,12 +97,12 @@
               <router-link to="/master-secondo-livello" class="navbar-item"
                 >Master di secondo livello</router-link
               > -->
-              <router-link
+              <!--        <router-link
                 to="/perfezionamento-alta-formazione"
                 class="navbar-item"
                 >Corsi Perfezionamento - Alta Formazione</router-link
               >
-              <hr class="navbar-divider" />
+              <hr class="navbar-divider" /> -->
               <router-link to="/lista-master-primo-livello" class="navbar-item"
                 >Lista master primo livello</router-link
               >
