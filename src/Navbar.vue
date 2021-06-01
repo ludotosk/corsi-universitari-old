@@ -49,12 +49,12 @@
             <p class="navbar-link">Corsi per livello</p>
 
             <div class="navbar-dropdown">
-              <router-link to="/corsi-di-laurea-triennale" class="navbar-item"
+              <!--         <router-link to="/corsi-di-laurea-triennale" class="navbar-item"
                 >Corsi di laurea triennali</router-link
               >
               <router-link to="/corsi-di-laurea-magistrale" class="navbar-item"
                 >Corsi di laurea magistrali</router-link
-              >
+              > -->
               <router-link
                 to="/corsi-di-laurea-magistrale-a-ciclo-unico"
                 class="navbar-item"
@@ -76,11 +76,11 @@
                 class="navbar-item"
                 >Lista corsi magistrali</router-link
               >
-              <router-link
+              <!--         <router-link
                 to="/lista-corsi-di-laurea-magistrale-a-ciclo-unico"
                 class="navbar-item"
                 >Lista corsi magistrali a ciclo unico</router-link
-              >
+              > -->
               <router-link
                 to="/lista-corsi-di-laurea-triennale-ad-accesso-libero"
                 class="navbar-item"
@@ -91,12 +91,12 @@
           <div class="navbar-item has-dropdown is-hoverable">
             <p class="navbar-link">Post laurea</p>
             <div class="navbar-dropdown is-right">
-              <router-link to="/master-primo-livello" class="navbar-item"
+              <!--          <router-link to="/master-primo-livello" class="navbar-item"
                 >Master di primo livello</router-link
               >
               <router-link to="/master-secondo-livello" class="navbar-item"
                 >Master di secondo livello</router-link
-              >
+              > -->
               <router-link
                 to="/perfezionamento-alta-formazione"
                 class="navbar-item"
@@ -117,7 +117,12 @@
               >
             </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
+          <router-link
+            to="/lista-corsi-di-laurea-senza-test"
+            class="navbar-item"
+            >Corsi senza test</router-link
+          >
+          <!--        <div class="navbar-item has-dropdown is-hoverable">
             <p class="navbar-link">No test</p>
             <div class="navbar-dropdown is-right">
               <router-link to="/corsi-di-laurea-senza-test" class="navbar-item"
@@ -130,7 +135,7 @@
                 >Lista corsi senza test</router-link
               >
             </div>
-          </div>
+          </div> -->
         </div>
 
         <div class="navbar-end"></div>

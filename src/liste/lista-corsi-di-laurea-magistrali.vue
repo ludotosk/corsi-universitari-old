@@ -1,7 +1,9 @@
 <template>
   <div class="container is-fullhd">
     <br />
-   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea magistrali [lista 2021]</h1>
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+      Corsi di laurea magistrali [lista 2021]
+    </h1>
     <br />
     <h2 class="has-text-grey is-size-2">
       Quali sono i corsi di laurea magistrali? Ecco la lista!
@@ -12,9 +14,10 @@
       corsi di laurea magistrali, per avere il
       <strong>link alla pagina del corso</strong> e la
       <strong>funzione di filtro</strong>
-      <router-link to="/corsi-di-laurea-magistrale" class="has-text-danger">
+      <b class="has-text-danger" @click="cerca = true"> clicca qui!</b>
+      <!--     <router-link to="/corsi-di-laurea-magistrale" class="has-text-danger">
         visita questa pagina</router-link
-      >.
+      >. -->
     </p>
     <p>
       Qui si possono trovare oltre
@@ -22,8 +25,77 @@
       sono relativi <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <br />
-     <table  class="table is-bordered">
-     <thead class="has-background-dark">
+    <div v-if="cerca == true">
+      <div class="field is-horizontal">
+        <div class="field-body">
+          <div class="field has-addons">
+            <p class="control">
+              <label
+                for="basic-url"
+                class="button is-static has-text-weight-medium has-text-black"
+                >Filtra in base al nome:</label
+              >
+            </p>
+            <input
+              type="text"
+              class="input"
+              id="basic-url"
+              aria-describedby="basic-addon3"
+              v-model="filters.n.value"
+            />
+          </div>
+        </div>
+      </div>
+      <p>
+        <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
+        corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
+        "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
+        risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
+        comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
+        tabella.
+      </p>
+      <br />
+      <v-table
+        :data="corsi"
+        :filters="filters"
+        :pageSize="15"
+        @totalPagesChanged="totalPages = $event"
+        :currentPage.sync="currentPage"
+        class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+      >
+        <thead slot="head" class="has-background-dark">
+          <th class="has-text-white">Corso di laurea</th>
+          <th class="has-text-white">Livello</th>
+          <v-th class="has-text-white" sortKey="a" defaultSort="asc">Test</v-th>
+          <v-th class="has-text-white" sortKey="u" defaultSort="asc"
+            >Università</v-th
+          >
+        </thead>
+        <tbody slot="body" slot-scope="{ displayData }" data-view>
+          <tr v-for="row in displayData" :key="row.guid">
+            <td>
+              <a
+                :href="row.h"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ row.n }}</a
+              >
+            </td>
+            <td>Corso di Laurea {{ row.t }}</td>
+            <td>{{ row.a }}</td>
+            <td>{{ row.u }}</td>
+          </tr>
+        </tbody>
+      </v-table>
+      <smart-pagination
+        :currentPage.sync="currentPage"
+        :totalPages="totalPages"
+        :maxPageLinks="4"
+      />
+    </div>
+    <table class="table is-bordered" v-if="cerca == false">
+      <thead class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
         <th class="has-text-white">Università</th>
       </thead>
@@ -69,9 +141,15 @@ export default {
     ],
   },
   data() {
-    return{
+    return {
+      filters: {
+        n: { value: "", keys: ["n"] },
+      },
+      currentPage: 1,
+      totalPages: 0,
       corsi: [],
-    }
+      cerca: false,
+    };
   },
   async beforeCreate() {
     try {

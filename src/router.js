@@ -26,10 +26,7 @@ const CorsiUnipr = () => import(/* webpackChunkName: "corsiUnipr" */ './uni/cors
 const CorsiPolimi = () => import(/* webpackChunkName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
 const ListaTriennale = () => import(/* webpackChunkName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue')
 const ListaMagistrale = () => import(/* webpackChunkName: "ListaMagistrale" */ './liste/lista-corsi-di-laurea-magistrali.vue')
-const ListaCiclo = () => import(/* webpackChunkName: "ListaCiclo" */ './liste/lista-corsi-di-laurea-magistrali-ciclo-unico.vue')
 const ListaAccesso = () => import(/* webpackChunkName: "ListaAccesso" */ './liste/lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
-const CorsiTriennale = () => import(/* webpackChunkName: "CorsiTriennale" */ './livello/corsi-di-laurea-triennali.vue')
-const CorsiMagistrale = () => import(/* webpackChunkName: "CorsiMagistrale" */ './livello/corsi-di-laurea-magistrali.vue')
 const CorsiCiclo = () => import(/* webpackChunkName: "CorsiCiclo" */ './livello/corsi-di-laurea-magistrali-a-ciclo-unico.vue')
 const CorsiLiberi = () => import(/* webpackChunkName: "CorsiLiberi" */ './livello/corsi-di-laurea-triennali-accesso-libero.vue')
 const Navbar = () => import(/* webpackChunkName: "Navbar" */ './Navbar.vue')
@@ -80,8 +77,6 @@ const CorsiFederico = () => import(/* webpackChunkName: "federico" */ './uni/cor
 const CorsiRomaTre = () => import(/* webpachChunkName: "romatre" */ './uni/corsi-di-laurea-roma-tre.vue')
 const CorsiTor = () => import(/* webpackChunkName: "tor" */ './uni/corsi-di-laurea-tor-vergata.vue')
 const CorsiUninettuno = () => import(/* webpackChunkName: "uninettuno" */ './uni/corsi-di-laurea-uninettuno.vue')
-const MasterPrimo = () => import(/* webpackChunkName: "master primo" */ './master/master-primo-livello.vue')
-const MasterSecondo = () => import(/* webpackChunkName: "master secondo" */ './master/master-secondo-livello.vue')
 const ListaMasterPrimo = () => import(/* webpackChunkName: "lista master primo" */ './liste/lista-master-di-primo-livello.vue')
 const ListaMasterSecondo = () => import(/* webpackChunkName: "lista master secondo" */ './liste/lista-master-di-secondo-livello.vue')
 const CorsiEconomia = () => import(/* webpackChunkName: "corsi economia" */ './area/corsi-di-laurea-economia.vue')
@@ -273,30 +268,30 @@ const routes = [
       footer: Footer
     }
   },
-  {
-    path: '/lista-corsi-di-laurea-magistrale-a-ciclo-unico', components: {
-      default: ListaCiclo,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-triennale', components: {
-      default: CorsiTriennale,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-magistrale', components: {
-      default: CorsiMagistrale,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
+  //{
+    //path: '/lista-corsi-di-laurea-magistrale-a-ciclo-unico', components: {
+      //default: () => import(/* webpackChunkName: "ListaCiclo" */ './liste/lista-corsi-di-laurea-magistrali-ciclo-unico.vue'),
+      //header: Navbar,
+      //panel: Panel,
+      //footer: Footer
+    //}
+  //},
+  //{
+    //path: '/corsi-di-laurea-triennale', components: {
+      //default: () => import(/* webpackChunkName: "CorsiTriennale" */ './livello/corsi-di-laurea-triennali.vue'),
+      //header: Navbar,
+      //panel: Panel,
+      //footer: Footer
+    //}
+  //},
+  //{
+    //path: '/corsi-di-laurea-magistrale', components: {
+      //default: () => import(/* webpackChunkName: "CorsiMagistrale" */ './livello/corsi-di-laurea-magistrali.vue'),
+      //header: Navbar,
+      //panel: Panel,
+      //footer: Footer
+    //}
+  //},
   {
     path: '/corsi-di-laurea-magistrale-a-ciclo-unico', components: {
       default: CorsiCiclo,
@@ -679,22 +674,22 @@ const routes = [
       footer: Footer
     }
   },
-  {
-    path: '/master-primo-livello', components: {
-      default: MasterPrimo,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/master-secondo-livello', components: {
-      default: MasterSecondo,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
+  //{
+    //path: '/master-primo-livello', components: {
+      //default: () => import(/* webpackChunkName: "master primo" */ './master/master-primo-livello.vue'),
+      //header: Navbar,
+      //panel: Panel,
+      //footer: Footer
+    //}
+  //},
+  //{
+    //path: '/master-secondo-livello', components: {
+      //default: () => import(/* webpackChunkName: "master secondo" */ './master/master-secondo-livello.vue'),
+      //header: Navbar,
+      //panel: Panel,
+      //footer: Footer
+    //}
+  //},
   {
     path: '/lista-master-primo-livello', components: {
       default: ListaMasterPrimo,
@@ -735,14 +730,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
-    path: '/corsi-di-laurea-senza-test', components: {
-      default: () => import(/* webpackChunkName: "corsi senza test" */ './no-test/corsi-di-laurea-senza-test.vue'),
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
+  //{
+    //path: '/corsi-di-laurea-senza-test', components: {
+      //default: () => import(/* webpackChunkName: "corsi senza test" */ './no-test/corsi-di-laurea-senza-test.vue'),
+      //header: Navbar,
+      //panel: Panel,
+      //footer: Footer
+    //}
+  //},
   {
     path: '/lista-corsi-di-laurea-senza-test', components: {
       default: () => import(/* webpackChunkName: "lista corsi senza test" */ './no-test/lista-corsi-di-laurea-senza-test.vue'),
