@@ -6,7 +6,7 @@
     </h1>
     <br />
     <h2 class="has-text-grey is-size-2">
-      Qui puoi trovare la lista dei corsi di laurea triennali ad accesso libero
+      Quali corsi di laurea triennali ad accesso libero scegliere? Ecco la lista!
     </h2>
     <hr />
     <p>

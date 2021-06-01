@@ -2,10 +2,10 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
-      Tutti i Corsi di Laurea 2021
+      Tutti i Corsi di Laurea (2021)
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Tutti i corsi di laurea italiani del 2021
+      Tutti i corsi di laurea italiani del (2021)
     </h2>
     <br />
     <div class="field is-horizontal">
@@ -110,7 +110,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Tutti i corsi di laurea 2021",
+    title: "Tutti i corsi di laurea (2021)",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [

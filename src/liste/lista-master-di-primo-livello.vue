@@ -2,11 +2,11 @@
   <div class="container is-fullhd">
     <br />
    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
-      Lista master di primo livello
+      Master di primo livello [lista 2021]
     </h1>
     <br />
     <h2 class="has-text-grey is-size-2">
-      Qui puoi trovare la lista di tutti i master di primo livello
+      Quali sono i master di primo livello? Ecco la lista!
     </h2>
     <hr />
     <p>
@@ -48,7 +48,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Lista master di primo livello",
+    title: "Master di primo livello [lista 2021]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [

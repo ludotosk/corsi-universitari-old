@@ -3,5 +3,7 @@ Allow: /
 Disallow: /App
 Disallow: /app
 Disallow: /guida
+Disallow: /contattami
+Disallow: /cookie-policy
 
 Sitemap: http://www.corsiuniversitari.info/sitemap.xml

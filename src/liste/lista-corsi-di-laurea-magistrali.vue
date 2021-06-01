@@ -1,10 +1,10 @@
 <template>
   <div class="container is-fullhd">
     <br />
-   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Lista corsi di laurea magistrali</h1>
+   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea magistrali [lista 2021]</h1>
     <br />
     <h2 class="has-text-grey is-size-2">
-      Qui puoi trovare la lista di tutti i corsi di laurea magistrali Italiani
+      Quali sono i corsi di laurea magistrali? Ecco la lista!
     </h2>
     <hr />
     <p>
@@ -46,7 +46,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Lista corsi di laurea magistrali",
+    title: "Corsi di laurea magistrali [lista 2021]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
