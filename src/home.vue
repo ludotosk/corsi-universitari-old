@@ -621,7 +621,7 @@ export default {
           "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
       },
     ],
-    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info/" }],
+    link: [{ rel: "canonical", href: "https://www.corsiuniversitari.info" }],
   },
 };
 </script>
