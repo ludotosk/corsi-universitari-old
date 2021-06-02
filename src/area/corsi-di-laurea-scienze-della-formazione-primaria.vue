@@ -2,10 +2,10 @@
   <div class="container is-fullhd">
     <br />
        <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
-      Corsi di laurea {{ uni }}
+      Lauree in {{ uni }}
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Qui puoi trovare tutti i Corsi di Laurea di {{ uni }}
+      Dove studiare {{ uni }}? [lista completa corsi]
     </h2>
     <br />
     <div class="field is-horizontal">

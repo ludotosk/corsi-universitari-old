@@ -3,7 +3,7 @@
     <br />
       <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea {{uni}} [2021]</h1>
      <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Corsi di laurea {{uni}}. [aggiornato 2021]
+      Corsi di laurea {{uni}} [aggiornato 2021]
     </h2>
     <br />
     <div class="field is-horizontal">
@@ -87,7 +87,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea Sapienza [2021]",
+    title: "Corsi di laurea Sapienza | Uniroma1 [2021]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
@@ -116,7 +116,7 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
-      uni: "La Sapienza",
+      uni: "La Sapienza | Uniroma1",
       corsi: [],
     };
   },

@@ -1,15 +1,19 @@
 <template>
   <div class="container is-fullhd" data-view>
     <br />
-   <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea per area accademica e università</h1>
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+      Corsi di laurea per area accademica e università
+    </h1>
     <div class="columns">
       <div class="column">
-        <br>
+        <br />
         <h2 class="has-text-grey is-size-2">Area accademica</h2>
         <hr />
         <ul class="list-group">
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-biologia"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-biologia"
               >Corsi di laurea biologia</router-link
             >
           </div>
@@ -28,12 +32,16 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-farmacia"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-farmacia"
               >Corsi di laurea farmacia</router-link
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-filosofia"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-filosofia"
               >Corsi di laurea filosofia</router-link
             >
           </div>
@@ -64,7 +72,9 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-logopedia"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-logopedia"
               >Corsi di laurea logopedia</router-link
             >
           </div>
@@ -76,7 +86,9 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-medicina"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-medicina"
               >Corsi di laurea medicina</router-link
             >
           </div>
@@ -114,19 +126,23 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-lettere"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-lettere"
               >Corsi di laurea lettere</router-link
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-economia"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-economia"
               >Corsi di laurea economia</router-link
             >
           </div>
         </ul>
       </div>
       <div class="column">
-        <br>
+        <br />
         <h2 class="has-text-grey is-size-2">Università</h2>
         <hr />
         <ul class="list-group">
@@ -146,12 +162,16 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-sapienza"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-sapienza"
               >Corsi di laurea La Sapienza</router-link
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-bicocca"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-bicocca"
               >Corsi di laurea Bicocca</router-link
             >
           </div>
@@ -195,11 +215,11 @@
               >Corsi di laurea Unipr</router-link
             >
           </div>
-          <div class="box">
+          <!--      <div class="box">
             <router-link class="has-text-black-ter" to="/corsi-di-laurea-uniroma1"
               >Corsi di laurea Uniroma1</router-link
             >
-          </div>
+          </div> -->
           <div class="box">
             <router-link class="has-text-black-ter" to="/corsi-di-laurea-unisa"
               >Corsi di laurea Unisa</router-link
@@ -211,7 +231,9 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-unikore"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-unikore"
               >Corsi di laurea Unikore</router-link
             >
           </div>
@@ -221,12 +243,16 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-bocconi"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-bocconi"
               >Corsi di laurea Bocconi</router-link
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-ecampus"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-ecampus"
               >Corsi di laurea Ecampus</router-link
             >
           </div>
@@ -245,7 +271,9 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-roma-tre"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-roma-tre"
               >Corsi di laurea Roma Tre</router-link
             >
           </div>
@@ -257,7 +285,9 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-unicusano"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-unicusano"
               >Corsi di laurea Unicusano</router-link
             >
           </div>
@@ -269,7 +299,9 @@
             >
           </div>
           <div class="box">
-            <router-link class="has-text-black-ter" to="/corsi-di-laurea-unipegaso"
+            <router-link
+              class="has-text-black-ter"
+              to="/corsi-di-laurea-unipegaso"
               >Corsi di laurea Unipegaso</router-link
             >
           </div>

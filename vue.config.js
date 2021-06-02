@@ -38,7 +38,6 @@ module.exports = {
         '/corsi-di-laurea-unipa',
         '/corsi-di-laurea-unipd',
         '/corsi-di-laurea-unipr',
-        '/corsi-di-laurea-uniroma1',
         '/corsi-di-laurea-unisa',
         '/corsi-di-laurea-unito',
         '/lista-corsi-di-laurea-triennale',
