@@ -6,8 +6,7 @@
     </h1>
     <br />
     <h2 class="has-text-grey is-size-2">
-      Qui puoi trovare la lista di tutti i corsi di perfezionamento - alta
-      formazione
+      Quali sono i corsi di perfezionamento? [lista completa]
     </h2>
     <hr />
     <p>

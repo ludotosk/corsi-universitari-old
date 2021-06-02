@@ -5,7 +5,7 @@
       Corsi di laurea {{ uni }}
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Qui puoi trovare tutti i Corsi di Laurea di {{ uni }}
+      Dove studiare {{uni}} in italia? [lista completa]
     </h2>
     <br />
     <div class="field is-horizontal">

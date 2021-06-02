@@ -2,10 +2,10 @@
   <div class="container is-fullhd">
     <br />
        <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
-      Corsi di laurea {{ uni }}
+      Corsi di laurea {{ uni }} [elenco]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Qui puoi trovare tutti i Corsi di Laurea di {{ uni }}
+      Quali sono i corsi di laurea di {{ uni }}? [elenco completo]
     </h2>
     <br />
     <div class="field is-horizontal">
@@ -91,7 +91,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea economia",
+    title: "Corsi di laurea economia [elenco]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [

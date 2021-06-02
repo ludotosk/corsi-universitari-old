@@ -1,16 +1,22 @@
 <template>
   <div class="container is-fullhd">
     <br />
-      <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea {{uni}}</h1>
-     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Qui puoi trovare tutti i Corsi di Laurea di {{ uni }}
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+      Corsi di laurea {{ uni }} [lista]
+    </h1>
+    <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
+      Quali sono i corsi di laurea {{ uni }}? [lista completa]
     </h2>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <label for="basic-url" class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</label>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -30,7 +36,7 @@
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
     </p>
-    <br>
+    <br />
     <v-table
       :data="corsi"
       :filters="filters"
@@ -40,19 +46,27 @@
       class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
     >
       <thead slot="head" class="has-background-dark">
-      <th class="has-text-white">Corso di laurea</th>
-        <v-th class="has-text-white" sortKey="t" defaultSort="asc">Livello</v-th>
+        <th class="has-text-white">Corso di laurea</th>
+        <v-th class="has-text-white" sortKey="t" defaultSort="asc"
+          >Livello</v-th
+        >
         <v-th class="has-text-white" sortKey="a" defaultSort="asc">Test</v-th>
         <th class="has-text-white">Università</th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-           <a :href="row.h" target="_blank" rel="noopener" class="has-text-danger">{{ row.n }}</a>
+            <a
+              :href="row.h"
+              target="_blank"
+              rel="noopener"
+              class="has-text-danger"
+              >{{ row.n }}</a
+            >
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
-          <td>{{uni}} </td>
+          <td>{{ uni }}</td>
         </tr>
       </tbody>
     </v-table>
@@ -63,7 +77,8 @@
     />
     <br />
     <p>
-      Qui si può trovare <strong>la lista dei corsi di laurea {{uni}}</strong>. I corsi in questione sono relativi
+      Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
+      >. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
@@ -87,7 +102,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea Tor Vergata",
+    title: "Corsi di laurea Tor Vergata [lista]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
@@ -131,7 +146,7 @@ export default {
       console.log(e);
     }
   },
-/*   methods: {
+  /*   methods: {
     FiltraLista: function () {
       var array = [];
       for (var x = 0; x < corsi.length; x++) {
