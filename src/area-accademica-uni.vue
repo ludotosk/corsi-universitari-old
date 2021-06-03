@@ -165,7 +165,7 @@
             <router-link
               class="has-text-black-ter"
               to="/corsi-di-laurea-sapienza"
-              >Corsi di laurea La Sapienza</router-link
+              >Corsi di laurea La Sapienza | Uniroma1</router-link
             >
           </div>
           <div class="box">
