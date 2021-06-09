@@ -43,7 +43,7 @@
             >Aree accademiche / Uni</router-link
           > -->
           <router-link to="/corsi-di-laurea-online" class="navbar-item">Corsi online</router-link>
-          <router-link to="/corsi-di-laurea-inernazionali" class="navbar-item">Corsi internazionali</router-link>
+          <router-link to="/corsi-di-laurea-internazionali" class="navbar-item">Corsi internazionali</router-link>
           <router-link to="/corsi-di-laurea-in-inglese" class="navbar-item"
             >In inglese</router-link
           >
