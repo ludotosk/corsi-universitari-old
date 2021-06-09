@@ -95,6 +95,8 @@ module.exports = {
         '/corsi-di-laurea-economia',
         '/lista-perfezionamento-alta-formazione',
         '/lista-corsi-di-laurea-senza-test',
+        '/corsi-di-laurea-online',
+        '/corsi-di-laurea-internazionali'
       ],
       //headless: true,
       //onlyProduction: true,
