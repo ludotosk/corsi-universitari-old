@@ -47,7 +47,6 @@ const CorsiLettere = () => import(/* webpackChunkName: "corsilettere" */ './area
 const CorsiLogopedia = () => import(/* webpackChunkName: "corsilogopedia" */ './area/corsi-di-laurea-logopedia.vue')
 const CorsiMotorie = () => import(/* webpackChunkName: "corsimotorie" */ './area/corsi-di-laurea-scienze-motorie.vue')
 const CorsiFisica = () => import(/* webpackChunkName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
-const AreaAccademicaUni = () => import(/* webpackChunkName: "areaaccademica" */ './area-accademica-uni.vue')
 const Inglese = () => import(/* webpackChunkName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
 //const Guida = () => import(/* webpackChunkName: "guida" */ './guida.vue')
 const Padova = () => import(/* webpackChunkName: "padova" */ './citta/corsi-di-laurea-padova.vue')
@@ -63,7 +62,6 @@ const Roma = () => import(/* webpackChunkName: "roma" */ './citta/corsi-di-laure
 const Torino = () => import(/* webpackChunkName: "torino" */ './citta/corsi-di-laurea-torino.vue')
 const Venezia = () => import(/* webpackChunkName: "venezia" */ './citta/corsi-di-laurea-venezia.vue')
 const Verona = () => import(/* webpackChunkName: "verona" */ './citta/corsi-di-laurea-verona.vue')
-const Citta = () => import(/* webpackChunkName: "citta" */ './citta.vue')
 const CorsiKore = () => import(/* webpackChunkName: "kore" */ './uni/corsi-di-laurea-unikore.vue')
 const CorsiUnivda = () => import(/* webpackChunkName: "univda" */ './uni/corsi-di-laurea-univda.vue')
 const CorsiUnipegaso = () => import(/* webpackChunkName: "unipegaso" */ './uni/corsi-di-laurea-unipegaso.vue')
@@ -449,13 +447,13 @@ const routes = [
       footer: Footer
     }
   },
-  {
-    path: '/area-accademica-uni', components: {
-      default: AreaAccademicaUni,
-      header: Navbar,
-      footer: Footer
-    }
-  },
+  //{
+    //path: '/area-accademica-uni', components: {
+      //default: () => import(/* webpackChunkName: "areaaccademica" */ './area-accademica-uni.vue'),
+      //header: Navbar,
+      //footer: Footer
+    //}
+  //},
   {
     path: '/corsi-di-laurea-in-inglese', components: {
       default: Inglese,
@@ -576,13 +574,13 @@ const routes = [
       footer: Footer
     }
   },
-  {
-    path: '/citta', components: {
-      default: Citta,
-      header: Navbar,
-      footer: Footer
-    }
-  },
+  //{
+    //path: '/citta', components: {
+      //default: () => import(/* webpackChunkName: "citta" */ './citta.vue'),
+      //header: Navbar,
+      //footer: Footer
+    //}
+  //},
   {
     path: '/corsi-di-laurea-unikore', components: {
       default: CorsiKore,
