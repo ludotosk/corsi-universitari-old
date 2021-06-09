@@ -742,6 +742,22 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
+  },
+  {
+    path: '/corsi-di-laurea-online', components: {
+      default: () => import(/* webpackChunkName: "corsi online" */ './corsi-di-laurea-online.vue'),
+      header: Navbar,
+      panel: Panel,
+      footer: Footer
+    }
+  },
+  {
+    path: '/corsi-di-laurea-internazionali', components: {
+      default: () => import(/* webpackChunkName: "corsi inrernazionali" */ './corsi-di-laurea-internazionali.vue'),
+      header: Navbar,
+      panel: Panel,
+      footer: Footer
+    }
   }
 ]
 

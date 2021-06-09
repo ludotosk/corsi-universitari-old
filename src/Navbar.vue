@@ -37,11 +37,13 @@
           <router-link to="/tutti-i-corsi-di-laurea" class="navbar-item"
             >Tutti i corsi di laurea</router-link
           >
-
+<!-- 
           <router-link to="/citta" class="navbar-item">Città</router-link>
           <router-link to="/area-accademica-uni" class="navbar-item"
             >Aree accademiche / Uni</router-link
-          >
+          > -->
+          <router-link to="/corsi-di-laurea-online" class="navbar-item">Corsi online</router-link>
+          <router-link to="/corsi-di-laurea-inernazionali" class="navbar-item">Corsi internazionali</router-link>
           <router-link to="/corsi-di-laurea-in-inglese" class="navbar-item"
             >In inglese</router-link
           >
