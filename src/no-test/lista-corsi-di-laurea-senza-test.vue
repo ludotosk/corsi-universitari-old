@@ -2,11 +2,11 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
-      Quali sono i corsi di laurea senza test d'ingresso?
+      Corsi di laurea senza test d'ingresso [lista]
     </h1>
     <br />
     <h2 class="has-text-grey is-size-2">
-      Stai cercando la lista dei corsi di laurea senza test d'ingresso? Ecco la
+      Quali sono i corsi di laurea senza test d'ingresso? Ecco la
       lista!
     </h2>
     <hr />
@@ -116,7 +116,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Quali sono i corsi di laurea senza test d'ingresso?",
+    title: "Corsi di laurea senza test d'ingresso [lista]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
