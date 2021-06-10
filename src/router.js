@@ -11,42 +11,42 @@ const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cook
 const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
 const CorsiUnibo = () => import(/* webpackChunkName: "corsiUnibo" */ './uni/corsi-di-laurea-unibo.vue')
 const CorsiUnipi = () => import(/* webpackChunkName: "corsiUnipi" */ './uni/corsi-di-laurea-unipi.vue')
-const CorsiSapienza = () => import(/* webpackChunkName: "corsiSapienza" */ './uni/corsi-di-laurea-sapienza.vue')
+//const CorsiSapienza = () => import(/* webpackChunkName: "corsiSapienza" */ './uni/corsi-di-laurea-sapienza.vue')
 const CorsiUnipd = () => import(/* webpackChunkName: "corsiUnipd" */ './uni/corsi-di-laurea-unipd.vue')
 const CorsiBicocca = () => import(/* webpackChunkName: "corsiBicocca" */ './uni/corsi-di-laurea-bicocca.vue')
 const CorsiUniba = () => import(/* webpackChunkName: "corsiUniba" */ './uni/corsi-di-laurea-uniba.vue')
-const CorsiUnifi = () => import(/* webpackChunkName: "corsiUnifi" */ './uni/corsi-di-laurea-unifi.vue')
-const CorsiUnimi = () => import(/* webpackChunkName: "corsiUnimi" */ './uni/corsi-di-laurea-unimi.vue')
-const CorsiUnina = () => import(/* webpackChunkName: "corsiUnina" */ './uni/corsi-di-laurea-unina.vue')
-const CorsiUnipa = () => import(/* webpackChunkName: "corsiUnipa" */ './uni/corsi-di-laurea-unipa.vue')
-const CorsiUnisa = () => import(/* webpackChunkName: "corsiUnisa" */ './uni/corsi-di-laurea-unisa.vue')
-const CorsiUnito = () => import(/* webpackChunkName: "corsiUnito" */ './uni/corsi-di-laurea-unito.vue')
-const CorsiUnipr = () => import(/* webpackChunkName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
+//const CorsiUnifi = () => import(/* webpackChunkName: "corsiUnifi" */ './uni/corsi-di-laurea-unifi.vue')
+//const CorsiUnimi = () => import(/* webpackChunkName: "corsiUnimi" */ './uni/corsi-di-laurea-unimi.vue')
+//const CorsiUnina = () => import(/* webpackChunkName: "corsiUnina" */ './uni/corsi-di-laurea-unina.vue')
+//const CorsiUnipa = () => import(/* webpackChunkName: "corsiUnipa" */ './uni/corsi-di-laurea-unipa.vue')
+//const CorsiUnisa = () => import(/* webpackChunkName: "corsiUnisa" */ './uni/corsi-di-laurea-unisa.vue')
+//const CorsiUnito = () => import(/* webpackChunkName: "corsiUnito" */ './uni/corsi-di-laurea-unito.vue')
+//const CorsiUnipr = () => import(/* webpackChunkName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
 const CorsiPolimi = () => import(/* webpackChunkName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
-const ListaTriennale = () => import(/* webpackChunkName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue')
+//const ListaTriennale = () => import(/* webpackChunkName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue')
 const ListaMagistrale = () => import(/* webpackChunkName: "ListaMagistrale" */ './liste/lista-corsi-di-laurea-magistrali.vue')
 const ListaAccesso = () => import(/* webpackChunkName: "ListaAccesso" */ './liste/lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
 const CorsiCiclo = () => import(/* webpackChunkName: "CorsiCiclo" */ './livello/corsi-di-laurea-magistrali-a-ciclo-unico.vue')
 const Navbar = () => import(/* webpackChunkName: "Navbar" */ './Navbar.vue')
 const Footer = () => import(/* webpackChunkName: "Footer" */ './Footer.vue')
-const CorsiMedicina = () => import(/* webpackChunkName: "corsimedicina" */ './area/corsi-di-laurea-medicina.vue')
-const CorsiPsicologia = () => import(/* webpackChunkName: "corsipsicologia" */ './area/corsi-di-laurea-psicologia.vue')
-const CorsiFisioterapia = () => import(/* webpackChunkName: "corsifisioterapia" */ './area/corsi-di-laurea-fisioterapia.vue')
-const CorsiStoria = () => import(/* webpackChunkName: "corsistoria" */ './area/corsi-di-laurea-storia.vue')
-const CorsiInfermieristica = () => import(/* webpackChunkName: "corsiinfermieristica" */ './area/corsi-di-laurea-infermieristica.vue')
-const CorsiMatematica = () => import(/* webpackChunkName: "corsimatematica" */ './area/corsi-di-laurea-matematica.vue')
+//const CorsiMedicina = () => import(/* webpackChunkName: "corsimedicina" */ './area/corsi-di-laurea-medicina.vue')
+//const CorsiPsicologia = () => import(/* webpackChunkName: "corsipsicologia" */ './area/corsi-di-laurea-psicologia.vue')
+//const CorsiFisioterapia = () => import(/* webpackChunkName: "corsifisioterapia" */ './area/corsi-di-laurea-fisioterapia.vue')
+//const CorsiStoria = () => import(/* webpackChunkName: "corsistoria" */ './area/corsi-di-laurea-storia.vue')
+//const CorsiInfermieristica = () => import(/* webpackChunkName: "corsiinfermieristica" */ './area/corsi-di-laurea-infermieristica.vue')
+//const CorsiMatematica = () => import(/* webpackChunkName: "corsimatematica" */ './area/corsi-di-laurea-matematica.vue')
 const CorsiFormazionePrimaria = () => import(/* webpackChunkName: "corsiformazioneprimaria" */ './area/corsi-di-laurea-scienze-della-formazione-primaria.vue')
 const CorsiBiologia = () => import(/* webpackChunkName: "corsibiologia" */ './area/corsi-di-laurea-biologia.vue')
 const CorsiFilosofia = () => import(/* webpackChunkName: "corsifilosofia" */ './area/corsi-di-laurea-filosofia.vue')
-const CorsiBiotecnologia = () => import(/* webpackChunkName: "corsibiotecnologie" */ './area/corsi-di-laurea-biotecnologia.vue')
-const CorsiDietistica = () => import(/* webpackChunkName: "corsidietistica" */ './area/corsi-di-laurea-dietistica.vue')
+//const CorsiBiotecnologia = () => import(/* webpackChunkName: "corsibiotecnologie" */ './area/corsi-di-laurea-biotecnologia.vue')
+//const CorsiDietistica = () => import(/* webpackChunkName: "corsidietistica" */ './area/corsi-di-laurea-dietistica.vue')
 const CorsiFarmacia = () => import(/* webpackChunkName: "corsifarmacia" */ './area/corsi-di-laurea-farmacia.vue')
-const CorsiGiurisprudenza = () => import(/* webpackChunkName: "corsigiurisprudenza" */ './area/corsi-di-laurea-giurisprudenza.vue')
+//const CorsiGiurisprudenza = () => import(/* webpackChunkName: "corsigiurisprudenza" */ './area/corsi-di-laurea-giurisprudenza.vue')
 const CorsiInformatica = () => import(/* webpackChunkName: "corsiinformatica" */ './area/corsi-di-laurea-informatica.vue')
-const CorsiLettere = () => import(/* webpackChunkName: "corsilettere" */ './area/corsi-di-laurea-lettere.vue')
-const CorsiLogopedia = () => import(/* webpackChunkName: "corsilogopedia" */ './area/corsi-di-laurea-logopedia.vue')
-const CorsiMotorie = () => import(/* webpackChunkName: "corsimotorie" */ './area/corsi-di-laurea-scienze-motorie.vue')
-const CorsiFisica = () => import(/* webpackChunkName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
+//const CorsiLettere = () => import(/* webpackChunkName: "corsilettere" */ './area/corsi-di-laurea-lettere.vue')
+//const CorsiLogopedia = () => import(/* webpackChunkName: "corsilogopedia" */ './area/corsi-di-laurea-logopedia.vue')
+//const CorsiMotorie = () => import(/* webpackChunkName: "corsimotorie" */ './area/corsi-di-laurea-scienze-motorie.vue')
+//const CorsiFisica = () => import(/* webpackChunkName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
 const Inglese = () => import(/* webpackChunkName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
 //const Guida = () => import(/* webpackChunkName: "guida" */ './guida.vue')
 const Padova = () => import(/* webpackChunkName: "padova" */ './citta/corsi-di-laurea-padova.vue')
@@ -55,27 +55,27 @@ const Bologna = () => import(/* webpackChunkName: "bologna" */ './citta/corsi-di
 const Firenze = () => import(/* webpackChunkName: "firenze" */ './citta/corsi-di-laurea-firenze.vue')
 const Genova = () => import(/* webpackChunkName: "genova" */ './citta/corsi-di-laurea-genova.vue')
 const Milano = () => import(/* webpackChunkName: "Milano" */ './citta/corsi-di-laurea-milano.vue')
-const Napoli = () => import(/* webpackChunkName: "napoli" */ './citta/corsi-di-laurea-napoli.vue')
-const Pavia = () => import(/* webpackChunkName: "pavia" */ './citta/corsi-di-laurea-pavia.vue')
-const Pisa = () => import(/* webpackChunkName: "pisa" */ './citta/corsi-di-laurea-pisa.vue')
-const Roma = () => import(/* webpackChunkName: "roma" */ './citta/corsi-di-laurea-roma.vue')
-const Torino = () => import(/* webpackChunkName: "torino" */ './citta/corsi-di-laurea-torino.vue')
+//const Napoli = () => import(/* webpackChunkName: "napoli" */ './citta/corsi-di-laurea-napoli.vue')
+//const Pavia = () => import(/* webpackChunkName: "pavia" */ './citta/corsi-di-laurea-pavia.vue')
+//const Pisa = () => import(/* webpackChunkName: "pisa" */ './citta/corsi-di-laurea-pisa.vue')
+//const Roma = () => import(/* webpackChunkName: "roma" */ './citta/corsi-di-laurea-roma.vue')
+//const Torino = () => import(/* webpackChunkName: "torino" */ './citta/corsi-di-laurea-torino.vue')
 const Venezia = () => import(/* webpackChunkName: "venezia" */ './citta/corsi-di-laurea-venezia.vue')
 const Verona = () => import(/* webpackChunkName: "verona" */ './citta/corsi-di-laurea-verona.vue')
-const CorsiKore = () => import(/* webpackChunkName: "kore" */ './uni/corsi-di-laurea-unikore.vue')
-const CorsiUnivda = () => import(/* webpackChunkName: "univda" */ './uni/corsi-di-laurea-univda.vue')
-const CorsiUnipegaso = () => import(/* webpackChunkName: "unipegaso" */ './uni/corsi-di-laurea-unipegaso.vue')
-const CorsiUnicusano = () => import(/* webpackChunkName: "unicusano" */ './uni/corsi-di-laurea-unicusano.vue')
+//const CorsiKore = () => import(/* webpackChunkName: "kore" */ './uni/corsi-di-laurea-unikore.vue')
+//const CorsiUnivda = () => import(/* webpackChunkName: "univda" */ './uni/corsi-di-laurea-univda.vue')
+//const CorsiUnipegaso = () => import(/* webpackChunkName: "unipegaso" */ './uni/corsi-di-laurea-unipegaso.vue')
+//const CorsiUnicusano = () => import(/* webpackChunkName: "unicusano" */ './uni/corsi-di-laurea-unicusano.vue')
 const CorsiEcampus = () => import(/* webpackChunkName: "ecampus" */ './uni/corsi-di-laurea-ecampus.vue')
 const CorsiMercatorum = () => import(/* webpackChunkName: "mercatorum" */ './uni/corsi-di-laurea-mercatorum.vue')
-const CorsiBocconi = () => import(/* webpackChunkName: "bocconi" */ './uni/corsi-di-laurea-bocconi.vue')
-const CorsiFederico = () => import(/* webpackChunkName: "federico" */ './uni/corsi-di-laurea-federico-ii.vue')
-const CorsiRomaTre = () => import(/* webpachChunkName: "romatre" */ './uni/corsi-di-laurea-roma-tre.vue')
-const CorsiTor = () => import(/* webpackChunkName: "tor" */ './uni/corsi-di-laurea-tor-vergata.vue')
-const CorsiUninettuno = () => import(/* webpackChunkName: "uninettuno" */ './uni/corsi-di-laurea-uninettuno.vue')
+//const CorsiBocconi = () => import(/* webpackChunkName: "bocconi" */ './uni/corsi-di-laurea-bocconi.vue')
+//const CorsiFederico = () => import(/* webpackChunkName: "federico" */ './uni/corsi-di-laurea-federico-ii.vue')
+//const CorsiRomaTre = () => import(/* webpachChunkName: "romatre" */ './uni/corsi-di-laurea-roma-tre.vue')
+//const CorsiTor = () => import(/* webpackChunkName: "tor" */ './uni/corsi-di-laurea-tor-vergata.vue')
+//const CorsiUninettuno = () => import(/* webpackChunkName: "uninettuno" */ './uni/corsi-di-laurea-uninettuno.vue')
 const ListaMasterPrimo = () => import(/* webpackChunkName: "lista master primo" */ './liste/lista-master-di-primo-livello.vue')
 const ListaMasterSecondo = () => import(/* webpackChunkName: "lista master secondo" */ './liste/lista-master-di-secondo-livello.vue')
-const CorsiEconomia = () => import(/* webpackChunkName: "corsi economia" */ './area/corsi-di-laurea-economia.vue')
+//const CorsiEconomia = () => import(/* webpackChunkName: "corsi economia" */ './area/corsi-di-laurea-economia.vue')
 const ListaPerfezionamentoAltaFormazione = () => import(/* webpackChunkName: "lista perfezionamento alta formazione" */ './liste/lista-perfezionamento-alta-formazione.vue')
 
 const routes = [
@@ -129,14 +129,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/corsi-di-laurea-sapienza', components: {
       default: CorsiSapienza,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/corsi-di-laurea-unipd', components: {
       default: CorsiUnipd,
@@ -177,44 +177,44 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/corsi-di-laurea-unifi', components: {
       default: CorsiUnifi,
       header: Navbar, CorsiMatematica
     }
-  },
-  {
+  }, */
+/*   {
     path: '/corsi-di-laurea-unimi', components: {
       default: CorsiUnimi,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+ /*  {
     path: '/corsi-di-laurea-unina', components: {
       default: CorsiUnina,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+ /*  {
     path: '/corsi-di-laurea-unipa', components: {
       default: CorsiUnipa,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+/*   {
     path: '/corsi-di-laurea-unipr', components: {
       default: CorsiUnipr,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   //{
     //path: '/corsi-di-laurea-uniroma1', components: {
       //default: () => import(/* webpackChunkName: "corsiUniroma1" */ './uni/corsi-di-laurea-uniroma1.vue'),
@@ -223,15 +223,15 @@ const routes = [
       //footer: Footer
     //}
   //},
-  {
+/*   {
     path: '/corsi-di-laurea-unisa', components: {
       default: CorsiUnisa,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+  /* {
     path: '/corsi-di-laurea-unito', components: {
       default: CorsiUnito,
       header: Navbar,
@@ -246,7 +246,7 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/lista-corsi-di-laurea-triennale-ad-accesso-libero', components: {
       default: ListaAccesso,
@@ -303,7 +303,7 @@ const routes = [
   //footer: Footer
   //}
   //},
-  {
+  /* {
     path: '/corsi-di-laurea-medicina', components: {
       default: CorsiMedicina,
       header: Navbar,
@@ -326,8 +326,8 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+/*   {
     path: '/corsi-di-laurea-storia', components: {
       default: CorsiStoria,
       header: Navbar,
@@ -350,7 +350,7 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/corsi-di-laurea-scienze-della-formazione-primaria', components: {
       default: CorsiFormazionePrimaria,
@@ -375,7 +375,7 @@ const routes = [
       footer: Footer
     }
   },
-  {
+ /*  {
     path: '/corsi-di-laurea-fisica', components: {
       default: CorsiFisica,
       header: Navbar,
@@ -398,7 +398,7 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/corsi-di-laurea-farmacia', components: {
       default: CorsiFarmacia,
@@ -407,14 +407,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+ /*  {
     path: '/corsi-di-laurea-giurisprudenza', components: {
       default: CorsiGiurisprudenza,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/corsi-di-laurea-informatica', components: {
       default: CorsiInformatica,
@@ -423,15 +423,15 @@ const routes = [
       footer: Footer
     }
   },
-  {
+ /*  {
     path: '/corsi-di-laurea-lettere', components: {
       default: CorsiLettere,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+/*   {
     path: '/corsi-di-laurea-logopedia', components: {
       default: CorsiLogopedia,
       header: Navbar,
@@ -446,7 +446,7 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   //{
     //path: '/area-accademica-uni', components: {
       //default: () => import(/* webpackChunkName: "areaaccademica" */ './area-accademica-uni.vue'),
@@ -518,7 +518,7 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/corsi-di-laurea-napoli', components: {
       default: Napoli,
       header: Navbar,
@@ -541,8 +541,8 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+  /* {
     path: '/corsi-di-laurea-roma', components: {
       default: Roma,
       header: Navbar,
@@ -557,7 +557,7 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/corsi-di-laurea-venezia', components: {
       default: Venezia,
@@ -581,7 +581,7 @@ const routes = [
       //footer: Footer
     //}
   //},
-  {
+  /* {
     path: '/corsi-di-laurea-unikore', components: {
       default: CorsiKore,
       header: Navbar,
@@ -611,8 +611,8 @@ const routes = [
       header: Navbar,
       panel: Panel,
       footer: Footer
-    }
-  },
+    } 
+  }, */
   {
     path: '/corsi-di-laurea-ecampus', components: {
       default: CorsiEcampus,
@@ -629,7 +629,7 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/corsi-di-laurea-bocconi', components: {
       default: CorsiBocconi,
       header: Navbar,
@@ -652,8 +652,8 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+ /*  {
     path: '/corsi-di-laurea-tor-vergata', components: {
       default: CorsiTor,
       header: Navbar,
@@ -668,7 +668,7 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   //{
   //path: '/master-primo-livello', components: {
   //default: () => import(/* webpackChunkName: "master primo" */ './master/master-primo-livello.vue'),
@@ -701,14 +701,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/corsi-di-laurea-economia', components: {
       default: CorsiEconomia,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/lista-perfezionamento-alta-formazione', components: {
       default: ListaPerfezionamentoAltaFormazione,

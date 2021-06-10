@@ -68,11 +68,11 @@
                 >Corsi di laurea triennali ad accesso libero</router-link
               > -->
               <hr class="navbar-divider" />
-              <router-link
+          <!--     <router-link
                 to="/lista-corsi-di-laurea-triennale"
                 class="navbar-item"
                 >Lista corsi triennali</router-link
-              >
+              > -->
               <router-link
                 to="/lista-corsi-di-laurea-magistrale"
                 class="navbar-item"
