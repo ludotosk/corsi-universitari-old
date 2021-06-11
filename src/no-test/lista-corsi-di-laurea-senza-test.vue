@@ -11,7 +11,7 @@
     <hr />
     <p>
       <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
-      corsi di laurea 2021 senza test d'ingresso, per avere il
+      corsi di laurea 2021 (di tutte le università) senza test d'ingresso, per avere il
       <strong>link alla pagina del corso</strong> e la
       <strong>funzione di filtro</strong>
       <b class="has-text-danger" @click="cerca = true"> clicca qui!</b>
