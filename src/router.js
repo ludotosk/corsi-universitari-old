@@ -44,7 +44,6 @@ const CorsiFarmacia = () => import(/* webpackChunkName: "corsifarmacia" */ './ar
 //const CorsiGiurisprudenza = () => import(/* webpackChunkName: "corsigiurisprudenza" */ './area/corsi-di-laurea-giurisprudenza.vue')
 const CorsiInformatica = () => import(/* webpackChunkName: "corsiinformatica" */ './area/corsi-di-laurea-informatica.vue')
 //const CorsiLettere = () => import(/* webpackChunkName: "corsilettere" */ './area/corsi-di-laurea-lettere.vue')
-//const CorsiLogopedia = () => import(/* webpackChunkName: "corsilogopedia" */ './area/corsi-di-laurea-logopedia.vue')
 //const CorsiMotorie = () => import(/* webpackChunkName: "corsimotorie" */ './area/corsi-di-laurea-scienze-motorie.vue')
 //const CorsiFisica = () => import(/* webpackChunkName: "corsifisica" */ './area/corsi-di-laurea-fisica.vue')
 const Inglese = () => import(/* webpackChunkName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
@@ -129,14 +128,14 @@ const routes = [
       footer: Footer
     }
   },
-/*   {
-    path: '/corsi-di-laurea-sapienza', components: {
-      default: CorsiSapienza,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*   {
+      path: '/corsi-di-laurea-sapienza', components: {
+        default: CorsiSapienza,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    }, */
   {
     path: '/corsi-di-laurea-unipd', components: {
       default: CorsiUnipd,
@@ -177,60 +176,60 @@ const routes = [
       footer: Footer
     }
   },
-/*   {
-    path: '/corsi-di-laurea-unifi', components: {
-      default: CorsiUnifi,
-      header: Navbar, CorsiMatematica
-    }
-  }, */
-/*   {
-    path: '/corsi-di-laurea-unimi', components: {
-      default: CorsiUnimi,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
- /*  {
-    path: '/corsi-di-laurea-unina', components: {
-      default: CorsiUnina,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
- /*  {
-    path: '/corsi-di-laurea-unipa', components: {
-      default: CorsiUnipa,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
-/*   {
-    path: '/corsi-di-laurea-unipr', components: {
-      default: CorsiUnipr,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*   {
+      path: '/corsi-di-laurea-unifi', components: {
+        default: CorsiUnifi,
+        header: Navbar, CorsiMatematica
+      }
+    }, */
+  /*   {
+      path: '/corsi-di-laurea-unimi', components: {
+        default: CorsiUnimi,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    }, */
+  /*  {
+     path: '/corsi-di-laurea-unina', components: {
+       default: CorsiUnina,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   }, */
+  /*  {
+     path: '/corsi-di-laurea-unipa', components: {
+       default: CorsiUnipa,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   }, */
+  /*   {
+      path: '/corsi-di-laurea-unipr', components: {
+        default: CorsiUnipr,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    }, */
   //{
-    //path: '/corsi-di-laurea-uniroma1', components: {
-      //default: () => import(/* webpackChunkName: "corsiUniroma1" */ './uni/corsi-di-laurea-uniroma1.vue'),
-      //header: Navbar,
-      //panel: Panel,
-      //footer: Footer
-    //}
+  //path: '/corsi-di-laurea-uniroma1', components: {
+  //default: () => import(/* webpackChunkName: "corsiUniroma1" */ './uni/corsi-di-laurea-uniroma1.vue'),
+  //header: Navbar,
+  //panel: Panel,
+  //footer: Footer
+  //}
   //},
-/*   {
-    path: '/corsi-di-laurea-unisa', components: {
-      default: CorsiUnisa,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*   {
+      path: '/corsi-di-laurea-unisa', components: {
+        default: CorsiUnisa,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    }, */
   /* {
     path: '/corsi-di-laurea-unito', components: {
       default: CorsiUnito,
@@ -327,30 +326,30 @@ const routes = [
       footer: Footer
     }
   }, */
-/*   {
-    path: '/corsi-di-laurea-storia', components: {
-      default: CorsiStoria,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-infermieristica', components: {
-      default: CorsiInfermieristica,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-matematica', components: {
-      default: CorsiMatematica,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*   {
+      path: '/corsi-di-laurea-storia', components: {
+        default: CorsiStoria,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    },
+    {
+      path: '/corsi-di-laurea-infermieristica', components: {
+        default: CorsiInfermieristica,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    },
+    {
+      path: '/corsi-di-laurea-matematica', components: {
+        default: CorsiMatematica,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    }, */
   {
     path: '/corsi-di-laurea-scienze-della-formazione-primaria', components: {
       default: CorsiFormazionePrimaria,
@@ -375,30 +374,30 @@ const routes = [
       footer: Footer
     }
   },
- /*  {
-    path: '/corsi-di-laurea-fisica', components: {
-      default: CorsiFisica,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-biotecnologia', components: {
-      default: CorsiBiotecnologia,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-dietistica', components: {
-      default: CorsiDietistica,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*  {
+     path: '/corsi-di-laurea-fisica', components: {
+       default: CorsiFisica,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   },
+   {
+     path: '/corsi-di-laurea-biotecnologia', components: {
+       default: CorsiBiotecnologia,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   },
+   {
+     path: '/corsi-di-laurea-dietistica', components: {
+       default: CorsiDietistica,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   }, */
   {
     path: '/corsi-di-laurea-farmacia', components: {
       default: CorsiFarmacia,
@@ -407,14 +406,14 @@ const routes = [
       footer: Footer
     }
   },
- /*  {
-    path: '/corsi-di-laurea-giurisprudenza', components: {
-      default: CorsiGiurisprudenza,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*  {
+     path: '/corsi-di-laurea-giurisprudenza', components: {
+       default: CorsiGiurisprudenza,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   }, */
   {
     path: '/corsi-di-laurea-informatica', components: {
       default: CorsiInformatica,
@@ -423,23 +422,23 @@ const routes = [
       footer: Footer
     }
   },
- /*  {
-    path: '/corsi-di-laurea-lettere', components: {
-      default: CorsiLettere,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
-/*   {
+  /*  {
+     path: '/corsi-di-laurea-lettere', components: {
+       default: CorsiLettere,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   }, */
+  {
     path: '/corsi-di-laurea-logopedia', components: {
-      default: CorsiLogopedia,
+      default: () => import(/* webpackChunkName: "corsilogopedia" */ './area/corsi-di-laurea-logopedia.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
   },
-  {
+  /*{
     path: '/corsi-di-laurea-scienze-motorie', components: {
       default: CorsiMotorie,
       header: Navbar,
@@ -448,11 +447,11 @@ const routes = [
     }
   }, */
   //{
-    //path: '/area-accademica-uni', components: {
-      //default: () => import(/* webpackChunkName: "areaaccademica" */ './area-accademica-uni.vue'),
-      //header: Navbar,
-      //footer: Footer
-    //}
+  //path: '/area-accademica-uni', components: {
+  //default: () => import(/* webpackChunkName: "areaaccademica" */ './area-accademica-uni.vue'),
+  //header: Navbar,
+  //footer: Footer
+  //}
   //},
   {
     path: '/corsi-di-laurea-in-inglese', components: {
@@ -518,30 +517,30 @@ const routes = [
       footer: Footer
     }
   },
-/*   {
-    path: '/corsi-di-laurea-napoli', components: {
-      default: Napoli,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-pavia', components: {
-      default: Pavia,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-pisa', components: {
-      default: Pisa,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*   {
+      path: '/corsi-di-laurea-napoli', components: {
+        default: Napoli,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    },
+    {
+      path: '/corsi-di-laurea-pavia', components: {
+        default: Pavia,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    },
+    {
+      path: '/corsi-di-laurea-pisa', components: {
+        default: Pisa,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    }, */
   /* {
     path: '/corsi-di-laurea-roma', components: {
       default: Roma,
@@ -575,11 +574,11 @@ const routes = [
     }
   },
   //{
-    //path: '/citta', components: {
-      //default: () => import(/* webpackChunkName: "citta" */ './citta.vue'),
-      //header: Navbar,
-      //footer: Footer
-    //}
+  //path: '/citta', components: {
+  //default: () => import(/* webpackChunkName: "citta" */ './citta.vue'),
+  //header: Navbar,
+  //footer: Footer
+  //}
   //},
   /* {
     path: '/corsi-di-laurea-unikore', components: {
@@ -629,46 +628,46 @@ const routes = [
       footer: Footer
     }
   },
-/*   {
-    path: '/corsi-di-laurea-bocconi', components: {
-      default: CorsiBocconi,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-federico-ii', components: {
-      default: CorsiFederico,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-roma-tre', components: {
-      default: CorsiRomaTre,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
- /*  {
-    path: '/corsi-di-laurea-tor-vergata', components: {
-      default: CorsiTor,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
-  {
-    path: '/corsi-di-laurea-uninettuno', components: {
-      default: CorsiUninettuno,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*   {
+      path: '/corsi-di-laurea-bocconi', components: {
+        default: CorsiBocconi,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    },
+    {
+      path: '/corsi-di-laurea-federico-ii', components: {
+        default: CorsiFederico,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    },
+    {
+      path: '/corsi-di-laurea-roma-tre', components: {
+        default: CorsiRomaTre,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    }, */
+  /*  {
+     path: '/corsi-di-laurea-tor-vergata', components: {
+       default: CorsiTor,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   },
+   {
+     path: '/corsi-di-laurea-uninettuno', components: {
+       default: CorsiUninettuno,
+       header: Navbar,
+       panel: Panel,
+       footer: Footer
+     }
+   }, */
   //{
   //path: '/master-primo-livello', components: {
   //default: () => import(/* webpackChunkName: "master primo" */ './master/master-primo-livello.vue'),
@@ -701,14 +700,14 @@ const routes = [
       footer: Footer
     }
   },
-/*   {
-    path: '/corsi-di-laurea-economia', components: {
-      default: CorsiEconomia,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  }, */
+  /*   {
+      path: '/corsi-di-laurea-economia', components: {
+        default: CorsiEconomia,
+        header: Navbar,
+        panel: Panel,
+        footer: Footer
+      }
+    }, */
   {
     path: '/lista-perfezionamento-alta-formazione', components: {
       default: ListaPerfezionamentoAltaFormazione,
@@ -718,12 +717,12 @@ const routes = [
     }
   },
   //{
-    //path: '/perfezionamento-alta-formazione', components: {
-      //default: () => import(/* webpackChunkName: "perfezionamento alta formazione" */ './master/perfezionamento-alta-formazione.vue'),
-      //header: Navbar,
-      //panel: Panel,
-      //footer: Footer
-    //}
+  //path: '/perfezionamento-alta-formazione', components: {
+  //default: () => import(/* webpackChunkName: "perfezionamento alta formazione" */ './master/perfezionamento-alta-formazione.vue'),
+  //header: Navbar,
+  //panel: Panel,
+  //footer: Footer
+  //}
   //},
   //{
   //path: '/corsi-di-laurea-senza-test', components: {

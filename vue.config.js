@@ -45,7 +45,7 @@ module.exports = {
         '/lista-corsi-di-laurea-magistrale',
         '/corsi-di-laurea-magistrale-a-ciclo-unico',
         //'/corsi-di-laurea-scienze-motorie',
-        //'/corsi-di-laurea-logopedia',
+        '/corsi-di-laurea-logopedia',
         //'/corsi-di-laurea-lettere',
         '/corsi-di-laurea-informatica',
         //'/corsi-di-laurea-giurisprudenza',
