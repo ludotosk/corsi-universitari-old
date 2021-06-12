@@ -153,11 +153,11 @@
             >Corsi di laurea Uniroma1</router-link
           >
         </div> -->
-        <!--    <div class="panel-block">
+        <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-unisa"
             >Corsi di laurea Unisa</router-link
           >
-        </div> -->
+        </div>
         <!--   <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-unito"
             >Corsi di laurea Unito</router-link

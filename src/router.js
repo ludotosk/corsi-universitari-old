@@ -19,7 +19,7 @@ const CorsiUniba = () => import(/* webpackChunkName: "corsiUniba" */ './uni/cors
 //const CorsiUnimi = () => import(/* webpackChunkName: "corsiUnimi" */ './uni/corsi-di-laurea-unimi.vue')
 //const CorsiUnina = () => import(/* webpackChunkName: "corsiUnina" */ './uni/corsi-di-laurea-unina.vue')
 //const CorsiUnipa = () => import(/* webpackChunkName: "corsiUnipa" */ './uni/corsi-di-laurea-unipa.vue')
-//const CorsiUnisa = () => import(/* webpackChunkName: "corsiUnisa" */ './uni/corsi-di-laurea-unisa.vue')
+const CorsiUnisa = () => import(/* webpackChunkName: "corsiUnisa" */ './uni/corsi-di-laurea-unisa.vue')
 //const CorsiUnito = () => import(/* webpackChunkName: "corsiUnito" */ './uni/corsi-di-laurea-unito.vue')
 //const CorsiUnipr = () => import(/* webpackChunkName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
 const CorsiPolimi = () => import(/* webpackChunkName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
@@ -222,14 +222,14 @@ const routes = [
   //footer: Footer
   //}
   //},
-  /*   {
-      path: '/corsi-di-laurea-unisa', components: {
-        default: CorsiUnisa,
-        header: Navbar,
-        panel: Panel,
-        footer: Footer
-      }
-    }, */
+  {
+    path: '/corsi-di-laurea-unisa', components: {
+      default: CorsiUnisa,
+      header: Navbar,
+      panel: Panel,
+      footer: Footer
+    }
+  },
   /* {
     path: '/corsi-di-laurea-unito', components: {
       default: CorsiUnito,
