@@ -5,4 +5,6 @@ package = "@netlify/plugin-sitemap"
   buildDir = "dist"
   exclude = [
     './dist/app.html',
+    './dist/cookie-policy',
+    './dist/contattami' 
   ]
