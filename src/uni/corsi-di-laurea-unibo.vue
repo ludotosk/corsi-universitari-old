@@ -3,7 +3,7 @@
     <br />
       <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea {{uni}} [2021]</h1>
      <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Qui puoi trovare tutti i Corsi di Laurea di {{ uni }}
+      Qui puoi trovare tutti i Corsi di Laurea alma mater ({{ uni }})
     </h2>
     <br />
     <div class="field is-horizontal">
@@ -52,7 +52,7 @@
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
-          <td>{{uni}} </td>
+          <td>alma mater</td>
         </tr>
       </tbody>
     </v-table>
