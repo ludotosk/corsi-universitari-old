@@ -5,7 +5,7 @@
       Tutti i Corsi di Laurea esistenti [2021]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Elenco completo dei corsi di laurea del 2021
+      Quali sono tutti i corsi di laurea? [lista 2021]
     </h2>
     <br />
     <div class="field is-horizontal">
