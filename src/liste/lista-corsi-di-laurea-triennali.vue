@@ -2,11 +2,11 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
-      Corsi di laurea triennali [lista 2021]
+      Lauree triennali elenco
     </h1>
     <br />
     <h2 class="has-text-grey is-size-2">
-      Quali sono i corsi di laurea triennali? Ecco la lista!
+      Quali sono i corsi di laurea triennali? Ecco l'elenco!
     </h2>
     <hr />
     <p>
@@ -118,25 +118,25 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea triennali [lista 2021]",
+    title: "Lauree triennali elenco",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "Qui puoi trovare la lista di tutti i corsi di laurea triennali Italiani. Visitaci per trovare altri strumenti.",
+          "Qui puoi trovare l'elenco di tutte le lauree triennali italiane. Visitaci per trovare altri strumenti.",
       },
       {
         name: "keywords",
-        content: "Corsi di laurea, Corso di laurea, Lista corsi di laurea",
+        content: "elenco lauree triennali",
       },
     ],
     link: [
       {
         rel: "canonical",
         href:
-          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennale",
+          "https://www.corsiuniversitari.info/lauree-triennali-elenco",
       },
     ],
   },

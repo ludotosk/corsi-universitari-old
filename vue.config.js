@@ -40,7 +40,7 @@ module.exports = {
         //'/corsi-di-laurea-unipr',
         '/corsi-di-laurea-unisa',
         //'/corsi-di-laurea-unito',
-        //'/lista-corsi-di-laurea-triennale',
+        '/lauree-triennali-elenco',
         '/lista-corsi-di-laurea-triennale-ad-accesso-libero',
         '/lista-corsi-di-laurea-magistrale',
         '/corsi-di-laurea-magistrale-a-ciclo-unico',

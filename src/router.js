@@ -23,7 +23,6 @@ const CorsiUnisa = () => import(/* webpackChunkName: "corsiUnisa" */ './uni/cors
 //const CorsiUnito = () => import(/* webpackChunkName: "corsiUnito" */ './uni/corsi-di-laurea-unito.vue')
 //const CorsiUnipr = () => import(/* webpackChunkName: "corsiUnipr" */ './uni/corsi-di-laurea-unipr.vue')
 const CorsiPolimi = () => import(/* webpackChunkName: "corsiPolimi" */ './uni/corsi-di-laurea-polimi.vue')
-//const ListaTriennale = () => import(/* webpackChunkName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue')
 const ListaMagistrale = () => import(/* webpackChunkName: "ListaMagistrale" */ './liste/lista-corsi-di-laurea-magistrali.vue')
 const ListaAccesso = () => import(/* webpackChunkName: "ListaAccesso" */ './liste/lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
 const CorsiCiclo = () => import(/* webpackChunkName: "CorsiCiclo" */ './livello/corsi-di-laurea-magistrali-a-ciclo-unico.vue')
@@ -238,14 +237,15 @@ const routes = [
       footer: Footer
     }
   },
+  */
   {
-    path: '/lista-corsi-di-laurea-triennale', components: {
-      default: ListaTriennale,
+    path: '/lauree-triennali-elenco', components: {
+      default: () => import(/* webpackChunkName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  }, */
+  }, 
   {
     path: '/lista-corsi-di-laurea-triennale-ad-accesso-libero', components: {
       default: ListaAccesso,
