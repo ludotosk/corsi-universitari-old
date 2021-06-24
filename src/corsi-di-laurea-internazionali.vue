@@ -74,7 +74,7 @@
                 >{{ row.n }}</a
               >
             </td>
-            <td>Corso di Laurea {{ row.t }} Online</td>
+            <td>Corso di Laurea {{ row.t }} Internazionali</td>
             <td>{{ row.a }}</td>
             <td>{{ row.u }}</td>
           </tr>
