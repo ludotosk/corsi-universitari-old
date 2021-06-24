@@ -83,21 +83,7 @@
         :totalPages="totalPages"
         :maxPageLinks="4"
       />
-    </div>
-    <table class="table is-bordered" v-if="cerca == false">
-      <thead class="has-background-dark">
-        <th class="has-text-white">Corso di laurea</th>
-        <th class="has-text-white">Università</th>
-      </thead>
-      <tbody v-for="corso in corsi" :key="corso.n">
-        <tr data-view>
-          <td>{{ corso.n }}</td>
-          <td>{{ corso.u }}</td>
-        </tr>
-      </tbody>
-    </table>
-    <div v-if="cerca">
-      <br>
+      <br />
       <p>
         <strong> Come funziona?</strong> È molto semplice, basta digitare nella
         barra di ricerca es. "data science" e comparirà la lista di tutti i
@@ -111,7 +97,19 @@
         test no.
       </p>
     </div>
-    <br>
+    <table class="table is-bordered" v-if="cerca == false">
+      <thead class="has-background-dark">
+        <th class="has-text-white">Corso di laurea</th>
+        <th class="has-text-white">Università</th>
+      </thead>
+      <tbody v-for="corso in corsi" :key="corso.n">
+        <tr data-view>
+          <td>{{ corso.n }}</td>
+          <td>{{ corso.u }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
     <br />
   </div>
 </template>

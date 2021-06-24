@@ -10,50 +10,42 @@
     </h2>
     <hr />
     <p>
-      <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
-      corsi di laurea 2021 (di tutte le università) senza test d'ingresso, per avere il
-      <strong>link alla pagina del corso</strong> e la
-      <strong>funzione di filtro</strong>
-      <b class="has-text-danger" @click="cerca = true"> clicca qui!</b>
-  <!--     <router-link to="/corsi-di-laurea-senza-test" class="has-text-danger">
-        visita questa pagina</router-link
-      >. -->
+      Qui si può trovare
+      <strong>la lista dei corsi di laurea senza test d'ingresso</strong>. I
+      corsi in questione sono relativi
+      <strong>all'anno accademico 2020/2021</strong>.
     </p>
+    <br />
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field has-addons">
+          <p class="control">
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
+          </p>
+          <input
+            type="text"
+            class="input"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+            v-model="filters.n.value"
+          />
+        </div>
+      </div>
+    </div>
     <p>
-      Qui si può trovare <strong>la lista dei corsi di laurea senza test d'ingresso</strong>. I corsi in
-      questione sono relativi <strong>all'anno accademico 2020/2021</strong>.
+      <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
+      corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
+      "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
+      risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
+      comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
+      tabella.
     </p>
     <br />
     <div v-if="cerca == true">
-      <div class="field is-horizontal">
-        <div class="field-body">
-          <div class="field has-addons">
-            <p class="control">
-              <label
-                for="basic-url"
-                class="button is-static has-text-weight-medium has-text-black"
-                >Filtra in base al nome:</label
-              >
-            </p>
-            <input
-              type="text"
-              class="input"
-              id="basic-url"
-              aria-describedby="basic-addon3"
-              v-model="filters.n.value"
-            />
-          </div>
-        </div>
-      </div>
-      <p>
-        <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
-        corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
-        "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
-        risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
-        comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
-        tabella.
-      </p>
-      <br />
       <v-table
         :data="corsi"
         :filters="filters"
@@ -90,6 +82,19 @@
         :totalPages="totalPages"
         :maxPageLinks="4"
       />
+      <br />
+      <p>
+        <strong> Come funziona?</strong> È molto semplice, basta digitare nella
+        barra di ricerca es. "data science" e comparirà la lista di tutti i
+        corsi con quel nome. Inoltre cliccando "Livello" vengono ordinati i
+        corsi in base al tipo di laurea.
+      </p>
+      <p>
+        <strong>Attenzione!</strong> La colonna test è per indicare quale corso
+        ha <strong>test d'ingresso </strong>o è a numero programmato. In quel
+        caso il corso sarà segnato come test sì, in caso di accesso libero come
+        test no.
+      </p>
     </div>
     <table class="table is-bordered" v-if="cerca == false">
       <thead class="has-background-dark">
@@ -133,8 +138,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href:
-          "https://www.corsiuniversitari.info/lista-corsi-di-laurea-senza-test",
+        href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea-senza-test",
       },
     ],
   },
@@ -160,16 +164,10 @@ export default {
       console.log(e);
     }
   },
-  /*   methods: {
-    FiltraLista: function () {
-      var triennale = [];
-      for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].t == "Triennale" && corsi[x].a == "No") {
-          triennale.push(corsi[x]);
-        }
-      }
-      return triennale;
+  watch: {
+    "filters.n.value": function () {
+      this.cerca = true;
     },
-  }, */
+  },
 };
 </script>
