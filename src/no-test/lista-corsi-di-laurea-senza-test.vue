@@ -6,7 +6,7 @@
     </h1>
     <br />
     <h2 class="has-text-grey is-size-2">
-      Quali sono le università senza test d'ingresso? [corsi di laurea 2021]
+      Quali sono le università senza test d'ingresso?
     </h2>
     <hr />
     <p>

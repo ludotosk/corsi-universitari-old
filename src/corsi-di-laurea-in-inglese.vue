@@ -7,6 +7,13 @@
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
       Quali sono i Corsi di Laurea {{ uni }}? Ecco la lista!
     </h2>
+    <hr />
+    <p>
+      Quali sono i Corsi di Laurea {{ uni }}?
+      <strong>Ecco lista di tutti i corsi di laurea italiani {{ uni }}</strong
+      >. I corsi in questione sono relativi
+      <strong>all'anno accademico 2020/2021</strong>.
+    </p>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
@@ -37,65 +44,76 @@
       tabella.
     </p>
     <br />
-    <v-table
-      :data="corsi"
-      :filters="filters"
-      :pageSize="15"
-      @totalPagesChanged="totalPages = $event"
-      :currentPage.sync="currentPage"
-      class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
-    >
-      <thead slot="head" class="has-background-dark">
+    <div v-if="cambiaTabella">
+      <v-table
+        :data="corsi"
+        :filters="filters"
+        :pageSize="15"
+        @totalPagesChanged="totalPages = $event"
+        :currentPage.sync="currentPage"
+        class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+      >
+        <thead slot="head" class="has-background-dark">
+          <th class="has-text-white">Corso di laurea</th>
+          <v-th sortKey="t" defaultSort="asc" class="has-text-white"
+            >Livello</v-th
+          >
+          <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
+          <v-th sortKey="u" defaultSort="asc" class="has-text-white"
+            >Università</v-th
+          >
+        </thead>
+        <tbody slot="body" slot-scope="{ displayData }" data-view>
+          <tr v-for="row in displayData" :key="row.guid">
+            <td>
+              <a
+                :href="row.h"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ row.n }}</a
+              >
+            </td>
+            <td>Corso di Laurea {{ row.t }} in Inglese</td>
+            <td>{{ row.a }}</td>
+            <td>{{ row.u }}</td>
+          </tr>
+        </tbody>
+      </v-table>
+      <smart-pagination
+        :currentPage.sync="currentPage"
+        :totalPages="totalPages"
+        :maxPageLinks="4"
+      />
+    </div>
+    <table class="table is-bordered" v-if="!cambiaTabella">
+      <thead class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc" class="has-text-white"
-          >Livello</v-th
-        >
-        <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc" class="has-text-white"
-          >Università</v-th
-        >
+        <th class="has-text-white">Università</th>
       </thead>
-      <tbody slot="body" slot-scope="{ displayData }" data-view>
-        <tr v-for="row in displayData" :key="row.guid">
-          <td>
-            <a
-              :href="row.h"
-              target="_blank"
-              rel="noopener"
-              class="has-text-danger"
-              >{{ row.n }}</a
-            >
-          </td>
-          <td>Corso di Laurea {{ row.t }} in Inglese</td>
-          <td>{{ row.a }}</td>
-          <td>{{ row.u }}</td>
+      <tbody v-for="corso in corsi" :key="corso.n">
+        <tr data-view>
+          <td>{{ corso.n }}</td>
+          <td>{{ corso.u }}</td>
         </tr>
       </tbody>
-    </v-table>
-    <smart-pagination
-      :currentPage.sync="currentPage"
-      :totalPages="totalPages"
-      :maxPageLinks="4"
-    />
+    </table>
     <br />
-    <p>
-      Qui si possono trovare
-      <strong>la lista di tutti i corsi di laurea {{ uni }}</strong
-      >. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
-    </p>
-    <p>
-      <strong> Come funziona?</strong> È molto semplice, basta digitare nella
-      barra di ricerca es. "data science" e comparirà la lista di tutti i corsi
-      con quel nome. Inoltre cliccando "Livello" vengono ordinati i corsi in
-      base al tipo di laurea.
-    </p>
-    <p>
-      <strong>Attenzione!</strong> La colonna test è per indicare quale corso ha
-      <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il
-      corso sarà segnato come test sì, in caso di accesso libero come test no.
-    </p>
-    <br />
+    <div v-if="cambiaTabella">
+      <p>
+        <strong> Come funziona?</strong> È molto semplice, basta digitare nella
+        barra di ricerca es. "data science" e comparirà la lista di tutti i
+        corsi con quel nome. Inoltre cliccando "Livello" vengono ordinati i
+        corsi in base al tipo di laurea.
+      </p>
+      <p>
+        <strong>Attenzione!</strong> La colonna test è per indicare quale corso
+        ha <strong>test d'ingresso </strong>o è a numero programmato. In quel
+        caso il corso sarà segnato come test sì, in caso di accesso libero come
+        test no.
+      </p>
+    </div>
+    <br>
   </div>
 </template>
 
@@ -142,6 +160,8 @@ export default {
       totalPages: 0,
       uni: "in inglese",
       corsi: [],
+      cerca: false,
+      cambiaTabella: false,
     };
   },
   async beforeCreate() {
@@ -157,6 +177,11 @@ export default {
     } catch (e) {
       console.log(e);
     }
+  },
+  watch: {
+    "filters.n.value": function () {
+      this.cambiaTabella = true;
+    },
   },
 };
 </script>

@@ -5,9 +5,11 @@
       Tutti i Corsi di Laurea esistenti [2021]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Quali sono tutti i corsi di laurea? [lista 2021]
+      Quali sono tutti i corsi di laurea?
     </h2>
-    <br />
+    <hr />
+    <p>Quali sono <strong>tutti i corsi di laurea Italiani esistenti</strong>? Qui puoi trovare la <strong>lista completa</strong> aggiornata <strong>all'anno accademico 2020/2021</strong>!</p>
+    <br>
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
@@ -84,11 +86,6 @@
       università italiane.
     </p>
     <p>
-      Qui si può trovare <strong>l'elenco dei corsi di laurea</strong> italiani che ho estrapolato da un
-      sito istituzionale. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
-    </p>
-    <p>
       <strong> Come funziona?</strong> È molto semplice, basta digitare nella
       barra di ricerca es. "data science" e comparirà la lista di tutti i corsi
       con quel nome. Inoltre cliccando "Livello" vengono ordinati i corsi in
@@ -99,7 +96,6 @@
       <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il
       corso sarà segnato come test sì, in caso di accesso libero come test no.
     </p>
-    <br />
   </div>
 </template>
 
