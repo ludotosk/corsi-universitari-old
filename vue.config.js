@@ -26,8 +26,8 @@ module.exports = {
         '/cookie-policy',
         '/tabella',
         '/tutti-i-corsi-di-laurea',
-        '/corsi-di-laurea-unibo',
-        '/corsi-di-laurea-unipi',
+        /* '/corsi-di-laurea-unibo', */
+        /* '/corsi-di-laurea-unipi', */
         '/corsi-di-laurea-bicocca',
         '/corsi-di-laurea-polimi',
         //'/corsi-di-laurea-sapienza',
@@ -36,7 +36,7 @@ module.exports = {
         //'/corsi-di-laurea-unimi',
         //'/corsi-di-laurea-unina',
         //'/corsi-di-laurea-unipa',
-        '/corsi-di-laurea-unipd',
+      /*   '/corsi-di-laurea-unipd', */
         //'/corsi-di-laurea-unipr',
         '/corsi-di-laurea-unisa',
         //'/corsi-di-laurea-unito',
@@ -49,7 +49,7 @@ module.exports = {
         //'/corsi-di-laurea-lettere',
         '/corsi-di-laurea-informatica',
         //'/corsi-di-laurea-giurisprudenza',
-        '/corsi-di-laurea-farmacia',
+        /* '/corsi-di-laurea-farmacia', */
         //'/corsi-di-laurea-dietistica',
         //'/corsi-di-laurea-biotecnologia',
         //'/corsi-di-laurea-fisica',
@@ -63,10 +63,10 @@ module.exports = {
         //'/corsi-di-laurea-psicologia',
         //'/corsi-di-laurea-medicina',
         '/corsi-di-laurea-in-inglese',
-        '/corsi-di-laurea-bari',
+        /* '/corsi-di-laurea-bari', */
         '/corsi-di-laurea-bologna',
         '/corsi-di-laurea-firenze',
-        '/corsi-di-laurea-genova',
+        /* '/corsi-di-laurea-genova', */
         '/corsi-di-laurea-milano',
         //'/corsi-di-laurea-napoli',
         '/corsi-di-laurea-padova',
@@ -75,13 +75,13 @@ module.exports = {
         //'/corsi-di-laurea-roma',
         //'/corsi-di-laurea-torino',
         '/corsi-di-laurea-venezia',
-        '/corsi-di-laurea-verona',
+        /* '/corsi-di-laurea-verona', */
         //'/corsi-di-laurea-unikore',
         //'/corsi-di-laurea-univda',
         //'/corsi-di-laurea-unipegaso',
         //'/corsi-di-laurea-unicusano',
         '/corsi-di-laurea-ecampus',
-        '/corsi-di-laurea-mercatorum',
+        /* '/corsi-di-laurea-mercatorum', */
         //'/corsi-di-laurea-bocconi',
         //'/corsi-di-laurea-roma-tre',
         //'/corsi-di-laurea-tor-vergata',

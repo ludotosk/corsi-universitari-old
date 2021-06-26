@@ -9,8 +9,8 @@ const Corsi = () => import(/* webpackChunkName: "corsi" */ './corsi-di-laurea.vu
 const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
 const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
 const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
-const CorsiUnibo = () => import(/* webpackChunkName: "corsiUnibo" */ './uni/corsi-di-laurea-unibo.vue')
-const CorsiUnipi = () => import(/* webpackChunkName: "corsiUnipi" */ './uni/corsi-di-laurea-unipi.vue')
+//const CorsiUnibo = () => import(/* webpackChunkName: "corsiUnibo" */ './uni/corsi-di-laurea-unibo.vue')
+//const CorsiUnipi = () => import(/* webpackChunkName: "corsiUnipi" */ './uni/corsi-di-laurea-unipi.vue')
 //const CorsiSapienza = () => import(/* webpackChunkName: "corsiSapienza" */ './uni/corsi-di-laurea-sapienza.vue')
 const CorsiUnipd = () => import(/* webpackChunkName: "corsiUnipd" */ './uni/corsi-di-laurea-unipd.vue')
 const CorsiBicocca = () => import(/* webpackChunkName: "corsiBicocca" */ './uni/corsi-di-laurea-bicocca.vue')
@@ -39,7 +39,7 @@ const CorsiBiologia = () => import(/* webpackChunkName: "corsibiologia" */ './ar
 const CorsiFilosofia = () => import(/* webpackChunkName: "corsifilosofia" */ './area/corsi-di-laurea-filosofia.vue')
 //const CorsiBiotecnologia = () => import(/* webpackChunkName: "corsibiotecnologie" */ './area/corsi-di-laurea-biotecnologia.vue')
 //const CorsiDietistica = () => import(/* webpackChunkName: "corsidietistica" */ './area/corsi-di-laurea-dietistica.vue')
-const CorsiFarmacia = () => import(/* webpackChunkName: "corsifarmacia" */ './area/corsi-di-laurea-farmacia.vue')
+//const CorsiFarmacia = () => import(/* webpackChunkName: "corsifarmacia" */ './area/corsi-di-laurea-farmacia.vue')
 //const CorsiGiurisprudenza = () => import(/* webpackChunkName: "corsigiurisprudenza" */ './area/corsi-di-laurea-giurisprudenza.vue')
 const CorsiInformatica = () => import(/* webpackChunkName: "corsiinformatica" */ './area/corsi-di-laurea-informatica.vue')
 //const CorsiLettere = () => import(/* webpackChunkName: "corsilettere" */ './area/corsi-di-laurea-lettere.vue')
@@ -48,10 +48,10 @@ const CorsiInformatica = () => import(/* webpackChunkName: "corsiinformatica" */
 const Inglese = () => import(/* webpackChunkName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
 //const Guida = () => import(/* webpackChunkName: "guida" */ './guida.vue')
 const Padova = () => import(/* webpackChunkName: "padova" */ './citta/corsi-di-laurea-padova.vue')
-const Bari = () => import(/* webpackChunkName: "bari" */ './citta/corsi-di-laurea-bari.vue')
+//const Bari = () => import(/* webpackChunkName: "bari" */ './citta/corsi-di-laurea-bari.vue')
 const Bologna = () => import(/* webpackChunkName: "bologna" */ './citta/corsi-di-laurea-bologna.vue')
 const Firenze = () => import(/* webpackChunkName: "firenze" */ './citta/corsi-di-laurea-firenze.vue')
-const Genova = () => import(/* webpackChunkName: "genova" */ './citta/corsi-di-laurea-genova.vue')
+//const Genova = () => import(/* webpackChunkName: "genova" */ './citta/corsi-di-laurea-genova.vue')
 const Milano = () => import(/* webpackChunkName: "Milano" */ './citta/corsi-di-laurea-milano.vue')
 //const Napoli = () => import(/* webpackChunkName: "napoli" */ './citta/corsi-di-laurea-napoli.vue')
 //const Pavia = () => import(/* webpackChunkName: "pavia" */ './citta/corsi-di-laurea-pavia.vue')
@@ -59,13 +59,13 @@ const Milano = () => import(/* webpackChunkName: "Milano" */ './citta/corsi-di-l
 //const Roma = () => import(/* webpackChunkName: "roma" */ './citta/corsi-di-laurea-roma.vue')
 //const Torino = () => import(/* webpackChunkName: "torino" */ './citta/corsi-di-laurea-torino.vue')
 const Venezia = () => import(/* webpackChunkName: "venezia" */ './citta/corsi-di-laurea-venezia.vue')
-const Verona = () => import(/* webpackChunkName: "verona" */ './citta/corsi-di-laurea-verona.vue')
+//const Verona = () => import(/* webpackChunkName: "verona" */ './citta/corsi-di-laurea-verona.vue')
 //const CorsiKore = () => import(/* webpackChunkName: "kore" */ './uni/corsi-di-laurea-unikore.vue')
 //const CorsiUnivda = () => import(/* webpackChunkName: "univda" */ './uni/corsi-di-laurea-univda.vue')
 //const CorsiUnipegaso = () => import(/* webpackChunkName: "unipegaso" */ './uni/corsi-di-laurea-unipegaso.vue')
 //const CorsiUnicusano = () => import(/* webpackChunkName: "unicusano" */ './uni/corsi-di-laurea-unicusano.vue')
 const CorsiEcampus = () => import(/* webpackChunkName: "ecampus" */ './uni/corsi-di-laurea-ecampus.vue')
-const CorsiMercatorum = () => import(/* webpackChunkName: "mercatorum" */ './uni/corsi-di-laurea-mercatorum.vue')
+//const CorsiMercatorum = () => import(/* webpackChunkName: "mercatorum" */ './uni/corsi-di-laurea-mercatorum.vue')
 //const CorsiBocconi = () => import(/* webpackChunkName: "bocconi" */ './uni/corsi-di-laurea-bocconi.vue')
 //const CorsiFederico = () => import(/* webpackChunkName: "federico" */ './uni/corsi-di-laurea-federico-ii.vue')
 //const CorsiRomaTre = () => import(/* webpachChunkName: "romatre" */ './uni/corsi-di-laurea-roma-tre.vue')
@@ -111,22 +111,22 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/corsi-di-laurea-unibo', components: {
       default: CorsiUnibo,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
-  {
+  }, */
+ /*  {
     path: '/corsi-di-laurea-unipi', components: {
       default: CorsiUnipi,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   /*   {
       path: '/corsi-di-laurea-sapienza', components: {
         default: CorsiSapienza,
@@ -167,14 +167,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+ /*  {
     path: '/corsi-di-laurea-unibo', components: {
       default: CorsiUnibo,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   /*   {
       path: '/corsi-di-laurea-unifi', components: {
         default: CorsiUnifi,
@@ -398,14 +398,14 @@ const routes = [
        footer: Footer
      }
    }, */
-  {
+/*   {
     path: '/corsi-di-laurea-farmacia', components: {
       default: CorsiFarmacia,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   /*  {
      path: '/corsi-di-laurea-giurisprudenza', components: {
        default: CorsiGiurisprudenza,
@@ -477,14 +477,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/corsi-di-laurea-bari', components: {
       default: Bari,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/corsi-di-laurea-bologna', components: {
       default: Bologna,
@@ -501,14 +501,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+ /*  {
     path: '/corsi-di-laurea-genova', components: {
       default: Genova,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   {
     path: '/corsi-di-laurea-milano', components: {
       default: Milano,
@@ -565,14 +565,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+ /*  {
     path: '/corsi-di-laurea-verona', components: {
       default: Verona,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   //{
   //path: '/citta', components: {
   //default: () => import(/* webpackChunkName: "citta" */ './citta.vue'),
@@ -620,14 +620,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
+/*   {
     path: '/corsi-di-laurea-mercatorum', components: {
       default: CorsiMercatorum,
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
-  },
+  }, */
   /*   {
       path: '/corsi-di-laurea-bocconi', components: {
         default: CorsiBocconi,

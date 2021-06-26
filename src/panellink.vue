@@ -16,11 +16,11 @@
         >
       </p>
       <div v-bind:class="{ hidden: hideCitta }">
-        <div class="panel-block">
+        <!--    <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-bari"
             >Corsi di laurea Bari</router-link
           >
-        </div>
+        </div> -->
         <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-bologna"
             >Corsi di laurea Bologna</router-link
@@ -31,11 +31,11 @@
             >Corsi di laurea Firenze</router-link
           >
         </div>
-        <div class="panel-block">
+        <!--    <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-genova"
             >Corsi di laurea Genova</router-link
           >
-        </div>
+        </div> -->
         <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-milano"
             >Corsi di laurea Milano</router-link
@@ -76,28 +76,28 @@
             >Corsi di laurea Venezia</router-link
           >
         </div>
-        <div class="panel-block">
+        <!--      <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-verona"
             >Corsi di laurea Verona</router-link
           >
-        </div>
+        </div> -->
       </div>
       <div v-bind:class="{ hidden: hideUni }">
-        <div class="panel-block">
+        <!--       <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-unibo"
             >Corsi di laurea Unibo</router-link
           >
-        </div>
-        <div class="panel-block">
+        </div> -->
+        <!--    <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-unipi"
             >Corsi di laurea Unipi</router-link
           >
-        </div>
-        <div class="panel-block">
+        </div> -->
+        <!--      <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-unipd"
             >Corsi di laurea Unipd</router-link
           >
-        </div>
+        </div> -->
         <!--       <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-sapienza"
             >Corsi di laurea La Sapienza | Uniroma1</router-link
@@ -138,11 +138,6 @@
             >Corsi di laurea Unipa</router-link
           >
         </div> -->
-        <div class="panel-block">
-          <router-link class="has-text-black-ter" to="/corsi-di-laurea-unipd"
-            >Corsi di laurea Unipd</router-link
-          >
-        </div>
         <!--      <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-unipr"
             >Corsi di laurea Unipr</router-link
@@ -190,13 +185,13 @@
             >Corsi di laurea Federico II</router-link
           >
         </div> -->
-        <div class="panel-block">
+        <!--     <div class="panel-block">
           <router-link
             class="has-text-black-ter"
             to="/corsi-di-laurea-mercatorum"
             >Corsi di laurea Mercatorum</router-link
           >
-        </div>
+        </div> -->
         <!--         <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-roma-tre"
             >Corsi di laurea Roma Tre</router-link
@@ -251,11 +246,11 @@
             >Corsi di laurea dietistica</router-link
           >
         </div> -->
-        <div class="panel-block">
+        <!--    <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-farmacia"
             >Corsi di laurea farmacia</router-link
           >
-        </div>
+        </div> -->
         <div class="panel-block">
           <router-link
             class="has-text-black-ter"
