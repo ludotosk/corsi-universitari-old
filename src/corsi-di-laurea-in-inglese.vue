@@ -5,12 +5,12 @@
       Lista Corsi di Laurea {{ uni }}
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-      Quali sono i Corsi di Laurea {{ uni }}? Ecco la lista!
+      Quali sono i Corsi di Laurea {{ uni }} in Italia? Ecco la lista!
     </h2>
     <hr />
     <p>
       Quali sono i Corsi di Laurea {{ uni }}?
-      <strong>Ecco lista di tutti i corsi di laurea italiani {{ uni }}</strong
+      <strong>Ecco lista di tutti i corsi di laurea {{ uni }} in Italia</strong
       >. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
