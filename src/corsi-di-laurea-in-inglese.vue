@@ -2,14 +2,14 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
-      Lista Corsi di Laurea {{ uni }}
+      Lista Corsi di Laurea in lingua inglese
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
       Quali sono i Corsi di Laurea {{ uni }} in Italia? Ecco la lista!
     </h2>
     <hr />
     <p>
-      Quali sono i Corsi di Laurea {{ uni }}?
+      Quali sono i Corsi di Laurea in lingua inglese in Italia?
       <strong>Ecco lista di tutti i corsi di laurea {{ uni }} in Italia</strong
       >. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
@@ -124,7 +124,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Lista corsi di laurea in inglese",
+    title: "Lista corsi di laurea in lingua inglese",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
