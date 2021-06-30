@@ -1,18 +1,28 @@
 <template>
   <div class="container is-fullhd">
     <br />
-       <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Corsi di laurea {{ uni }} [2021]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
       Qui puoi trovare tutti i Corsi di Laurea di {{ uni }}
     </h2>
+    <hr />
+    <p>
+      Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
+      >. I corsi in questione sono relativi
+      <strong>all'anno accademico 2020/2021</strong>.
+    </p>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <label for="basic-url" class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</label>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -32,7 +42,8 @@
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
     </p>
-    <br>
+    <br />
+    <div v-if="cambiaTabella">
     <v-table
       :data="corsi"
       :filters="filters"
@@ -43,14 +54,24 @@
     >
       <thead slot="head" class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc" class="has-text-white">Livello</v-th>
+        <v-th sortKey="t" defaultSort="asc" class="has-text-white"
+          >Livello</v-th
+        >
         <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc" class="has-text-white">Università</v-th>
+        <v-th sortKey="u" defaultSort="asc" class="has-text-white"
+          >Università</v-th
+        >
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-           <a :href="row.h" target="_blank" rel="noopener" class="has-text-danger">{{ row.n }}</a>
+            <a
+              :href="row.h"
+              target="_blank"
+              rel="noopener"
+              class="has-text-danger"
+              >{{ row.n }}</a
+            >
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
@@ -65,11 +86,6 @@
     />
     <br />
     <p>
-      Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
-      >. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
-    </p>
-    <p>
       <strong> Come funziona?</strong> È molto semplice, basta digitare nella
       barra di ricerca es. "data science" e comparirà la lista di tutti i corsi
       con quel nome. Inoltre cliccando "Livello" vengono ordinati i corsi in
@@ -80,6 +96,19 @@
       <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il
       corso sarà segnato come test sì, in caso di accesso libero come test no.
     </p>
+    </div>
+      <table class="table is-bordered" v-if="!cambiaTabella">
+      <thead class="has-background-dark">
+        <th class="has-text-white">Corso di laurea</th>
+        <th class="has-text-white">Università</th>
+      </thead>
+      <tbody v-for="corso in corsi" :key="corso.n">
+        <tr data-view>
+          <td>{{ corso.n }}</td>
+          <td>{{ corso.u }}</td>
+        </tr>
+      </tbody>
+    </table>
     <br />
   </div>
 </template>
@@ -110,7 +139,7 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-biologia",
       },
-   /*    {
+      /*    {
         rel: "preload",
         href: "https://json-corsi-fastify.herokuapp.com/corsi?c=L-13&c=LM-6",
         as: "fetch",
@@ -126,6 +155,7 @@ export default {
       totalPages: 0,
       uni: "biologia",
       corsi: [],
+      cambiaTabella: false,
     };
   },
   async beforeCreate() {
@@ -139,16 +169,10 @@ export default {
       console.log(e);
     }
   },
-  /*  methods: {
-    FiltraLista: function () {
-      var array = [];
-      for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].c == "L-13" || corsi[x].c == "LM-6") {
-          array.push(corsi[x]);
-        }
-      }
-      return array;
+  watch: {
+    "filters.n.value": function () {
+      this.cambiaTabella = true;
     },
-  }, */
+  },
 };
 </script>

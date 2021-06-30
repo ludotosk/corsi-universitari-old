@@ -7,6 +7,12 @@
     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
       Quali sono i corsi di laurea {{ uni }}? [2021]
     </h2>
+    <hr />
+    <p>
+      Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
+      >. I corsi in questione sono relativi
+      <strong>all'anno accademico 2020/2021</strong>.
+    </p>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
@@ -37,61 +43,71 @@
       tabella.
     </p>
     <br />
-    <v-table
-      :data="corsi"
-      :filters="filters"
-      :pageSize="15"
-      @totalPagesChanged="totalPages = $event"
-      :currentPage.sync="currentPage"
-      class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
-    >
-      <thead slot="head" class="has-background-dark">
+    <div v-if="cambiaTabella">
+      <v-table
+        :data="corsi"
+        :filters="filters"
+        :pageSize="15"
+        @totalPagesChanged="totalPages = $event"
+        :currentPage.sync="currentPage"
+        class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+      >
+        <thead slot="head" class="has-background-dark">
+          <th class="has-text-white">Corso di laurea</th>
+          <v-th class="has-text-white" sortKey="t" defaultSort="asc"
+            >Livello</v-th
+          >
+          <v-th class="has-text-white" sortKey="a" defaultSort="asc">Test</v-th>
+          <th class="has-text-white">Università</th>
+        </thead>
+        <tbody slot="body" slot-scope="{ displayData }" data-view>
+          <tr v-for="row in displayData" :key="row.guid">
+            <td>
+              <a
+                :href="row.h"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ row.n }}</a
+              >
+            </td>
+            <td>Corso di Laurea {{ row.t }}</td>
+            <td>{{ row.a }}</td>
+            <td>{{ uni }}</td>
+          </tr>
+        </tbody>
+      </v-table>
+      <smart-pagination
+        :currentPage.sync="currentPage"
+        :totalPages="totalPages"
+        :maxPageLinks="4"
+      />
+      <br />
+      <p>
+        <strong> Come funziona?</strong> È molto semplice, basta digitare nella
+        barra di ricerca es. "data science" e comparirà la lista di tutti i
+        corsi con quel nome. Inoltre cliccando "Livello" vengono ordinati i
+        corsi in base al tipo di laurea.
+      </p>
+      <p>
+        <strong>Attenzione!</strong> La colonna test è per indicare quale corso
+        ha <strong>test d'ingresso </strong>o è a numero programmato. In quel
+        caso il corso sarà segnato come test sì, in caso di accesso libero come
+        test no.
+      </p>
+    </div>
+    <table class="table is-bordered" v-if="!cambiaTabella">
+      <thead class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <v-th class="has-text-white" sortKey="t" defaultSort="asc"
-          >Livello</v-th
-        >
-        <v-th class="has-text-white" sortKey="a" defaultSort="asc">Test</v-th>
         <th class="has-text-white">Università</th>
       </thead>
-      <tbody slot="body" slot-scope="{ displayData }" data-view>
-        <tr v-for="row in displayData" :key="row.guid">
-          <td>
-            <a
-              :href="row.h"
-              target="_blank"
-              rel="noopener"
-              class="has-text-danger"
-              >{{ row.n }}</a
-            >
-          </td>
-          <td>Corso di Laurea {{ row.t }}</td>
-          <td>{{ row.a }}</td>
-          <td>{{ uni }}</td>
+      <tbody v-for="corso in corsi" :key="corso.n">
+        <tr data-view>
+          <td>{{ corso.n }}</td>
+          <td>{{ corso.u }}</td>
         </tr>
       </tbody>
-    </v-table>
-    <smart-pagination
-      :currentPage.sync="currentPage"
-      :totalPages="totalPages"
-      :maxPageLinks="4"
-    />
-    <br />
-    <p>
-      Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
-      >. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
-    </p>
-    <p>
-      <strong> Come funziona?</strong> È molto semplice, basta digitare nella
-      barra di ricerca es. "data science" e comparirà la lista di tutti i corsi
-      con quel nome. Inoltre cliccando "Livello" vengono ordinati i corsi in
-      base al tipo di laurea.
-    </p>
-    <p>
-      <strong>Attenzione!</strong> La colonna test è per indicare quale corso ha
-      <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il
-      corso sarà segnato come test sì, in caso di accesso libero come test no.
-    </p>
+    </table>
     <br />
   </div>
 </template>
@@ -132,6 +148,7 @@ export default {
       totalPages: 0,
       uni: "Uniba",
       corsi: [],
+      cambiaTabella: false,
     };
   },
   async beforeCreate() {
@@ -145,16 +162,10 @@ export default {
       console.log(e);
     }
   },
-  /*   methods: {
-    FiltraLista: function () {
-      var triennale = [];
-      for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].u == "Università degli Studi di BARI ALDO MORO") {
-          triennale.push(corsi[x]);
-        }
-      }
-      return triennale;
+  watch: {
+    "filters.n.value": function () {
+      this.cambiaTabella = true;
     },
-  },*/
+  },
 };
 </script>

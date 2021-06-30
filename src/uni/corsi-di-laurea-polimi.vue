@@ -1,16 +1,28 @@
 <template>
   <div class="container is-fullhd">
     <br />
-      <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea {{uni}} [lista]</h1>
-     <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
-       Cosa si studia al {{uni}}? Tutti i corsi di laurea!
+    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+      Corsi di laurea {{ uni }} [lista]
+    </h1>
+    <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
+      Cosa si studia al {{ uni }}? Tutti i corsi di laurea!
     </h2>
+    <hr />
+    <p>
+      Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
+      >. I corsi in questione sono relativi
+      <strong>all'anno accademico 2020/2021</strong>.
+    </p>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <label for="basic-url" class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</label>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -30,53 +42,72 @@
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
     </p>
-    <br>
-    <v-table
-      :data="corsi"
-      :filters="filters"
-      :pageSize="15"
-      @totalPagesChanged="totalPages = $event"
-      :currentPage.sync="currentPage"
-      class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
-    >
-      <thead slot="head" class="has-background-dark">
-      <th class="has-text-white">Corso di laurea</th>
-        <v-th class="has-text-white" sortKey="t" defaultSort="asc">Livello</v-th>
-        <v-th class="has-text-white" sortKey="a" defaultSort="asc">Test</v-th>
+    <br />
+    <div v-if="cambiaTabella">
+      <v-table
+        :data="corsi"
+        :filters="filters"
+        :pageSize="15"
+        @totalPagesChanged="totalPages = $event"
+        :currentPage.sync="currentPage"
+        class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+      >
+        <thead slot="head" class="has-background-dark">
+          <th class="has-text-white">Corso di laurea</th>
+          <v-th class="has-text-white" sortKey="t" defaultSort="asc"
+            >Livello</v-th
+          >
+          <v-th class="has-text-white" sortKey="a" defaultSort="asc">Test</v-th>
+          <th class="has-text-white">Università</th>
+        </thead>
+        <tbody slot="body" slot-scope="{ displayData }" data-view>
+          <tr v-for="row in displayData" :key="row.guid">
+            <td>
+              <a
+                :href="row.h"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ row.n }}</a
+              >
+            </td>
+            <td>Corso di Laurea {{ row.t }}</td>
+            <td>{{ row.a }}</td>
+            <td>{{ uni }}</td>
+          </tr>
+        </tbody>
+      </v-table>
+      <smart-pagination
+        :currentPage.sync="currentPage"
+        :totalPages="totalPages"
+        :maxPageLinks="4"
+      />
+      <br />
+      <p>
+        <strong> Come funziona?</strong> È molto semplice, basta digitare nella
+        barra di ricerca es. "data science" e comparirà la lista di tutti i
+        corsi con quel nome. Inoltre cliccando "Livello" vengono ordinati i
+        corsi in base al tipo di laurea.
+      </p>
+      <p>
+        <strong>Attenzione!</strong> La colonna test è per indicare quale corso
+        ha <strong>test d'ingresso </strong>o è a numero programmato. In quel
+        caso il corso sarà segnato come test sì, in caso di accesso libero come
+        test no.
+      </p>
+    </div>
+    <table class="table is-bordered" v-if="!cambiaTabella">
+      <thead class="has-background-dark">
+        <th class="has-text-white">Corso di laurea</th>
         <th class="has-text-white">Università</th>
       </thead>
-      <tbody slot="body" slot-scope="{ displayData }" data-view>
-        <tr v-for="row in displayData" :key="row.guid">
-          <td>
-           <a :href="row.h" target="_blank" rel="noopener" class="has-text-danger">{{ row.n }}</a>
-          </td>
-          <td>Corso di Laurea {{ row.t }}</td>
-          <td>{{ row.a }}</td>
-          <td>{{uni}} </td>
+      <tbody v-for="corso in corsi" :key="corso.n">
+        <tr data-view>
+          <td>{{ corso.n }}</td>
+          <td>{{ corso.u }}</td>
         </tr>
       </tbody>
-    </v-table>
-    <smart-pagination
-      :currentPage.sync="currentPage"
-      :totalPages="totalPages"
-      :maxPageLinks="4"
-    />
-    <br />
-    <p>
-      Qui si può trovare <strong>la lista dei corsi di laurea {{uni}}</strong>. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
-    </p>
-    <p>
-      <strong> Come funziona?</strong> È molto semplice, basta digitare nella
-      barra di ricerca es. "data science" e comparirà la lista di tutti i corsi
-      con quel nome. Inoltre cliccando "Livello" vengono ordinati i corsi in
-      base al tipo di laurea.
-    </p>
-    <p>
-      <strong>Attenzione!</strong> La colonna test è per indicare quale corso ha
-      <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il
-      corso sarà segnato come test sì, in caso di accesso libero come test no.
-    </p>
+    </table>
     <br />
   </div>
 </template>
@@ -98,8 +129,7 @@ export default {
       },
       {
         name: "keywords",
-        content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea polimi",
+        content: "Corsi di laurea, Corso di laurea, Corsi di laurea polimi",
       },
     ],
     link: [
@@ -118,12 +148,13 @@ export default {
       totalPages: 0,
       uni: "Polimi",
       corsi: [],
+      cambiaTabella: false,
     };
   },
-    async beforeCreate() {
+  async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-corsi-fastify.herokuapp.com/corsi?u=Politecnico di MILANO'
+        "https://json-corsi-fastify.herokuapp.com/corsi?u=Politecnico di MILANO"
       );
 
       this.corsi = res.data;
@@ -131,16 +162,10 @@ export default {
       console.log(e);
     }
   },
-/*   methods: {
-    FiltraLista: function () {
-      var triennale = [];
-      for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].u == "Politecnico di MILANO") {
-          triennale.push(corsi[x]);
-        }
-      }
-      return triennale;
+  watch: {
+    "filters.n.value": function () {
+      this.cambiaTabella = true;
     },
-  }, */
+  },
 };
 </script>
