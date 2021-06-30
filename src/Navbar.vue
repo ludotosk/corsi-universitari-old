@@ -142,7 +142,15 @@
           </div> -->
         </div>
 
-        <div class="navbar-end"></div>
+        <div class="navbar-end">
+          <a href="https://youtu.be/awDfiW3z5GY" class="navbar-item"
+            ><img
+              src="/img/youtube.svg"
+              alt="link a youtube"
+              height="40"
+              width="40"
+          /> YouTube </a>
+        </div>
       </div>
     </nav>
   </div>
