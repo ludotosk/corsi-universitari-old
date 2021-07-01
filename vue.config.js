@@ -31,7 +31,7 @@ module.exports = {
         '/corsi-di-laurea-bicocca',
         '/corsi-di-laurea-polimi',
         //'/corsi-di-laurea-sapienza',
-        //'/corsi-di-laurea-uniba',
+        '/corsi-di-laurea-uniba',
         //'/corsi-di-laurea-unifi',
         //'/corsi-di-laurea-unimi',
         //'/corsi-di-laurea-unina',
