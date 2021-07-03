@@ -229,7 +229,7 @@
       <div v-bind:class="{ hidden: hideArea }">
         <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-biologia"
-            >Corsi di laurea biologia</router-link
+            >Corsi di laurea Biologia</router-link
           >
         </div>
         <!--      <div class="panel-block">
@@ -255,7 +255,7 @@
           <router-link
             class="has-text-black-ter"
             to="/corsi-di-laurea-filosofia"
-            >Corsi di laurea filosofia</router-link
+            >Corsi di laurea Filosofia</router-link
           >
         </div>
         <!--   <div class="panel-block">
@@ -281,14 +281,14 @@
           <router-link
             class="has-text-black-ter"
             to="/corsi-di-laurea-informatica"
-            >Corsi di laurea informatica</router-link
+            >Corsi di laurea Informatica</router-link
           >
         </div>
         <div class="panel-block">
           <router-link
             class="has-text-black-ter"
             to="/corsi-di-laurea-logopedia"
-            >Corsi di laurea logopedia</router-link
+            >Corsi di laurea Logopedia</router-link
           >
         </div>
         <!--      <div class="panel-block">
@@ -314,7 +314,7 @@
           <router-link
             class="has-text-black-ter"
             to="/corsi-di-laurea-scienze-della-formazione-primaria"
-            >Corsi di laurea scienze della formazione primaria</router-link
+            >Corsi di laurea Scienze della formazione primaria</router-link
           >
         </div>
         <!--  <div class="panel-block">
