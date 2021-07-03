@@ -98,14 +98,22 @@
         test no.
       </p>
     </div>
-    <table class="table is-bordered" v-if="!cambiaTabella">
+    <table class="table is-bordered is-fullwidth is-hoverable" v-if="!cambiaTabella">
       <thead class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
         <th class="has-text-white">Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.n">
         <tr data-view>
-          <td>{{ corso.n }}</td>
+          <td>
+            <a
+              :href="corso.h"
+              target="_blank"
+              rel="noopener"
+              class="has-text-danger"
+              >{{ corso.n }}</a
+            >
+          </td>
           <td>{{ corso.u }}</td>
         </tr>
       </tbody>

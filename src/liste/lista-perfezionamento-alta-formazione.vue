@@ -67,7 +67,7 @@
         :maxPageLinks="4"
       />
     </div>
-    <table class="table is-bordered" v-if="cerca == false">
+    <table class="table is-bordered is-hoverable is-fullwidth" v-if="cerca == false">
       <thead class="has-background-dark">
         <th class="has-text-white">Nome corso</th>
         <th class="has-text-white">Arco</th>

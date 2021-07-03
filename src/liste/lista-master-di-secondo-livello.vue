@@ -93,7 +93,7 @@
       />
     </div>
     <br />
-    <table class="table is-bordered" v-if="cerca == false">
+    <table class="table is-bordered is-hoverable is-fullwidth" v-if="cerca == false">
       <thead class="has-background-dark">
         <th class="has-text-white">Nome master</th>
         <th class="has-text-white">Arco</th>
