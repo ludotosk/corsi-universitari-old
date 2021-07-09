@@ -26,7 +26,6 @@
           >Strumento che contiene tutti i corsi di laurea italiani e permette di
           effettuare una rapida ricerca tramite i nomi dei corsi.</mark
         >
-        Per capire come funziona <router-link to="/guida" class="has-text-danger-dark">qui c'è la mia guida</router-link>.
       </p>
       <br />
     </div>
