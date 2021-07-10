@@ -4,7 +4,6 @@
    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Lista corsi di laurea magistrali a ciclo unico
     </h1>
-    <br />
     <h2 class="has-text-grey is-size-2">
       Qui puoi trovare la lista di tutti i corsi di laurea magistrali a ciclo
       unico

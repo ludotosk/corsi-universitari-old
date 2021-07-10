@@ -4,7 +4,6 @@
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Lista corsi di laurea triennali ad accesso libero
     </h1>
-    <br />
     <h2 class="has-text-grey is-size-2">
       Quali corsi di laurea triennali ad accesso libero scegliere? Ecco la
       lista!
