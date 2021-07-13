@@ -4,55 +4,45 @@
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Master di primo livello [lista 2021]
     </h1>
-    <br />
     <h2 class="has-text-grey is-size-2">
       Quali sono i master di primo livello? Ecco la lista!
     </h2>
     <hr />
     <p>
-      <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
-      master di primo livello, per avere il
-      <strong>link alla pagina del corso</strong> e la
-      <strong>funzione di filtro</strong>
-      <b @click="cerca = true" class="has-text-danger"> clicca qui!</b>
-      <!--       <router-link to="/master-primo-livello" class="has-text-danger">
-        visita questa pagina</router-link
-      >. -->
-    </p>
-    <p>
       Qui si possono trovare oltre
-      <strong>1700 master di primo livello</strong>.
+      <strong>1700 master di primo livello</strong>, cioè tutti i master di primo livello
+      Italiani 2020/2021.
+    </p>
+    <br />
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field has-addons">
+          <p class="control">
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
+          </p>
+          <input
+            type="text"
+            class="input"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+            v-model="filters.corso.value"
+          />
+        </div>
+      </div>
+    </div>
+    <p>
+      <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
+      corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
+      "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
+      risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
+      comune a tutti i nomi.
     </p>
     <br />
     <div v-if="cerca == true">
-      <div class="field is-horizontal">
-        <div class="field-body">
-          <div class="field has-addons">
-            <p class="control">
-              <label
-                for="basic-url"
-                class="button is-static has-text-weight-medium has-text-black"
-                >Filtra in base al nome:</label
-              >
-            </p>
-            <input
-              type="text"
-              class="input"
-              id="basic-url"
-              aria-describedby="basic-addon3"
-              v-model="filters.corso.value"
-            />
-          </div>
-        </div>
-      </div>
-      <p>
-        <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
-        corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
-        "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
-        risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
-        comune a tutti i nomi.
-      </p>
-      <br />
       <v-table
         :data="corsi"
         :filters="filters"
@@ -92,7 +82,10 @@
         :maxPageLinks="4"
       />
     </div>
-    <table class="table is-bordered is-hoverable is-fullwidth" v-if="cerca == false">
+    <table
+      class="table is-bordered is-hoverable is-fullwidth"
+      v-if="cerca == false"
+    >
       <thead class="has-background-dark">
         <th class="has-text-white">Nome master</th>
         <th class="has-text-white">Arco</th>
@@ -100,7 +93,11 @@
       </thead>
       <tbody v-for="corso in corsi" :key="corso.corso">
         <tr data-view>
-          <td class="text-break">{{ corso.corso }}</td>
+          <td>
+            <a :href="corso.link" class="has-text-danger text-break">{{
+              corso.corso
+            }}</a>
+          </td>
           <td>{{ corso.durata }}</td>
           <td>{{ corso.uni }}</td>
         </tr>
@@ -161,16 +158,10 @@ export default {
       console.log(e);
     }
   },
-  /*  methods: {
-    FiltraLista: function () {
-      var triennale = [];
-      for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].t == "Magistrale a Ciclo Unico") {
-          triennale.push(corsi[x]);
-        }
-      }
-      return triennale;
+  watch: {
+    "filters.corso.value": function () {
+      this.cerca = true;
     },
-  }, */
+  },
 };
 </script>

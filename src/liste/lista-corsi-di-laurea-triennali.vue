@@ -4,7 +4,6 @@
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Lauree triennali elenco
     </h1>
-    <br />
     <h2 class="has-text-grey is-size-2">
       Quali sono i corsi di laurea triennali? Ecco la lista!
     </h2>

@@ -4,27 +4,43 @@
     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
       Lista corsi di perfezionamento - alta formazione
     </h1>
-    <br />
     <h2 class="has-text-grey is-size-2">
       Quali sono i corsi di perfezionamento? [lista completa]
     </h2>
     <hr />
     <p>
-      <strong>Attenzione!</strong> questa pagina fornisce solo la lista dei
-      corsi di perfezionamento - alta formazione, per avere il
-      <strong>link alla pagina del corso</strong> e la
-      <strong>funzione di filtro</strong>
-      <b class="has-text-danger" @click="cerca = true"> clicca qui!</b>
-      <!--      <router-link
-        to="/perfezionamento-alta-formazione"
-        class="has-text-danger"
-      >
-        visita questa pagina</router-link
-      >. -->
-    </p>
-    <p>
       Qui si possono trovare oltre
-      <strong>800 corsi di perfezionamento - alta formazione</strong>.
+      <strong>800 corsi di perfezionamento - alta formazione</strong>, cioè
+      tutti i corsi di perfezionamento - alta formazione esistenti in Italia.
+      Aggiornati al 2020/2021
+    </p>
+    <br />
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field has-addons">
+          <p class="control">
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
+          </p>
+          <input
+            type="text"
+            class="input"
+            id="basic-url"
+            aria-describedby="basic-addon3"
+            v-model="filters.corso.value"
+          />
+        </div>
+      </div>
+    </div>
+    <p>
+      <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
+      corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
+      "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
+      risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
+      comune a tutti i nomi.
     </p>
     <br />
     <div v-if="cerca == true">
@@ -67,7 +83,10 @@
         :maxPageLinks="4"
       />
     </div>
-    <table class="table is-bordered is-hoverable is-fullwidth" v-if="cerca == false">
+    <table
+      class="table is-bordered is-hoverable is-fullwidth"
+      v-if="cerca == false"
+    >
       <thead class="has-background-dark">
         <th class="has-text-white">Nome corso</th>
         <th class="has-text-white">Arco</th>
@@ -75,7 +94,7 @@
       </thead>
       <tbody v-for="corso in corsi" :key="corso.corso">
         <tr data-view>
-          <td class="text-break">{{ corso.corso }}</td>
+          <td><a :href="corso.link" class="text-break has-text-danger">{{ corso.corso }}</a></td>
           <td>{{ corso.durata }}</td>
           <td>{{ corso.uni }}</td>
         </tr>
@@ -110,8 +129,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href:
-          "https://www.corsiuniversitari.info/lista-perfezionamento-alta-formazione",
+        href: "https://www.corsiuniversitari.info/lista-perfezionamento-alta-formazione",
       },
     ],
   },
@@ -124,7 +142,7 @@ export default {
       currentPage: 1,
       totalPages: 0,
       livello: "Corso Perfezionamento - Alta Formazione",
-      cerca: false
+      cerca: false,
     };
   },
   async beforeCreate() {
@@ -138,16 +156,10 @@ export default {
       console.log(e);
     }
   },
-  /*  methods: {
-    FiltraLista: function () {
-      var triennale = [];
-      for (var x = 0; x < corsi.length; x++) {
-        if (corsi[x].t == "Magistrale a Ciclo Unico") {
-          triennale.push(corsi[x]);
-        }
-      }
-      return triennale;
+  watch: {
+    "filters.corso.value": function () {
+      this.cerca = true;
     },
-  }, */
+  },
 };
 </script>
