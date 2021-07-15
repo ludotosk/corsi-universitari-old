@@ -10,8 +10,8 @@
     <hr />
     <p>
       Qui si possono trovare oltre
-      <strong>1700 master di primo livello</strong>, cioè tutti i master di primo livello
-      Italiani 2020/2021.
+      <strong>1700 master di primo livello</strong>, cioè tutti i master di
+      primo livello Italiani 2020/2021.
     </p>
     <br />
     <div class="field is-horizontal">
@@ -94,9 +94,13 @@
       <tbody v-for="corso in corsi" :key="corso.corso">
         <tr data-view>
           <td>
-            <a :href="corso.link" class="has-text-danger text-break">{{
-              corso.corso
-            }}</a>
+            <a
+              :href="corso.link"
+              class="has-text-danger text-break"
+              target="_blank"
+              rel="noopener"
+              >{{ corso.corso }}</a
+            >
           </td>
           <td>{{ corso.durata }}</td>
           <td>{{ corso.uni }}</td>

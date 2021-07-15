@@ -94,7 +94,15 @@
       </thead>
       <tbody v-for="corso in corsi" :key="corso.corso">
         <tr data-view>
-          <td><a :href="corso.link" class="text-break has-text-danger">{{ corso.corso }}</a></td>
+          <td>
+            <a
+              :href="corso.link"
+              class="text-break has-text-danger"
+              target="_blank"
+              rel="noopener"
+              >{{ corso.corso }}</a
+            >
+          </td>
           <td>{{ corso.durata }}</td>
           <td>{{ corso.uni }}</td>
         </tr>
