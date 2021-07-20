@@ -68,6 +68,7 @@ export default {
         content:
           "Corsi di laurea, Corso di laurea, Corsi universitari, Orientamento universitario",
       },
+      { name: "robots", content: "noindex" },
     ],
     link: [
       {
