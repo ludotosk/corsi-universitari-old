@@ -5,5 +5,6 @@ Disallow: /app
 Disallow: /guida
 Disallow: /contattami
 Disallow: /cookie-policy
+Disallow: /comunita
 
 Sitemap: http://www.corsiuniversitari.info/sitemap.xml
