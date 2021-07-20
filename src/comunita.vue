@@ -8,7 +8,7 @@
         Comunità di corsiuniversitari.info
       </h1>
       <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
-        Perché accedere al gruppo du corsiuniversitari.info?
+        Perché accedere al gruppo di corsiuniversitari.info?
       </h2>
       <hr />
       <p>
