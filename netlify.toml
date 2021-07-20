@@ -7,4 +7,5 @@ package = "@netlify/plugin-sitemap"
     './dist/app.html',
     './dist/cookie-policy.html',
     './dist/contattami.html', 
+    './dist/comunita.html'
   ]
