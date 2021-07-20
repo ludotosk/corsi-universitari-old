@@ -1,10 +1,10 @@
 <template>
   <div class="container is-fullhd">
     <br />
-    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+    <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
       Master di primo livello [lista 2021]
     </h1>
-    <h2 class="has-text-grey is-size-2">
+    <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono i master di primo livello? Ecco la lista!
     </h2>
     <hr />

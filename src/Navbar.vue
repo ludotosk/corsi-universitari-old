@@ -143,13 +143,22 @@
         </div>
 
         <div class="navbar-end">
-          <a href="https://youtu.be/awDfiW3z5GY" class="navbar-item"
+          <!--           <a href="https://youtu.be/awDfiW3z5GY" class="navbar-item"
             ><img
               src="/img/youtube.svg"
               alt="link a youtube"
               height="40"
               width="40"
-          /> YouTube </a>
+          /> YouTube </a> -->
+          <router-link to="/comunita" class="navbar-item"
+            ><img
+              src="/img/whatsapp-svgrepo-com.svg"
+              alt="pagina gruppo whatsapp"
+              height="40"
+              width="40"
+            />
+            Gruppo whatsapp</router-link
+          >
         </div>
       </div>
     </nav>

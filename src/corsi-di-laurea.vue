@@ -1,10 +1,10 @@
 <template>
   <div class="container is-fullhd">
     <br />
-    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+    <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
       Tutti i Corsi di Laurea esistenti [2021]
     </h1>
-    <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
+    <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono tutti i corsi di laurea?
     </h2>
     <hr />

@@ -755,6 +755,14 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
+  },
+  {
+    path: '/comunita', components: {
+      default: () => import(/* webpackChunk: "comunita" */ './comunita.vue'),
+      header: Navbar,
+      panel: Panel,
+      footer: Footer
+    }
   }
 ]
 

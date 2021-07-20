@@ -1,8 +1,8 @@
 <template>
   <div class="container is-fullhd">
     <br />
-     <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">Corsi di laurea a {{uni}} [2021]</h1>
-   <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">Quali sono i corsi di laurea a {{uni}}? Ecco la lista!</h2>
+     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">Corsi di laurea a {{uni}} [2021]</h1>
+   <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">Quali sono i corsi di laurea a {{uni}}? Ecco la lista!</h2>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">

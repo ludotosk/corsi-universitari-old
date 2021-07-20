@@ -1,10 +1,10 @@
 <template>
   <div class="container is-fullhd">
     <br />
-       <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+       <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
       Corsi di laurea {{ uni }} [lista]
     </h1>
-    <h2 class="has-text-centered is-size-3 has-text-grey has-text-left">
+    <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Dove laurearsi in {{ uni }}? Tutti i corsi di laurea!
     </h2>
     <br />

@@ -1,13 +1,13 @@
 <template>
   <div class="container is-fullhd" data-view>
     <br />
-    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+    <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
       Corsi di laurea per area accademica e università
     </h1>
     <div class="columns">
       <div class="column">
         <br />
-        <h2 class="has-text-grey is-size-2">Area accademica</h2>
+        <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">Area accademica</h2>
         <hr />
         <ul class="list-group">
           <div class="box">
@@ -143,7 +143,7 @@
       </div>
       <div class="column">
         <br />
-        <h2 class="has-text-grey is-size-2">Università</h2>
+        <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">Università</h2>
         <hr />
         <ul class="list-group">
           <div class="box">

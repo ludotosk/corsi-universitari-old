@@ -1,11 +1,10 @@
 <template>
   <div class="container is-fullhd">
     <br />
-    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+    <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
       Università senza test d'ingresso [2021]
     </h1>
-    <br />
-    <h2 class="has-text-grey is-size-2">
+    <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono le università senza test d'ingresso?
     </h2>
     <hr />

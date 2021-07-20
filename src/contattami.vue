@@ -1,7 +1,7 @@
 <template>
   <div class="container is-fullhd" data-view>
     <br />
-    <h1 class="has-text-centered is-size-2 has-text-grey has-text-left">
+    <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
       Inviaci qui il tuo feedback
     </h1>
     <hr />
