@@ -37,3 +37,12 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+    metaInfo: {
+        meta: [{ name: "robots", content: "noindex" }],
+        title: "Gruppo corsiuniversitari.info"
+    }
+}
+</script>

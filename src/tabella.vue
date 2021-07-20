@@ -4,7 +4,11 @@
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <label for="basic-url" class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</label>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -26,9 +30,13 @@
     >
       <thead slot="head" class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc" class="has-text-white">Livello</v-th>
+        <v-th sortKey="t" defaultSort="asc" class="has-text-white"
+          >Livello</v-th
+        >
         <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc" class="has-text-white">Università</v-th>
+        <v-th sortKey="u" defaultSort="asc" class="has-text-white"
+          >Università</v-th
+        >
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
@@ -68,11 +76,12 @@ import axios from "axios";
 
 export default {
   name: "home",
-    metaInfo: {
+  metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
     title: "Tabella",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
+    meta: [{ name: "robots", content: "noindex" }],
   },
   data() {
     return {
