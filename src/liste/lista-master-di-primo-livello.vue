@@ -53,7 +53,7 @@
       >
         <thead slot="head" class="has-background-dark">
           <th class="has-text-white">Nome del master</th>
-          <th class="has-text-white">Livello</th>
+          <v-th sortKey="citta" defaultSort="asc" class="has-text-white">Città</v-th>
           <th class="has-text-white">Arco</th>
           <v-th class="has-text-white" sortKey="uni" defaultSort="asc"
             >Università</v-th
@@ -70,7 +70,7 @@
                 >{{ row.corso }}</a
               >
             </td>
-            <td>{{ row.tipo }}</td>
+            <td>{{ row.citta }}</td>
             <td>{{ row.durata }}</td>
             <td>{{ row.uni }}</td>
           </tr>
