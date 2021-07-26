@@ -41,7 +41,7 @@
     >
       <thead slot="head" class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <th class="has-text-white">Livello</th>
+        <th class="has-text-white">Città</th>
         <v-th sortKey="u" defaultSort="asc" class="has-text-white">Università</v-th>
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
@@ -49,7 +49,7 @@
           <td>
            <a :href="row.h" target="_blank" rel="noopener" class="has-text-danger">{{ row.n }}</a>
           </td>
-          <td>Corso di Laurea {{ row.t }} Accesso Libero</td>
+          <td>{{ row.c }}</td>
           <td>{{ row.u }} </td>
         </tr>
       </tbody>

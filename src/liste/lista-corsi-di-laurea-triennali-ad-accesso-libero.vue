@@ -56,7 +56,7 @@
       >
         <thead slot="head" class="has-background-dark">
           <th class="has-text-white">Corso di laurea</th>
-          <th class="has-text-white">Livello</th>
+          <th class="has-text-white">Città</th>
           <v-th sortKey="u" defaultSort="asc" class="has-text-white"
             >Università</v-th
           >
@@ -72,7 +72,7 @@
                 >{{ row.n }}</a
               >
             </td>
-            <td>Corso di Laurea {{ row.t }} Accesso Libero</td>
+            <td>{{ row.s }}</td>
             <td>{{ row.u }}</td>
           </tr>
         </tbody>
