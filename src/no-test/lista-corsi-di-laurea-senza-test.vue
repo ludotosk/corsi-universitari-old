@@ -71,7 +71,7 @@
                 >{{ row.n }}</a
               >
             </td>
-            <td>Corso di Laurea {{ row.t }} Senza Test</td>
+            <td>Corso di Laurea {{ row.t }}</td>
             <td>{{ row.u }}</td>
           </tr>
         </tbody>
