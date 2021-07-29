@@ -7,14 +7,7 @@
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali lauree {{ uni }} si possono prendere? Ecco la lista!
     </h2>
-    <hr />
-    <p>
-      Qui si possono trovare
-      <strong>la lista di tutti i corsi di laurea {{ uni }}</strong
-      >. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
-    </p>
-    <br>
+    <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
@@ -87,6 +80,12 @@
       />
       <br />
       <p>
+        Qui si possono trovare
+        <strong>la lista di tutti i corsi di laurea {{ uni }}</strong
+        >. I corsi in questione sono relativi
+        <strong>all'anno accademico 2020/2021</strong>.
+      </p>
+      <p>
         <strong> Come funziona?</strong> È molto semplice, basta digitare nella
         barra di ricerca es. "data science" e comparirà la lista di tutti i
         corsi con quel nome. Inoltre cliccando "Livello" vengono ordinati i
@@ -99,14 +98,17 @@
         test no.
       </p>
     </div>
-    <table class="table is-bordered is-fullwidth is-hoverable" v-if="!cambiaTabella">
+    <table
+      class="table is-bordered is-fullwidth is-hoverable"
+      v-if="!cambiaTabella"
+    >
       <thead class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
         <th class="has-text-white">Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.n">
         <tr data-view>
-              <td>
+          <td>
             <a
               :href="corso.h"
               target="_blank"

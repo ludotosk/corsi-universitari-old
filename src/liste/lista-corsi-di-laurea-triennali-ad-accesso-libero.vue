@@ -8,13 +8,6 @@
       Quali corsi di laurea triennali ad accesso libero scegliere? Ecco la
       lista!
     </h2>
-    <hr />
-    <p>
-      Quali corsi di laurea triennali ad accesso libero scegliere?
-      <strong>Ecco lista dei corsi di laurea triennali ad accesso libero</strong
-      >. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
-    </p>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
@@ -56,7 +49,9 @@
       >
         <thead slot="head" class="has-background-dark">
           <th class="has-text-white">Corso di laurea</th>
-          <v-th sortKey="s" defaultSort="asc" class="has-text-white">Città</v-th>
+          <v-th sortKey="s" defaultSort="asc" class="has-text-white"
+            >Città</v-th
+          >
           <v-th sortKey="u" defaultSort="asc" class="has-text-white"
             >Università</v-th
           >
@@ -84,6 +79,13 @@
       />
       <br />
       <p>
+        Quali corsi di laurea triennali ad accesso libero scegliere?
+        <strong
+          >Ecco lista dei corsi di laurea triennali ad accesso libero</strong
+        >. I corsi in questione sono relativi
+        <strong>all'anno accademico 2020/2021</strong>.
+      </p>
+      <p>
         <strong> Come funziona?</strong> È molto semplice, basta digitare nella
         barra di ricerca es. "data science" e comparirà la lista di tutti i
         corsi con quel nome. Inoltre cliccando "Livello" vengono ordinati i
@@ -96,14 +98,17 @@
         test no.
       </p>
     </div>
-    <table class="table is-bordered is-hoverable is-fullwidth" v-if="cerca == false">
+    <table
+      class="table is-bordered is-hoverable is-fullwidth"
+      v-if="cerca == false"
+    >
       <thead class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
         <th class="has-text-white">Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.n">
         <tr data-view>
-              <td>
+          <td>
             <a
               :href="corso.h"
               target="_blank"
