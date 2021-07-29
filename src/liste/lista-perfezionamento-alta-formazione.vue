@@ -7,13 +7,13 @@
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono i corsi di perfezionamento? [lista completa]
     </h2>
-    <hr />
+    <!--     <hr />
     <p>
       Qui si possono trovare oltre
       <strong>800 corsi di perfezionamento - alta formazione</strong>, cioè
       tutti i corsi di perfezionamento - alta formazione esistenti in Italia.
       Aggiornati al 2020/2021
-    </p>
+    </p> -->
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
@@ -35,13 +35,13 @@
         </div>
       </div>
     </div>
-    <p>
+    <!--     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
       corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
       "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
       risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
       comune a tutti i nomi.
-    </p>
+    </p> -->
     <br />
     <div v-if="cerca == true">
       <v-table
@@ -54,7 +54,9 @@
       >
         <thead slot="head" class="has-background-dark">
           <th class="has-text-white">Nome del master</th>
-          <v-th class="has-text-white" sortKey="citta" defaultSort="asc">Città</v-th>
+          <v-th class="has-text-white" sortKey="citta" defaultSort="asc"
+            >Città</v-th
+          >
           <th class="has-text-white">Arco</th>
           <v-th class="has-text-white" sortKey="uni" defaultSort="asc"
             >Università</v-th

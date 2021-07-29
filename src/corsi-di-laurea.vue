@@ -7,9 +7,9 @@
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono tutti i corsi di laurea?
     </h2>
-    <hr />
-    <p>Quali sono <strong>tutti i corsi di laurea Italiani esistenti</strong>? Qui puoi trovare la <strong>lista completa</strong> aggiornata <strong>all'anno accademico 2020/2021</strong>!</p>
-    <br>
+    <!--     <hr />
+    <p>Quali sono <strong>tutti i corsi di laurea Italiani esistenti</strong>? Qui puoi trovare la <strong>lista completa</strong> aggiornata <strong>all'anno accademico 2020/2021</strong>!</p> -->
+    <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
@@ -30,14 +30,14 @@
         </div>
       </div>
     </div>
-    <p>
+    <!--    <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
       corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
       "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
       risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
-    </p>
+    </p> -->
     <br />
     <v-table
       :data="corsi"
@@ -96,7 +96,7 @@
       <strong>test d'ingresso </strong>o è a numero programmato. In quel caso il
       corso sarà segnato come test sì, in caso di accesso libero come test no.
     </p>
-    <br>
+    <br />
   </div>
 </template>
 

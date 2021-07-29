@@ -7,12 +7,12 @@
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono i master di primo livello? Ecco la lista!
     </h2>
-    <hr />
+    <!--     <hr />
     <p>
       Qui si possono trovare oltre
       <strong>1700 master di primo livello</strong>, cioè tutti i master di
       primo livello Italiani 2020/2021.
-    </p>
+    </p> -->
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
@@ -34,13 +34,13 @@
         </div>
       </div>
     </div>
-    <p>
+    <!--     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
       corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
       "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
       risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
       comune a tutti i nomi.
-    </p>
+    </p> -->
     <br />
     <div v-if="cerca == true">
       <v-table
@@ -53,7 +53,9 @@
       >
         <thead slot="head" class="has-background-dark">
           <th class="has-text-white">Nome del master</th>
-          <v-th sortKey="citta" defaultSort="asc" class="has-text-white">Città</v-th>
+          <v-th sortKey="citta" defaultSort="asc" class="has-text-white"
+            >Città</v-th
+          >
           <th class="has-text-white">Arco</th>
           <v-th class="has-text-white" sortKey="uni" defaultSort="asc"
             >Università</v-th

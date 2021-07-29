@@ -1,8 +1,10 @@
 <template>
   <div class="container is-fullhd">
     <br />
-      <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">Corsi di laurea {{uni}}</h1>
-     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
+    <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
+      Corsi di laurea {{ uni }}
+    </h1>
+    <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Qui puoi trovare tutti i Corsi di Laurea di {{ uni }}
     </h2>
     <br />
@@ -10,7 +12,11 @@
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <label for="basic-url" class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</label>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -22,15 +28,15 @@
         </div>
       </div>
     </div>
-    <p>
+    <!--     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
       corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
       "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
       risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
-    </p>
-    <br>
+    </p> -->
+    <br />
     <v-table
       :data="corsi"
       :filters="filters"
@@ -40,19 +46,27 @@
       class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
     >
       <thead slot="head" class="has-background-dark">
-           <th class="has-text-white">Corso di laurea</th>
+        <th class="has-text-white">Corso di laurea</th>
         <th class="has-text-white">Livello</th>
         <v-th class="has-text-white" sortKey="a" defaultSort="asc">Test</v-th>
-        <v-th class="has-text-white" sortKey="u" defaultSort="asc">Università</v-th>
+        <v-th class="has-text-white" sortKey="u" defaultSort="asc"
+          >Università</v-th
+        >
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-           <a :href="row.h" target="_blank" rel="noopener" class="has-text-danger">{{ row.n }}</a>
+            <a
+              :href="row.h"
+              target="_blank"
+              rel="noopener"
+              class="has-text-danger"
+              >{{ row.n }}</a
+            >
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
-          <td>{{ row.u }} </td>
+          <td>{{ row.u }}</td>
         </tr>
       </tbody>
     </v-table>
@@ -63,7 +77,8 @@
     />
     <br />
     <p>
-      Qui si può trovare <strong>la lista dei corsi di laurea {{uni}}</strong>. I corsi in questione sono relativi
+      Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
+      >. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
@@ -99,8 +114,7 @@ export default {
       },
       {
         name: "keywords",
-        content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea triennali",
+        content: "Corsi di laurea, Corso di laurea, Corsi di laurea triennali",
       },
     ],
     link: [
@@ -121,10 +135,10 @@ export default {
       corsi: [],
     };
   },
-   async beforeCreate() {
+  async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?t=Triennale&_sort=a,u&_order=desc,asc",
+        "https://json-corsi-fastify.herokuapp.com/corsi?t=Triennale&_sort=a,u&_order=desc,asc"
       );
 
       this.corsi = res.data;
@@ -132,7 +146,7 @@ export default {
       console.log(e);
     }
   },
-/*   methods: {
+  /*   methods: {
     FiltraLista: function () {
       var triennale = [];
       for (var x = 0; x < corsi.length; x++) {

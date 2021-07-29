@@ -1,14 +1,22 @@
 <template>
   <div class="container is-fullhd">
     <br />
-   <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">Master di {{ livello }}</h1>
-   <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">Qui puoi trovare i master di {{ livello }}</h2>
+    <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
+      Master di {{ livello }}
+    </h1>
+    <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
+      Qui puoi trovare i master di {{ livello }}
+    </h2>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <label for="basic-url" class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</label>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -20,13 +28,14 @@
         </div>
       </div>
     </div>
-    <p>
+    <!--     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
       corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
       "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
       risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
       comune a tutti i nomi.
-    </p><br>
+    </p> -->
+    <br />
     <v-table
       :data="corsi"
       :filters="filters"
@@ -39,7 +48,9 @@
         <th class="has-text-white">Nome del master</th>
         <th class="has-text-white">Livello</th>
         <th class="has-text-white">Arco</th>
-        <v-th class="has-text-white" sortKey="uni" defaultSort="asc">Università</v-th>
+        <v-th class="has-text-white" sortKey="uni" defaultSort="asc"
+          >Università</v-th
+        >
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">

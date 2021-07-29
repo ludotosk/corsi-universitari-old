@@ -7,13 +7,13 @@
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono le lauree {{ uni }}? Ecco la lista!
     </h2>
-    <hr />
+    <!--     <hr />
     <p>
       Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
       >. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
-    </p>
-    <br>
+    </p> -->
+    <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
@@ -34,14 +34,14 @@
         </div>
       </div>
     </div>
-    <p>
+    <!--     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
       corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
       "biotecnologie" "biotecnologia" "biotechnology" quindi per avere il
       risultato corretto inserire <strong>"biotec"</strong>. Cioè la parte
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
-    </p>
+    </p> -->
     <br />
     <div v-if="cerca == true">
       <v-table
@@ -54,7 +54,9 @@
       >
         <thead slot="head" class="has-background-dark">
           <th class="has-text-white">Corso di laurea</th>
-          <v-th class="has-text-white" sortKey="t" defaultSort="asc">Città</v-th>
+          <v-th class="has-text-white" sortKey="t" defaultSort="asc"
+            >Città</v-th
+          >
           <v-th class="has-text-white" sortKey="a" defaultSort="asc">Test</v-th>
           <v-th class="has-text-white" sortKey="u" defaultSort="asc"
             >Università</v-th
