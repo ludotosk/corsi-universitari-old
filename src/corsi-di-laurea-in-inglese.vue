@@ -102,13 +102,13 @@
               :href="corso.h"
               target="_blank"
               rel="noopener"
-              class="has-text-danger"
+              class="has-text-danger is-capitalized"
               >{{ corso.n }}</a
             >
           </td>
           <td>{{ corso.t }}</td>
           <td>{{ corso.a }}</td>
-          <td>{{ corso.u }}</td>
+          <td class="is-capitalized">{{ corso.u }}</td>
         </tr>
       </tbody>
     </table>

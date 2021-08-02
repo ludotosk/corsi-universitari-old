@@ -91,6 +91,7 @@
     >
       <thead class="has-background-dark">
         <th class="has-text-white">Nome corso</th>
+        <th class="has-text-white">Città</th>
         <th class="has-text-white">Arco</th>
         <th class="has-text-white">Università</th>
       </thead>
@@ -105,6 +106,7 @@
               >{{ corso.corso }}</a
             >
           </td>
+          <td>{{ corso.citta }}</td>
           <td>{{ corso.durata }}</td>
           <td>{{ corso.uni }}</td>
         </tr>
