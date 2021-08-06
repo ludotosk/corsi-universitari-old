@@ -104,8 +104,8 @@
     >
       <thead class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <th class="has-text-white">Livello</th>
-        <th class="has-text-white">Test</th>
+        <!--         <th class="has-text-white">Livello</th>
+        <th class="has-text-white">Test</th> -->
         <th class="has-text-white">Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.n">
@@ -119,8 +119,8 @@
               >{{ corso.n }}</a
             >
           </td>
-          <td>{{ corso.t }}</td>
-          <td>{{ corso.a }}</td>
+          <!--      <td>{{ corso.t }}</td>
+          <td>{{ corso.a }}</td> -->
           <td>{{ corso.u }}</td>
         </tr>
       </tbody>

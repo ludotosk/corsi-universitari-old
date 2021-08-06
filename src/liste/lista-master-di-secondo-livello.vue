@@ -94,8 +94,8 @@
     >
       <thead class="has-background-dark">
         <th class="has-text-white">Nome master</th>
-        <th class="has-text-white">Città</th>
-        <th class="has-text-white">Arco</th>
+        <!--         <th class="has-text-white">Città</th>
+        <th class="has-text-white">Arco</th> -->
         <th class="has-text-white">Università</th>
       </thead>
       <tbody v-for="corso in corsi" :key="corso.corso">
@@ -109,8 +109,8 @@
               >{{ corso.corso }}</a
             >
           </td>
-          <td>{{ corso.citta }}</td>
-          <td>{{ corso.durata }}</td>
+          <!--       <td>{{ corso.citta }}</td>
+          <td>{{ corso.durata }}</td> -->
           <td>{{ corso.uni }}</td>
         </tr>
       </tbody>
