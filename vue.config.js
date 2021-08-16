@@ -36,7 +36,7 @@ module.exports = {
         //'/corsi-di-laurea-unimi',
         //'/corsi-di-laurea-unina',
         //'/corsi-di-laurea-unipa',
-      /*   '/corsi-di-laurea-unipd', */
+        /*   '/corsi-di-laurea-unipd', */
         //'/corsi-di-laurea-unipr',
         '/corsi-di-laurea-unisa',
         //'/corsi-di-laurea-unito',
@@ -107,8 +107,11 @@ module.exports = {
   },
   devServer: {
     proxy: {
-      '/api': {
-        target: 'localhost:8888/.netlify/functions/api'
+      '^/api': {
+        target: 'https://json-corsi-fastify.herokuapp.com/',
+        changeOrigin: true,
+        logLevel: 'debug',
+        pathRewrite: { "^/api": "/" }
       }
     }
   },

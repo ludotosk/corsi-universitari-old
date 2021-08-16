@@ -128,12 +128,19 @@
       </p>
     </div>
     <br />
+    <iframe
+      src="/api/corsi?e=1"
+      frameborder="0"
+      id="dati"
+      v-on:click="prova"
+      onload='(function(){document.getElementById("dati").click();})()'
+      style="display: none"
+    ></iframe>
   </div>
 </template>
 
 <script>
-import axios from "axios";
-//import corsi from "./corsi.json";
+//import axios from "axios";
 
 export default {
   metaInfo: {
@@ -157,12 +164,10 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-in-inglese",
       },
-      /*       {
+      {
         rel: "preload",
-        href:
-          "https://json-corsi-fastify.herokuapp.com/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc",
-        as: "fetch",
-      }, */
+        href: "/api/corsi?e=1",
+      },
     ],
   },
   data() {
@@ -178,23 +183,29 @@ export default {
       cambiaTabella: false,
     };
   },
-  async beforeCreate() {
+  /*   async beforeCreate() {
     try {
       const res = await axios.get(
         "https://json-corsi-fastify.herokuapp.com/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc"
       );
 
       this.corsi = res.data;
-      /*   const cache = await caches.open('cache-corsi-universitari');
-      cache.add(res) */
-      //console.log(res.data, cache)
     } catch (e) {
       console.log(e);
     }
-  },
+  }, */
   watch: {
     "filters.n.value": function () {
       this.cambiaTabella = true;
+    },
+  },
+  methods: {
+    prova: function () {
+      var iframe = document.getElementById("dati");
+      this.corsi = JSON.parse(
+        iframe.contentWindow.document.getElementsByTagName("pre")[0].innerHTML
+      );
+      iframe.remove();
     },
   },
 };
