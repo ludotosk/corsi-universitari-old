@@ -25,14 +25,6 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-  /https:\/\/www.corsiuniversitari.info\/.(.*)/,
-  workbox.strategies.networkFirst({
-    cacheName: 'sito',
-  }),
-);
-
-
-workbox.routing.registerRoute(
   new RegExp('https://fonts.(?:googleapis|gstatic).com/(.*)'),
   workbox.strategies.cacheFirst({
     cacheName: 'googleapis',
