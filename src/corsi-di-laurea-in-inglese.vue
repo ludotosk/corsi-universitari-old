@@ -129,7 +129,7 @@
     </div>
     <br />
     <iframe
-      src="/api/corsi?e=1"
+      src="https://www.corsiuniversitari.info/api/corsi?e=1"
       frameborder="0"
       id="dati"
       v-on:click="prova"
