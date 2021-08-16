@@ -166,7 +166,7 @@ export default {
       },
       {
         rel: "preload",
-        href: "/api/corsi?e=1",
+        href: "https://www.corsiuniversitari.info/api/corsi?e=1",
       },
     ],
   },
