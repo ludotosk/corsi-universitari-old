@@ -122,7 +122,7 @@ export default {
    async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?t=Triennale&a=No&_sort=u&_order=asc",
+        "https://www.corsiuniversitari.info/api/corsi?t=Triennale&a=No&_sort=u&_order=asc",
       );
 
       this.corsi = res.data;

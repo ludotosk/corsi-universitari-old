@@ -113,7 +113,7 @@ export default {
       },
     /*   {
         rel: "preload",
-        href: "https://json-corsi-fastify.herokuapp.com/corsi?c=L-02&c=LM-7&c=LM-8&c=LM-9",
+        href: "https://www.corsiuniversitari.info/api/corsi?c=L-02&c=LM-7&c=LM-8&c=LM-9",
         as: "fetch",
       }, */
     ],
@@ -132,7 +132,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?c=L-02&c=LM-7&c=LM-8&c=LM-9"
+        "https://www.corsiuniversitari.info/api/corsi?c=L-02&c=LM-7&c=LM-8&c=LM-9"
       );
 
       this.corsi = res.data;

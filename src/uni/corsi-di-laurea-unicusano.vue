@@ -137,7 +137,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?u=UNICUSANO Università degli Studi Niccolò Cusano -Telematica Roma"
+        "https://www.corsiuniversitari.info/api/corsi?u=UNICUSANO Università degli Studi Niccolò Cusano -Telematica Roma"
       );
 
       this.corsi = res.data;

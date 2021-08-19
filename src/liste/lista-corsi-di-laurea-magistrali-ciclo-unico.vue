@@ -86,7 +86,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?t=Magistrale a Ciclo Unico",
+        "https://www.corsiuniversitari.info/api/corsi?t=Magistrale a Ciclo Unico",
       );
 
       this.corsi = res.data;

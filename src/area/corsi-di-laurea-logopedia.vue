@@ -158,7 +158,7 @@ export default {
       /*   {
         rel: "preload",
         href:
-          "https://json-corsi-fastify.herokuapp.com/corsi?c=L/SNT2&n=Logopedia (abilitante alla professione sanitaria di Logopedista)",
+          "https://www.corsiuniversitari.info/api/corsi?c=L/SNT2&n=Logopedia (abilitante alla professione sanitaria di Logopedista)",
         as: "fetch",
       }, */
     ],
@@ -178,7 +178,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?c=L/SNT2&n=Logopedia (abilitante alla professione sanitaria di Logopedista)"
+        "https://www.corsiuniversitari.info/api/corsi?c=L/SNT2&n=Logopedia (abilitante alla professione sanitaria di Logopedista)"
       );
 
       this.corsi = res.data;

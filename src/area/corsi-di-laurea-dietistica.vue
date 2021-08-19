@@ -113,7 +113,7 @@ export default {
    /*    {
         rel: "preload",
         href:
-          "https://json-corsi-fastify.herokuapp.com/corsi?c=L/SNT3&n=Dietistica (abilitante alla professione sanitaria di Dietista)",
+          "https://www.corsiuniversitari.info/api/corsi?c=L/SNT3&n=Dietistica (abilitante alla professione sanitaria di Dietista)",
         as: "fetch",
       }, */
     ],
@@ -132,7 +132,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?c=L/SNT3&n=Dietistica (abilitante alla professione sanitaria di Dietista)"
+        "https://www.corsiuniversitari.info/api/corsi?c=L/SNT3&n=Dietistica (abilitante alla professione sanitaria di Dietista)"
       );
 
       this.corsi = res.data;

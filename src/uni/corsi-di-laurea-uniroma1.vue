@@ -123,7 +123,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-corsi-fastify.herokuapp.com/corsi?u=Università degli Studi di ROMA "La Sapienza"'
+        'https://www.corsiuniversitari.info/api/corsi?u=Università degli Studi di ROMA "La Sapienza"'
       );
 
       this.corsi = res.data;

@@ -121,7 +121,7 @@ export default {
   },
     async beforeCreate(){
     try {
-      const res = await axios.get('https://json-corsi-fastify.herokuapp.com/corsi?s=PAVIA');
+      const res = await axios.get('https://www.corsiuniversitari.info/api/corsi?s=PAVIA');
 
       this.corsi = res.data;
     } catch (e) {

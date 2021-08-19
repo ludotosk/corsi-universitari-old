@@ -1,14 +1,22 @@
 <template>
   <div class="container is-fullhd">
     <br />
-     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">Corsi di laurea a {{uni}} [tutte le facoltà]</h1>
-   <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">Quali corsi di laurea ci sono a {{uni}}? Ecco la lista!</h2>
+    <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
+      Corsi di laurea a {{ uni }} [tutte le facoltà]
+    </h1>
+    <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
+      Quali corsi di laurea ci sono a {{ uni }}? Ecco la lista!
+    </h2>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
         <div class="field has-addons">
           <p class="control">
-            <label for="basic-url" class="button is-static has-text-weight-medium has-text-black">Filtra in base al nome:</label>
+            <label
+              for="basic-url"
+              class="button is-static has-text-weight-medium has-text-black"
+              >Filtra in base al nome:</label
+            >
           </p>
           <input
             type="text"
@@ -28,7 +36,7 @@
       comune a tutti i nomi. Il resto della <strong>guida</strong> è sotto la
       tabella.
     </p>
-    <br>
+    <br />
     <v-table
       :data="corsi"
       :filters="filters"
@@ -39,18 +47,28 @@
     >
       <thead slot="head" class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-        <v-th sortKey="t" defaultSort="asc" class="has-text-white">Livello</v-th>
+        <v-th sortKey="t" defaultSort="asc" class="has-text-white"
+          >Livello</v-th
+        >
         <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
-        <v-th sortKey="u" defaultSort="asc" class="has-text-white">Università</v-th>
+        <v-th sortKey="u" defaultSort="asc" class="has-text-white"
+          >Università</v-th
+        >
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
         <tr v-for="row in displayData" :key="row.guid">
           <td>
-           <a :href="row.h" target="_blank" rel="noopener" class="has-text-danger">{{ row.n }}</a>
+            <a
+              :href="row.h"
+              target="_blank"
+              rel="noopener"
+              class="has-text-danger"
+              >{{ row.n }}</a
+            >
           </td>
           <td>Corso di Laurea {{ row.t }}</td>
           <td>{{ row.a }}</td>
-          <td>{{ row.u }} </td>
+          <td>{{ row.u }}</td>
         </tr>
       </tbody>
     </v-table>
@@ -61,7 +79,9 @@
     />
     <br />
     <p>
-      Qui si può trovare <strong>la lista dei corsi di laurea a {{uni}}</strong>. I corsi in questione sono relativi
+      Qui si può trovare
+      <strong>la lista dei corsi di laurea a {{ uni }}</strong
+      >. I corsi in questione sono relativi
       <strong>all'anno accademico 2020/2021</strong>.
     </p>
     <p>
@@ -97,8 +117,7 @@ export default {
       },
       {
         name: "keywords",
-        content:
-          "Corsi di laurea, Corso di laurea, Corsi di laurea Bari",
+        content: "Corsi di laurea, Corso di laurea, Corsi di laurea Bari",
       },
     ],
     link: [
@@ -119,16 +138,18 @@ export default {
       corsi: [],
     };
   },
-   async beforeCreate(){
+  async beforeCreate() {
     try {
-      const res = await axios.get('https://json-corsi-fastify.herokuapp.com/corsi?s=BARI');
+      const res = await axios.get(
+        "https://www.corsiuniversitari.info/api/corsi?s=BARI"
+      );
 
       this.corsi = res.data;
     } catch (e) {
       console.log(e);
     }
-  } 
-/*   methods: {
+  },
+  /*   methods: {
     FiltraLista: function () {
       var array = [];
       for (var x = 0; x < corsi.length; x++) {

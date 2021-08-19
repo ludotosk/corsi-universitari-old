@@ -123,7 +123,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-corsi-fastify.herokuapp.com/corsi?u=UKE - Università Kore di ENNA'
+        'https://www.corsiuniversitari.info/api/corsi?u=UKE - Università Kore di ENNA'
       );
 
       this.corsi = res.data;

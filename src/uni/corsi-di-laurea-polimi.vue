@@ -169,7 +169,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?u=Politecnico di MILANO"
+        "https://www.corsiuniversitari.info/api/corsi?u=Politecnico di MILANO"
       );
 
       this.corsi = res.data;

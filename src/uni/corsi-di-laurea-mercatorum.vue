@@ -124,7 +124,7 @@ export default {
    async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-corsi-fastify.herokuapp.com/corsi?u=Università Telematica "Universitas MERCATORUM"'
+        'https://www.corsiuniversitari.info/api/corsi?u=Università Telematica "Universitas MERCATORUM"'
       );
 
       this.corsi = res.data;

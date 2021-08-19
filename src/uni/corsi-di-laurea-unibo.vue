@@ -123,7 +123,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        'https://json-corsi-fastify.herokuapp.com/corsi?u=Alma mater studiorum Università di Bologna'
+        'https://www.corsiuniversitari.info/api/corsi?u=Alma mater studiorum Università di Bologna'
       );
 
       this.corsi = res.data;

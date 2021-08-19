@@ -137,7 +137,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?u=Università degli Studi di PARMA"
+        "https://www.corsiuniversitari.info/api/corsi?u=Università degli Studi di PARMA"
       );
 
       this.corsi = res.data;

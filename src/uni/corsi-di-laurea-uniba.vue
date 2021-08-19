@@ -169,7 +169,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?u=Università degli Studi di BARI ALDO MORO"
+        "https://www.corsiuniversitari.info/api/corsi?u=Università degli Studi di BARI ALDO MORO"
       );
 
       this.corsi = res.data;

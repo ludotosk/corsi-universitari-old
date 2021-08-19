@@ -187,7 +187,7 @@ export default {
   /*   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc"
+        "https://www.corsiuniversitari.info/api/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc"
       );
 
       this.corsi = res.data;

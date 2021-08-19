@@ -123,7 +123,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?u=Università della VALLE D'AOSTA"
+        "https://www.corsiuniversitari.info/api/corsi?u=Università della VALLE D'AOSTA"
       );
 
       this.corsi = res.data;

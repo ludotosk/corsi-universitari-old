@@ -137,7 +137,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?u=Università degli Studi di TORINO"
+        "https://www.corsiuniversitari.info/api/corsi?u=Università degli Studi di TORINO"
       );
 
       this.corsi = res.data;

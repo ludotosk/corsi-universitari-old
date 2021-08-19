@@ -169,7 +169,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://json-corsi-fastify.herokuapp.com/corsi?u=Università degli Studi di SALERNO"
+        "https://www.corsiuniversitari.info/api/corsi?u=Università degli Studi di SALERNO"
       );
 
       this.corsi = res.data;
