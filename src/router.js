@@ -12,7 +12,7 @@ const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
 //const CorsiUnibo = () => import(/* webpackChunkName: "corsiUnibo" */ './uni/corsi-di-laurea-unibo.vue')
 //const CorsiUnipi = () => import(/* webpackChunkName: "corsiUnipi" */ './uni/corsi-di-laurea-unipi.vue')
 //const CorsiSapienza = () => import(/* webpackChunkName: "corsiSapienza" */ './uni/corsi-di-laurea-sapienza.vue')
-const CorsiUnipd = () => import(/* webpackChunkName: "corsiUnipd" */ './uni/corsi-di-laurea-unipd.vue')
+//const CorsiUnipd = () => import(/* webpackChunkName: "corsiUnipd" */ './uni/corsi-di-laurea-unipd.vue')
 const CorsiBicocca = () => import(/* webpackChunkName: "corsiBicocca" */ './uni/corsi-di-laurea-bicocca.vue')
 const CorsiUniba = () => import(/* webpackChunkName: "corsiUniba" */ './uni/corsi-di-laurea-uniba.vue')
 //const CorsiUnifi = () => import(/* webpackChunkName: "corsiUnifi" */ './uni/corsi-di-laurea-unifi.vue')
@@ -134,7 +134,7 @@ const routes = [
         panel: Panel,
         footer: Footer
       }
-    }, */
+    }, 
   {
     path: '/corsi-di-laurea-unipd', components: {
       default: CorsiUnipd,
@@ -142,7 +142,7 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
-  },
+  },*/
   {
     path: '/corsi-di-laurea-bicocca', components: {
       default: CorsiBicocca,

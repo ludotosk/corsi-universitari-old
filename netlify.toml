@@ -16,3 +16,9 @@ package = "@netlify/plugin-sitemap"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
+[[redirects]]
+  from = '/prova'
+  to = 'https://prova-svelte.netlify.app/'
+  status = 200
+  force = true
+  headers = {X-From = "Netlify"}
