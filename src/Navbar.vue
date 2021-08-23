@@ -74,7 +74,7 @@
           <router-link to="/lauree-triennali-elenco" class="navbar-item"
             >Triennali</router-link
           >
-          <div class="navbar-item has-dropdown is-hoverable">
+          <!--        <div class="navbar-item has-dropdown is-hoverable">
             <p class="navbar-link">Corsi per livello</p>
 
             <div class="navbar-dropdown">
@@ -91,7 +91,7 @@
                 >Lista corsi magistrali</router-link
               >
             </div>
-          </div>
+          </div> -->
           <div class="navbar-item has-dropdown is-hoverable">
             <p class="navbar-link">Corsi no test</p>
 
