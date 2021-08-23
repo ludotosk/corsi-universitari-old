@@ -37,11 +37,6 @@
           <router-link to="/tutti-i-corsi-di-laurea" class="navbar-item"
             >Tutti i corsi di laurea</router-link
           >
-          <!-- 
-          <router-link to="/citta" class="navbar-item">Città</router-link>
-          <router-link to="/area-accademica-uni" class="navbar-item"
-            >Aree accademiche / Uni</router-link
-          > -->
           <router-link to="/corsi-di-laurea-online" class="navbar-item"
             >Corsi online</router-link
           >
@@ -52,39 +47,60 @@
             >In inglese</router-link
           >
           <div class="navbar-item has-dropdown is-hoverable">
+            <p class="navbar-link">Città</p>
+
+            <div class="navbar-dropdown">
+              <router-link class="navbar-item" to="/corsi-di-laurea-bologna"
+                >Corsi di laurea Bologna</router-link
+              >
+
+              <router-link class="navbar-item" to="/corsi-di-laurea-firenze"
+                >Corsi di laurea Firenze</router-link
+              >
+
+              <router-link class="navbar-item" to="/corsi-di-laurea-milano"
+                >Corsi di laurea Milano</router-link
+              >
+
+              <router-link class="navbar-item" to="/corsi-di-laurea-padova"
+                >Corsi di laurea Padova</router-link
+              >
+
+              <router-link class="navbar-item" to="/corsi-di-laurea-venezia"
+                >Corsi di laurea Venezia</router-link
+              >
+            </div>
+          </div>
+          <router-link to="/lauree-triennali-elenco" class="navbar-item"
+            >Triennali</router-link
+          >
+          <div class="navbar-item has-dropdown is-hoverable">
             <p class="navbar-link">Corsi per livello</p>
 
             <div class="navbar-dropdown">
-              <!--         <router-link to="/corsi-di-laurea-triennale" class="navbar-item"
-                >Corsi di laurea triennali</router-link
-              >
-              <router-link to="/corsi-di-laurea-magistrale" class="navbar-item"
-                >Corsi di laurea magistrali</router-link
-              > -->
               <router-link
                 to="/corsi-di-laurea-magistrale-a-ciclo-unico"
                 class="navbar-item"
                 >Corsi di laurea magistrali a ciclo unico</router-link
               >
-              <!--         <router-link
-                to="/corsi-di-laurea-triennali-ad-accesso-libero"
-                class="navbar-item"
-                >Corsi di laurea triennali ad accesso libero</router-link
-              > -->
               <hr class="navbar-divider" />
-              <router-link to="/lauree-triennali-elenco" class="navbar-item"
-                >Lista corsi triennali</router-link
-              >
+
               <router-link
                 to="/lista-corsi-di-laurea-magistrale"
                 class="navbar-item"
                 >Lista corsi magistrali</router-link
               >
-              <!--         <router-link
-                to="/lista-corsi-di-laurea-magistrale-a-ciclo-unico"
+            </div>
+          </div>
+          <div class="navbar-item has-dropdown is-hoverable">
+            <p class="navbar-link">Corsi no test</p>
+
+            <div class="navbar-dropdown is-right">
+              <router-link
+                to="/lista-corsi-di-laurea-senza-test"
                 class="navbar-item"
-                >Lista corsi magistrali a ciclo unico</router-link
-              > -->
+                >Corsi senza test magistrali/triennali/ciclo unico</router-link
+              >
               <router-link
                 to="/lista-corsi-di-laurea-triennale-ad-accesso-libero"
                 class="navbar-item"
@@ -92,64 +108,8 @@
               >
             </div>
           </div>
-          <div class="navbar-item has-dropdown is-hoverable">
-            <p class="navbar-link">Post laurea</p>
-            <div class="navbar-dropdown is-right">
-              <!--          <router-link to="/master-primo-livello" class="navbar-item"
-                >Master di primo livello</router-link
-              >
-              <router-link to="/master-secondo-livello" class="navbar-item"
-                >Master di secondo livello</router-link
-              > -->
-              <!--        <router-link
-                to="/perfezionamento-alta-formazione"
-                class="navbar-item"
-                >Corsi Perfezionamento - Alta Formazione</router-link
-              >
-              <hr class="navbar-divider" /> -->
-              <router-link to="/lista-master-primo-livello" class="navbar-item"
-                >Lista master primo livello</router-link
-              >
-              <router-link
-                to="/lista-master-secondo-livello"
-                class="navbar-item"
-                >Lista master secondo livello</router-link
-              ><router-link
-                to="/lista-perfezionamento-alta-formazione"
-                class="navbar-item"
-                >Lista Corsi Perfezionamento - Alta Formazione</router-link
-              >
-            </div>
-          </div>
-          <router-link
-            to="/lista-corsi-di-laurea-senza-test"
-            class="navbar-item"
-            >Corsi senza test</router-link
-          >
-          <!--        <div class="navbar-item has-dropdown is-hoverable">
-            <p class="navbar-link">No test</p>
-            <div class="navbar-dropdown is-right">
-              <router-link to="/corsi-di-laurea-senza-test" class="navbar-item"
-                >Corsi senza test</router-link
-              >
-              <hr class="navbar-divider" />
-              <router-link
-                to="/lista-corsi-di-laurea-senza-test"
-                class="navbar-item"
-                >Lista corsi senza test</router-link
-              >
-            </div>
-          </div> -->
         </div>
-
         <div class="navbar-end">
-          <!--           <a href="https://youtu.be/awDfiW3z5GY" class="navbar-item"
-            ><img
-              src="/img/youtube.svg"
-              alt="link a youtube"
-              height="40"
-              width="40"
-          /> YouTube </a> -->
           <router-link to="/comunita" class="navbar-item"
             ><img
               src="/img/whatsapp-svgrepo-com.svg"

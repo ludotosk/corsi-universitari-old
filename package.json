@@ -10,7 +10,7 @@
     "http-server": "http-server dist",
     "netlify dev": "netlify dev",
     "vite": "node ./bin/vite",
-    "deply rapido": "git commit -a -m \"deploy rapido\" && git push -u origin main"
+    "deploy rapido": "git commit -a -m \"deploy rapido\" && git push -u origin main"
   },
   "dependencies": {
     "axios": "^0.21.1",
