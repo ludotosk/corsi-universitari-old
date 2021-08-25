@@ -19,6 +19,11 @@
           v-bind:class="{ active: !hideLivello, danger: hideLivello }"
           >Corsi per livello</a
         >
+        <a
+          @click="classifica"
+          v-bind:class="{ active: !hideClassifica, danger: hideClassifica }"
+          >Classifiche</a
+        >
       </p>
       <!-- <div v-bind:class="{ hidden: hideCitta }">
         <div class="panel-block">
@@ -373,6 +378,13 @@
           >
         </div>
       </div>
+      <div v-bind:class="{ hidden: hideClassifica }">
+        <div class="panel-block">
+          <router-link to="/migliori-corsi-di-laurea" class="has-text-black-ter"
+            >Migliori corsi di laurea per trovare lavoro</router-link
+          >
+        </div>
+      </div>
     </nav>
     <br />
   </div>
@@ -386,6 +398,7 @@ export default {
       //hideUni: true,
       hideArea: true,
       hideLive: true,
+      hideClassifica: true,
     };
   },
   methods: {
@@ -402,10 +415,17 @@ export default {
     area() {
       this.hideLivello = true;
       this.hideArea = false;
+      this.hideClassifica = true;
     },
     livello() {
       this.hideLivello = false;
       this.hideArea = true;
+      this.hideClassifica = true;
+    },
+    classifica() {
+      this.hideLivello = true;
+      this.hideArea = true;
+      this.hideClassifica = false;
     },
   },
 };

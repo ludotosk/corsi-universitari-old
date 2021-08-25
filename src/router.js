@@ -763,6 +763,14 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
+  },
+  {
+    path: '/migliori-corsi-di-laurea', components: {
+      default: () => import(/* webpackChunk: "migliori corsi di laurea" */ './migliori-corsi-di-laurea.vue'),
+      header: Navbar,
+      panel: Panel,
+      footer: Footer
+    }
   }
 ]
 

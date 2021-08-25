@@ -95,7 +95,8 @@ module.exports = {
         '/lista-corsi-di-laurea-senza-test',
         '/corsi-di-laurea-online',
         '/corsi-di-laurea-internazionali',
-        '/comunita'
+        '/comunita',
+        '/migliori-corsi-di-laurea'
       ],
       //headless: true,
       //onlyProduction: true,
