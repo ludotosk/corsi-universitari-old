@@ -98,33 +98,35 @@
         test no.
       </p>
     </div>
-    <table
-      class="table is-bordered is-fullwidth is-hoverable"
-      v-if="!cambiaTabella"
-    >
-      <thead class="has-background-dark">
-        <th class="has-text-white">Corso di laurea</th>
-        <!--         <th class="has-text-white">Università</th>
+    <main>
+      <table
+        class="table is-bordered is-fullwidth is-hoverable"
+        v-if="!cambiaTabella"
+      >
+        <thead class="has-background-dark">
+          <th class="has-text-white">Corso di laurea</th>
+          <!--         <th class="has-text-white">Università</th>
         <th class="has-text-white">Test</th> -->
-        <th class="has-text-white">Università</th>
-      </thead>
-      <tbody v-for="corso in corsi" :key="corso.n">
-        <tr data-view>
-          <td>
-            <a
-              :href="corso.h"
-              target="_blank"
-              rel="noopener"
-              class="has-text-danger"
-              >{{ corso.n }}</a
-            >
-          </td>
-          <!--    <td>{{ corso.t }}</td>
+          <th class="has-text-white">Università</th>
+        </thead>
+        <tbody v-for="corso in corsi" :key="corso.n">
+          <tr data-view>
+            <td>
+              <a
+                :href="corso.h"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ corso.n }}</a
+              >
+            </td>
+            <!--    <td>{{ corso.t }}</td>
           <td>{{ corso.a }}</td> -->
-          <td>{{ corso.u }}</td>
-        </tr>
-      </tbody>
-    </table>
+            <td>{{ corso.u }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
     <br />
   </div>
 </template>
