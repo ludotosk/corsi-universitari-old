@@ -771,6 +771,14 @@ const routes = [
       panel: Panel,
       footer: Footer
     }
+  },
+  {
+    path: '/migliori-universita-italiane', components: {
+      default: () => import(/* webpackChunk : "migliori universita-italiane" */ './migliori-universita.vue'),
+      header: Navbar,
+      panel: Panel,
+      footer: Footer
+    }
   }
 ]
 

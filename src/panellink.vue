@@ -384,6 +384,13 @@
             >Migliori corsi di laurea per trovare lavoro</router-link
           >
         </div>
+        <div class="panel-block">
+          <router-link
+            to="/migliori-universita-italiane"
+            class="has-text-black-ter"
+            >Migliori universita italiane</router-link
+          >
+        </div>
       </div>
     </nav>
     <br />

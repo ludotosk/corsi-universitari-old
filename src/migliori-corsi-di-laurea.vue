@@ -15,7 +15,8 @@
       laureati da tre anni. I corsi di laurea selezionati riguardano le classi
       di laurea dei corsi magistrali e delle magistrali a ciclo unico. Per
       ulteriori informazioni su metologia e campione dei dati vi invito ad
-      andare sul link in fondo alla tabella.
+      andare sul link in fondo alla tabella. <router-link to="/migliori-universita-italiane" class="has-text-danger"> Se invece vuoi scoprire quali sono
+      le migliori università italiane clicca qui</router-link>!
     </p>
     <br />
     <div class="field is-horizontal">
