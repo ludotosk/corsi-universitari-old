@@ -52,7 +52,7 @@
           >Occupazione %</v-th
         >
         <v-th sortKey="Stipendio" defaultSort="asc" class="has-text-white"
-          >Stipendio medio netto</v-th
+          >Stipendio medio netto €</v-th
         >
       </thead>
       <tbody slot="body" slot-scope="{ displayData }" data-view>
