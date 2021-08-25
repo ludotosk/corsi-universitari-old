@@ -96,7 +96,8 @@ module.exports = {
         '/corsi-di-laurea-online',
         '/corsi-di-laurea-internazionali',
         '/comunita',
-        '/migliori-corsi-di-laurea'
+        '/migliori-corsi-di-laurea', 
+        '/migliori-universita-italiane'
       ],
       //headless: true,
       //onlyProduction: true,
