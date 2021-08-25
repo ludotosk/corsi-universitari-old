@@ -1,0 +1,517 @@
+[
+    {
+        "Classe": "antropologia culturale ed etnologia (LM-1, 1/S)",
+        "Occupazione": "74,2",
+        "Stipendio": 1143
+    },
+    {
+        "Classe": "archeologia (LM-2, 2/S)",
+        "Occupazione": "70,4",
+        "Stipendio": 1130
+    },
+    {
+        "Classe": "architettura del paesaggio (LM-3, 3/S)",
+        "Occupazione": "88,0",
+        "Stipendio": 1327
+    },
+    {
+        "Classe": "architettura e ingegneria edile-architettura (LM-4, LM-4 C.U., 4/S)",
+        "Occupazione": "88,4",
+        "Stipendio": 1307
+    },
+    {
+        "Classe": "architettura e ingegneria edile-architettura (LM-4, LM-4 C.U., 4/S)",
+        "Occupazione": "85,8",
+        "Stipendio": 1311
+    },
+    {
+        "Classe": "archivistica e biblioteconomia (LM-5, 5/S)",
+        "Occupazione": "80,0",
+        "Stipendio": 1243
+    },
+    {
+        "Classe": "biologia (LM-6, 6/S)",
+        "Occupazione": "80,6",
+        "Stipendio": 1290
+    },
+    {
+        "Classe": "biotecnologie agrarie (LM-7, 7/S)",
+        "Occupazione": "85,1",
+        "Stipendio": 1233
+    },
+    {
+        "Classe": "biotecnologie industriali (LM-8, 8/S)",
+        "Occupazione": "90,2",
+        "Stipendio": 1459
+    },
+    {
+        "Classe": "biotecnologie mediche, veterinarie e farmaceutiche (LM-9, 9/S)",
+        "Occupazione": "87,8",
+        "Stipendio": 1390
+    },
+    {
+        "Classe": "conservazione e restauro dei beni culturali (LMR/02)",
+        "Occupazione": "78,0",
+        "Stipendio": 1385
+    },
+    {
+        "Classe": "design (LM-12, 103/S)(2)",
+        "Occupazione": "88,0",
+        "Stipendio": 1342
+    },
+    {
+        "Classe": "farmacia e farmacia industriale (LM-13, 14/S)",
+        "Occupazione": "91,1",
+        "Stipendio": 1425
+    },
+    {
+        "Classe": "filologia moderna (LM-14, 16/S, 40/S)",
+        "Occupazione": "80,7",
+        "Stipendio": 1225
+    },
+    {
+        "Classe": "filologia, letterature e storia dell'antichità (LM-15, 15/S)",
+        "Occupazione": "84,7",
+        "Stipendio": 1260
+    },
+    {
+        "Classe": "finanza (LM-16, 19/S)",
+        "Occupazione": "93,7",
+        "Stipendio": 1675
+    },
+    {
+        "Classe": "fisica (LM-17, 20/S)",
+        "Occupazione": "94,1",
+        "Stipendio": 1534
+    },
+    {
+        "Classe": "giurisprudenza (LMG/01, 22/S, 102/S)",
+        "Occupazione": "77,8",
+        "Stipendio": 1464
+    },
+    {
+        "Classe": "giurisprudenza (LMG/01, 22/S, 102/S)",
+        "Occupazione": "59,5",
+        "Stipendio": 1314
+    },
+    {
+        "Classe": "informatica (LM-18, 23/S)",
+        "Occupazione": "96,3",
+        "Stipendio": 1700
+    },
+    {
+        "Classe": "informazione e sistemi editoriali (LM-19, 13/S)",
+        "Occupazione": "79,8",
+        "Stipendio": 1177
+    },
+    {
+        "Classe": "ingegneria aerospaziale e astronautica (LM-20, 25/S)",
+        "Occupazione": "97,2",
+        "Stipendio": 1743
+    },
+    {
+        "Classe": "ingegneria biomedica (LM-21, 26/S)",
+        "Occupazione": "96,3",
+        "Stipendio": 1579
+    },
+    {
+        "Classe": "ingegneria chimica (LM-22, 27/S)",
+        "Occupazione": "94,6",
+        "Stipendio": 1661
+    },
+    {
+        "Classe": "ingegneria civile (LM-23, 28/S)",
+        "Occupazione": "94,2",
+        "Stipendio": 1543
+    },
+    {
+        "Classe": "ingegneria dei sistemi edilizi (LM-24)",
+        "Occupazione": "92,2",
+        "Stipendio": 1478
+    },
+    {
+        "Classe": "ingegneria dell'automazione (LM-25, 29/S)",
+        "Occupazione": "97,8",
+        "Stipendio": 1739
+    },
+    {
+        "Classe": "ingegneria della sicurezza (LM-26)",
+        "Occupazione": "95,5",
+        "Stipendio": 1745
+    },
+    {
+        "Classe": "ingegneria delle telecomunicazioni (LM-27, 30/S)",
+        "Occupazione": "93,7",
+        "Stipendio": 1702
+    },
+    {
+        "Classe": "ingegneria elettrica (LM-28, 31/S)",
+        "Occupazione": "98,7",
+        "Stipendio": 1698
+    },
+    {
+        "Classe": "ingegneria elettronica (LM-29, 32/S)",
+        "Occupazione": "96,3",
+        "Stipendio": 1733
+    },
+    {
+        "Classe": "ingegneria energetica e nucleare (LM-30, 33/S)",
+        "Occupazione": "97,7",
+        "Stipendio": 1629
+    },
+    {
+        "Classe": "ingegneria gestionale (LM-31, 34/S)",
+        "Occupazione": "96,5",
+        "Stipendio": 1665
+    },
+    {
+        "Classe": "ingegneria informatica (LM-32, 35/S)",
+        "Occupazione": "97,6",
+        "Stipendio": 1729
+    },
+    {
+        "Classe": "ingegneria meccanica (LM-33, 36/S)",
+        "Occupazione": "96,8",
+        "Stipendio": 1708
+    },
+    {
+        "Classe": "ingegneria navale (LM-34, 37/S)",
+        "Occupazione": "96,9",
+        "Stipendio": 1853
+    },
+    {
+        "Classe": "ingegneria per l'ambiente e il territorio (LM-35, 38/S)",
+        "Occupazione": "93,2",
+        "Stipendio": 1494
+    },
+    {
+        "Classe": "lingue e letterature dell'Africa e dell'Asia (LM-36, 41/S)",
+        "Occupazione": "76,1",
+        "Stipendio": 1303
+    },
+    {
+        "Classe": "lingue e letterature moderne europee e americane (LM-37, 42/S)",
+        "Occupazione": "78,0",
+        "Stipendio": 1206
+    },
+    {
+        "Classe": "lingue moderne per la comunicazione e la cooperazione internazionale (LM-38, 43/S)",
+        "Occupazione": "81,8",
+        "Stipendio": 1317
+    },
+    {
+        "Classe": "linguistica (LM-39, 44/S)",
+        "Occupazione": "77,1",
+        "Stipendio": 1330
+    },
+    {
+        "Classe": "matematica (LM-40, 45/S)",
+        "Occupazione": "94,2",
+        "Stipendio": 1480
+    },
+    {
+        "Classe": "medicina e chirurgia (LM-41, 46/S)",
+        "Occupazione": "95,4",
+        "Stipendio": 2059
+    },
+    {
+        "Classe": "medicina veterinaria (LM-42, 47/S)",
+        "Occupazione": "90,4",
+        "Stipendio": 1418
+    },
+    {
+        "Classe": "metodologie informatiche per le discipline umanistiche (LM-43, 24/S)",
+        "Occupazione": "90,5",
+        "Stipendio": 1422
+    },
+    {
+        "Classe": "modellistica matematico-fisica per l'ingegneria (LM-44, 50/S)",
+        "Occupazione": "98,2",
+        "Stipendio": 1778
+    },
+    {
+        "Classe": "musicologia e beni musicali (LM-45, 51/S)",
+        "Occupazione": "81,0",
+        "Stipendio": 1299
+    },
+    {
+        "Classe": "odontoiatria e protesi dentaria (LM-46, 52/S)",
+        "Occupazione": "95,7",
+        "Stipendio": 2108
+    },
+    {
+        "Classe": "organizzazione e gestione dei servizi per lo sport e le attività motorie (LM-47, 53/S)",
+        "Occupazione": "78,7",
+        "Stipendio": 1214
+    },
+    {
+        "Classe": "pianificazione territoriale urbanistica e ambientale (LM-48, 54/S)",
+        "Occupazione": "82,3",
+        "Stipendio": 1385
+    },
+    {
+        "Classe": "progettazione e gestione dei sistemi turistici (LM-49, 55/S)",
+        "Occupazione": "76,6",
+        "Stipendio": 1237
+    },
+    {
+        "Classe": "programmazione e gestione dei servizi educativi (LM-50, 56/S)",
+        "Occupazione": "84,6",
+        "Stipendio": 1088
+    },
+    {
+        "Classe": "psicologia (LM-51, 58/S)",
+        "Occupazione": "74,0",
+        "Stipendio": 1034
+    },
+    {
+        "Classe": "relazioni internazionali (LM-52, 60/S)",
+        "Occupazione": "75,9",
+        "Stipendio": 1461
+    },
+    {
+        "Classe": "scienza e ingegneria dei materiali (LM-53, 61/S)",
+        "Occupazione": "92,8",
+        "Stipendio": 1633
+    },
+    {
+        "Classe": "scienze chimiche (LM-54, 62/S)",
+        "Occupazione": "90,3",
+        "Stipendio": 1495
+    },
+    {
+        "Classe": "scienze cognitive (LM-55, 63/S)",
+        "Occupazione": "88,7",
+        "Stipendio": 1526
+    },
+    {
+        "Classe": "scienze dell'economia (LM-56, 64/S)",
+        "Occupazione": "89,0",
+        "Stipendio": 1519
+    },
+    {
+        "Classe": "scienze dell'educazione degli adulti e della formazione continua (LM-57, 65/S)",
+        "Occupazione": "77,1",
+        "Stipendio": 1156
+    },
+    {
+        "Classe": "scienze dell'universo (LM-58, 66/S)",
+        "Occupazione": "90,2",
+        "Stipendio": 1348
+    },
+    {
+        "Classe": "scienze della comunicazione pubblica, d'impresa e pubblicità (LM-59, 59/S, 67/S)",
+        "Occupazione": "84,0",
+        "Stipendio": 1367
+    },
+    {
+        "Classe": "scienze della difesa e della sicurezza (LM/DS, DS/S)(2)",
+        "Occupazione": "95,5",
+        "Stipendio": 1914
+    },
+    {
+        "Classe": "scienze della formazione primaria (LM-85bis)",
+        "Occupazione": "90,4",
+        "Stipendio": 1329
+    },
+    {
+        "Classe": "scienze della natura (LM-60, 68/S)",
+        "Occupazione": "76,2",
+        "Stipendio": 1208
+    },
+    {
+        "Classe": "scienze della nutrizione umana (LM-61, 69/S)",
+        "Occupazione": "86,4",
+        "Stipendio": 1215
+    },
+    {
+        "Classe": "scienze della politica (LM-62, 70/S)",
+        "Occupazione": "73,6",
+        "Stipendio": 1385
+    },
+    {
+        "Classe": "scienze delle professioni sanitarie della prevenzione (LM/SNT4, SNT_SPEC/4)",
+        "Occupazione": "94,7",
+        "Stipendio": 1564
+    },
+    {
+        "Classe": "scienze delle professioni sanitarie tecniche (LM/SNT3, SNT_SPEC/3)",
+        "Occupazione": "95,7",
+        "Stipendio": 1602
+    },
+    {
+        "Classe": "scienze delle pubbliche amministrazioni (LM-63, 71/S)",
+        "Occupazione": "82,1",
+        "Stipendio": 1439
+    },
+    {
+        "Classe": "scienze delle religioni (LM-64, 72/S)(2)",
+        "Occupazione": "88,9",
+        "Stipendio": 1334
+    },
+    {
+        "Classe": "scienze dello spettacolo e produzione multimediale (LM-65, 73/S)",
+        "Occupazione": "69,2",
+        "Stipendio": 1259
+    },
+    {
+        "Classe": "scienze e tecniche delle attività motorie preventive e adattate (LM-67, 76/S)",
+        "Occupazione": "78,9",
+        "Stipendio": 1087
+    },
+    {
+        "Classe": "scienze e tecniche dello sport (LM-68, 75/S)",
+        "Occupazione": "85,3",
+        "Stipendio": 1133
+    },
+    {
+        "Classe": "scienze e tecnologie agrarie (LM-69, 77/S)",
+        "Occupazione": "90,1",
+        "Stipendio": 1431
+    },
+    {
+        "Classe": "scienze e tecnologie alimentari (LM-70, 78/S)",
+        "Occupazione": "84,7",
+        "Stipendio": 1379
+    },
+    {
+        "Classe": "scienze e tecnologie della chimica industriale (LM-71, 81/S)",
+        "Occupazione": "96,4",
+        "Stipendio": 1561
+    },
+    {
+        "Classe": "scienze e tecnologie della navigazione (LM-72, 80/S)",
+        "Occupazione": "91,7",
+        "Stipendio": 1307
+    },
+    {
+        "Classe": "scienze e tecnologie forestali ed ambientali (LM-73, 74/S)",
+        "Occupazione": "88,3",
+        "Stipendio": 1394
+    },
+    {
+        "Classe": "scienze e tecnologie geologiche (LM-74, 86/S)",
+        "Occupazione": "84,9",
+        "Stipendio": 1368
+    },
+    {
+        "Classe": "scienze e tecnologie per l'ambiente e il territorio (LM-75, 82/S)",
+        "Occupazione": "85,4",
+        "Stipendio": 1318
+    },
+    {
+        "Classe": "scienze economiche per l'ambiente e la cultura (LM-76, 83/S)",
+        "Occupazione": "82,1",
+        "Stipendio": 1358
+    },
+    {
+        "Classe": "scienze economico-aziendali (LM-77, 84/S)",
+        "Occupazione": "91,0",
+        "Stipendio": 1512
+    },
+    {
+        "Classe": "scienze filosofiche (LM-78, 17/S, 18/S, 96/S)",
+        "Occupazione": "73,3",
+        "Stipendio": 1210
+    },
+    {
+        "Classe": "scienze geofisiche (LM-79, 85/S)",
+        "Occupazione": "100,0",
+        "Stipendio": 1695
+    },
+    {
+        "Classe": "scienze geografiche (LM-80, 21/S)",
+        "Occupazione": "77,3",
+        "Stipendio": 1240
+    },
+    {
+        "Classe": "scienze infermieristiche e ostetriche (LM/SNT1, SNT_SPEC/1)",
+        "Occupazione": "95,0",
+        "Stipendio": 1587
+    },
+    {
+        "Classe": "scienze pedagogiche (LM-85, 87/S)",
+        "Occupazione": "80,1",
+        "Stipendio": 1096
+    },
+    {
+        "Classe": "scienze per la conservazione dei beni culturali (LM-11, 12/S)",
+        "Occupazione": "65,2",
+        "Stipendio": 1116
+    },
+    {
+        "Classe": "scienze per la cooperazione allo sviluppo (LM-81, 88/S)",
+        "Occupazione": "77,1",
+        "Stipendio": 1448
+    },
+    {
+        "Classe": "scienze riabilitative delle professioni sanitarie (LM/SNT2, SNT_SPEC/2)",
+        "Occupazione": "94,8",
+        "Stipendio": 1443
+    },
+    {
+        "Classe": "scienze statistiche (LM-82, 48/S, 90/S, 92/S)",
+        "Occupazione": "94,8",
+        "Stipendio": 1555
+    },
+    {
+        "Classe": "scienze statistiche attuariali e finanziarie (LM-83, 91/S)",
+        "Occupazione": "94,7",
+        "Stipendio": 1667
+    },
+    {
+        "Classe": "scienze storiche (LM-84, 93/S, 94/S, 97/S, 98/S)",
+        "Occupazione": "72,7",
+        "Stipendio": 1249
+    },
+    {
+        "Classe": "scienze zootecniche e tecnologie animali (LM-86, 79/S)",
+        "Occupazione": "84,1",
+        "Stipendio": 1323
+    },
+    {
+        "Classe": "servizio sociale e politiche sociali (LM-87, 57/S)",
+        "Occupazione": "80,5",
+        "Stipendio": 1201
+    },
+    {
+        "Classe": "sicurezza informatica (LM-66)",
+        "Occupazione": "100,0",
+        "Stipendio": 1844
+    },
+    {
+        "Classe": "sociologia e ricerca sociale (LM-88, 49/S, 89/S)",
+        "Occupazione": "77,1",
+        "Stipendio": 1248
+    },
+    {
+        "Classe": "storia dell'arte (LM-89, 95/S)",
+        "Occupazione": "68,2",
+        "Stipendio": 1120
+    },
+    {
+        "Classe": "studi europei (LM-90, 99/S)",
+        "Occupazione": "79,8",
+        "Stipendio": 1547
+    },
+    {
+        "Classe": "tecniche e metodi per la società dell'informazione (LM-91, 100/S)",
+        "Occupazione": "100,0",
+        "Stipendio": 1726
+    },
+    {
+        "Classe": "teorie della comunicazione (LM-92, 101/S)",
+        "Occupazione": "80,2",
+        "Stipendio": 1289
+    },
+    {
+        "Classe": "teorie e metodologie dell'e-learning e della media education (LM-93)",
+        "Occupazione": "66,7",
+        "Stipendio": 876
+    },
+    {
+        "Classe": "traduzione specialistica e interpretariato (LM-94, 39/S, 104/S)",
+        "Occupazione": "86,5",
+        "Stipendio": 1301
+    }
+]
