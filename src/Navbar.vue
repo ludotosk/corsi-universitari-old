@@ -48,26 +48,36 @@
           >
           <div class="navbar-item has-dropdown is-hoverable">
             <p class="navbar-link">Città</p>
-
             <div class="navbar-dropdown">
               <router-link class="navbar-item" to="/corsi-di-laurea-bologna"
                 >Corsi di laurea Bologna</router-link
               >
-
               <router-link class="navbar-item" to="/corsi-di-laurea-firenze"
                 >Corsi di laurea Firenze</router-link
               >
-
               <router-link class="navbar-item" to="/corsi-di-laurea-milano"
                 >Corsi di laurea Milano</router-link
               >
-
               <router-link class="navbar-item" to="/corsi-di-laurea-padova"
                 >Corsi di laurea Padova</router-link
               >
-
-              <router-link class="navbar-item" to="/corsi-di-laurea-venezia"
-                >Corsi di laurea Venezia</router-link
+              <router-link class="navbar-item" to="/corsi-di-laurea-roma"
+                >Corsi di laurea Roma</router-link
+              >
+              <router-link class="navbar-item" to="/corsi-di-laurea-torino"
+                >Corsi di laurea Torino</router-link
+              >
+              <router-link class="navbar-item" to="/corsi-di-laurea-bari"
+                >Corsi di laurea Bari</router-link
+              >
+              <router-link class="navbar-item" to="/corsi-di-laurea-pisa"
+                >Corsi di laurea Pisa</router-link
+              >
+              <router-link class="navbar-item" to="/corsi-di-laurea-napoli"
+                >Corsi di laurea Napoli</router-link
+              >
+              <router-link class="navbar-item" to="/corsi-di-laurea-palermo"
+                >Corsi di laurea Palermo</router-link
               >
             </div>
           </div>

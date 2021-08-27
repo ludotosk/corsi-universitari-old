@@ -135,24 +135,24 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea a Torino [lista 2021]",
+    title: "Corsi di laurea a Palermo [lista 2021]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "In questo sito potrai trovare rapidamente tutti i corsi di laurea torino, tutti raggruppati su una comoda tabella.",
+          "In questo sito potrai trovare rapidamente tutti i corsi di laurea palermo, tutti raggruppati su una comoda tabella.",
       },
       {
         name: "keywords",
-        content: "Corsi di laurea, Corso di laurea, Corsi di laurea torino",
+        content: "Corsi di laurea, Corso di laurea, Corsi di laurea palermo",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-torino",
+        href: "https://www.corsiuniversitari.info/corsi-di-laurea-palermo",
       },
     ],
   },
@@ -163,7 +163,7 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
-      uni: "Torino",
+      uni: "Palermo",
       corsi: [],
       cambiaTabella: false,
     };
@@ -171,7 +171,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?s=TORINO"
+        "https://www.corsiuniversitari.info/api/corsi?s=PALERMO"
       );
 
       this.corsi = res.data;

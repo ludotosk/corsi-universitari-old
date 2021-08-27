@@ -11,9 +11,9 @@
         <a @click="uni" v-bind:class="{ active: !hideUni, danger: hideUni }"
           >Università</a
         > -->
-        <a @click="area" v-bind:class="{ active: !hideArea, danger: hideArea }"
+        <!--         <a @click="area" v-bind:class="{ active: !hideArea, danger: hideArea }"
           >Area accademica</a
-        >
+        > -->
         <a
           @click="livello"
           v-bind:class="{ active: !hideLivello, danger: hideLivello }"
@@ -236,7 +236,7 @@
           >
         </div>
       </div> -->
-      <div v-bind:class="{ hidden: hideArea }">
+      <!-- <div v-bind:class="{ hidden: hideArea }">
         <div class="panel-block">
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-biologia"
             >Corsi di laurea Biologia</router-link
@@ -269,8 +269,8 @@
             to="/corsi-di-laurea-scienze-della-formazione-primaria"
             >Corsi di laurea Scienze della formazione primaria</router-link
           >
-        </div>
-        <!--   <div class="panel-block">
+        </div> -->
+      <!--   <div class="panel-block">
           <router-link
             class="has-text-black-ter"
             to="/corsi-di-laurea-biotecnologia"
@@ -355,8 +355,8 @@
           <router-link class="has-text-black-ter" to="/corsi-di-laurea-economia"
             >Corsi di laurea economia</router-link
           >
-        </div> -->
-      </div>
+        </div> 
+      </div> -->
       <div v-bind:class="{ hidden: hideLivello }">
         <div class="panel-block">
           <router-link to="/lauree-triennali-elenco" class="has-text-black-ter"
@@ -388,7 +388,7 @@
           <router-link
             to="/migliori-universita-italiane"
             class="has-text-black-ter"
-            >Migliori universita italiane</router-link
+            >Migliori università italiane</router-link
           >
         </div>
       </div>
@@ -403,7 +403,7 @@ export default {
     return {
       //hideCitta: false,
       //hideUni: true,
-      hideArea: true,
+      //hideArea: true,
       hideLive: true,
       hideClassifica: true,
     };
@@ -419,19 +419,19 @@ export default {
       this.hideUni = false;
       this.hideArea = true;
     }, */
-    area() {
+    /*     area() {
       this.hideLivello = true;
       this.hideArea = false;
       this.hideClassifica = true;
-    },
+    }, */
     livello() {
       this.hideLivello = false;
-      this.hideArea = true;
+      //this.hideArea = true;
       this.hideClassifica = true;
     },
     classifica() {
       this.hideLivello = true;
-      this.hideArea = true;
+      //this.hideArea = true;
       this.hideClassifica = false;
     },
   },
