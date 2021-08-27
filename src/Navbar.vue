@@ -34,7 +34,7 @@
           class="navbar-start has-text-weight-medium"
           style="flex-grow: 1; justify-content: center"
         >
-          <router-link to="/tutti-i-corsi-di-laurea" class="navbar-item"
+          <router-link to="/" class="navbar-item"
             >Tutti i corsi di laurea</router-link
           >
           <router-link to="/corsi-di-laurea-online" class="navbar-item"

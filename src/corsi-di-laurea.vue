@@ -122,7 +122,7 @@ export default {
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/tutti-i-corsi-di-laurea",
+        href: "https://www.corsiuniversitari.info/",
       },
     ],
   },

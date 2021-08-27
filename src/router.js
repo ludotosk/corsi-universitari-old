@@ -3,7 +3,7 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
+//const Home = () => import(/* webpackChunkName: "home" */ './home.vue')
 const Panel = () => import(/* webpackChunkName: "panel" */'./panellink.vue')
 const Corsi = () => import(/* webpackChunkName: "corsi" */ './corsi-di-laurea.vue')
 const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
@@ -74,8 +74,9 @@ const Milano = () => import(/* webpackChunkName: "Milano" */ './citta/corsi-di-l
 const routes = [
   {
     path: '/', components: {
-      default: Home,
+      default: Corsi,
       header: Navbar,
+      panel: Panel,
       footer: Footer
     }
   },
