@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Corsi di laurea a {{ uni }} [lista 2021]
+      Università a {{ uni }}, Corsi di laurea [2021]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono i corsi di laurea a {{ uni }}? Ecco la lista!
@@ -135,9 +135,7 @@ import axios from "axios";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea a Palermo [lista 2021]",
-    // all titles will be injected into this template
-    titleTemplate: "%s | corsiuniversitari.info",
+    title: "Università a Palermo, Corsi di laurea [2021]",
     meta: [
       {
         name: "description",

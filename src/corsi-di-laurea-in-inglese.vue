@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Lista Corsi di Laurea in lingua inglese
+      Università {{ uni }}, Corsi di Laurea [2021]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono i Corsi di Laurea {{ uni }} in Italia? Ecco la lista!
@@ -145,9 +145,7 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Lista corsi di laurea in lingua inglese",
-    // all titles will be injected into this template
-    titleTemplate: "%s | corsiuniversitari.info",
+    title: "Università in inglese, corsi di laurea [2021]",
     meta: [
       {
         name: "description",
@@ -167,7 +165,7 @@ export default {
       {
         rel: "preload",
         href: "https://www.corsiuniversitari.info/api/corsi?e=1",
-        as: "document"
+        as: "document",
       },
     ],
   },
