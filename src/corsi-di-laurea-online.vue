@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Università a {{ uni }}, Corsi di laurea [2021]
+      Università {{ uni }}, Corsi di laurea [2021]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali lauree {{ uni }} si possono prendere? Ecco la lista!
