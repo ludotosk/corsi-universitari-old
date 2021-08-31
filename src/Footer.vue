@@ -21,7 +21,7 @@
       <div class="modal-background"></div>
       <div class="modal-card">
         <header class="modal-card-head">
-          <p class="modal-card-title">Unisciti al gruppo Whatsapp!</p>
+          <p class="modal-card-title">Unisciti ai nostri gruppi!</p>
           <button
             class="delete"
             aria-label="close"
@@ -30,32 +30,30 @@
         </header>
         <section class="modal-card-body">
           <h2 class="has-text-centered is-size-4 has-text-dark has-text-left">
-            Perché accedere al gruppo di corsiuniversitari.info?
+            Perché i nostri gruppi posso essere d'aiuto?
           </h2>
           <hr />
           <p>
-            <mark class="has-background-success">Perché</mark> puoi trovare
-            altre <strong>persone come te che cercano il corso giusto</strong>.
+            Nel <mark class="has-background-success">gruppo generico</mark> ti
+            puoi confrontare con <strong>centinaia di persone</strong>
+            relativamente all'ambito unviersitario.
           </p>
           <p>
-            <mark class="has-background-success">Perché</mark> a volte è la
-            semplice mancanza di informazione a fare la differenza.
-          </p>
-          <p>
-            <mark class="has-background-success">Perché</mark> puoi
-            <strong>confrontarti con chi già fa quel corso di laurea</strong>!
-          </p>
-          <p>
-            <mark class="has-background-success">Perché</mark> i
-            <strong
-              >manifesti universitari sono tutti i uguali e solo uno studente
-              conosce la vita della sede universitaria</strong
-            >.
+            Nel <mark class="has-background-success">gruppo test</mark> troverai
+            il nostro <strong>simulatore test</strong> e altre persone che si
+            stanno preparnado ai vari <strong>test d'ingresso</strong>, sono
+            compresi i <strong>tolc</strong> e i
+            <strong>test di medicina</strong>.
           </p>
         </section>
         <footer class="modal-card-foot">
-          <a href="https://chat.whatsapp.com/EiygmP7oY944HWFgwuejLD"
-            ><button class="button is-primary">Entra nel gruppo</button></a
+          <a
+            href="https://chat.whatsapp.com/EiygmP7oY944HWFgwuejLD"
+            class="button is-primary"
+            >Generico</a
+          >
+          <a href="https://t.me/corsiuniversitari" class="button is-primary"
+            >Gruppo test</a
           >
           <button class="button" v-on:click="attiva()">Chiudi</button>
         </footer>
