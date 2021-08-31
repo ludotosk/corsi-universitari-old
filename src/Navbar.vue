@@ -40,9 +40,6 @@
           <router-link to="/corsi-di-laurea-online" class="navbar-item"
             >Corsi online</router-link
           >
-          <router-link to="/corsi-di-laurea-internazionali" class="navbar-item"
-            >Corsi internazionali</router-link
-          >
           <router-link to="/corsi-di-laurea-in-inglese" class="navbar-item"
             >In inglese</router-link
           >
@@ -84,24 +81,6 @@
           <router-link to="/lauree-triennali-elenco" class="navbar-item"
             >Triennali</router-link
           >
-          <!--        <div class="navbar-item has-dropdown is-hoverable">
-            <p class="navbar-link">Corsi per livello</p>
-
-            <div class="navbar-dropdown">
-              <router-link
-                to="/corsi-di-laurea-magistrale-a-ciclo-unico"
-                class="navbar-item"
-                >Corsi di laurea magistrali a ciclo unico</router-link
-              >
-              <hr class="navbar-divider" />
-
-              <router-link
-                to="/lista-corsi-di-laurea-magistrale"
-                class="navbar-item"
-                >Lista corsi magistrali</router-link
-              >
-            </div>
-          </div> -->
           <div class="navbar-item has-dropdown is-hoverable">
             <p class="navbar-link">Corsi no test</p>
 
@@ -118,6 +97,9 @@
               >
             </div>
           </div>
+          <a href="https://t.me/corsiuniversitari" class="navbar-item"
+            >Simulazioni test</a
+          >
         </div>
         <div class="navbar-end">
           <router-link to="/comunita" class="navbar-item"

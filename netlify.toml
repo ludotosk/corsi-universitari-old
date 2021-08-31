@@ -8,7 +8,8 @@ package = "@netlify/plugin-sitemap"
     './dist/cookie-policy.html',
     './dist/contattami.html', 
     './dist/comunita.html',
-    './dist/tabella.html'
+    './dist/tabella.html',
+    './dist/simulazioni-test.html'
   ]
 
 [[redirects]]
