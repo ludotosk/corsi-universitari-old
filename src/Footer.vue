@@ -30,7 +30,7 @@
         </header>
         <section class="modal-card-body">
           <h2 class="has-text-centered is-size-4 has-text-dark has-text-left">
-            Perché i nostri gruppi posso essere d'aiuto?
+            Perché i nostri gruppi possono essere d'aiuto?
           </h2>
           <hr />
           <p>
