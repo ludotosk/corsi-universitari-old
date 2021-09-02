@@ -1,0 +1,289 @@
+[
+  {
+    "diciotto": "101,41",
+    "diciannove": "100,17",
+    "venti": "90,5",
+    "uni": "MILANO \"VITA-SALUTE SAN RAFFAELE\"",
+    "media": "97,36"
+  },
+  {
+    "diciotto": "97,05",
+    "diciannove": "99,67",
+    "venti": "85,9",
+    "uni": "ROMA \"CAMPUS BIO-MEDICO\"",
+    "media": "94,21"
+  },
+  {
+    "diciotto": "96,73",
+    "diciannove": "95,84",
+    "venti": "85,8",
+    "uni": "UNIVERSITA DEGLI STUDI DI UDINE",
+    "media": "92,79"
+  },
+  {
+    "diciotto": "94,67",
+    "diciannove": "93,12",
+    "venti": "85,1",
+    "uni": "UNIVERSITA DEGLI STUDI DI VERONA",
+    "media": "90,96"
+  },
+  {
+    "diciotto": "94,04",
+    "diciannove": "94,41",
+    "venti": "87,7",
+    "uni": "UNIVERSITA DEGLI STUDI DI MILANO - BICOCCA",
+    "media": "92,05"
+  },
+  {
+    "diciotto": "93,19",
+    "diciannove": "93,12",
+    "venti": 87,
+    "uni": "UNIVERSITA DEGLI STUDI DI MILANO",
+    "media": "91,1"
+  },
+  {
+    "diciotto": "92,96",
+    "diciannove": "96,56",
+    "venti": "85,3",
+    "uni": "ROMA \"UNIVERSITÀ CATTOLICA SACRO CUORE”",
+    "media": "91,61"
+  },
+  {
+    "diciotto": "92,67",
+    "diciannove": "94,02",
+    "venti": "78,8",
+    "uni": "UNIVERSITA DEGLI STUDI DI SALERNO",
+    "media": "88,5"
+  },
+  {
+    "diciotto": "92,39",
+    "diciannove": "92,12",
+    "venti": "82,7",
+    "uni": "PIEMONTE ORIENTALE AMEDEO AVOGADRO",
+    "media": "89,07"
+  },
+  {
+    "diciotto": "92,39",
+    "diciannove": "90,05",
+    "venti": "83,3",
+    "uni": "ANCONA - POLITECNICA DELLE MARCHE",
+    "media": "88,58"
+  },
+  {
+    "diciotto": "91,31",
+    "diciannove": "71,3",
+    "venti": "81,1",
+    "uni": "MILANO - HUMANITAS",
+    "media": "81,24"
+  },
+  {
+    "diciotto": "91,28",
+    "diciannove": "90,47",
+    "venti": "84,8",
+    "uni": "UNIVERSITA DEGLI STUDI DI TRIESTE",
+    "media": "88,85"
+  },
+  {
+    "diciotto": "90,89",
+    "diciannove": "91,01",
+    "venti": "81,9",
+    "uni": "UNIVERSITA DEGLI STUDI DI PADOVA",
+    "media": "87,93"
+  },
+  {
+    "diciotto": "90,72",
+    "diciannove": "91,07",
+    "venti": 81,
+    "uni": "UNIVERSITA DEGLI STUDI DI TORINO",
+    "media": "87,6"
+  },
+  {
+    "diciotto": "88,85",
+    "diciannove": "87,17",
+    "venti": "80,3",
+    "uni": "VARESE \"UNIVERSITÀ DELLINSUBRIA\"",
+    "media": "85,44"
+  },
+  {
+    "diciotto": "88,41",
+    "diciannove": "88,09",
+    "venti": "79,3",
+    "uni": "UNIVERSITA DEGLI STUDI DI PARMA",
+    "media": "85,27"
+  },
+  {
+    "diciotto": "88,37",
+    "diciannove": "87,87",
+    "venti": "77,7",
+    "uni": "UNIVERSITA DEGLI STUDI DI BRESCIA",
+    "media": "84,65"
+  },
+  {
+    "diciotto": "88,37",
+    "diciannove": "87,47",
+    "venti": "77,5",
+    "uni": "UNIVERSITA DEGLI STUDI DI PISA",
+    "media": "84,45"
+  },
+  {
+    "diciotto": "88,35",
+    "diciannove": "93,66",
+    "venti": "83,3",
+    "uni": "Napoli Federico II",
+    "media": "88,44"
+  },
+  {
+    "diciotto": "87,18",
+    "diciannove": "89,95",
+    "venti": "81,6",
+    "uni": "UNIVERSITA DEGLI STUDI DI FIRENZE",
+    "media": "86,24"
+  },
+  {
+    "diciotto": "86,88",
+    "diciannove": "90,44",
+    "venti": "81,9",
+    "uni": "UNIVERSITA DEGLI STUDI DI BOLOGNA",
+    "media": "86,41"
+  },
+  {
+    "diciotto": "86,26",
+    "diciannove": "88,35",
+    "venti": "78,8",
+    "uni": "UNIVERSITÀ DEGLI STUDI DI MODENA E REGGIO EMILIA",
+    "media": "84,47"
+  },
+  {
+    "diciotto": "86,12",
+    "diciannove": "85,82",
+    "venti": "80,2",
+    "uni": "UNIVERSITA DEGLI STUDI DI PAVIA",
+    "media": "84,05"
+  },
+  {
+    "diciotto": "85,95",
+    "diciannove": "87,16",
+    "venti": "78,3",
+    "uni": "ROMA \"LA SAPIENZA\"",
+    "media": "83,8"
+  },
+  {
+    "diciotto": "85,93",
+    "diciannove": "88,54",
+    "venti": "78,5",
+    "uni": "UNIVERSITA DEGLI STUDI DI GENOVA",
+    "media": "84,32"
+  },
+  {
+    "diciotto": "84,9",
+    "diciannove": "86,61",
+    "venti": "78,5",
+    "uni": "UNIVERSITA DEGLI STUDI DI PERUGIA",
+    "media": "83,34"
+  },
+  {
+    "diciotto": "84,88",
+    "diciannove": "86,78",
+    "venti": "78,5",
+    "uni": "UNIVERSITA DEGLI STUDI DI SIENA",
+    "media": "83,39"
+  },
+  {
+    "diciotto": "84,57",
+    "diciannove": "86,23",
+    "venti": "76,2",
+    "uni": "UNIVERSITA DEGLI STUDI DI CATANZARO",
+    "media": "82,33"
+  },
+  {
+    "diciotto": "83,44",
+    "diciannove": "80,95",
+    "venti": "75,8",
+    "uni": "UNIVERSITA DEGLI STUDI DEL MOLISE - UNIMOL",
+    "media": "80,06"
+  },
+  {
+    "diciotto": "83,13",
+    "diciannove": "84,72",
+    "venti": "76,1",
+    "uni": "ROMA - TOR VERGATA",
+    "media": "81,32"
+  },
+  {
+    "diciotto": "82,73",
+    "diciannove": "85,79",
+    "venti": "77,2",
+    "uni": "UNIVERSITA DEGLI STUDI DI FERRARA",
+    "media": "81,91"
+  },
+  {
+    "diciotto": "82,48",
+    "diciannove": "84,11",
+    "venti": "73,2",
+    "uni": "BARI - ALDO MORO",
+    "media": "79,93"
+  },
+  {
+    "diciotto": "81,92",
+    "diciannove": "83,11",
+    "venti": "76,5",
+    "uni": "CHIETI - GABRIELE DANNUNZIO",
+    "media": "80,51"
+  },
+  {
+    "diciotto": "80,58",
+    "diciannove": "86,7",
+    "venti": "76,3",
+    "uni": "UNIVERSITA DEGLI STUDI DI CAGLIARI",
+    "media": "81,19"
+  },
+  {
+    "diciotto": "80,38",
+    "diciannove": "82,25",
+    "venti": "70,1",
+    "uni": "CAMPANIA LUIGI VANVITELLI",
+    "media": "77,58"
+  },
+  {
+    "diciotto": "80,01",
+    "diciannove": "83,28",
+    "venti": "73,4",
+    "uni": "UNIVERSITA DEGLI STUDI DI CATANIA",
+    "media": "78,9"
+  },
+  {
+    "diciotto": "78,75",
+    "diciannove": "80,48",
+    "venti": "67,1",
+    "uni": "UNIVERSITA DEGLI STUDI DI MESSINA",
+    "media": "75,44"
+  },
+  {
+    "diciotto": "78,24",
+    "diciannove": "81,64",
+    "venti": "72,4",
+    "uni": "UNIVERSITA DEGLI STUDI DELLAQUILA",
+    "media": "77,43"
+  },
+  {
+    "diciotto": "77,09",
+    "diciannove": "79,76",
+    "venti": "71,1",
+    "uni": "UNIVERSITA DEGLI STUDI DI PALERMO",
+    "media": "75,98"
+  },
+  {
+    "diciotto": "75,87",
+    "diciannove": "80,37",
+    "venti": "70,5",
+    "uni": "UNIVERSITA DEGLI STUDI DI SASSARI",
+    "media": "75,58"
+  },
+  {
+    "diciotto": "75,42",
+    "diciannove": "76,84",
+    "venti": "64,9",
+    "uni": "UNIVERSITA DEGLI STUDI DI FOGGIA",
+    "media": "72,39"
+  }
+]
