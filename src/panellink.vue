@@ -53,6 +53,13 @@
             >Migliori università italiane</router-link
           >
         </div>
+        <div class="panel-block">
+          <router-link
+            to="/migliori-universita-medicina"
+            class="has-text-black-ter"
+            >Migliori università di medicina Italiane</router-link
+          >
+        </div>
       </div>
       <div v-bind:class="{ hidden: hideInter }">
         <div class="panel-block">
