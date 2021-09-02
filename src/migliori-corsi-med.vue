@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Migliori unviersità di medicina [2020]
+      Migliori università di medicina [2020]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Qual è l'università di medicina migliore d'Italia?
@@ -124,7 +124,7 @@ import corsi from "./migliori-med.json";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Migliori unviersità di medicina [2020]",
+    title: "Migliori università di medicina [2020]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
