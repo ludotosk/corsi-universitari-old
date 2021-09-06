@@ -36,12 +36,12 @@
           <p>
             Nel <mark class="has-background-success">gruppo generico</mark> ti
             puoi confrontare con <strong>centinaia di persone</strong>
-            relativamente all'ambito unviersitario.
+            relativamente all'ambito universitario.
           </p>
           <p>
             Nel <mark class="has-background-success">gruppo test</mark> troverai
             il nostro <strong>simulatore test</strong> e altre persone che si
-            stanno preparnado ai vari <strong>test d'ingresso</strong>, sono
+            stanno preparando ai vari <strong>test d'ingresso</strong>, sono
             compresi i <strong>tolc</strong> e i
             <strong>test di medicina</strong>.
           </p>
