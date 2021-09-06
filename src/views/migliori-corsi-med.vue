@@ -119,7 +119,7 @@
 
 
 <script>
-import corsi from "./migliori-med.json";
+import corsi from "../assets/migliori-med.json";
 
 export default {
   metaInfo: {

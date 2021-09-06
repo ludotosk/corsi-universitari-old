@@ -2,18 +2,16 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Corsi di laurea a {{ uni }} [2021]
+      Università senza test d'ingresso [2021]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
-      Quali sono i corsi di laurea a {{ uni }}? Ecco la lista!
+      Quali sono le università senza test d'ingresso?
     </h2>
-    <!--     <hr />
+    <hr />
     <p>
-      Qui si può trovare
-      <strong>la lista dei corsi di laurea a {{ uni }}</strong
-      >. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
-    </p> -->
+      Quali facoltà offrono corsi senza test d'ingresso? In questa pagina puoi
+      trovare tutti i corsi di laurea ad accesso libero!
+    </p>
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
@@ -35,6 +33,17 @@
         </div>
       </div>
     </div>
+    <div>
+      <label for="Triennali" v-if="cerca == false">
+        <input
+          type="checkbox"
+          class="checkbox"
+          id="Triennali"
+          v-model="triennali"
+        />
+        Mostra solo corsi di laurea triennali
+      </label>
+    </div>
     <!--     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
       corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
@@ -44,7 +53,7 @@
       tabella.
     </p> -->
     <br />
-    <div v-if="cambiaTabella">
+    <div v-if="cerca == true">
       <v-table
         :data="corsi"
         :filters="filters"
@@ -55,10 +64,8 @@
       >
         <thead slot="head" class="has-background-dark">
           <th class="has-text-white">Corso di laurea</th>
-          <v-th sortKey="t" defaultSort="asc" class="has-text-white"
-            >Livello</v-th
-          >
-          <v-th sortKey="a" defaultSort="asc" class="has-text-white">Test</v-th>
+          <th class="has-text-white">Città</th>
+          <th class="has-text-white">Livello</th>
           <v-th sortKey="u" defaultSort="asc" class="has-text-white"
             >Università</v-th
           >
@@ -74,8 +81,8 @@
                 >{{ row.n }}</a
               >
             </td>
+            <td>{{ row.s }}</td>
             <td>Corso di Laurea {{ row.t }}</td>
-            <td>{{ row.a }}</td>
             <td>{{ row.u }}</td>
           </tr>
         </tbody>
@@ -100,80 +107,99 @@
       </p>
     </div>
     <table
-      class="table is-bordered is-fullwidth is-hoverable"
-      v-if="!cambiaTabella"
+      class="table is-bordered is-hoverable is-fullwidth"
+      v-if="cerca == false"
     >
-      <thead class="has-background-dark">
-        <th class="has-text-white">Corso di laurea</th>
-        <!--  <th class="has-text-white">Livello</th>
-        <th class="has-text-white">Test</th> -->
-        <th class="has-text-white">Università</th>
-      </thead>
-      <tbody v-for="corso in corsi" :key="corso.n">
-        <tr data-view>
-          <td>
-            <a
-              :href="corso.h"
-              target="_blank"
-              rel="noopener"
-              class="has-text-danger"
-              >{{ corso.n }}</a
-            >
-          </td>
-          <!--     <td>{{ corso.t }}</td>
-          <td>{{ corso.a }}</td> -->
-          <td>{{ corso.u }}</td>
-        </tr>
-      </tbody>
+      <div v-if="!triennali">
+        <thead class="has-background-dark">
+          <th class="has-text-white">Corso di laurea ad accesso libero</th>
+          <th class="has-text-white">Università</th>
+        </thead>
+        <tbody v-for="corso in corsi" :key="corso.n">
+          <tr>
+            <td>
+              <a
+                :href="corso.h"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ corso.n }}</a
+              >
+            </td>
+            <td>{{ corso.u }}</td>
+          </tr>
+        </tbody>
+      </div>
+      <div v-if="triennali">
+        <thead class="has-background-dark">
+          <th class="has-text-white">Corso di laurea ad accesso libero</th>
+          <th class="has-text-white">Università</th>
+        </thead>
+        <tbody v-for="corso in corsi" :key="corso.n">
+          <tr v-if="corso.t === 'Triennale'">
+            <td>
+              <a
+                :href="corso.h"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ corso.n }}</a
+              >
+            </td>
+            <td>{{ corso.u }}</td>
+          </tr>
+        </tbody>
+      </div>
     </table>
+    <br />
     <br />
   </div>
 </template>
 
 <script>
-//import corsi from "../corsi.json";
 import axios from "axios";
 
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea a Venezia [2021]",
+    title: "Università senza test d'ingresso [2021]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "In questo sito potrai trovare rapidamente tutti i corsi di laurea Venezia, tutti raggruppati su una comoda tabella.",
+          "Università senza test d'ingresso 2021, qui puoi trovare tutti i corsi di laurea di tutte le facoltà ad accesso libero!",
       },
       {
         name: "keywords",
-        content: "Corsi di laurea, Corso di laurea, Corsi di laurea Venezia",
+        content:
+          "Corsi di laurea senza test d'ingresso, Corsi di laurea ad accesso libero, Facoltà senza test d'ingresso, Facoltà ad accesso libero",
       },
     ],
     link: [
       {
         rel: "canonical",
-        href: "https://www.corsiuniversitari.info/corsi-di-laurea-venezia",
+        href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea-senza-test",
       },
     ],
   },
   data() {
     return {
+      corsi: [],
+      cerca: false,
+      triennali: false,
       filters: {
         n: { value: "", keys: ["n"] },
       },
       currentPage: 1,
       totalPages: 0,
-      uni: "Venezia",
-      corsi: [],
-      cambiaTabella: false,
     };
   },
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?s=VENEZIA"
+        "https://www.corsiuniversitari.info/api/corsi?a=No"
       );
 
       this.corsi = res.data;
@@ -183,7 +209,7 @@ export default {
   },
   watch: {
     "filters.n.value": function () {
-      this.cambiaTabella = true;
+      this.cerca = true;
     },
   },
 };

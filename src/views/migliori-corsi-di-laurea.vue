@@ -81,7 +81,7 @@
 
 
 <script>
-import corsi from "./migliori-corsi.json";
+import corsi from "../assets/migliori-corsi.json";
 
 export default {
   metaInfo: {

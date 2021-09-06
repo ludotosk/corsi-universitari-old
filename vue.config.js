@@ -22,7 +22,6 @@ module.exports = {
         '/tabella',
         '/migliori-universita-medicina',
         '/lauree-triennali-elenco',
-        '/lista-corsi-di-laurea-triennale-ad-accesso-libero',
         '/lista-corsi-di-laurea-magistrale',
         '/corsi-di-laurea-magistrale-a-ciclo-unico',
         '/corsi-di-laurea-in-inglese',

@@ -4,7 +4,7 @@ import SmartTable from 'vuejs-smart-table'
 import VueMeta from 'vue-meta'
 import VueGtag from "vue-gtag"
 import Hotjar from 'vue-hotjar'
-import './scss/style.scss'
+import './assets/style.scss'
 import router from './router'
 import './registerServiceWorker'
 

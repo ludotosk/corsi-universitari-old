@@ -82,22 +82,11 @@
           <router-link to="/lauree-triennali-elenco" class="navbar-item"
             >Triennali</router-link
           >
-          <div class="navbar-item has-dropdown is-hoverable">
-            <p class="navbar-link">Corsi no test</p>
-
-            <div class="navbar-dropdown is-right">
-              <router-link
-                to="/lista-corsi-di-laurea-senza-test"
-                class="navbar-item"
-                >Corsi senza test magistrali/triennali/ciclo unico</router-link
-              >
-              <router-link
-                to="/lista-corsi-di-laurea-triennale-ad-accesso-libero"
-                class="navbar-item"
-                >Lista corsi triennali ad accesso libero</router-link
-              >
-            </div>
-          </div>
+          <router-link
+            to="/lista-corsi-di-laurea-senza-test"
+            class="navbar-item"
+            >Corsi senza test</router-link
+          >
           <a href="https://t.me/corsiuniversitari" class="navbar-item"
             >Simulazioni test</a
           >

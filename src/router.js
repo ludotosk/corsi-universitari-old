@@ -3,27 +3,14 @@ import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
 
-const Panel = () => import(/* webpackChunkName: "panel" */'./panellink.vue')
-const Corsi = () => import(/* webpackChunkName: "corsi" */ './corsi-di-laurea.vue')
-const Contattami = () => import(/* webpackChunkName: "feedback" */ './contattami.vue')
-const Cookiepolicy = () => import(/* webpackChunkName: "cookiepolicy" */ './cookie-policy.vue')
-const Tabella = () => import(/* webpackChunkName: "tabella" */ './tabella.vue')
-const ListaMagistrale = () => import(/* webpackChunkName: "ListaMagistrale" */ './liste/lista-corsi-di-laurea-magistrali.vue')
-const ListaAccesso = () => import(/* webpackChunkName: "ListaAccesso" */ './liste/lista-corsi-di-laurea-triennali-ad-accesso-libero.vue')
-const CorsiCiclo = () => import(/* webpackChunkName: "CorsiCiclo" */ './livello/corsi-di-laurea-magistrali-a-ciclo-unico.vue')
-const Navbar = () => import(/* webpackChunkName: "Navbar" */ './Navbar.vue')
-const Footer = () => import(/* webpackChunkName: "Footer" */ './Footer.vue')
-const Inglese = () => import(/* webpackChunkName: "inglese" */ './corsi-di-laurea-in-inglese.vue')
-const Padova = () => import(/* webpackChunkName: "padova" */ './citta/corsi-di-laurea-padova.vue')
-const Bologna = () => import(/* webpackChunkName: "bologna" */ './citta/corsi-di-laurea-bologna.vue')
-const Firenze = () => import(/* webpackChunkName: "firenze" */ './citta/corsi-di-laurea-firenze.vue')
-const Milano = () => import(/* webpackChunkName: "Milano" */ './citta/corsi-di-laurea-milano.vue')
-
+const Panel = () => import(/* webpackChunkName: "panel" */'./components/Panellink.vue')
+const Navbar = () => import(/* webpackChunkName: "Navbar" */ './components/Navbar.vue')
+const Footer = () => import(/* webpackChunkName: "Footer" */ './components/Footer.vue')
 
 const routes = [
   {
     path: '/', components: {
-      default: Corsi,
+      default: () => import(/* webpackChunkName: "corsi" */ './views/corsi-di-laurea.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -31,50 +18,42 @@ const routes = [
   },
   {
     path: '/contattami', components: {
-      default: Contattami,
+      default: () => import(/* webpackChunkName: "feedback" */ './views/contattami.vue'),
       header: Navbar,
       footer: Footer
     }
   },
   {
     path: '/cookie-policy', components: {
-      default: Cookiepolicy,
+      default: () => import(/* webpackChunkName: "cookiepolicy" */ './views/cookie-policy.vue'),
       header: Navbar,
       footer: Footer
     }
   },
   {
     path: '/tabella', components: {
-      default: Tabella
-    }
-  },
-  {
-    path: '/tutti-i-corsi-di-laurea', components: {
-      default: Corsi,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
+      default: () => import(/* webpackChunkName: "tabella" */ './views/tabella.vue')
     }
   },
   {
     path: '/lauree-triennali-elenco', components: {
-      default: () => import(/* webpackChunkName: "ListaTriennale" */ './liste/lista-corsi-di-laurea-triennali.vue'),
+      default: () => import(/* webpackChunkName: "ListaTriennale" */ './views/lista-corsi-di-laurea-triennali.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
     }
   },
-  {
-    path: '/lista-corsi-di-laurea-triennale-ad-accesso-libero', components: {
-      default: ListaAccesso,
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
+  //{
+    //path: '/lista-corsi-di-laurea-triennale-ad-accesso-libero', components: {
+      //default:  () => import(/* webpackChunkName: "ListaAccesso" */ './views/lista-corsi-di-laurea-triennali-ad-accesso-libero.vue'),
+      //header: Navbar,
+      //panel: Panel,
+      //footer: Footer
+    //}
+  //},
   {
     path: '/lista-corsi-di-laurea-magistrale', components: {
-      default: ListaMagistrale,
+      default: () => import(/* webpackChunkName: "ListaMagistrale" */ './views/lista-corsi-di-laurea-magistrali.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -82,7 +61,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-magistrale-a-ciclo-unico', components: {
-      default: CorsiCiclo,
+      default: () => import(/* webpackChunkName: "CorsiCiclo" */ './views/corsi-di-laurea-magistrali-a-ciclo-unico.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -90,7 +69,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-in-inglese', components: {
-      default: Inglese,
+      default: () => import(/* webpackChunkName: "inglese" */ './views/corsi-di-laurea-in-inglese.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -98,7 +77,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-padova', components: {
-      default: Padova,
+      default: () => import(/* webpackChunkName: "padova" */ './views/corsi-di-laurea-padova.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -106,7 +85,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-bari', components: {
-      default: () => import(/* webpackChunkName: "bari" */ './citta/corsi-di-laurea-bari.vue'),
+      default: () => import(/* webpackChunkName: "bari" */ './views/corsi-di-laurea-bari.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -114,7 +93,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-bologna', components: {
-      default: Bologna,
+      default: () => import(/* webpackChunkName: "bologna" */ './views/corsi-di-laurea-bologna.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -122,7 +101,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-firenze', components: {
-      default: Firenze,
+      default: () => import(/* webpackChunkName: "firenze" */ './views/corsi-di-laurea-firenze.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -130,7 +109,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-milano', components: {
-      default: Milano,
+      default:  () => import(/* webpackChunkName: "Milano" */ './views/corsi-di-laurea-milano.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -138,7 +117,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-napoli', components: {
-      default: () => import(/* webpackChunkName: "napoli" */ './citta/corsi-di-laurea-napoli.vue'),
+      default: () => import(/* webpackChunkName: "napoli" */ './views/corsi-di-laurea-napoli.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -146,7 +125,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-palermo', components: {
-      default: () => import(/* webpackChunkName: "palermo" */ './citta/corsi-di-laurea-palermo.vue'),
+      default: () => import(/* webpackChunkName: "palermo" */ './views/corsi-di-laurea-palermo.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -154,7 +133,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-pisa', components: {
-      default: () => import(/* webpackChunkName: "pisa" */ './citta/corsi-di-laurea-pisa.vue'),
+      default: () => import(/* webpackChunkName: "pisa" */ './views/corsi-di-laurea-pisa.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -162,7 +141,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-roma', components: {
-      default: () => import(/* webpackChunkName: "roma" */ './citta/corsi-di-laurea-roma.vue'),
+      default: () => import(/* webpackChunkName: "roma" */ './views/corsi-di-laurea-roma.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -170,7 +149,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-torino', components: {
-      default: () => import(/* webpackChunkName: "torino" */ './citta/corsi-di-laurea-torino.vue'),
+      default: () => import(/* webpackChunkName: "torino" */ './views/corsi-di-laurea-torino.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -178,7 +157,7 @@ const routes = [
   },
   {
     path: '/lista-corsi-di-laurea-senza-test', components: {
-      default: () => import(/* webpackChunkName: "lista corsi senza test" */ './no-test/lista-corsi-di-laurea-senza-test.vue'),
+      default: () => import(/* webpackChunkName: "lista corsi senza test" */ './views/lista-corsi-di-laurea-senza-test.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -186,7 +165,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-online', components: {
-      default: () => import(/* webpackChunkName: "corsi online" */ './corsi-di-laurea-online.vue'),
+      default: () => import(/* webpackChunkName: "corsi online" */ './views/corsi-di-laurea-online.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -194,7 +173,7 @@ const routes = [
   },
   {
     path: '/corsi-di-laurea-internazionali', components: {
-      default: () => import(/* webpackChunkName: "corsi inrernazionali" */ './corsi-di-laurea-internazionali.vue'),
+      default: () => import(/* webpackChunkName: "corsi inrernazionali" */ './views/corsi-di-laurea-internazionali.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -202,7 +181,7 @@ const routes = [
   },
   {
     path: '/comunita', components: {
-      default: () => import(/* webpackChunk: "comunita" */ './comunita.vue'),
+      default: () => import(/* webpackChunk: "comunita" */ './views/comunita.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -210,7 +189,7 @@ const routes = [
   },
   {
     path: '/migliori-corsi-di-laurea', components: {
-      default: () => import(/* webpackChunk: "migliori corsi di laurea" */ './migliori-corsi-di-laurea.vue'),
+      default: () => import(/* webpackChunk: "migliori corsi di laurea" */ './views/migliori-corsi-di-laurea.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -218,7 +197,7 @@ const routes = [
   },
   {
     path: '/migliori-universita-italiane', components: {
-      default: () => import(/* webpackChunk : "migliori universita italiane" */ './migliori-universita.vue'),
+      default: () => import(/* webpackChunk : "migliori universita italiane" */ './views/migliori-universita.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer
@@ -226,7 +205,7 @@ const routes = [
   },
   {
     path: '/migliori-universita-medicina', components: {
-      default: () => import(/* webpackChunk : "migliori universita medicina" */ './migliori-corsi-med.vue'),
+      default: () => import(/* webpackChunk : "migliori universita medicina" */ './views/migliori-corsi-med.vue'),
       header: Navbar,
       panel: Panel,
       footer: Footer

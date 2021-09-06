@@ -296,7 +296,7 @@
 </template>
 
 <script>
-import corsi from "./migliori-uni.json";
+import corsi from "../assets/migliori-uni.json";
 
 export default {
   metaInfo: {
