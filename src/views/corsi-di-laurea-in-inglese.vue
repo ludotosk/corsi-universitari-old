@@ -128,19 +128,19 @@
       </p>
     </div>
     <br />
-    <iframe
+    <!--     <iframe
       src="https://www.corsiuniversitari.info/api/corsi?e=1"
       frameborder="0"
       id="dati"
       v-on:click="prova"
       onload='(function(){document.getElementById("dati").click();})()'
       style="display: none"
-    ></iframe>
+    ></iframe> -->
   </div>
 </template>
 
 <script>
-//import axios from "axios";
+import axios from "axios";
 
 export default {
   metaInfo: {
@@ -182,7 +182,7 @@ export default {
       cambiaTabella: false,
     };
   },
-  /*   async beforeCreate() {
+  async beforeCreate() {
     try {
       const res = await axios.get(
         "https://www.corsiuniversitari.info/api/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc"
@@ -192,13 +192,13 @@ export default {
     } catch (e) {
       console.log(e);
     }
-  }, */
+  },
   watch: {
     "filters.n.value": function () {
       this.cambiaTabella = true;
     },
   },
-  methods: {
+  /*   methods: {
     prova: function () {
       var iframe = document.getElementById("dati");
       this.corsi = JSON.parse(
@@ -206,6 +206,6 @@ export default {
       );
       iframe.remove();
     },
-  },
+  }, */
 };
 </script>

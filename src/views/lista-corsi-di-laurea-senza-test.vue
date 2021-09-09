@@ -115,18 +115,18 @@
           <th class="has-text-white">Corso di laurea ad accesso libero</th>
           <th class="has-text-white">Università</th>
         </thead>
-        <tbody v-for="corso in corsi" :key="corso.n">
-          <tr>
-            <td>
-              <a
-                :href="corso.h"
-                target="_blank"
-                rel="noopener"
-                class="has-text-danger"
-                >{{ corso.n }}</a
-              >
-            </td>
-            <td>{{ corso.u }}</td>
+        <tbody>
+          <tr v-for="corso in corsi" :key="corso.n">
+              <td>
+                <a
+                  :href="corso.h"
+                  target="_blank"
+                  rel="noopener"
+                  class="has-text-danger"
+                  >{{ corso.n }}</a
+                >
+              </td>
+              <td>{{ corso.u }}</td>
           </tr>
         </tbody>
       </div>
@@ -135,8 +135,8 @@
           <th class="has-text-white">Corso di laurea ad accesso libero</th>
           <th class="has-text-white">Università</th>
         </thead>
-        <tbody v-for="corso in corsi" :key="corso.n">
-          <tr v-if="corso.t === 'Triennale'">
+        <tbody>
+          <tr v-for="corso in corsi" :key="corso.n">
             <td>
               <a
                 :href="corso.h"

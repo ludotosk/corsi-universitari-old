@@ -36,7 +36,7 @@
           <router-link
             to="/lista-corsi-di-laurea-magistrale"
             class="has-text-black-ter"
-            >Corsi di laurea magistrali</router-link
+            >Corsi di laurea Magistrali</router-link
           >
         </div>
       </div>
@@ -79,8 +79,8 @@
 export default {
   data() {
     return {
-      hideLive: true,
-      hideClassifica: true,
+      hideLivello: true,
+      hideClassifica: false,
       hideInter: true,
     };
   },
