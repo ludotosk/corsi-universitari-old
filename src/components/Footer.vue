@@ -3,7 +3,7 @@
     <footer class="has-background-dark has-text-light footer">
       <div class="content has-text-weight-medium has-text-centered">
         <p>
-          Sito a cura di Ludovico Toscano. Contatti email:
+          Sviluppato a Morgex - Valle d'Aosta da Ludovico Toscano. Contatti email:
           <a href="mailto:corsiuniversitari@ludotosk.it" class="has-text-danger"
             >corsiuniversitari@ludotosk.it</a
           >
