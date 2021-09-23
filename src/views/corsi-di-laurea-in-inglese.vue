@@ -184,7 +184,7 @@ export default {
   },
   async beforeCreate() {
     try {
-      fetch("https://www.corsiuniversitari.info/api/corsi")
+      fetch("https://www.corsiuniversitari.info/api/corsi?e=1")
         .then((response) => response.json())
         .then((data) => (this.corsi = data));
     } catch (e) {
