@@ -127,6 +127,7 @@ export default {
       {
         rel: "preload",
         href: "https://www.corsiuniversitari.info/api/corsi",
+        as: "fetch"
       }
     ],
   },
