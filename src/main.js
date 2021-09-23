@@ -3,7 +3,7 @@ import App from './App.vue'
 import SmartTable from 'vuejs-smart-table'
 import VueMeta from 'vue-meta'
 import VueGtag from "vue-gtag"
-import Hotjar from 'vue-hotjar'
+//import Hotjar from 'vue-hotjar'
 import './assets/style.scss'
 import router from './router'
 import './registerServiceWorker'
@@ -13,12 +13,12 @@ Vue.use(VueMeta)
 
 Vue.use(VueGtag, {
   config: { id: 'G-WSK0D83FEJ' },
-}, router); 
+}, router);
 
-Vue.use (Hotjar, {
+/* Vue.use (Hotjar, {
   id: '2580867' // Hotjar Site ID
 })
-
+ */
 new Vue({
   el: '#app',
   router,
