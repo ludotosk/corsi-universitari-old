@@ -124,6 +124,10 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/",
       },
+      {
+        rel: "preload",
+        href: "https://www.corsiuniversitari.info/api/corsi",
+      }
     ],
   },
   data() {
