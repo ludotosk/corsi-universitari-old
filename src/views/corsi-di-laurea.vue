@@ -101,7 +101,7 @@
 </template>
 
 <script>
-import axios from "axios";
+//import axios from "axios";
 
 export default {
   metaInfo: {
@@ -128,6 +128,7 @@ export default {
         rel: "prefetch",
         href: "https://www.corsiuniversitari.info/api/corsi",
         as: "fetch",
+        crossorigin: "anonymous"
       },
     ],
   },
@@ -143,11 +144,9 @@ export default {
   },
   async beforeCreate() {
     try {
-      const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi"
-      );
-
-      this.corsi = res.data;
+      fetch("https://www.corsiuniversitari.info/api/corsi")
+        .then((response) => response.json())
+        .then((data) => this.corsi = data);
     } catch (e) {
       console.log(e);
     }
