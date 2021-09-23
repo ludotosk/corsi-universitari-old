@@ -127,8 +127,8 @@ export default {
       {
         rel: "prefetch",
         href: "https://www.corsiuniversitari.info/api/corsi",
-        as: "fetch"
-      }
+        as: "fetch",
+      },
     ],
   },
   data() {
@@ -144,7 +144,7 @@ export default {
   async beforeCreate() {
     try {
       const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?_sort=u,a,t&_order=asc,desc,desc"
+        "https://www.corsiuniversitari.info/api/corsi"
       );
 
       this.corsi = res.data;
