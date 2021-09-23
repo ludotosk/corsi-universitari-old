@@ -140,7 +140,7 @@
 </template>
 
 <script>
-import axios from "axios";
+//import axios from "axios";
 
 export default {
   metaInfo: {
@@ -184,11 +184,9 @@ export default {
   },
   async beforeCreate() {
     try {
-      const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc"
-      );
-
-      this.corsi = res.data;
+      fetch("https://www.corsiuniversitari.info/api/corsi")
+        .then((response) => response.json())
+        .then((data) => (this.corsi = data));
     } catch (e) {
       console.log(e);
     }
