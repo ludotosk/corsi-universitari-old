@@ -105,7 +105,7 @@
     >
       <thead class="has-background-dark">
         <th class="has-text-white">Corso di laurea</th>
-  <!--       <th class="has-text-white">Livello</th>
+        <!--       <th class="has-text-white">Livello</th>
         <th class="has-text-white">Test</th> -->
         <th class="has-text-white">Università</th>
       </thead>
@@ -120,7 +120,7 @@
               >{{ corso.n }}</a
             >
           </td>
-      <!--     <td>{{ corso.t }}</td>
+          <!--     <td>{{ corso.t }}</td>
           <td>{{ corso.a }}</td> -->
           <td>{{ corso.u }}</td>
         </tr>
@@ -131,9 +131,6 @@
 </template>
 
 <script>
-//import corsi from "../corsi.json";
-import axios from "axios";
-
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -170,11 +167,9 @@ export default {
   },
   async beforeCreate() {
     try {
-      const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?s=BOLOGNA"
-      );
-
-      this.corsi = res.data;
+      fetch("https://www.corsiuniversitari.info/api/corsi?s=BOLOGNA")
+        .then((response) => response.json())
+        .then((data) => (this.corsi = data));
     } catch (e) {
       console.log(e);
     }

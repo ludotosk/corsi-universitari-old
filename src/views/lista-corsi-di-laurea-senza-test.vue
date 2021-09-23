@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <div>
+    <!--     <div>
       <label for="Triennali" v-if="cerca == false">
         <input
           type="checkbox"
@@ -43,7 +43,7 @@
         />
         Mostra solo corsi di laurea triennali
       </label>
-    </div>
+    </div> -->
     <!--     <p>
       <strong>Attenzione!</strong> per eseguire la ricerca serve il nome del
       corso corretto. Es. <strong>biotecnologie</strong> si trova sotto
@@ -110,27 +110,27 @@
       class="table is-bordered is-hoverable is-fullwidth"
       v-if="cerca == false"
     >
-      <div v-if="!triennali">
+      <!--       <div v-if="!triennali">
         <thead class="has-background-dark">
           <th class="has-text-white">Corso di laurea ad accesso libero</th>
           <th class="has-text-white">Università</th>
         </thead>
         <tbody>
           <tr v-for="corso in corsi" :key="corso.n">
-              <td>
-                <a
-                  :href="corso.h"
-                  target="_blank"
-                  rel="noopener"
-                  class="has-text-danger"
-                  >{{ corso.n }}</a
-                >
-              </td>
-              <td>{{ corso.u }}</td>
+            <td>
+              <a
+                :href="corso.h"
+                target="_blank"
+                rel="noopener"
+                class="has-text-danger"
+                >{{ corso.n }}</a
+              >
+            </td>
+            <td>{{ corso.u }}</td>
           </tr>
         </tbody>
-      </div>
-      <div v-if="triennali">
+      </div> -->
+      <div v-if="!triennali">
         <thead class="has-background-dark">
           <th class="has-text-white">Corso di laurea ad accesso libero</th>
           <th class="has-text-white">Università</th>
@@ -157,8 +157,6 @@
 </template>
 
 <script>
-import axios from "axios";
-
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -198,11 +196,9 @@ export default {
   },
   async beforeCreate() {
     try {
-      const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?a=No"
-      );
-
-      this.corsi = res.data;
+      fetch("https://www.corsiuniversitari.info/api/corsi?a=No")
+        .then((response) => response.json())
+        .then((data) => (this.corsi = data));
     } catch (e) {
       console.log(e);
     }

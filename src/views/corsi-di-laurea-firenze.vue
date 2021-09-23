@@ -131,9 +131,6 @@
 </template>
 
 <script>
-//import corsi from "../corsi.json";
-import axios from "axios";
-
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -170,11 +167,9 @@ export default {
   },
   async beforeCreate() {
     try {
-      const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?s=FIRENZE"
-      );
-
-      this.corsi = res.data;
+      fetch("https://www.corsiuniversitari.info/api/corsi?s=FIRENZE")
+        .then((response) => response.json())
+        .then((data) => (this.corsi = data));
     } catch (e) {
       console.log(e);
     }

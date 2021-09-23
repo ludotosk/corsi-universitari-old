@@ -96,7 +96,7 @@
         <th class="has-text-white">Università</th>
       </thead>
       <tbody>
-       <tr v-for="corso in corsi" :key="corso.n">
+        <tr v-for="corso in corsi" :key="corso.n">
           <td>
             <a
               :href="corso.h"
@@ -133,9 +133,6 @@
 </template>
 
 <script>
-//import corsi from "../corsi.json";
-import axios from "axios";
-
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -173,11 +170,9 @@ export default {
   },
   async beforeCreate() {
     try {
-      const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?t=Triennale"
-      );
-
-      this.corsi = res.data;
+      fetch("https://www.corsiuniversitari.info/api/corsi?t=Triennale")
+        .then((response) => response.json())
+        .then((data) => (this.corsi = data));
     } catch (e) {
       console.log(e);
     }

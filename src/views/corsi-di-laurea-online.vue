@@ -110,7 +110,7 @@
           <th class="has-text-white">Università</th>
         </thead>
         <tbody>
-         <tr v-for="corso in corsi" :key="corso.n">
+          <tr v-for="corso in corsi" :key="corso.n">
             <td>
               <a
                 :href="corso.h"
@@ -132,9 +132,6 @@
 </template>
 
 <script>
-import axios from "axios";
-//import corsi from "./corsi.json";
-
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -155,12 +152,6 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-online",
       },
-      /*       {
-        rel: "preload",
-        href:
-          "https://www.corsiuniversitari.info/api/corsi?e=1&_sort=u,a,t&_order=asc,desc,desc",
-        as: "fetch",
-      }, */
     ],
   },
   data() {
@@ -177,14 +168,9 @@ export default {
   },
   async beforeCreate() {
     try {
-      const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi?o=1"
-      );
-
-      this.corsi = res.data;
-      /*   const cache = await caches.open('cache-corsi-universitari');
-      cache.add(res) */
-      //console.log(res.data, cache)
+      fetch("https://www.corsiuniversitari.info/api/corsi?O=1")
+        .then((response) => response.json())
+        .then((data) => (this.corsi = data));
     } catch (e) {
       console.log(e);
     }

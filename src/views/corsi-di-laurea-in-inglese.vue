@@ -140,8 +140,6 @@
 </template>
 
 <script>
-//import axios from "axios";
-
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
@@ -161,11 +159,6 @@ export default {
       {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-in-inglese",
-      },
-      {
-        rel: "preload",
-        href: "https://www.corsiuniversitari.info/api/corsi?e=1",
-        as: "document",
       },
     ],
   },

@@ -71,9 +71,6 @@
 </template>
 
 <script>
-//import corsi from "./corsi.json";
-import axios from "axios";
-
 export default {
   name: "home",
   metaInfo: {
@@ -93,23 +90,11 @@ export default {
       totalPages: 0,
     };
   },
-  /*  metaInfo: {
-    link: [
-      {
-        rel: "preload",
-        href:
-          "https://www.corsiuniversitari.info/api/corsi?_sort=u,a,t&_order=asc,desc,desc",
-        as: "fetch",
-      },
-    ],
-  }, */
   async beforeCreate() {
     try {
-      const res = await axios.get(
-        "https://www.corsiuniversitari.info/api/corsi"
-      );
-
-      this.corsi = res.data;
+      fetch("https://www.corsiuniversitari.info/api/corsi")
+        .then((response) => response.json())
+        .then((data) => (this.corsi = data));
     } catch (e) {
       console.log(e);
     }
