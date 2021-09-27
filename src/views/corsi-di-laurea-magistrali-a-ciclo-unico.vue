@@ -163,7 +163,7 @@ export default {
       cerca: false,
     };
   },
-  async beforeCreate() {
+  async mounted() {
     try {
       fetch("https://www.corsiuniversitari.info/api/corsi?t=Magistrale a Ciclo Unico")
         .then((response) => response.json())

@@ -194,7 +194,7 @@ export default {
       totalPages: 0,
     };
   },
-  async beforeCreate() {
+  async mounted() {
     try {
       fetch("https://www.corsiuniversitari.info/api/corsi?a=No")
         .then((response) => response.json())

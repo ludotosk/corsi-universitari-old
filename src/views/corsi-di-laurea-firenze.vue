@@ -165,7 +165,7 @@ export default {
       cambiaTabella: false,
     };
   },
-  async beforeCreate() {
+  async mounted() {
     try {
       fetch("https://www.corsiuniversitari.info/api/corsi?s=FIRENZE")
         .then((response) => response.json())
