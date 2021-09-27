@@ -138,7 +138,7 @@ export default {
     try {
       fetch("https://www.corsiuniversitari.info/api/corsi")
         .then((response) => response.json())
-        .then((data) => this.corsi = data);
+        .then((data) => (this.corsi = data));
     } catch (e) {
       console.log(e);
     }
