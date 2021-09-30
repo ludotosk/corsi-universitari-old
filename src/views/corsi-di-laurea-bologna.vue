@@ -151,6 +151,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-bologna",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?s=BOLOGNA",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {

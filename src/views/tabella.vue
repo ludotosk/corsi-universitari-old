@@ -79,6 +79,14 @@ export default {
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [{ name: "robots", content: "noindex" }],
+    link: [
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi",
+        crossorigin: "anonymous"
+      }
+    ],
   },
   data() {
     return {

@@ -152,6 +152,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-online",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?o=1",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {
@@ -168,7 +174,7 @@ export default {
   },
   async mounted() {
     try {
-      fetch("https://www.corsiuniversitari.info/api/corsi?O=1")
+      fetch("https://www.corsiuniversitari.info/api/corsi?o=1")
         .then((response) => response.json())
         .then((data) => (this.corsi = data));
     } catch (e) {

@@ -151,6 +151,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-milano",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?s=MILANO",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {

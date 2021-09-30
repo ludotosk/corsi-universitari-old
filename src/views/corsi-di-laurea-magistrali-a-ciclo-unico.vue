@@ -149,6 +149,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-magistrale-a-ciclo-unico",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?t=Magistrale a Ciclo Unico",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {

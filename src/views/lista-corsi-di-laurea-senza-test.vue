@@ -180,6 +180,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea-senza-test",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?a=No",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {

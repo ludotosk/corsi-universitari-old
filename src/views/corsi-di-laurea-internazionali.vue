@@ -153,6 +153,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-internazionali",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?inter=1",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {

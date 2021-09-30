@@ -152,6 +152,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/lista-corsi-di-laurea-triennale-ad-accesso-libero",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?t=Triennale&a=No",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {

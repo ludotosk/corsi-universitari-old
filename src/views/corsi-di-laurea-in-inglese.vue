@@ -160,6 +160,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-in-inglese",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?e=1",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {

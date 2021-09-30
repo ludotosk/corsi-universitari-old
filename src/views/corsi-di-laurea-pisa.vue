@@ -149,6 +149,12 @@ export default {
         rel: "canonical",
         href: "https://www.corsiuniversitari.info/corsi-di-laurea-pisa",
       },
+      {
+        rel: "preload",
+        as: "fetch",
+        href: "https://www.corsiuniversitari.info/api/corsi?s=PISA",
+        crossorigin: "anonymous"
+      }
     ],
   },
   data() {
