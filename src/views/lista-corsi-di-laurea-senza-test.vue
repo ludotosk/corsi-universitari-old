@@ -60,7 +60,7 @@
         :pageSize="15"
         @totalPagesChanged="totalPages = $event"
         :currentPage.sync="currentPage"
-        class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth"
+        class="table is-bordered is-narrow is-hoverable is-fullwidth"
       >
         <thead slot="head" class="has-background-dark">
           <th class="has-text-white">Corso di laurea</th>
