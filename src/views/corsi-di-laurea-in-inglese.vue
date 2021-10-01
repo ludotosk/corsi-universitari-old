@@ -84,6 +84,18 @@
         :totalPages="totalPages"
         :maxPageLinks="4"
       />
+      <p>
+        <strong> Come funziona?</strong> È molto semplice, basta digitare nella
+        barra di ricerca es. "data science" e comparirà la lista di tutti i
+        corsi con quel nome. Inoltre cliccando "Livello" vengono ordinati i
+        corsi in base al tipo di laurea.
+      </p>
+      <p>
+        <strong>Attenzione!</strong> La colonna test è per indicare quale corso
+        ha <strong>test d'ingresso </strong>o è a numero programmato. In quel
+        caso il corso sarà segnato come test sì, in caso di accesso libero come
+        test no.
+      </p>
     </div>
     <table
       class="table is-bordered is-fullwidth is-hoverable"
@@ -113,29 +125,6 @@
       </tbody>
     </table>
     <br />
-    <div v-if="cambiaTabella">
-      <p>
-        <strong> Come funziona?</strong> È molto semplice, basta digitare nella
-        barra di ricerca es. "data science" e comparirà la lista di tutti i
-        corsi con quel nome. Inoltre cliccando "Livello" vengono ordinati i
-        corsi in base al tipo di laurea.
-      </p>
-      <p>
-        <strong>Attenzione!</strong> La colonna test è per indicare quale corso
-        ha <strong>test d'ingresso </strong>o è a numero programmato. In quel
-        caso il corso sarà segnato come test sì, in caso di accesso libero come
-        test no.
-      </p>
-    </div>
-    <br />
-    <!--     <iframe
-      src="https://www.corsiuniversitari.info/api/corsi?e=1"
-      frameborder="0"
-      id="dati"
-      v-on:click="prova"
-      onload='(function(){document.getElementById("dati").click();})()'
-      style="display: none"
-    ></iframe> -->
   </div>
 </template>
 
@@ -164,8 +153,8 @@ export default {
         rel: "preload",
         as: "fetch",
         href: "https://www.corsiuniversitari.info/api/corsi?e=1",
-        crossorigin: "anonymous"
-      }
+        crossorigin: "anonymous",
+      },
     ],
   },
   data() {
@@ -195,14 +184,5 @@ export default {
       this.cambiaTabella = true;
     },
   },
-  /*   methods: {
-    prova: function () {
-      var iframe = document.getElementById("dati");
-      this.corsi = JSON.parse(
-        iframe.contentWindow.document.getElementsByTagName("pre")[0].innerHTML
-      );
-      iframe.remove();
-    },
-  }, */
 };
 </script>

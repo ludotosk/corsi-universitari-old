@@ -21,6 +21,7 @@
       </div>
     </div>
     <v-table
+      v-if="carico"
       :data="corsi"
       :filters="filters"
       :pageSize="15"
@@ -56,6 +57,7 @@
       </tbody>
     </v-table>
     <smart-pagination
+      v-if="carico"
       :currentPage.sync="currentPage"
       :totalPages="totalPages"
       :maxPageLinks="4"
@@ -84,8 +86,8 @@ export default {
         rel: "preload",
         as: "fetch",
         href: "https://www.corsiuniversitari.info/api/corsi",
-        crossorigin: "anonymous"
-      }
+        crossorigin: "anonymous",
+      },
     ],
   },
   data() {
@@ -96,13 +98,17 @@ export default {
       },
       currentPage: 1,
       totalPages: 0,
+      carico: false,
     };
   },
   async mounted() {
     try {
       fetch("https://www.corsiuniversitari.info/api/corsi")
         .then((response) => response.json())
-        .then((data) => (this.corsi = data));
+        .then((data) => {
+          this.corsi = data;
+          this.carico = true;
+        });
     } catch (e) {
       console.log(e);
     }
