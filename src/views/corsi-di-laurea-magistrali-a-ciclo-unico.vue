@@ -11,7 +11,7 @@
     <p>
       Qui si può trovare <strong>la lista dei corsi di laurea {{ uni }}</strong
       >. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
+      <strong>all'anno accademico 2020/2021/2022</strong>.
     </p> -->
     <br />
     <div class="field is-horizontal">

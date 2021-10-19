@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Università a {{ uni }}, Corsi di laurea [2021]
+      Università a {{ uni }}, Corsi di laurea [2021/2022]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono i corsi di laurea a {{ uni }}? Ecco la lista!
@@ -12,7 +12,7 @@
       Qui si può trovare
       <strong>la lista dei corsi di laurea a {{ uni }}</strong
       >. I corsi in questione sono relativi
-      <strong>all'anno accademico 2020/2021</strong>.
+      <strong>all'anno accademico 2020/2021/2022</strong>.
     </p> -->
     <br />
     <div class="field is-horizontal">
@@ -132,7 +132,7 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Università a Pisa, Corsi di laurea [2021]",
+    title: "Università a Pisa, Corsi di laurea [2021/2022]",
     meta: [
       {
         name: "description",

@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Corsi di laurea magistrali [lista 2021]
+      Corsi di laurea magistrali [lista 2021/2022]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono i corsi di laurea magistrali? Ecco la lista!
@@ -11,7 +11,7 @@
     <p>
       Qui si possono trovare oltre
       <strong>2200 corsi di laurea magistrali</strong>. I corsi in questione
-      sono relativi <strong>all'anno accademico 2020/2021</strong>.
+      sono relativi <strong>all'anno accademico 2020/2021/2022</strong>.
     </p> -->
     <br />
     <div class="field is-horizontal">
@@ -137,7 +137,7 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Corsi di laurea magistrali [lista 2021]",
+    title: "Corsi di laurea magistrali [lista 2021/2022]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [

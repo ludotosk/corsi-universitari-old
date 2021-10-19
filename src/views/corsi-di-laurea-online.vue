@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Università {{ uni }}, Corsi di laurea [2021]
+      Università {{ uni }}, Corsi di laurea [2021/2022]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali lauree {{ uni }} si possono prendere? Ecco la lista!
@@ -83,7 +83,7 @@
         Qui si possono trovare
         <strong>la lista di tutti i corsi di laurea {{ uni }}</strong
         >. I corsi in questione sono relativi
-        <strong>all'anno accademico 2020/2021</strong>.
+        <strong>all'anno accademico 2020/2021/2022</strong>.
       </p>
       <p>
         <strong> Come funziona?</strong> È molto semplice, basta digitare nella
@@ -135,7 +135,7 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Università online, corsi di laurea [2021]",
+    title: "Università online, corsi di laurea [2021/2022]",
     meta: [
       {
         name: "description",

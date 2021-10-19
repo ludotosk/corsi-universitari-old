@@ -2,13 +2,13 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Tutti i Corsi di Laurea esistenti [2021]
+      Tutti i Corsi di Laurea esistenti [2021/2022]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono tutti i corsi di laurea?
     </h2>
     <!--     <hr />
-    <p>Quali sono <strong>tutti i corsi di laurea Italiani esistenti</strong>? Qui puoi trovare la <strong>lista completa</strong> aggiornata <strong>all'anno accademico 2020/2021</strong>!</p> -->
+    <p>Quali sono <strong>tutti i corsi di laurea Italiani esistenti</strong>? Qui puoi trovare la <strong>lista completa</strong> aggiornata <strong>all'anno accademico 2020/2021/2022</strong>!</p> -->
     <br />
     <div class="field is-horizontal">
       <div class="field-body">
@@ -106,17 +106,17 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Tutti i corsi di laurea esistenti [2021]",
+    title: "Tutti i corsi di laurea esistenti [2021/2022]",
     meta: [
       {
         name: "description",
         content:
-          "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea del 2021 in base al nome del corso e di trovare quello che fa per te.",
+          "corsiuniversitari.info ti permette di cercare fra tutti i corsi di laurea del 2021/2022 in base al nome del corso e di trovare quello che fa per te.",
       },
       {
         name: "keywords",
         content:
-          "Corsi di laurea, Corso di laurea, Corsi universitari, tutti i corsi di laurea, 2021",
+          "Corsi di laurea, Corso di laurea, Corsi universitari, tutti i corsi di laurea, 2021/2022",
       },
     ],
     link: [

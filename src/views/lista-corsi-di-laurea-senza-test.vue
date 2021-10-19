@@ -2,7 +2,7 @@
   <div class="container is-fullhd">
     <br />
     <h1 class="has-text-centered is-size-2 has-text-dark has-text-left">
-      Università senza test d'ingresso [2021]
+      Università senza test d'ingresso [2021/2022]
     </h1>
     <h2 class="has-text-centered is-size-3 has-text-dark has-text-left">
       Quali sono le università senza test d'ingresso?
@@ -160,14 +160,14 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Università senza test d'ingresso [2021]",
+    title: "Università senza test d'ingresso [2021/2022]",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "Università senza test d'ingresso 2021, qui puoi trovare tutti i corsi di laurea di tutte le facoltà ad accesso libero!",
+          "Università senza test d'ingresso 2021/2022, qui puoi trovare tutti i corsi di laurea di tutte le facoltà ad accesso libero!",
       },
       {
         name: "keywords",

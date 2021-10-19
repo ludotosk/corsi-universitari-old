@@ -11,7 +11,7 @@
     <p>
     Qui si possono trovare oltre
     <strong>1700 corsi di laurea triennali</strong>. I corsi in questione sono
-    relativi <strong>all'anno accademico 2020/2021</strong>.
+    relativi <strong>all'anno accademico 2020/2021/2022</strong>.
   </p> -->
   <br />
   <div class="field is-horizontal">
