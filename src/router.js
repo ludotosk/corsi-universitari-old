@@ -59,14 +59,14 @@ const routes = [
       footer: Footer
     }
   },
-  {
-    path: '/corsi-di-laurea-magistrale-a-ciclo-unico', components: {
-      default: () => import(/* webpackChunkName: "CorsiCiclo" */ './views/corsi-di-laurea-magistrali-a-ciclo-unico.vue'),
-      header: Navbar,
-      panel: Panel,
-      footer: Footer
-    }
-  },
+  // {
+  //   path: '/corsi-di-laurea-magistrale-a-ciclo-unico', components: {
+  //     default: () => import(/* webpackChunkName: "CorsiCiclo" */ './views/corsi-di-laurea-magistrali-a-ciclo-unico.vue'),
+  //     header: Navbar,
+  //     panel: Panel,
+  //     footer: Footer
+  //   }
+  // },
   {
     path: '/corsi-di-laurea-in-inglese', components: {
       default: () => import(/* webpackChunkName: "inglese" */ './views/corsi-di-laurea-in-inglese.vue'),

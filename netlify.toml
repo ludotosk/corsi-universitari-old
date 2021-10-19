@@ -30,3 +30,9 @@ package = "@netlify/plugin-sitemap"
   status = 200
   force = true
   headers = {X-From = "Netlify"}
+
+[[redirects]]
+  from = "/corsi-di-laurea-magistrale-a-ciclo-unico/"
+  to = "/lauree-triennali-elenco/"
+  status = 301
+  force = true

@@ -23,7 +23,6 @@ module.exports = {
         '/migliori-universita-medicina',
         '/lauree-triennali-elenco',
         '/lista-corsi-di-laurea-magistrale',
-        '/corsi-di-laurea-magistrale-a-ciclo-unico',
         '/corsi-di-laurea-in-inglese',
         '/corsi-di-laurea-bari',
         '/corsi-di-laurea-bologna',
