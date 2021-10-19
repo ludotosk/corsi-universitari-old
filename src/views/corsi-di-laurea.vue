@@ -40,6 +40,7 @@
   </p> -->
     <br />
     <v-table
+      v-if="carico"
       :data="corsi"
       :filters="filters"
       :pageSize="15"
@@ -75,6 +76,7 @@
       </tbody>
     </v-table>
     <smart-pagination
+      v-if="carico"
       :currentPage.sync="currentPage"
       :totalPages="totalPages"
       :maxPageLinks="4"
