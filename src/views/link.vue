@@ -8,14 +8,14 @@
       width="96"
     />
     <p id="brand">@present_med.gram | corsiuniversitari.info</p>
-    <a href="https://chat.whatsapp.com/EiygmP7oY944HWFgwuejLD"
+    <a href="https://chat.whatsapp.com/EiygmP7oY944HWFgwuejLD" target="_blank"
       >Whatsapp orientamento universitario</a
     >
-    <a href="https://t.me/corsiuniversitari">Telegram con simulatore quiz</a>
-    <a href="https://www.corsiuniversitari.info/"
+    <a href="https://t.me/corsiuniversitari" target="_blank">Telegram con simulatore quiz</a>
+    <a href="https://www.corsiuniversitari.info/" target="_blank"
       >Tutti i corsi di laurea italiani</a
     >
-    <a href="https://instagram.com/present_med.gram"
+    <a href="https://instagram.com/present_med.gram" target="_blank"
       >Pagina Instagram per preparazione a medicina</a
     >
     <a href="mailto:corsiuniversitari@ludotosk.it" id="firma">🎨 @ludotosk</a>
