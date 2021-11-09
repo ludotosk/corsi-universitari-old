@@ -60,7 +60,7 @@
           </p>
         </section>
         <footer class="modal-card-foot">
-          <a href="https://www.corsiuniversitari.info/link" class="button is-primary"
+          <a href="https://www.corsiuniversitari.info/link" target="_blank" class="button is-primary"
             >Link di accesso</a
           >
           <button class="button" v-on:click="attiva()">Chiudi</button>
