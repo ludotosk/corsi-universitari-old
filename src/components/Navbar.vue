@@ -87,10 +87,8 @@
             class="navbar-item"
             >Corsi senza test</router-link
           >
-          <router-link
-            to="/link"
-            class="navbar-item"
-            >Test medicina</router-link
+          <a href="https://www.corsiuniversitari.info/link" class="navbar-item"
+            >Test medicina</a
           >
         </div>
         <div class="navbar-end">

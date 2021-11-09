@@ -60,8 +60,8 @@
           </p>
         </section>
         <footer class="modal-card-foot">
-          <router-link to="/link" class="button is-primary"
-            >Link di accesso</router-link
+          <a href="https://www.corsiuniversitari.info/link" class="button is-primary"
+            >Link di accesso</a
           >
           <button class="button" v-on:click="attiva()">Chiudi</button>
         </footer>
