@@ -9,7 +9,8 @@ package = "@netlify/plugin-sitemap"
     './dist/contattami.html', 
     './dist/comunita.html',
     './dist/tabella.html',
-    './dist/simulazioni-test.html'
+    './dist/simulazioni-test.html',
+    './dist/link.html'
   ]
 
 [[redirects]]
