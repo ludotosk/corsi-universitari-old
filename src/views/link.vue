@@ -13,7 +13,7 @@
     >
     <a href="https://t.me/corsiuniversitari">Telegram con simulatore quiz</a>
     <a href="https://www.corsiuniversitari.info/"
-      >Sito con tutti i corsi di laurea</a
+      >Tutti i corsi di laurea italiani</a
     >
     <a href="https://instagram.com/present_med.gram"
       >Pagina Instagram per preparazione a medicina</a

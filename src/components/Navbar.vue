@@ -87,8 +87,10 @@
             class="navbar-item"
             >Corsi senza test</router-link
           >
-          <a href="https://t.me/corsiuniversitari" class="navbar-item"
-            >Simulazioni test</a
+          <router-link
+            to="/link"
+            class="navbar-item"
+            >Test medicina</router-link
           >
         </div>
         <div class="navbar-end">
