@@ -7,7 +7,7 @@
       height="96"
       width="96"
     />
-    <p id="brand">@present_med.gram | corsiuniversitari.info</p>
+    <p id="brand">@current.medstudent | corsiuniversitari.info</p>
     <a href="https://chat.whatsapp.com/EiygmP7oY944HWFgwuejLD" target="_blank"
       >Whatsapp orientamento universitario</a
     >
@@ -15,7 +15,7 @@
     <a href="https://www.corsiuniversitari.info/" target="_blank"
       >Tutti i corsi di laurea italiani</a
     >
-    <a href="https://instagram.com/present_med.gram" target="_blank"
+    <a href="https://instagram.com/current.medstudent" target="_blank"
       >Pagina Instagram per preparazione a medicina</a
     >
     <a href="mailto:corsiuniversitari@ludotosk.it" id="firma">🎨 @ludotosk</a>
@@ -26,12 +26,12 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "@present_med.gram | corsiuniversitari.info",
+    title: "@current.medstudent | corsiuniversitari.info",
     meta: [
       {
         name: "description",
         content:
-          "Pagina link social di @present_med.gram | corsiuniversitari.info, qui ci sono i link per il sito, instagram, telegram e whatsapp.",
+          "Pagina link social di @current.medstudent | corsiuniversitari.info, qui ci sono i link per il sito, instagram, telegram e whatsapp.",
       },
       { name: "robots", content: "noindex" },
     ],
