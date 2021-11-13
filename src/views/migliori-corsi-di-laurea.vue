@@ -68,7 +68,7 @@
     </v-table>
     <p>
       <a
-        href="https://www2.almalaurea.it/cgi-php/universita/statistiche/tendine.php?config=profilo&lang=it"
+        href="https://www2.almalaurea.it/cgi-php/universita/statistiche/tendine.php?anno=2020&config=occupazione"
         rel="noopener"
         target="_blank"
         class="has-text-danger"
