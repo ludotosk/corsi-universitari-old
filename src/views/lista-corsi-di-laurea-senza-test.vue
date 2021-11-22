@@ -183,7 +183,7 @@ export default {
       {
         rel: "preload",
         as: "fetch",
-        href: "https://www.corsiuniversitari.info/api/corsi?a=NO",
+        href: "https://json-corsi-fastify.herokuapp.com/corsi?a=No",
         crossorigin: "anonymous"
       }
     ],
@@ -202,7 +202,7 @@ export default {
   },
   async mounted() {
     try {
-      fetch("https://www.corsiuniversitari.info/api/corsi?a=No")
+      fetch("https://json-corsi-fastify.herokuapp.com/corsi?a=No")
         .then((response) => response.json())
         .then((data) => (this.corsi = data));
     } catch (e) {
