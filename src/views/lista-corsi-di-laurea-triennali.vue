@@ -158,7 +158,7 @@ export default {
       {
         rel: "preload",
         as: "fetch",
-        href: "https://www.corsiuniversitari.info/api/corsi?t=Triennale&t=Magistrale a Ciclo Unico",
+        href: "https://json-corsi-fastify.herokuapp.com/corsi?t=Triennale&t=Magistrale a Ciclo Unico",
         crossorigin: "anonymous",
       },
     ],
@@ -177,7 +177,7 @@ export default {
   async mounted() {
     try {
       fetch(
-        "https://www.corsiuniversitari.info/api/corsi?t=Triennale&t=Magistrale a Ciclo Unico"
+        "https://json-corsi-fastify.herokuapp.com/corsi?t=Triennale&t=Magistrale a Ciclo Unico"
       )
         .then((response) => response.json())
         .then((data) => (this.corsi = data));

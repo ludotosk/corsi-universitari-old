@@ -152,7 +152,7 @@ export default {
       {
         rel: "preload",
         as: "fetch",
-        href: "https://www.corsiuniversitari.info/api/corsi?s=PADOVA",
+        href: "https://json-corsi-fastify.herokuapp.com/corsi?s=PADOVA",
         crossorigin: "anonymous"
       }
     ],
@@ -171,7 +171,7 @@ export default {
   },
   async mounted() {
     try {
-      fetch("https://www.corsiuniversitari.info/api/corsi?s=PADOVA")
+      fetch("https://json-corsi-fastify.herokuapp.com/corsi?s=PADOVA")
         .then((response) => response.json())
         .then((data) => (this.corsi = data));
     } catch (e) {

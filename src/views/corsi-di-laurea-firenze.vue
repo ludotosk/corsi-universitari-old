@@ -154,7 +154,7 @@ export default {
       {
         rel: "preload",
         as: "fetch",
-        href: "https://www.corsiuniversitari.info/api/corsi?s=FIRENZE",
+        href: "https://json-corsi-fastify.herokuapp.com/corsi?s=FIRENZE",
         crossorigin: "anonymous"
       }
     ],
@@ -173,7 +173,7 @@ export default {
   },
   async mounted() {
     try {
-      fetch("https://www.corsiuniversitari.info/api/corsi?s=FIRENZE")
+      fetch("https://json-corsi-fastify.herokuapp.com/corsi?s=FIRENZE")
         .then((response) => response.json())
         .then((data) => (this.corsi = data));
     } catch (e) {
