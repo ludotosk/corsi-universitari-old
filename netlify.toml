@@ -38,8 +38,8 @@ package = "@netlify/plugin-sitemap"
   status = 301
   force = true
 
-  [[redirects]]
-  from = "/lista-corsi-di-laurea-senza-test/"
-  to = "https://elated-montalcini-c67e29.netlify.app/"
+[[redirects]]
+  from = "/lista-corsi-di-laurea-senza-test/*"
+  to = "https://elated-montalcini-c67e29.netlify.app/:splat"
   status = 200
   force = true
