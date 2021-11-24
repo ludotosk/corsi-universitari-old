@@ -82,10 +82,10 @@
           <router-link to="/lauree-triennali-elenco" class="navbar-item"
             >Triennali</router-link
           >
-          <a
-            href="/lista-corsi-di-laurea-senza-test"
+          <router-link
+            to="/lista-corsi-di-laurea-senza-test"
             class="navbar-item"
-            >Corsi senza test</a
+            >Corsi senza test</router-link
           >
           <a href="https://www.corsiuniversitari.info/link" target="_blank" class="navbar-item"
             >Test medicina</a

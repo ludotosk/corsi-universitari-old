@@ -34,7 +34,7 @@ module.exports = {
                 '/corsi-di-laurea-roma',
                 '/corsi-di-laurea-torino',
                 '/corsi-di-laurea-in-inglese',
-                // '/lista-corsi-di-laurea-senza-test',
+                '/lista-corsi-di-laurea-senza-test',
                 '/corsi-di-laurea-online',
                 '/corsi-di-laurea-internazionali',
                 '/comunita',

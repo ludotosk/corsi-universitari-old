@@ -191,16 +191,16 @@ const routes = [{
             footer: Footer
         }
     },
-    // {
-    //     path: '/lista-corsi-di-laurea-senza-test',
-    //     components: {
-    //         default: () =>
-    //             import ( /* webpackChunkName: "lista corsi senza test" */ './views/lista-corsi-di-laurea-senza-test.vue'),
-    //         header: Navbar,
-    //         panel: Panel,
-    //         footer: Footer
-    //     }
-    // },
+    {
+        path: '/lista-corsi-di-laurea-senza-test',
+        components: {
+            default: () =>
+                import ( /* webpackChunkName: "lista corsi senza test" */ './views/lista-corsi-di-laurea-senza-test.vue'),
+            header: Navbar,
+            panel: Panel,
+            footer: Footer
+        }
+    },
     {
         path: '/corsi-di-laurea-online',
         components: {
