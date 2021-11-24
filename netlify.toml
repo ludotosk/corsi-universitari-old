@@ -37,3 +37,9 @@ package = "@netlify/plugin-sitemap"
   to = "/lauree-triennali-elenco/"
   status = 301
   force = true
+
+  [[redirects]]
+  from = "/lista-corsi-di-laurea-senza-test/"
+  to = "https://elated-montalcini-c67e29.netlify.app/"
+  status = 301
+  force = true
