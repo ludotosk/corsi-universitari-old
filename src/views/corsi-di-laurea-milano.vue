@@ -133,7 +133,7 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Università a Milano, Corsi di laurea [2021/2022] 🌁",
+    title: "Università a Milano, Corsi di laurea [2021/2022] ✅",
     meta: [
       {
         name: "description",
