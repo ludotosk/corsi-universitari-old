@@ -63,7 +63,6 @@
                 :href="row.h"
                 target="_blank"
                 rel="noopener"
-                class="has-text-danger"
                 >{{ row.n }}</a
               >
             </td>
@@ -135,7 +134,7 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Università online, corsi di laurea [2021/2022]",
+    title: "Università online, corsi di laurea [2021/2022] ✅",
     meta: [
       {
         name: "description",

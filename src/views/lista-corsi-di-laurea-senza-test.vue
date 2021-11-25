@@ -77,7 +77,6 @@
                 :href="row.h"
                 target="_blank"
                 rel="noopener"
-                class="has-text-danger"
                 >{{ row.n }}</a
               >
             </td>
@@ -160,7 +159,7 @@
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Università senza test d'ingresso [2021/2022]",
+    title: "Università senza test d'ingresso [2021/2022] ✅",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [

@@ -1,6 +1,6 @@
 /*! `Custom` Bootstrap 4 theme */
-@import url(https://fonts.googleapis.com/css?family=Quicksand:200,300,400,700&display=swap);
 
+@import url(https://fonts.googleapis.com/css?family=Quicksand:200,300,400,700&display=swap);
 $primary:#2f3c48;
 $secondary:#6f7f8c;
 $success:#fcf8e3;
@@ -9,12 +9,10 @@ $info:#5c8f94;
 $warning:#6e9fa5;
 $light:#eceeec;
 $dark:#1e2b37;
-
-$family-sans-serif: "Quicksand", sans-serif;
-
+$family-sans-serif: "Quicksand",
+sans-serif;
 @import "node_modules/bulma/bulma.sass";
-
-.smart-pagination{
+.smart-pagination {
     @extend .pagination;
 }
 
@@ -25,10 +23,10 @@ $family-sans-serif: "Quicksand", sans-serif;
 }
 
 .page-link {
-    color: #cc330d;   
+    color: #cc330d;
 }
 
-.page-item.active  {
+.page-item.active {
     @extend .is-current;
     color: #fff;
     background-color: #2f3c48;
@@ -45,4 +43,13 @@ $family-sans-serif: "Quicksand", sans-serif;
 
 .danger {
     @extend .has-text-danger;
+}
+
+td a {
+    color: $danger;
+}
+
+td {
+    word-wrap: break-word;
+    word-break: break-all;
 }

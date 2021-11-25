@@ -86,7 +86,7 @@ import corsi from "../assets/migliori-corsi.json";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Migliori lauree per trovare lavoro [2020]",
+    title: "Migliori lauree per trovare lavoro [2020] 👷",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [

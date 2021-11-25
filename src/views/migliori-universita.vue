@@ -301,7 +301,7 @@ import corsi from "../assets/migliori-uni.json";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Migliori università italiane 2021/2022/2021/2022",
+    title: "Migliori università italiane 2021/2022 🧑‍🎓",
     // all titles will be injected into this template
     titleTemplate: "%s | Classifica Censis",
     meta: [

@@ -69,7 +69,6 @@
                 :href="row.h"
                 target="_blank"
                 rel="noopener"
-                class="has-text-danger"
                 >{{ row.n }}</a
               >
             </td>
