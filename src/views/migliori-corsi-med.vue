@@ -124,7 +124,7 @@ import corsi from "../assets/migliori-med.json";
 export default {
   metaInfo: {
     // if no subcomponents specify a metaInfo.title, this title will be used
-    title: "Migliori università di medicina [2020] 👩‍⚕️",
+    title: "Migliori università di medicina [2020] ✅",
     // all titles will be injected into this template
     titleTemplate: "%s | corsiuniversitari.info",
     meta: [
