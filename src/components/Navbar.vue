@@ -92,14 +92,14 @@
           >
         </div>
         <div class="navbar-end">
-          <router-link to="/comunita" class="navbar-item"
+          <a href="https://www.corsiuniversitari.info/link" class="navbar-item"
             ><img
               src="/img/whatsapp-svgrepo-com.svg"
               alt="pagina gruppo whatsapp"
               height="40"
               width="40"
             />
-            Gruppo whatsapp</router-link
+            Gruppo whatsapp</a
           >
         </div>
       </div>

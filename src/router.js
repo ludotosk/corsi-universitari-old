@@ -222,16 +222,6 @@ const routes = [{
         }
     },
     {
-        path: '/comunita',
-        components: {
-            default: () =>
-                import ( /* webpackChunk: "comunita" */ './views/comunita.vue'),
-            header: Navbar,
-            panel: Panel,
-            footer: Footer
-        }
-    },
-    {
         path: '/migliori-corsi-di-laurea',
         components: {
             default: () =>

@@ -25,13 +25,6 @@
             >Corsi di laurea Triennali e Magistrali a ciclo unico</router-link
           >
         </div>
-        <!-- <div class="panel-block">
-          <router-link
-            to="/corsi-di-laurea-magistrale-a-ciclo-unico"
-            class="has-text-black-ter"
-            >Corsi di laurea Magistrali a Ciclo Unico</router-link
-          >
-        </div> -->
         <div class="panel-block">
           <router-link
             to="/lista-corsi-di-laurea-magistrale"

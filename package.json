@@ -7,7 +7,7 @@
         "build": "vue-cli-service build --modern",
         "lint": "vue-cli-service lint",
         "build:report": "vue-cli-service build --report",
-        "http-server": "http-server dist",
+        "http-server": "http-server dist -g",
         "netlify dev": "netlify dev",
         "deploy rapido": "git commit -a -m \"deploy rapido\" && git push -u origin main"
     },
