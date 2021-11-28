@@ -308,7 +308,7 @@ export default {
       {
         name: "description",
         content:
-          "Quali sono le migliori università 2021/2022/2021/2022? Abbiamo creato una tabella consultabile con tutti i punteggi Censis di tutte le università italiane!",
+          "Quali sono le migliori università 2021/2022? Abbiamo creato una tabella consultabile con tutti i punteggi Censis di tutte le università italiane!",
       },
       {
         name: "keywords",
